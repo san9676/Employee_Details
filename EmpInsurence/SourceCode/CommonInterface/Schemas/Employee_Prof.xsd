@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema targetNamespace="http://www.EniqueSol.org/Employee_Prof/V1" elementFormDefault="qualified" xmlns="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://www.EniqueSol.org/Employee_Prof/V1">
+
+    <element name="Employee_ProfReq" type="tns:Employee_ProfReqType"></element>
+    
+    <complexType name="Employee_ProfReqType">
+    	<sequence>
+    		<element name="EmpCode" type="string"></element>
+    		<element name="Department" type="string" maxOccurs="1" minOccurs="0"></element>
+    		<element name="Reporting-To" type="string" maxOccurs="1" minOccurs="0"></element>
+    		<element name="Seating-Location" type="string" maxOccurs="1" minOccurs="0"></element>
+    		<element name="Location" type="string" maxOccurs="1" minOccurs="0"></element>
+    		<element name="Title" type="string" maxOccurs="1" minOccurs="0"></element>
+    		<element name="Date-of-joining" type="string" maxOccurs="1" minOccurs="0"></element>
+    		<element name="Employee-status" type="string" maxOccurs="1" minOccurs="0"></element>
+    		<element name="Employee-type" type="string" maxOccurs="1" minOccurs="0"></element>
+    		<element name="Role" type="string" maxOccurs="1" minOccurs="0"></element>
+    		<element name="Experience" type="string" maxOccurs="1" minOccurs="0"></element>
+    	</sequence>
+    </complexType>
+
+    <element name="Employee_ProfRes" type="tns:Employee_ProfResType"></element>
+    
+    <complexType name="Employee_ProfResType">
+    	<sequence>
+    		<element name="ResCode" type="string"></element>
+    		<element name="ResMsg" type="string"></element>
+    	</sequence>
+    </complexType>
+</schema>

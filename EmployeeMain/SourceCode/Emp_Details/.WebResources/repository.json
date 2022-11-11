@@ -1,0 +1,29 @@
+{
+    "records": [{
+        "name": "Cloud",
+        "items": [],
+        "url": "https://integration.cloud.tibco.com:443"
+    }],
+    "resources": [
+        {
+            "location": "Service Descriptors/emp_details.SendSalaryRequest-Emp_SalTitle.json",
+            "type": "generated"
+        },
+        {
+            "location": "Service Descriptors/emp_details.AddOrgDetails-OrgDetails.json",
+            "type": "generated"
+        },
+        {
+            "location": "Service Descriptors/emp_details.EmpDetails-OrgDetails.json",
+            "type": "generated"
+        },
+        {
+            "location": "Service Descriptors/emp_details.EmpDetails-EmpDetails.json",
+            "type": "generated"
+        },
+        {
+            "location": "Service Descriptors/emp_details.MainSystem-MainSystem.json",
+            "type": "generated"
+        }
+    ]
+}

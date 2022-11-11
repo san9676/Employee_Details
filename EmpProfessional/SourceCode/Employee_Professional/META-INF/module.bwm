@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sca:composite xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:BW="http://xsd.tns.tibco.com/amf/models/sca/implementationtype/BW" xmlns:Emp_Professional="http://www.EniqueSol.com/Abstract/V1/Emp_Professional/" xmlns:V1="http://www.EniqueSol.org/Employee_Prof/V1" xmlns:WebFault="http://www.EniqueSol.org/WebFault" xmlns:XMLSchema="http://www.w3.org/2001/XMLSchema" xmlns:axis2="http://xsd.tns.tibco.com/bw/models/binding/soap/axis2" xmlns:compositeext="http://schemas.tibco.com/amx/3.0/compositeext" xmlns:sca="http://www.osoa.org/xmlns/sca/1.0" xmlns:scact="http://xsd.tns.tibco.com/amf/models/sca/componentType" xmlns:scaext="http://xsd.tns.tibco.com/amf/models/sca/extensions" xmi:id="_Ovqq4E7KEe2pVZfBfiTVQA" targetNamespace="http://tns.tibco.com/bw/composite/Employee_Professional" name="Employee_Professional" compositeext:version="1.0.0" compositeext:formatVersion="2">
+  <sca:service xmi:id="_UVd48k7OEe2pVZfBfiTVQA" name="Emp_Professional" promote="ComponentEmp_Professional/Emp_Professional">
+    <sca:interface.wsdl xmi:id="_UVnp8k7OEe2pVZfBfiTVQA" interface="http://www.EniqueSol.com/Abstract/V1/Emp_Professional/#wsdl.interface(Emp_Professional)" scaext:wsdlLocation="../Service%20Descriptors/Emp_Professional.wsdl"/>
+    <scaext:binding xsi:type="axis2:SOAPServiceBinding" xmi:id="_OoRd4E7UEe2pVZfBfiTVQA" name="SOAPServiceBinding" targetNamespace="http://www.eniqueSol.com/540b86db2f6e4e53bc0f8872342e87c5/SOAPServiceBinding" portTypeQName="Emp_Professional:Emp_Professional" transportBindingType="HTTP" attachmentStyle="SwA" modelVersion="1.2.0" portTypeWSDLLocation="platform:/resource/Employee_Professional/Service%20Descriptors/Emp_Professional.wsdl">
+      <bindingType xmi:id="_OoijoE7UEe2pVZfBfiTVQA"/>
+      <inboundConfiguration xsi:type="axis2:HttpTransportConfiguration" xmi:id="_WFHp8E7UEe2pVZfBfiTVQA" endpointURI="/SOAPServiceBinding/emp_Professional/" httpConnector="employee_professional.EmpProfHTTP"/>
+      <operationConfiguration xmi:id="_OomOAE7UEe2pVZfBfiTVQA" operationName="AddEmp_Prof" action="AddEmp_Prof" actionNeeded="true">
+        <bindingType xmi:id="_OomOAU7UEe2pVZfBfiTVQA"/>
+        <messageConfiguration xmi:id="_OomOAk7UEe2pVZfBfiTVQA" messageQName="Emp_Professional:AddEmp_ProfRequest" wsdlLocation="platform:/resource/Employee_Professional/Service%20Descriptors/Emp_Professional.wsdl">
+          <messagePartConfigurations xsi:type="axis2:BodyPartConfiguration" xmi:id="_OomOA07UEe2pVZfBfiTVQA" partName="parameters" partElementName="V1:Employee_ProfReq"/>
+        </messageConfiguration>
+        <messageConfiguration xmi:id="_OomOBE7UEe2pVZfBfiTVQA" messageQName="Emp_Professional:AddEmp_ProfResponse" messageDirection="OUTPUT" wsdlLocation="platform:/resource/Employee_Professional/Service%20Descriptors/Emp_Professional.wsdl">
+          <messagePartConfigurations xsi:type="axis2:BodyPartConfiguration" xmi:id="_OomOBU7UEe2pVZfBfiTVQA" partName="parameters" partElementName="V1:Employee_ProfRes"/>
+        </messageConfiguration>
+        <messageConfiguration xmi:id="_OomOBk7UEe2pVZfBfiTVQA" messageQName="Emp_Professional:AddEmp_ProfFault" messageDirection="FAULT" action="fault" wsdlLocation="platform:/resource/Employee_Professional/Service%20Descriptors/Emp_Professional.wsdl">
+          <messagePartConfigurations xsi:type="axis2:BodyPartConfiguration" xmi:id="_OomOB07UEe2pVZfBfiTVQA" partName="parameters" partElementName="WebFault:fault"/>
+        </messageConfiguration>
+        <context xmi:id="_OoncIE7UEe2pVZfBfiTVQA">
+          <inputMapping xmi:id="_OopRUE7UEe2pVZfBfiTVQA"/>
+          <outputMapping xmi:id="_OopRUU7UEe2pVZfBfiTVQA" direction="OUTPUT"/>
+          <faultMappings xmi:id="_Oop4YE7UEe2pVZfBfiTVQA" direction="FAULT" faultName="fault"/>
+        </context>
+      </operationConfiguration>
+    </scaext:binding>
+    <scact:bindingAdjunct xmi:id="_Oop4YU7UEe2pVZfBfiTVQA" bindingName="SOAPServiceBinding"/>
+  </sca:service>
+  <sca:property xmi:id="_Pwgc0E7KEe2pVZfBfiTVQA" name="BW.DEPLOYMENTUNIT.TYPE" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_Pwgc0U7KEe2pVZfBfiTVQA" name="BW.APPNODE.NAME" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_PwqN0E7KEe2pVZfBfiTVQA" name="BW.DEPLOYMENTUNIT.NAME" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_PwqN0U7KEe2pVZfBfiTVQA" name="BW.HOST.NAME" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_PwzXwE7KEe2pVZfBfiTVQA" name="BW.DOMAIN.NAME" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_PwzXwU7KEe2pVZfBfiTVQA" name="BW.DEPLOYMENTUNIT.VERSION" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_PwzXwk7KEe2pVZfBfiTVQA" name="BW.APPSPACE.NAME" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_Pw9IwE7KEe2pVZfBfiTVQA" name="BW.MODULE.VERSION" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_Pw9IwU7KEe2pVZfBfiTVQA" name="BW.MODULE.NAME" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_hiAkAE7UEe2pVZfBfiTVQA" name="/EmpProf/HTTP/Host" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_roYXEE7UEe2pVZfBfiTVQA" name="/EmpProf/HTTP/Port" type="XMLSchema:int" scaext:simpleValue="0" publicAccess="true" scalable="true"/>
+  <sca:component xmi:id="_O2RCIE7KEe2pVZfBfiTVQA" name="ComponentEmp_Professional" compositeext:version="1.0.0.qualifier">
+    <scaext:implementation xsi:type="BW:BWComponentImplementation" xmi:id="_O2RCIU7KEe2pVZfBfiTVQA" processName="Main.Emp_Professional"/>
+    <sca:service xmi:id="_UVd48E7OEe2pVZfBfiTVQA" name="Emp_Professional">
+      <sca:interface.wsdl xmi:id="_UVd48U7OEe2pVZfBfiTVQA" interface="http://www.EniqueSol.com/Abstract/V1/Emp_Professional/#wsdl.interface(Emp_Professional)" scaext:wsdlLocation="../Service%20Descriptors/Emp_Professional.wsdl"/>
+    </sca:service>
+  </sca:component>
+</sca:composite>

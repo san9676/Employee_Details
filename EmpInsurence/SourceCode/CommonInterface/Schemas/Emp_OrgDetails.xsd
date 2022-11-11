@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema targetNamespace="http://www.EniqueSol.org/Emp_OrgDetails/V1" elementFormDefault="qualified" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://www.EniqueSol.org/Emp_OrgDetails/V1">
+
+    <xsd:element name="Emp_OrgDetailsReq"
+    	type="tns:Emp_OrgDetailsReqType">
+    </xsd:element>
+    
+    <xsd:complexType name="Emp_OrgDetailsReqType">
+    	<xsd:sequence>
+    		<xsd:element name="EmpCode" type="xsd:string"></xsd:element>
+    		<xsd:element name="EmpName" type="xsd:string"></xsd:element>
+    		<xsd:element name="OrganizationName" type="xsd:string"></xsd:element>
+    		<xsd:element name="CompanyHQ" type="xsd:string"></xsd:element>
+    		<xsd:element name="CompanyPhNo" type="xsd:string"></xsd:element>
+    		<xsd:element name="OrgAddress" type="xsd:string" maxOccurs="1" minOccurs="0"></xsd:element>
+    		<xsd:element name="DirectorName" type="xsd:string" maxOccurs="1" minOccurs="0"></xsd:element>
+    	</xsd:sequence>
+    </xsd:complexType>
+    
+    <xsd:element name="Emp_OrgDetailsRes"
+    	type="tns:Emp_OrgDetailsResType">
+    </xsd:element>
+    
+    <xsd:complexType name="Emp_OrgDetailsResType">
+    	<xsd:sequence>
+    		<xsd:element name="ResCode" type="xsd:string" maxOccurs="1" minOccurs="0"></xsd:element>
+    		<xsd:element name="ResMsg" type="xsd:string" maxOccurs="1" minOccurs="0"></xsd:element>
+    	</xsd:sequence>
+    </xsd:complexType>
+</xsd:schema>

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<wsdl:definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tns="http://www.EniqueSol.com/concrete/V1/Emp_Professional/" xmlns:tns0="http://www.EniqueSol.org/Employee_Prof/V1" xmlns:tns1="http://www.EniqueSol.org/WebFault" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="Emp_Professional" targetNamespace="http://www.EniqueSol.com/concrete/V1/Emp_Professional/">
+  <wsdl:types>
+    <xsd:schema xmlns:tns="http://www.EniqueSol.org/Employee_Prof/V1" elementFormDefault="qualified" targetNamespace="http://www.EniqueSol.org/Employee_Prof/V1">
+      <xsd:element name="Employee_ProfReq" type="tns:Employee_ProfReqType"/>
+      <xsd:complexType name="Employee_ProfReqType">
+        <xsd:sequence>
+          <xsd:element name="EmpCode" type="xsd:string"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="Department" type="xsd:string"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="Reporting-To" type="xsd:string"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="Seating-Location" type="xsd:string"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="Location" type="xsd:string"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="Title" type="xsd:string"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="Date-of-joining" type="xsd:string"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="Employee-status" type="xsd:string"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="Employee-type" type="xsd:string"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="Role" type="xsd:string"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="Experience" type="xsd:string"/>
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:element name="Employee_ProfRes" type="tns:Employee_ProfResType"/>
+      <xsd:complexType name="Employee_ProfResType">
+        <xsd:sequence>
+          <xsd:element name="ResCode" type="xsd:string"/>
+          <xsd:element name="ResMsg" type="xsd:string"/>
+        </xsd:sequence>
+      </xsd:complexType>
+    </xsd:schema>
+    <xsd:schema xmlns:tns="http://www.EniqueSol.org/WebFault" elementFormDefault="qualified" targetNamespace="http://www.EniqueSol.org/WebFault">
+      <xsd:element name="fault" type="tns:faultType"/>
+      <xsd:complexType name="faultType">
+        <xsd:sequence>
+          <xsd:element maxOccurs="1" minOccurs="0" name="faultCode" type="xsd:string"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="faultMsg" type="xsd:string"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="StackTrace" type="xsd:string"/>
+        </xsd:sequence>
+      </xsd:complexType>
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="AddEmp_ProfRequest">
+    <wsdl:part element="tns0:Employee_ProfReq" name="parameters"/>
+  </wsdl:message>
+  <wsdl:message name="AddEmp_ProfResponse">
+    <wsdl:part element="tns0:Employee_ProfRes" name="parameters"/>
+  </wsdl:message>
+  <wsdl:message name="AddEmp_ProfFault">
+    <wsdl:part element="tns1:fault" name="parameters"/>
+  </wsdl:message>
+  <wsdl:portType name="Emp_Professional">
+    <wsdl:operation name="AddEmp_Prof">
+      <wsdl:input message="tns:AddEmp_ProfRequest"/>
+      <wsdl:output message="tns:AddEmp_ProfResponse"/>
+      <wsdl:fault message="tns:AddEmp_ProfFault" name="fault"/>
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="SOAPServiceBinding" type="tns:Emp_Professional">
+    <soap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+    <wsdl:operation name="AddEmp_Prof">
+      <soap:operation soapAction="AddEmp_Prof" style="document"/>
+      <wsdl:input>
+        <soap:body parts="parameters" use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body parts="parameters" use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="fault">
+        <soap:fault name="fault" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="Emp_Professional">
+    <wsdl:port binding="tns:SOAPServiceBinding" name="Emp_ProfessionalSOAP">
+      <soap:address location="http://localhost:10298/SOAPServiceBinding/emp_Professional/"/>
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

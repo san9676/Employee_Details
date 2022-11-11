@@ -1,0 +1,97 @@
+{
+  "swagger" : "2.0",
+  "info" : {
+    "version" : "1.0",
+    "title" : "Insurence",
+    "description" : "Insurence service"
+  },
+  "host" : "localhost:8080",
+  "basePath" : "/",
+  "schemes" : [ "http" ],
+  "paths" : {
+    "/addInsurence" : {
+      "post" : {
+        "summary" : "postInsurence",
+        "description" : "postInsurence",
+        "operationId" : "post-addInsurence",
+        "consumes" : [ "application/xml" ],
+        "produces" : [ "application/xml" ],
+        "parameters" : [ {
+          "name" : "body",
+          "in" : "body",
+          "description" : "",
+          "schema" : {
+            "$ref" : "#/definitions/Emp_InsurenceReq"
+          },
+          "required" : true
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "a Emp_InsurenceRes to be returned",
+            "schema" : {
+              "$ref" : "#/definitions/Emp_InsurenceRes"
+            }
+          }
+        }
+      }
+    }
+  },
+  "definitions" : {
+    "Emp_InsurenceReq" : {
+      "type" : "object",
+      "required" : [ "EmpInsurence" ],
+      "properties" : {
+        "CorelationID" : {
+          "type" : "string"
+        },
+        "TransacTime" : {
+          "type" : "string",
+          "format" : "date-time"
+        },
+        "EmpInsurence" : {
+          "$ref" : "#/definitions/Emp_InsurenceType"
+        }
+      }
+    },
+    "Emp_InsurenceRes" : {
+      "type" : "object",
+      "properties" : {
+        "ResCode" : {
+          "type" : "string"
+        },
+        "ResMsg" : {
+          "type" : "string"
+        }
+      }
+    },
+    "Emp_InsurenceType" : {
+      "type" : "object",
+      "required" : [ "PolicyType", "SumInsured", "PolicyNumber", "ValidTill", "OrgName", "EmpCode", "EmpName" ],
+      "properties" : {
+        "EmpCode" : {
+          "type" : "string"
+        },
+        "EmpName" : {
+          "type" : "string"
+        },
+        "OrgName" : {
+          "type" : "string"
+        },
+        "PolicyNumber" : {
+          "type" : "string"
+        },
+        "PolicyType" : {
+          "type" : "string"
+        },
+        "SumInsured" : {
+          "type" : "integer",
+          "format" : "int32"
+        },
+        "ValidTill" : {
+          "type" : "string",
+          "format" : "date"
+        }
+      }
+    }
+  }
+}

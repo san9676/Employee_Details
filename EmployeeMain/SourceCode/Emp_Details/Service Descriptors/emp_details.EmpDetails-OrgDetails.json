@@ -1,0 +1,79 @@
+{
+  "swagger" : "2.0",
+  "info" : {
+    "version" : "1.0",
+    "title" : "OrgDetails",
+    "description" : "OrgDetails service"
+  },
+  "host" : "localhost:8080",
+  "basePath" : "/",
+  "schemes" : [ "http" ],
+  "paths" : {
+    "/addOrgDetails" : {
+      "post" : {
+        "summary" : "postOrgDetails",
+        "description" : "postOrgDetails",
+        "operationId" : "post-addOrgDetails",
+        "consumes" : [ "application/json", "application/xml" ],
+        "produces" : [ "application/json", "application/xml" ],
+        "parameters" : [ {
+          "name" : "body",
+          "in" : "body",
+          "description" : "",
+          "schema" : {
+            "$ref" : "#/definitions/Emp_OrgDetailsReq"
+          },
+          "required" : true
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "a Emp_OrgDetailsRes to be returned",
+            "schema" : {
+              "$ref" : "#/definitions/Emp_OrgDetailsRes"
+            }
+          }
+        }
+      }
+    }
+  },
+  "definitions" : {
+    "Emp_OrgDetailsRes" : {
+      "type" : "object",
+      "properties" : {
+        "ResCode" : {
+          "type" : "string"
+        },
+        "ResMsg" : {
+          "type" : "string"
+        }
+      }
+    },
+    "Emp_OrgDetailsReq" : {
+      "type" : "object",
+      "required" : [ "OrganizationName", "CompanyHQ", "CompanyPhNo", "EmpCode", "EmpName" ],
+      "properties" : {
+        "EmpCode" : {
+          "type" : "string"
+        },
+        "EmpName" : {
+          "type" : "string"
+        },
+        "OrganizationName" : {
+          "type" : "string"
+        },
+        "CompanyHQ" : {
+          "type" : "string"
+        },
+        "CompanyPhNo" : {
+          "type" : "string"
+        },
+        "OrgAddress" : {
+          "type" : "string"
+        },
+        "DirectorName" : {
+          "type" : "string"
+        }
+      }
+    }
+  }
+}

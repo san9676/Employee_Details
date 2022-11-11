@@ -1,0 +1,262 @@
+{
+  "swagger" : "2.0",
+  "info" : {
+    "version" : "1.0",
+    "title" : "MainSystem",
+    "description" : "MainSystem service"
+  },
+  "host" : "localhost:8080",
+  "basePath" : "/",
+  "schemes" : [ "http" ],
+  "paths" : {
+    "/EmployeeMain" : {
+      "post" : {
+        "summary" : "postMainSystem",
+        "description" : "postMainSystem",
+        "operationId" : "post-EmployeeMain",
+        "consumes" : [ "application/json" ],
+        "produces" : [ "application/json" ],
+        "parameters" : [ {
+          "name" : "body",
+          "in" : "body",
+          "description" : "",
+          "schema" : {
+            "$ref" : "#/definitions/MainSysReq"
+          },
+          "required" : true
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "a MainSysRes to be returned",
+            "schema" : {
+              "$ref" : "#/definitions/MainSysRes"
+            }
+          }
+        }
+      }
+    }
+  },
+  "definitions" : {
+    "Employee_AddressType" : {
+      "type" : "object",
+      "required" : [ "AddressLine1", "State", "ZipCode", "City", "EmpCode" ],
+      "properties" : {
+        "EmpCode" : {
+          "type" : "string"
+        },
+        "AddressLine1" : {
+          "type" : "string"
+        },
+        "AddressLine2" : {
+          "type" : "string"
+        },
+        "Landmark" : {
+          "type" : "string"
+        },
+        "City" : {
+          "type" : "string"
+        },
+        "State" : {
+          "type" : "string"
+        },
+        "ZipCode" : {
+          "type" : "string"
+        }
+      }
+    },
+    "MainSysRes" : {
+      "type" : "object",
+      "properties" : {
+        "ResCode" : {
+          "type" : "string"
+        },
+        "ResMsg" : {
+          "type" : "string"
+        }
+      }
+    },
+    "Employee_ProfType" : {
+      "type" : "object",
+      "required" : [ "EmpCode" ],
+      "properties" : {
+        "EmpCode" : {
+          "type" : "string"
+        },
+        "Department" : {
+          "type" : "string"
+        },
+        "Reporting-To" : {
+          "type" : "string"
+        },
+        "Seating-Location" : {
+          "type" : "string"
+        },
+        "Location" : {
+          "type" : "string"
+        },
+        "Title" : {
+          "type" : "string"
+        },
+        "Date-of-joining" : {
+          "type" : "string",
+          "format" : "date"
+        },
+        "Employee-status" : {
+          "type" : "string"
+        },
+        "Employee-type" : {
+          "type" : "string"
+        },
+        "Role" : {
+          "type" : "string"
+        },
+        "Experience" : {
+          "type" : "string"
+        }
+      }
+    },
+    "MainSysReq" : {
+      "type" : "object",
+      "properties" : {
+        "EmpPersonal" : {
+          "$ref" : "#/definitions/EmpPersonalType"
+        },
+        "Employee_Prof" : {
+          "$ref" : "#/definitions/Employee_ProfType"
+        },
+        "Employee_Address" : {
+          "$ref" : "#/definitions/Employee_AddressType"
+        },
+        "Emp_OrgDetails" : {
+          "$ref" : "#/definitions/Emp_OrgDetailsType"
+        },
+        "Emp_SalTitle" : {
+          "$ref" : "#/definitions/Emp_SalTitleType"
+        },
+        "Emp_Insurence" : {
+          "$ref" : "#/definitions/Emp_InsurenceType"
+        }
+      }
+    },
+    "Emp_OrgDetailsType" : {
+      "type" : "object",
+      "required" : [ "OrganizationName", "CompanyHQ", "CompanyPhNo", "EmpCode", "EmpName" ],
+      "properties" : {
+        "EmpCode" : {
+          "type" : "string"
+        },
+        "EmpName" : {
+          "type" : "string"
+        },
+        "OrganizationName" : {
+          "type" : "string"
+        },
+        "CompanyHQ" : {
+          "type" : "string"
+        },
+        "CompanyPhNo" : {
+          "type" : "integer",
+          "format" : "int64"
+        },
+        "OrgAddress" : {
+          "type" : "string"
+        },
+        "DirectorName" : {
+          "type" : "string"
+        }
+      }
+    },
+    "EmpPersonalType" : {
+      "type" : "object",
+      "required" : [ "EmailID", "EmpCode", "EmpName" ],
+      "properties" : {
+        "EmpCode" : {
+          "type" : "string"
+        },
+        "EmpName" : {
+          "type" : "string"
+        },
+        "EmailID" : {
+          "type" : "string"
+        },
+        "Alt_EmailID" : {
+          "type" : "string"
+        },
+        "PhoneNo" : {
+          "type" : "integer",
+          "format" : "int64"
+        },
+        "DOB" : {
+          "type" : "string",
+          "format" : "date"
+        },
+        "MaritalStatus" : {
+          "type" : "string"
+        },
+        "Age" : {
+          "type" : "integer",
+          "format" : "int32"
+        },
+        "AadhaarNo" : {
+          "type" : "integer",
+          "format" : "int64"
+        },
+        "PAN_Number" : {
+          "type" : "string"
+        }
+      }
+    },
+    "Emp_SalTitleType" : {
+      "type" : "object",
+      "required" : [ "Title", "CurrentSal", "EmpCode", "EmpName" ],
+      "properties" : {
+        "EmpCode" : {
+          "type" : "string"
+        },
+        "EmpName" : {
+          "type" : "string"
+        },
+        "Title" : {
+          "type" : "string"
+        },
+        "CurrentSal" : {
+          "type" : "integer",
+          "format" : "int32"
+        },
+        "lastModifiedDate" : {
+          "type" : "string",
+          "format" : "date-time"
+        }
+      }
+    },
+    "Emp_InsurenceType" : {
+      "type" : "object",
+      "required" : [ "PolicyType", "SumInsured", "PolicyNumber", "ValidTill", "OrgName", "EmpCode", "EmpName" ],
+      "properties" : {
+        "EmpCode" : {
+          "type" : "string"
+        },
+        "EmpName" : {
+          "type" : "string"
+        },
+        "OrgName" : {
+          "type" : "string"
+        },
+        "PolicyNumber" : {
+          "type" : "string"
+        },
+        "PolicyType" : {
+          "type" : "string"
+        },
+        "SumInsured" : {
+          "type" : "integer",
+          "format" : "int32"
+        },
+        "ValidTill" : {
+          "type" : "string",
+          "format" : "date"
+        }
+      }
+    }
+  }
+}

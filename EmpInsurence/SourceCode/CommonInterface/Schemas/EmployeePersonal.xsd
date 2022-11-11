@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema targetNamespace="http://www.EniqueSol.org/Employee_Personal/V1" elementFormDefault="qualified" xmlns="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://www.EniqueSol.org/Employee_Personal/V1">
+
+    <element name="EmpPersonalReq" type="tns:EmpPersonalReqType"></element>
+    
+    <complexType name="EmpPersonalReqType">
+    	<sequence>
+    		<element name="EmpCode" type="string" ></element>
+    		<element name="EmpName" type="string"></element>
+    		<element name="EmailID" type="string"></element>
+    		<element name="Alt_EmailID" type="string" maxOccurs="1" minOccurs="0"></element>
+    		<element name="PhoneNo" type="long" maxOccurs="1"
+    			minOccurs="0">
+    		</element>
+    		<element name="DOB" type="date" maxOccurs="1" minOccurs="0"></element>
+    		<element name="MaritalStatus" type="string" maxOccurs="1" minOccurs="0"></element>
+    		<element name="Age" type="int" maxOccurs="1" minOccurs="0"></element>
+    		<element name="AadhaarNo" type="long" maxOccurs="1" minOccurs="0"></element>
+    		<element name="PAN_Number" type="string" maxOccurs="1" minOccurs="0"></element>
+    	</sequence>
+    </complexType>
+    
+    <element name="EmpPersonalRes" type="tns:EmpPersonalResType"></element>
+    
+    <complexType name="EmpPersonalResType">
+    	<sequence>
+    		<element name="ResCode" type="string" maxOccurs="1" minOccurs="0"></element>
+    		<element name="ResMsg" type="string" maxOccurs="1" minOccurs="0"></element>
+    	</sequence>
+    </complexType>
+</schema>

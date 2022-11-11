@@ -1,0 +1,37 @@
+{"records": [
+    {
+        "jsonSchemaLocation": "/Emp_Details/Service Descriptors/emp_details.AddOrgDetails-OrgDetails.json",
+        "conversionType": "linked",
+        "xsdSchemaTargetNamespace": "http://www.EniqueSol.org/Emp_OrgDetails/V1"
+    },
+    {
+        "jsonSchemaLocation": "/Emp_Details/Service Descriptors/emp_details.EmpDetails-EmpDetails.json",
+        "conversionType": "linked",
+        "xsdSchemaTargetNamespace": "http://www.EniqueSol.org/Emp_InsurenceDetails/V1"
+    },
+    {
+        "jsonSchemaLocation": "/Emp_Details/Service Descriptors/emp_details.EmpDetails-EmpDetails.json",
+        "conversionType": "linked",
+        "xsdSchemaTargetNamespace": "http://www.EniqueSol.org/Employee_Personal/V1"
+    },
+    {
+        "jsonSchemaLocation": "/Emp_Details/Service Descriptors/emp_details.EmpDetails-EmpDetails.json",
+        "conversionType": "linked",
+        "xsdSchemaTargetNamespace": "http://www.EniqueSol.org/Employee_Prof/V1"
+    },
+    {
+        "jsonSchemaLocation": "/Emp_Details/Service Descriptors/emp_details.EmpDetails-EmpDetails.json",
+        "conversionType": "linked",
+        "xsdSchemaTargetNamespace": "http://www.EniqueSol.org/Employee_Address/V1"
+    },
+    {
+        "jsonSchemaLocation": "/Emp_Details/Service Descriptors/emp_details.EmpDetails-EmpDetails.json",
+        "conversionType": "linked",
+        "xsdSchemaTargetNamespace": "http://www.EniqueSol.org/Emp_SalTitle/V1"
+    },
+    {
+        "jsonSchemaLocation": "/Emp_Details/Service Descriptors/emp_details.MainSystem-MainSystem.json",
+        "conversionType": "linked",
+        "xsdSchemaTargetNamespace": "http://www.example.org/MainPayload"
+    }
+]}

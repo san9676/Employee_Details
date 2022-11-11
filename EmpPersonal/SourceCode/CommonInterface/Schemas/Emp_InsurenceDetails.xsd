@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema targetNamespace="http://www.EniqueSol.org/Emp_InsurenceDetails/V1" elementFormDefault="qualified" xmlns="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://www.EniqueSol.org/Emp_InsurenceDetails/V1">
+
+    <element name="Emp_InsurenceReq" type="tns:Emp_InsurenceReqType"></element>
+    <complexType name="Emp_InsurenceReqType">
+    	<sequence><element name="CorelationID" type="string" maxOccurs="1"
+    			minOccurs="0">
+    		</element>
+    		<element name="TransacTime" type="dateTime" maxOccurs="1" minOccurs="0"></element>
+    		<element name="EmpInsurence" type="tns:Emp_InsurenceType"></element>
+    	</sequence>
+    </complexType>
+    <complexType name="Emp_InsurenceType">
+    	<sequence>
+    		<element name="EmpCode" type="string">
+    		</element>
+    		<element name="EmpName" type="string"></element>
+    		<element name="OrgName" type="string"></element>
+    		<element name="PolicyNumber" type="string"></element>
+    		<element name="PolicyType" type="string"></element>
+    		<element name="SumInsured" type="int"></element>
+    		<element name="ValidTill" type="date"></element>
+    	</sequence>
+    </complexType>
+    
+    <element name="Emp_InsurenceRes" type="tns:Emp_InsurenceResType"></element>
+    
+    <complexType name="Emp_InsurenceResType">
+    	<sequence>
+    		<element name="ResCode" type="string" maxOccurs="1" minOccurs="0"></element>
+    		<element name="ResMsg" type="string" maxOccurs="1" minOccurs="0"></element>
+    	</sequence>
+    </complexType>
+
+    <element name="Emp_Insurence" type="tns:Emp_InsurenceType"></element>
+</schema>

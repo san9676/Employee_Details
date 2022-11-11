@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sca:composite xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:BW="http://xsd.tns.tibco.com/amf/models/sca/implementationtype/BW" xmlns:XMLSchema="http://www.w3.org/2001/XMLSchema" xmlns:compositeext="http://schemas.tibco.com/amx/3.0/compositeext" xmlns:rest="http://xsd.tns.tibco.com/bw/models/binding/rest" xmlns:sca="http://www.osoa.org/xmlns/sca/1.0" xmlns:scact="http://xsd.tns.tibco.com/amf/models/sca/componentType" xmlns:scaext="http://xsd.tns.tibco.com/amf/models/sca/extensions" xmi:id="_d5RJ0FjnEe28ef0bHrU9Ng" targetNamespace="http://tns.tibco.com/bw/composite/Emp_Details" name="Emp_Details" compositeext:version="1.0.0" compositeext:formatVersion="2">
+  <sca:service xmi:id="_ardNIF6REe2PFegRppAYBA" name="EmployeeMain" promote="ComponentMainSystem/EmployeeMain">
+    <sca:interface.wsdl xmi:id="_ar1noF6REe2PFegRppAYBA" interface="http://xmlns.example.com/20221107171336PLT#wsdl.interface(EmployeeMain)" scaext:wsdlLocation="../Processes/emp_details/MainSystem.bwp"/>
+    <scaext:binding xsi:type="rest:RestServiceBinding" xmi:id="_ar7HMF6REe2PFegRppAYBA" name="RestService" path="/EmployeeMain" docBasePath="http://localhost:7777/Emp_Details" docResourcePath="MainSystem" basePath="/" connector="es_common_framework_sh.MainSysHttpConn" structuredData="true" technologyVersion="2.0" implementation="Service Descriptors/emp_details.MainSystem-MainSystem.json">
+      <operation xmi:id="_atP84F6REe2PFegRppAYBA" operationName="post" nickname="post-EmployeeMain" httpMethod="POST" notes="postMainSystem" responseStyle="element" requestStyle="element" outputPartName="item">
+        <clientFormat>json</clientFormat>
+        <clientRequestFormat>json</clientRequestFormat>
+      </operation>
+      <parameters xmi:id="_audd0F6REe2PFegRppAYBA"/>
+      <advancedConfig xmi:id="_ar7HMV6REe2PFegRppAYBA" blockingQueueSize="2147483647"/>
+    </scaext:binding>
+    <scact:bindingAdjunct xmi:id="_atP84V6REe2PFegRppAYBA" bindingName="RestService"/>
+  </sca:service>
+  <sca:property xmi:id="_eHRJkFjnEe28ef0bHrU9Ng" name="BW.DEPLOYMENTUNIT.TYPE" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_eHWCEFjnEe28ef0bHrU9Ng" name="BW.APPNODE.NAME" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_eHZFYFjnEe28ef0bHrU9Ng" name="BW.DEPLOYMENTUNIT.NAME" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_eJ9RMFjnEe28ef0bHrU9Ng" name="BW.HOST.NAME" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_ePM9kFjnEe28ef0bHrU9Ng" name="BW.DOMAIN.NAME" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_eR6TUFjnEe28ef0bHrU9Ng" name="BW.DEPLOYMENTUNIT.VERSION" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_eSEEUFjnEe28ef0bHrU9Ng" name="BW.APPSPACE.NAME" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_eSLZEFjnEe28ef0bHrU9Ng" name="BW.MODULE.VERSION" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_eSPDcFjnEe28ef0bHrU9Ng" name="BW.MODULE.NAME" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_jQGYsFj0Ee28ef0bHrU9Ng" name="/SalHttpClient/host" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_mMTEEFj0Ee28ef0bHrU9Ng" name="/SalHttpClient/port" type="XMLSchema:int" scaext:simpleValue="0" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_9Aba0FkCEe2L0tcRQSMsSQ" name="/OrgHttpClient/Host" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="__PsHsFkCEe2L0tcRQSMsSQ" name="/OrgHttpClient/port" type="XMLSchema:int" scaext:simpleValue="0" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_FuDwgGDeEe2rs8GLg4L-mQ" name="/resourcePaths/personalPath" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_M36IEGDeEe2rs8GLg4L-mQ" name="/resourcePaths/OrganizationPath" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_UKu1cGDeEe2rs8GLg4L-mQ" name="/resourcePaths/InsurencePath" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+  <sca:component xmi:id="_ofUYsF5cEe2PFegRppAYBA" name="Componenttest" compositeext:version="1.0.0.qualifier">
+    <scaext:implementation xsi:type="BW:BWComponentImplementation" xmi:id="_ofUYsV5cEe2PFegRppAYBA" processName="SubProcesses.test" autoStart="false"/>
+  </sca:component>
+  <sca:component xmi:id="_arJrIF6REe2PFegRppAYBA" name="ComponentMainSystem" compositeext:version="1.0.0.qualifier">
+    <scaext:implementation xsi:type="BW:BWComponentImplementation" xmi:id="_arKSMF6REe2PFegRppAYBA" processName="emp_details.MainSystem"/>
+    <sca:service xmi:id="_arXtkF6REe2PFegRppAYBA" name="EmployeeMain">
+      <sca:interface.wsdl xmi:id="_arZiwF6REe2PFegRppAYBA" interface="http://xmlns.example.com/20221107171336PLT#wsdl.interface(EmployeeMain)" scaext:wsdlLocation="../Processes/emp_details/MainSystem.bwp"/>
+    </sca:service>
+  </sca:component>
+</sca:composite>

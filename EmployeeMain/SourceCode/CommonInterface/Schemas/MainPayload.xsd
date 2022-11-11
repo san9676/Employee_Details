@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema"
+	targetNamespace="http://www.example.org/MainPayload"
+	xmlns:tns="http://www.example.org/MainPayload"
+	elementFormDefault="qualified"
+	xmlns:Q1="http://www.EniqueSol.org/Employee_Personal/V1"
+	xmlns:pref="http://www.EniqueSol.org/Employee_Address/V1"
+	xmlns:pref1="http://www.EniqueSol.org/Emp_InsurenceDetails/V1"
+	xmlns:pref2="http://www.EniqueSol.org/Emp_OrgDetails/V1"
+	xmlns:pref3="http://www.EniqueSol.org/Emp_SalTitle/V1" xmlns:pref4="http://www.EniqueSol.org/Employee_Prof/V1">
+
+	<import schemaLocation="Emp_Address.xsd"
+		namespace="http://www.EniqueSol.org/Employee_Address/V1">
+	</import>
+	<import schemaLocation="Emp_InsurenceDetails.xsd"
+		namespace="http://www.EniqueSol.org/Emp_InsurenceDetails/V1">
+	</import>
+	<import schemaLocation="Emp_OrgDetails.xsd"
+		namespace="http://www.EniqueSol.org/Emp_OrgDetails/V1">
+	</import>
+	<import schemaLocation="Emp_SalTitle.xsd"
+		namespace="http://www.EniqueSol.org/Emp_SalTitle/V1">
+	</import>
+	<import schemaLocation="EmployeePersonal.xsd"
+		namespace="http://www.EniqueSol.org/Employee_Personal/V1">
+	</import>
+	<import schemaLocation="Employee_Prof.xsd" namespace="http://www.EniqueSol.org/Employee_Prof/V1"></import>
+
+	<element name="MainSysReq" type="tns:MainSysReqType"></element>
+
+	<complexType name="MainSysReqType">
+		<sequence>
+			<element ref="Q1:EmpPersonal" maxOccurs="1" minOccurs="0"></element>
+			<element ref="pref4:Employee_Prof" maxOccurs="1" minOccurs="0"></element>
+			<element ref="pref:Employee_Address" maxOccurs="1" minOccurs="0"></element>
+			<element ref="pref2:Emp_OrgDetails" maxOccurs="1" minOccurs="0"></element>
+			<element ref="pref3:Emp_SalTitle" maxOccurs="1" minOccurs="0"></element>
+			<element ref="pref1:Emp_Insurence" maxOccurs="1" minOccurs="0"></element>
+		</sequence>
+	</complexType>
+	
+    <element name="MainSysRes" type="tns:MainSysResType"></element>
+    
+    <complexType name="MainSysResType">
+    	<sequence>
+    		<element name="ResCode" type="string" maxOccurs="1" minOccurs="0"></element>
+    		<element name="ResMsg" type="string" maxOccurs="1" minOccurs="0"></element>
+    	</sequence>
+    </complexType>
+</schema>

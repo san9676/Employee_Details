@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema targetNamespace="http://www.EniqueSol.org/WebFault" elementFormDefault="qualified" xmlns="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://www.EniqueSol.org/WebFault">
+
+    <element name="fault" type="tns:faultType"></element>
+
+    <complexType name="faultType">
+    	<sequence>
+    		<element name="faultCode" type="string" maxOccurs="1" minOccurs="0"></element>
+    		<element name="faultMsg" type="string" maxOccurs="1" minOccurs="0"></element>
+    		<element name="StackTrace" type="string" maxOccurs="1" minOccurs="0"></element>
+    	</sequence>
+    </complexType>
+</schema>

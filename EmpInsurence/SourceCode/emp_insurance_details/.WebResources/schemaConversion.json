@@ -1,0 +1,5 @@
+{"records": [{
+    "jsonSchemaLocation": "/emp_insurance_details/Service Descriptors/emp_insurance_details.Add_InsurenceDetails-Insurence.json",
+    "conversionType": "linked",
+    "xsdSchemaTargetNamespace": "http://www.EniqueSol.org/Emp_InsurenceDetails/V1"
+}]}

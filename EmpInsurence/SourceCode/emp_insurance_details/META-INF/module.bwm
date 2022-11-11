@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sca:composite xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:BW="http://xsd.tns.tibco.com/amf/models/sca/implementationtype/BW" xmlns:XMLSchema="http://www.w3.org/2001/XMLSchema" xmlns:compositeext="http://schemas.tibco.com/amx/3.0/compositeext" xmlns:rest="http://xsd.tns.tibco.com/bw/models/binding/rest" xmlns:sca="http://www.osoa.org/xmlns/sca/1.0" xmlns:scact="http://xsd.tns.tibco.com/amf/models/sca/componentType" xmlns:scaext="http://xsd.tns.tibco.com/amf/models/sca/extensions" xmi:id="_l95SUFkNEe2L0tcRQSMsSQ" targetNamespace="http://tns.tibco.com/bw/composite/emp_insurance_details" name="emp_insurance_details" compositeext:version="1.0.0" compositeext:formatVersion="2">
+  <sca:service xmi:id="_m7DoslkOEe2L0tcRQSMsSQ" name="addInsurence" promote="ComponentAdd_InsurenceDetails/addInsurence">
+    <sca:interface.wsdl xmi:id="_m7DotlkOEe2L0tcRQSMsSQ" interface="http://xmlns.example.com/20221031164724PLT#wsdl.interface(addInsurence)" scaext:wsdlLocation="../Processes/emp_insurance_details/Add_InsurenceDetails.bwp"/>
+    <scaext:binding xsi:type="rest:RestServiceBinding" xmi:id="_m7K9cFkOEe2L0tcRQSMsSQ" name="RestService" path="/addInsurence" docBasePath="http://localhost:7777/emp_insurance_details" docResourcePath="Insurence" basePath="/" connector="emp_insurance_details.Insurence" structuredData="true" technologyVersion="2.0" implementation="Service Descriptors/emp_insurance_details.Add_InsurenceDetails-Insurence.json">
+      <operation xmi:id="_m7RrIFkOEe2L0tcRQSMsSQ" operationName="post" nickname="post-addInsurence" httpMethod="POST" notes="postInsurence" responseStyle="element" requestStyle="element" outputPartName="item">
+        <clientFormat>xml</clientFormat>
+        <clientRequestFormat>xml</clientRequestFormat>
+      </operation>
+      <advancedConfig xmi:id="_m7K9cVkOEe2L0tcRQSMsSQ" blockingQueueSize="2147483647"/>
+    </scaext:binding>
+    <scact:bindingAdjunct xmi:id="_m7RrIVkOEe2L0tcRQSMsSQ" bindingName="RestService"/>
+  </sca:service>
+  <sca:property xmi:id="_mI0I4FkNEe2L0tcRQSMsSQ" name="BW.DEPLOYMENTUNIT.TYPE" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_mI3MMFkNEe2L0tcRQSMsSQ" name="BW.APPNODE.NAME" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_mI4aUFkNEe2L0tcRQSMsSQ" name="BW.DEPLOYMENTUNIT.NAME" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_mI6PgFkNEe2L0tcRQSMsSQ" name="BW.HOST.NAME" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_mI8EsFkNEe2L0tcRQSMsSQ" name="BW.DOMAIN.NAME" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_mI954FkNEe2L0tcRQSMsSQ" name="BW.DEPLOYMENTUNIT.VERSION" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_mI_vEFkNEe2L0tcRQSMsSQ" name="BW.APPSPACE.NAME" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_mJBkQFkNEe2L0tcRQSMsSQ" name="BW.MODULE.VERSION" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_mJDZcFkNEe2L0tcRQSMsSQ" name="BW.MODULE.NAME" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_9pQe8FkOEe2L0tcRQSMsSQ" name="/HTTP/host" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="__B4ewFkOEe2L0tcRQSMsSQ" name="/HTTP/port" type="XMLSchema:int" scaext:simpleValue="0" publicAccess="true" scalable="true"/>
+  <sca:component xmi:id="_mDZdYFkNEe2L0tcRQSMsSQ" name="ComponentAdd_InsurenceDetails" compositeext:version="1.0.0.qualifier">
+    <scaext:implementation xsi:type="BW:BWComponentImplementation" xmi:id="_mDZdYVkNEe2L0tcRQSMsSQ" processName="emp_insurance_details.Add_InsurenceDetails"/>
+    <sca:service xmi:id="_m7DosFkOEe2L0tcRQSMsSQ" name="addInsurence">
+      <sca:interface.wsdl xmi:id="_m7DosVkOEe2L0tcRQSMsSQ" interface="http://xmlns.example.com/20221031164724PLT#wsdl.interface(addInsurence)"/>
+    </sca:service>
+  </sca:component>
+  <sca:component xmi:id="_c8IvMFkTEe2L0tcRQSMsSQ" name="ComponentTest" compositeext:version="1.0.0.qualifier">
+    <scaext:implementation xsi:type="BW:BWComponentImplementation" xmi:id="_c8IvMVkTEe2L0tcRQSMsSQ" processName="emp_insurance_details.Test" autoStart="false"/>
+  </sca:component>
+</sca:composite>

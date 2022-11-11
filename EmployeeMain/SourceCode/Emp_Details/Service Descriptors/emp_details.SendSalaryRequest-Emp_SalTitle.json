@@ -1,0 +1,74 @@
+{
+  "swagger" : "2.0",
+  "info" : {
+    "version" : "1.0",
+    "title" : "Emp_SalTitle",
+    "description" : "Emp_SalTitle service"
+  },
+  "host" : "localhost:8080",
+  "basePath" : "/",
+  "schemes" : [ "http" ],
+  "paths" : {
+    "/addsal_title" : {
+      "post" : {
+        "summary" : "postEmp_SalTitle",
+        "description" : "postEmp_SalTitle",
+        "operationId" : "post-addsal_title",
+        "consumes" : [ "application/json", "application/xml" ],
+        "produces" : [ "application/json", "application/xml" ],
+        "parameters" : [ {
+          "name" : "body",
+          "in" : "body",
+          "description" : "",
+          "schema" : {
+            "$ref" : "#/definitions/Emp_SalTitleReq"
+          },
+          "required" : true
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "a Emp_SalTitleRes to be returned",
+            "schema" : {
+              "$ref" : "#/definitions/Emp_SalTitleRes"
+            }
+          }
+        }
+      }
+    }
+  },
+  "definitions" : {
+    "Emp_SalTitleRes" : {
+      "type" : "object",
+      "properties" : {
+        "ResCode" : {
+          "type" : "string"
+        },
+        "ResMsg" : {
+          "type" : "string"
+        }
+      }
+    },
+    "Emp_SalTitleReq" : {
+      "type" : "object",
+      "required" : [ "Title", "CurrentSal", "EmpCode", "EmpName" ],
+      "properties" : {
+        "EmpCode" : {
+          "type" : "string"
+        },
+        "EmpName" : {
+          "type" : "string"
+        },
+        "Title" : {
+          "type" : "string"
+        },
+        "CurrentSal" : {
+          "type" : "string"
+        },
+        "lastModifiedDate" : {
+          "type" : "string",
+          "format" : "date-time"
+        }
+      }
+    }
+  }
+}
