@@ -24,6 +24,10 @@
         {
             "location": "Service Descriptors/emp_details.MainSystem-MainSystem.json",
             "type": "generated"
+        },
+        {
+            "location": "Service Descriptors/emp_details.MainData-MainData.json",
+            "type": "generated"
         }
     ]
 }

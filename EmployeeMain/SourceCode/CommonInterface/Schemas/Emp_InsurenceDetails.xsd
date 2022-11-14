@@ -12,7 +12,7 @@
     </complexType>
     <complexType name="Emp_InsurenceType">
     	<sequence>
-    		<element name="EmpCode" type="string">
+    		<element name="EmpCode" type="string" maxOccurs="1" minOccurs="0">
     		</element>
     		<element name="EmpName" type="string"></element>
     		<element name="OrgName" type="string"></element>

@@ -7,7 +7,7 @@
     
     <xsd:complexType name="Emp_OrgDetailsType">
     	<xsd:sequence>
-    		<xsd:element name="EmpCode" type="xsd:string">
+    		<xsd:element name="EmpCode" type="xsd:string" maxOccurs="1" minOccurs="0">
     		</xsd:element>
     		<xsd:element name="EmpName" type="xsd:string"></xsd:element>
     		<xsd:element name="OrganizationName" type="xsd:string"></xsd:element>

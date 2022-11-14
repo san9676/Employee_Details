@@ -39,7 +39,7 @@
   "definitions" : {
     "Employee_AddressType" : {
       "type" : "object",
-      "required" : [ "AddressLine1", "State", "ZipCode", "City", "EmpCode" ],
+      "required" : [ "AddressLine1", "State", "ZipCode", "City" ],
       "properties" : {
         "EmpCode" : {
           "type" : "string"
@@ -77,7 +77,6 @@
     },
     "Employee_ProfType" : {
       "type" : "object",
-      "required" : [ "EmpCode" ],
       "properties" : {
         "EmpCode" : {
           "type" : "string"
@@ -140,7 +139,7 @@
     },
     "Emp_OrgDetailsType" : {
       "type" : "object",
-      "required" : [ "OrganizationName", "CompanyHQ", "CompanyPhNo", "EmpCode", "EmpName" ],
+      "required" : [ "OrganizationName", "CompanyHQ", "CompanyPhNo", "EmpName" ],
       "properties" : {
         "EmpCode" : {
           "type" : "string"
@@ -168,7 +167,7 @@
     },
     "EmpPersonalType" : {
       "type" : "object",
-      "required" : [ "EmailID", "EmpCode", "EmpName" ],
+      "required" : [ "EmailID", "EmpName" ],
       "properties" : {
         "EmpCode" : {
           "type" : "string"
@@ -208,7 +207,7 @@
     },
     "Emp_SalTitleType" : {
       "type" : "object",
-      "required" : [ "Title", "CurrentSal", "EmpCode", "EmpName" ],
+      "required" : [ "Title", "CurrentSal", "EmpName" ],
       "properties" : {
         "EmpCode" : {
           "type" : "string"
@@ -231,7 +230,7 @@
     },
     "Emp_InsurenceType" : {
       "type" : "object",
-      "required" : [ "PolicyType", "SumInsured", "PolicyNumber", "ValidTill", "OrgName", "EmpCode", "EmpName" ],
+      "required" : [ "PolicyType", "SumInsured", "PolicyNumber", "ValidTill", "OrgName", "EmpName" ],
       "properties" : {
         "EmpCode" : {
           "type" : "string"

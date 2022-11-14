@@ -33,5 +33,10 @@
         "jsonSchemaLocation": "/Emp_Details/Service Descriptors/emp_details.MainSystem-MainSystem.json",
         "conversionType": "linked",
         "xsdSchemaTargetNamespace": "http://www.example.org/MainPayload"
+    },
+    {
+        "jsonSchemaLocation": "/Emp_Details/Service Descriptors/emp_details.EmpDetails-EmpDetails.json",
+        "conversionType": "linked",
+        "xsdSchemaTargetNamespace": "http://www.EniqueSol.org/Emp_OrgDetails/V1"
     }
 ]}
