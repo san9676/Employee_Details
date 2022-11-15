@@ -5,7 +5,7 @@
 
     <complexType name="EmpPersonalType">
     	<sequence>
-    		<element name="EmpCode" type="string" ></element>
+    		<element name="EmpCode" type="string" maxOccurs="1" minOccurs="0"></element>
     		<element name="EmpName" type="string"></element>
     		<element name="EmailID" type="string"></element>
     		<element name="Alt_EmailID" type="string" maxOccurs="1" minOccurs="0"></element>

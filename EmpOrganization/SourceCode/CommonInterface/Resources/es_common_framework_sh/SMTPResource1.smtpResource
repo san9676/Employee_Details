@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jndi:namedResource xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:jndi="http://xsd.tns.tibco.com/amf/models/sharedresource/jndi" xmlns:smtp="http://xsd.tns.tibco.com/bw/models/sharedresource/smtp" xmlns:subject="http://xsd.tns.tibco.com/trinity/models/identity/subject" xmi:id="_bWMgEWGuEe2rs8GLg4L-mQ" name="es_common_framework_sh.SMTPResource1" type="smtp:SmtpConfiguration">
+  <jndi:reference xmi:id="_bWrBMGGuEe2rs8GLg4L-mQ" key="identityJNDIName" type="subject:SubjectConfiguration" value=""/>
+  <jndi:configuration xsi:type="smtp:SmtpConfiguration" xmi:id="_bWrBMWGuEe2rs8GLg4L-mQ" useTLS="false">
+    <tcpDetails xmi:id="_bWuEgGGuEe2rs8GLg4L-mQ" connectionTimeout="60000">
+      <substitutionBindings xmi:id="_A_PfYGSsEe2X_sO3sQoIlw" template="host" propName="/Connections/Smtp/Host"/>
+      <substitutionBindings xmi:id="_CGCvYGSsEe2X_sO3sQoIlw" template="port" propName="/Connections/Smtp/port"/>
+    </tcpDetails>
+    <userCredentials xmi:id="_bWuEgWGuEe2rs8GLg4L-mQ">
+      <substitutionBindings xmi:id="_DC9qoGSsEe2X_sO3sQoIlw" template="username" propName="/Connections/Smtp/userame"/>
+      <substitutionBindings xmi:id="_EGwp8GSsEe2X_sO3sQoIlw" template="password" propName="/Connections/Smtp/password"/>
+    </userCredentials>
+  </jndi:configuration>
+</jndi:namedResource>
