@@ -1,9 +1,16 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<wsdl:definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tns="http://www.EniqueSol.com/concrete/V1/Emp_Professional/" xmlns:tns0="http://www.EniqueSol.org/Employee_Prof/V1" xmlns:tns1="http://www.EniqueSol.org/WebFault" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="Emp_Professional" targetNamespace="http://www.EniqueSol.com/concrete/V1/Emp_Professional/">
+<wsdl:definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tns="http://www.EniqueSol.com/Concrete/V2/Emp_Professional/" xmlns:tns0="http://www.EniqueSol.org/Employee_Prof/V1" xmlns:tns1="http://www.EniqueSol.org/WebFault" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="Emp_Professional" targetNamespace="http://www.EniqueSol.com/Concrete/V2/Emp_Professional/">
   <wsdl:types>
     <xsd:schema xmlns:tns="http://www.EniqueSol.org/Employee_Prof/V1" elementFormDefault="qualified" targetNamespace="http://www.EniqueSol.org/Employee_Prof/V1">
       <xsd:element name="Employee_ProfReq" type="tns:Employee_ProfReqType"/>
       <xsd:complexType name="Employee_ProfReqType">
+        <xsd:sequence>
+          <xsd:element maxOccurs="1" minOccurs="0" name="CorelationID" type="xsd:string"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="TransacTime" type="xsd:dateTime"/>
+          <xsd:element ref="tns:Employee_Prof"/>
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="Employee_ProfType">
         <xsd:sequence>
           <xsd:element name="EmpCode" type="xsd:string"/>
           <xsd:element maxOccurs="1" minOccurs="0" name="Department" type="xsd:string"/>
@@ -11,7 +18,7 @@
           <xsd:element maxOccurs="1" minOccurs="0" name="Seating-Location" type="xsd:string"/>
           <xsd:element maxOccurs="1" minOccurs="0" name="Location" type="xsd:string"/>
           <xsd:element maxOccurs="1" minOccurs="0" name="Title" type="xsd:string"/>
-          <xsd:element maxOccurs="1" minOccurs="0" name="Date-of-joining" type="xsd:string"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="Date-of-joining" type="xsd:date"/>
           <xsd:element maxOccurs="1" minOccurs="0" name="Employee-status" type="xsd:string"/>
           <xsd:element maxOccurs="1" minOccurs="0" name="Employee-type" type="xsd:string"/>
           <xsd:element maxOccurs="1" minOccurs="0" name="Role" type="xsd:string"/>
@@ -25,6 +32,7 @@
           <xsd:element name="ResMsg" type="xsd:string"/>
         </xsd:sequence>
       </xsd:complexType>
+      <xsd:element name="Employee_Prof" type="tns:Employee_ProfType"/>
     </xsd:schema>
     <xsd:schema xmlns:tns="http://www.EniqueSol.org/WebFault" elementFormDefault="qualified" targetNamespace="http://www.EniqueSol.org/WebFault">
       <xsd:element name="fault" type="tns:faultType"/>

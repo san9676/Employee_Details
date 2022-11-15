@@ -50,7 +50,7 @@
     },
     "EmpPersonalType" : {
       "type" : "object",
-      "required" : [ "EmailID", "EmpCode", "EmpName" ],
+      "required" : [ "EmailID", "EmpName" ],
       "properties" : {
         "EmpCode" : {
           "type" : "string"
