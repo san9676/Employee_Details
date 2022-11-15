@@ -30,4 +30,7 @@
       <sca:interface.wsdl xmi:id="_vqYbYE9tEe2TJpQPEuH7uA" interface="http://xmlns.example.com/20221019104853PLT#wsdl.interface(emp_personal)"/>
     </sca:service>
   </sca:component>
+  <sca:component xmi:id="_7-e6QGS2Ee2KD5PnCkKGqg" name="Componenttest" compositeext:version="1.0.0.qualifier">
+    <scaext:implementation xsi:type="BW:BWComponentImplementation" xmi:id="_7-e6QWS2Ee2KD5PnCkKGqg" processName="SubProcesses.test"/>
+  </sca:component>
 </sca:composite>
