@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <schema targetNamespace="http://www.EniqueSol.org/Emp_SalTitle/V1" elementFormDefault="qualified" xmlns="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://www.EniqueSol.org/Emp_SalTitle/V1">
 
-    <element name="Emp_SalTitle" type="tns:Emp_SalTitleType"></element>
-    
+    <element name="Emp_SalTitleReq" type="tns:Emp_SalTitleReqType"></element>
+
     <complexType name="Emp_SalTitleType">
     	<sequence>
-    		<element name="EmpCode" type="string"></element>
+    		<element name="EmpCode" type="string" maxOccurs="1" minOccurs="0">
+    		</element>
     		<element name="EmpName" type="string"></element>
     		<element name="Title" type="string"></element>
     		<element name="CurrentSal" type="int"></element>
@@ -22,16 +23,12 @@
     	</sequence>
     </complexType>
 
-    <element name="Emp_SalTitleReq" type="tns:Emp_SalTitleReqType"></element>
+    <element name="Emp_SalTitle" type="tns:Emp_SalTitleType"></element>
     
     <complexType name="Emp_SalTitleReqType">
     	<sequence>
-    		<element name="CorelationID" type="string" maxOccurs="1"
-    			minOccurs="0">
-    		</element>
-    		<element name="TransacTime" type="string" maxOccurs="1"
-    			minOccurs="0">
-    		</element>
+    		<element name="CorelationID" type="string" maxOccurs="1" minOccurs="0"></element>
+    		<element name="TransacTime" type="string" maxOccurs="1" minOccurs="0"></element>
     		<element ref="tns:Emp_SalTitle"></element>
     	</sequence>
     </complexType>

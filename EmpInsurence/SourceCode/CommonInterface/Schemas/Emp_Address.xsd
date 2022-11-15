@@ -4,10 +4,20 @@
     <element name="Employee_AddressReq"
     	type="tns:Employee_AddressReqType">
     </element>
-    
     <complexType name="Employee_AddressReqType">
+    	<sequence><element name="CorelationID" type="string" maxOccurs="1"
+    			minOccurs="0">
+    		</element>
+    		<element name="TransacTime" type="dateTime" maxOccurs="1" minOccurs="0"></element>
+    		<element name="EmpAddress"
+    			type="tns:Employee_AddressType">
+    		</element>
+    	</sequence>
+    </complexType>
+    <complexType name="Employee_AddressType">
     	<sequence>
-    		<element name="EmpCode" type="string"></element>
+    		<element name="EmpCode" type="string" maxOccurs="1" minOccurs="0">
+    		</element>
     		<element name="AddressLine1" type="string"></element>
     		<element name="AddressLine2" type="string" maxOccurs="1"
     			minOccurs="0">
@@ -31,4 +41,6 @@
     		<element name="ResMsg" type="string" maxOccurs="1" minOccurs="0"></element>
     	</sequence>
     </complexType>
+
+    <element name="Employee_Address" type="tns:Employee_AddressType"></element>
 </schema>

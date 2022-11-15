@@ -2,15 +2,14 @@
 <schema targetNamespace="http://www.EniqueSol.org/Employee_Personal/V1" elementFormDefault="qualified" xmlns="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://www.EniqueSol.org/Employee_Personal/V1">
 
     <element name="EmpPersonalReq" type="tns:EmpPersonalReqType"></element>
-    
-    <complexType name="EmpPersonalReqType">
+
+    <complexType name="EmpPersonalType">
     	<sequence>
-    		<element name="EmpCode" type="string" ></element>
+    		<element name="EmpCode" type="string" maxOccurs="1" minOccurs="0"></element>
     		<element name="EmpName" type="string"></element>
     		<element name="EmailID" type="string"></element>
     		<element name="Alt_EmailID" type="string" maxOccurs="1" minOccurs="0"></element>
-    		<element name="PhoneNo" type="long" maxOccurs="1"
-    			minOccurs="0">
+    		<element name="PhoneNo" maxOccurs="1" minOccurs="0" type="long">
     		</element>
     		<element name="DOB" type="date" maxOccurs="1" minOccurs="0"></element>
     		<element name="MaritalStatus" type="string" maxOccurs="1" minOccurs="0"></element>
@@ -28,4 +27,16 @@
     		<element name="ResMsg" type="string" maxOccurs="1" minOccurs="0"></element>
     	</sequence>
     </complexType>
+
+    <complexType name="EmpPersonalReqType">
+    	<sequence>
+    		<element name="CorelationID" type="string" maxOccurs="1"
+    			minOccurs="0">
+    		</element>
+    		<element name="TransacTime" type="dateTime" maxOccurs="1" minOccurs="0"></element>
+    		<element name="empPersonal" type="tns:EmpPersonalType"></element>
+    	</sequence>
+    </complexType>
+
+    <element name="EmpPersonal" type="tns:EmpPersonalType"></element>
 </schema>

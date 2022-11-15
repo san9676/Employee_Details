@@ -1,16 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <bpws:process exitOnStandardFault="no"
-    name="es_common_framework_sh.LogHandler" suppressJoinFailure="yes"
-    targetNamespace="http://xmlns.example.com/20220503123451"
+    name="es_common_framework_sh.ErrorHandler" suppressJoinFailure="yes"
+    targetNamespace="http://xmlns.example.com/20221115102359"
     xmlns:bpws="http://docs.oasis-open.org/wsbpel/2.0/process/executable"
     xmlns:info="http://www.tibco.com/bw/process/info"
     xmlns:ns="http://www.tibco.com/pe/EngineTypes"
     xmlns:ns0="http://www.eniquesolution.com/E-Commerce/CommonFramework"
-    xmlns:ns1="http://www.tibco.com/namespaces/tnt/plugins/file"
-    xmlns:ns2="http://tns.tibco.com/bw/palette/internal/activityerror+bw.file.write"
-    xmlns:ns3="http://www.tibco.com/namespaces/tnt/plugins/jdbc+3e72af6a-79eb-48e7-9292-0fcee2650c02+input"
-    xmlns:ns4="http://www.tibco.com/namespaces/tnt/plugins/jdbc"
-    xmlns:ns5="http://tns.tibco.com/bw/palette/internal/activityerror+bw.jdbc.update"
+    xmlns:ns1="http://www.tibco.com/namespaces/tnt/plugins/jdbc+349539a4-426f-4243-a3a3-a9f425ced0f9+input"
+    xmlns:ns2="http://www.tibco.com/namespaces/tnt/plugins/jdbc"
+    xmlns:ns3="http://tns.tibco.com/bw/palette/internal/activityerror+bw.jdbc.update"
     xmlns:sca="http://docs.oasis-open.org/ns/opencsa/sca/200912"
     xmlns:sca-bpel="http://docs.oasis-open.org/ns/opencsa/sca-bpel/200801"
     xmlns:tibex="http://www.tibco.com/bpel/2007/extensions"
@@ -177,27 +175,29 @@
             <element name="DuplicateKeyException" type="tns:DuplicateKeyExceptionType"/>
         </schema>
         <schema
-            targetNamespace="http://www.tibco.com/namespaces/tnt/plugins/jdbc+3e72af6a-79eb-48e7-9292-0fcee2650c02+input"
-            xmlns="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://www.tibco.com/namespaces/tnt/plugins/jdbc+3e72af6a-79eb-48e7-9292-0fcee2650c02+input">
+            targetNamespace="http://www.tibco.com/namespaces/tnt/plugins/jdbc+349539a4-426f-4243-a3a3-a9f425ced0f9+input"
+            xmlns="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://www.tibco.com/namespaces/tnt/plugins/jdbc+349539a4-426f-4243-a3a3-a9f425ced0f9+input">
             <element name="jdbcUpdateActivityInput">
                 <complexType>
                     <sequence>
                         <element maxOccurs="1" minOccurs="1"
-                            name="Appliction" nillable="true" type="string"/>
+                            name="APPLICATIONNAME" nillable="true" type="string"/>
                         <element maxOccurs="1" minOccurs="1"
-                            name="ProcessName" nillable="true" type="string"/>
+                            name="PROCESSNAME" nillable="true" type="string"/>
                         <element maxOccurs="1" minOccurs="1"
-                            name="LogType" nillable="true" type="string"/>
+                            name="LOGTYPE" nillable="true" type="string"/>
                         <element maxOccurs="1" minOccurs="1"
-                            name="Status" nillable="true" type="string"/>
+                            name="STATUS" nillable="true" type="string"/>
                         <element maxOccurs="1" minOccurs="1"
-                            name="CorrelationID" nillable="true" type="string"/>
+                            name="CORRELATIONID" nillable="true" type="string"/>
                         <element maxOccurs="1" minOccurs="1"
-                            name="MessageType" nillable="true" type="string"/>
+                            name="MSGTYPE" nillable="true" type="string"/>
                         <element maxOccurs="1" minOccurs="1"
-                            name="Timestamp" nillable="true" type="string"/>
+                            name="TIMESTAMP" nillable="true" type="string"/>
                         <element maxOccurs="1" minOccurs="1"
-                            name="Payload" nillable="true" type="string"/>
+                            name="ErrorCode" nillable="true" type="string"/>
+                        <element maxOccurs="1" minOccurs="1"
+                            name="ErrorMsg" nillable="true" type="string"/>
                         <element maxOccurs="1" minOccurs="0"
                             name="ServerTimeZone" type="string"/>
                         <element maxOccurs="1" minOccurs="0"
@@ -382,12 +382,12 @@
         </schema>
     </tibex:Types>
     <tibex:ProcessInfo callable="true" createdBy="admin"
-        createdOn="Tue May 03 12:34:51 IST 2022" description=""
+        createdOn="Tue Nov 15 10:23:59 IST 2022" description=""
         extraErrorVars="true" modifiers="public"
         productVersion="6.8.0 V55 2021-11-10" scalable="true"
         singleton="true" stateless="false" type="IT"/>
     <tibex:ProcessInterface context=""
-        input="{http://www.eniquesolution.com/E-Commerce/CommonFramework}LogExceptionHandler" output=""/>
+        input="{http://www.eniquesolution.com/E-Commerce/CommonFramework}ErrorLogHandler" output=""/>
     <tibex:ProcessTemplateConfigurations/>
     <notation:Diagram measurementUnit="Pixel" type="BWProcess"
         xmlns:bwnotation="http://tns.tibco.com/bw/runtime/BWNotation"
@@ -441,8 +441,8 @@
                                     gradientEndColor="50431"
                                     gradientStartColor="16777215" xsi:type="bwnotation:BackgroundStyle"/>
                                     <element href="//0/@process/@activity/@activity/@activities.0"/>
-                                    <layoutConstraint x="-34"
-                                    xsi:type="notation:Bounds" y="138"/>
+                                    <layoutConstraint x="-12"
+                                    xsi:type="notation:Bounds" y="140"/>
                                     </children>
                                     <children type="4002">
                                     <children type="4017">
@@ -476,8 +476,8 @@
                                     gradientEndColor="50431"
                                     gradientStartColor="16777215" xsi:type="bwnotation:BackgroundStyle"/>
                                     <element href="//0/@process/@activity/@activity/@activities.1"/>
-                                    <layoutConstraint x="462"
-                                    xsi:type="notation:Bounds" y="138"/>
+                                    <layoutConstraint x="360"
+                                    xsi:type="notation:Bounds" y="140"/>
                                     </children>
                                     <children type="4002 bw.jdbc.update">
                                     <children type="4017">
@@ -513,8 +513,8 @@
                                     <element href="//0/@process/@activity/@activity/@activities.2"/>
                                     <layoutConstraint
                                     height="40" width="40"
-                                    x="206"
-                                    xsi:type="notation:Bounds" y="138"/>
+                                    x="172"
+                                    xsi:type="notation:Bounds" y="140"/>
                                     </children>
                                     <styles xsi:type="notation:DrawerStyle"/>
                                     <styles xsi:type="notation:SortingStyle"/>
@@ -529,7 +529,7 @@
                                     <styles xsi:type="bwnotation:ResizingStyle"/>
                                     <element href="//0/@process/@activity/@activity"/>
                                     <layoutConstraint height="384"
-                                    width="653" xsi:type="notation:Bounds"/>
+                                    width="515" xsi:type="notation:Bounds"/>
                                 </children>
                                 <styles xsi:type="notation:SortingStyle"/>
                                 <styles xsi:type="notation:FilteringStyle"/>
@@ -538,42 +538,8 @@
                             <styles xsi:type="bwnotation:BackgroundStyle"/>
                             <styles xsi:type="bwnotation:ResizingStyle"/>
                             <element href="//0/@process/@activity"/>
-                            <layoutConstraint height="372" width="656" xsi:type="notation:Bounds"/>
-                        </children>
-                        <children type="4022">
-                            <children type="3022">
-                                <children type="4029">
-                                    <children type="3031">
-                                    <children type="4033">
-                                    <styles fontName="Segoe UI"
-                                    lineColor="0" xsi:type="notation:ShapeStyle"/>
-                                    <element href="//0/@process/@activity/@faultHandlers/@catchAll"/>
-                                    <layoutConstraint
-                                    height="34" width="34"
-                                    xsi:type="notation:Bounds" y="68"/>
-                                    </children>
-                                    <styles xsi:type="notation:SortingStyle"/>
-                                    <styles xsi:type="notation:FilteringStyle"/>
-                                    </children>
-                                    <children type="3032">
-                                    <styles xsi:type="notation:SortingStyle"/>
-                                    <styles xsi:type="notation:FilteringStyle"/>
-                                    </children>
-                                    <styles fontName="Segoe UI"
-                                    lineColor="0" xsi:type="notation:ShapeStyle"/>
-                                    <styles xsi:type="bwnotation:BackgroundStyle"/>
-                                    <styles xsi:type="bwnotation:ResizingStyle"/>
-                                    <element href="//0/@process/@activity/@faultHandlers/@catchAll"/>
-                                    <layoutConstraint xsi:type="notation:Bounds"/>
-                                </children>
-                                <styles xsi:type="notation:SortingStyle"/>
-                                <styles xsi:type="notation:FilteringStyle"/>
-                            </children>
-                            <styles fontName="Segoe UI" lineColor="0" xsi:type="notation:ShapeStyle"/>
-                            <styles xsi:type="bwnotation:BackgroundStyle"/>
-                            <styles xsi:type="bwnotation:ResizingStyle"/>
-                            <element href="//0/@process/@activity/@faultHandlers"/>
-                            <layoutConstraint height="200" width="561" xsi:type="notation:Bounds"/>
+                            <layoutConstraint height="365" width="444"
+                                x="30" xsi:type="notation:Bounds" y="20"/>
                         </children>
                         <styles xsi:type="notation:SortingStyle"/>
                         <styles xsi:type="notation:FilteringStyle"/>
@@ -583,8 +549,7 @@
                     <styles xsi:type="bwnotation:BackgroundStyle"/>
                     <styles xsi:type="bwnotation:ResizingStyle"/>
                     <element href="//0/@process/@activity"/>
-                    <layoutConstraint height="608" width="656" x="1"
-                        xsi:type="notation:Bounds" y="1"/>
+                    <layoutConstraint height="409" width="519" xsi:type="notation:Bounds"/>
                 </children>
                 <styles xsi:type="notation:SortingStyle"/>
                 <styles xsi:type="notation:FilteringStyle"/>
@@ -592,7 +557,7 @@
             </children>
             <styles fontName="Segoe UI" lineColor="0" xsi:type="notation:ShapeStyle"/>
             <element href="//0/@process"/>
-            <layoutConstraint height="660" width="998" xsi:type="notation:Bounds"/>
+            <layoutConstraint height="460" width="860" xsi:type="notation:Bounds"/>
         </children>
         <styles xsi:type="notation:DiagramStyle"/>
         <element href="//0"/>
@@ -621,25 +586,23 @@
     </notation:Diagram>
     <tibex:NamespaceRegistry enabled="true">
         <tibex:namespaceItem
-            namespace="http://www.tibco.com/namespaces/tnt/plugins/file" prefix="tns"/>
+            namespace="http://www.tibco.com/namespaces/tnt/plugins/jdbc+349539a4-426f-4243-a3a3-a9f425ced0f9+input" prefix="tns"/>
         <tibex:namespaceItem
-            namespace="http://www.tibco.com/namespaces/tnt/plugins/jdbc+3e72af6a-79eb-48e7-9292-0fcee2650c02+input" prefix="tns1"/>
+            namespace="http://www.eniquesolution.com/E-Commerce/CommonFramework" prefix="tns1"/>
         <tibex:namespaceItem
             namespace="http://www.w3.org/2001/XMLSchema-instance" prefix="xsi"/>
-        <tibex:namespaceItem
-            namespace="http://www.eniquesolution.com/E-Commerce/CommonFramework" prefix="tns2"/>
     </tibex:NamespaceRegistry>
     <bpws:import importType="http://www.w3.org/2001/XMLSchema" namespace="http://www.eniquesolution.com/E-Commerce/CommonFramework"/>
     <bpws:variables>
         <bpws:variable element="ns:ProcessContext"
             name="_processContext" sca-bpel:internal="true"/>
-        <bpws:variable element="ns0:LogExceptionHandler" name="Start"
+        <bpws:variable element="ns0:ErrorLogHandler" name="Start"
             sca-bpel:internal="true" tibex:parameter="in"/>
-        <bpws:variable element="ns3:jdbcUpdateActivityInput"
+        <bpws:variable element="ns1:jdbcUpdateActivityInput"
             name="JDBCUpdate-input" sca-bpel:internal="true"/>
-        <bpws:variable element="ns4:jdbcUpdateActivityOutput"
+        <bpws:variable element="ns2:jdbcUpdateActivityOutput"
             name="JDBCUpdate" sca-bpel:internal="true"/>
-        <bpws:variable element="ns5:ActivityErrorData"
+        <bpws:variable element="ns3:ActivityErrorData"
             name="_error_JDBCUpdate" sca-bpel:internal="true"/>
         <bpws:variable element="ns:ErrorReport" name="_error" sca-bpel:internal="true"/>
         <bpws:variable name="jdbcProperty" sca-bpel:hotUpdate="false"
@@ -649,8 +612,6 @@
                 <bpws:literal>es_common_framework_sh.CommonJDBC</bpws:literal>
             </bpws:from>
         </bpws:variable>
-        <bpws:variable name="FaultName" sca-bpel:internal="true" type="xsd:string"/>
-        <bpws:variable element="ns:FaultDetail" name="FaultDetails" sca-bpel:internal="true"/>
     </bpws:variables>
     <bpws:extensions>
         <bpws:extension mustUnderstand="no" namespace="http://www.eclipse.org/gmf/runtime/1.0.2/notation"/>
@@ -661,16 +622,6 @@
         <bpws:extension mustUnderstand="no" namespace="http://www.tibco.com/bpel/2007/extensions"/>
     </bpws:extensions>
     <bpws:scope name="scope">
-        <bpws:faultHandlers>
-            <bpws:catchAll tibex:faultDetailsVar="FaultDetails"
-                tibex:faultNameVar="FaultName" tibex:xpdlId="a52870e4-944b-4aab-8f7a-1a599b7ccb21">
-                <bpws:scope name="scope1">
-                    <bpws:flow name="flow1">
-                        <bpws:links/>
-                    </bpws:flow>
-                </bpws:scope>
-            </bpws:catchAll>
-        </bpws:faultHandlers>
         <bpws:flow name="flow">
             <bpws:links>
                 <bpws:link name="StartToEnd" tibex:linkType="SUCCESS"/>
@@ -679,7 +630,7 @@
             <bpws:extensionActivity>
                 <tibex:receiveEvent createInstance="yes"
                     eventTimeout="0" name="Start"
-                    tibex:xpdlId="e6531520-8b41-4b93-a6b8-fae00b9d5f25"
+                    tibex:xpdlId="0f6f22d3-5fdb-4866-a77b-2ac8f32f82a7"
                     variable="Start" xmlns:tibex="http://www.tibco.com/bpel/2007/extensions">
                     <bpws:sources>
                         <bpws:source linkName="StartToEnd"/>
@@ -691,7 +642,7 @@
             </bpws:extensionActivity>
             <bpws:extensionActivity>
                 <tibex:activityExtension name="End"
-                    tibex:xpdlId="8f69c308-f1ae-4014-927b-cdbc1e6ed980" xmlns:tibex="http://www.tibco.com/bpel/2007/extensions">
+                    tibex:xpdlId="3d16d5bf-f406-4d56-ba18-a9aa24833b99" xmlns:tibex="http://www.tibco.com/bpel/2007/extensions">
                     <bpws:targets>
                         <bpws:target linkName="JDBCUpdateToEnd"/>
                     </bpws:targets>
@@ -715,7 +666,7 @@
                 <tibex:activityExtension
                     inputVariable="JDBCUpdate-input" name="JDBCUpdate"
                     outputVariable="JDBCUpdate"
-                    tibex:xpdlId="3e72af6a-79eb-48e7-9292-0fcee2650c02" xmlns:tibex="http://www.tibco.com/bpel/2007/extensions">
+                    tibex:xpdlId="349539a4-426f-4243-a3a3-a9f425ced0f9" xmlns:tibex="http://www.tibco.com/bpel/2007/extensions">
                     <bpws:targets>
                         <bpws:target linkName="StartToEnd"/>
                     </bpws:targets>
@@ -724,7 +675,7 @@
                     </bpws:sources>
                     <tibex:inputBindings>
                         <tibex:inputBinding
-                            expression="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xa;&lt;xsl:stylesheet xmlns:xsl=&quot;http://www.w3.org/1999/XSL/Transform&quot; xmlns:tns1=&quot;http://www.tibco.com/namespaces/tnt/plugins/jdbc+3e72af6a-79eb-48e7-9292-0fcee2650c02+input&quot; xmlns:tns2=&quot;http://www.eniquesolution.com/E-Commerce/CommonFramework&quot; xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot; version=&quot;2.0&quot;>&lt;xsl:param name=&quot;Start&quot;/>&lt;xsl:template name=&quot;JDBCUpdate-input&quot; match=&quot;/&quot;>&lt;tns1:jdbcUpdateActivityInput>&lt;Appliction>&lt;xsl:choose>&lt;xsl:when test=&quot;exists($Start/tns2:ApplictionName)&quot;>&lt;xsl:value-of select=&quot;$Start/tns2:ApplictionName&quot;/>&lt;/xsl:when>&lt;xsl:otherwise>&lt;xsl:attribute name=&quot;xsi:nil&quot;>true&lt;/xsl:attribute>&lt;/xsl:otherwise>&lt;/xsl:choose>&lt;/Appliction>&lt;ProcessName>&lt;xsl:choose>&lt;xsl:when test=&quot;exists($Start/tns2:ProcessName)&quot;>&lt;xsl:value-of select=&quot;$Start/tns2:ProcessName&quot;/>&lt;/xsl:when>&lt;xsl:otherwise>&lt;xsl:attribute name=&quot;xsi:nil&quot;>true&lt;/xsl:attribute>&lt;/xsl:otherwise>&lt;/xsl:choose>&lt;/ProcessName>&lt;LogType>&lt;xsl:value-of select=&quot;$Start/tns2:LogType&quot;/>&lt;/LogType>&lt;Status>&lt;xsl:value-of select=&quot;$Start/tns2:status&quot;/>&lt;/Status>&lt;CorrelationID>&lt;xsl:value-of select=&quot;$Start/tns2:CorrelationID&quot;/>&lt;/CorrelationID>&lt;MessageType>&lt;xsl:choose>&lt;xsl:when test=&quot;exists($Start/tns2:MessageType)&quot;>&lt;xsl:value-of select=&quot;$Start/tns2:MessageType&quot;/>&lt;/xsl:when>&lt;xsl:otherwise>&lt;xsl:attribute name=&quot;xsi:nil&quot;>true&lt;/xsl:attribute>&lt;/xsl:otherwise>&lt;/xsl:choose>&lt;/MessageType>&lt;Timestamp>&lt;xsl:choose>&lt;xsl:when test=&quot;exists($Start/tns2:Timestamp)&quot;>&lt;xsl:value-of select=&quot;$Start/tns2:Timestamp&quot;/>&lt;/xsl:when>&lt;xsl:otherwise>&lt;xsl:attribute name=&quot;xsi:nil&quot;>true&lt;/xsl:attribute>&lt;/xsl:otherwise>&lt;/xsl:choose>&lt;/Timestamp>&lt;Payload>&lt;xsl:choose>&lt;xsl:when test=&quot;exists($Start/tns2:PAYLOAD)&quot;>&lt;xsl:value-of select=&quot;$Start/tns2:PAYLOAD&quot;/>&lt;/xsl:when>&lt;xsl:otherwise>&lt;xsl:attribute name=&quot;xsi:nil&quot;>true&lt;/xsl:attribute>&lt;/xsl:otherwise>&lt;/xsl:choose>&lt;/Payload>&lt;/tns1:jdbcUpdateActivityInput>&lt;/xsl:template>&lt;/xsl:stylesheet>" expressionLanguage="urn:oasis:names:tc:wsbpel:2.0:sublang:xslt1.0"/>
+                            expression="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xa;&lt;xsl:stylesheet xmlns:xsl=&quot;http://www.w3.org/1999/XSL/Transform&quot; xmlns:tns=&quot;http://www.tibco.com/namespaces/tnt/plugins/jdbc+349539a4-426f-4243-a3a3-a9f425ced0f9+input&quot; xmlns:tns1=&quot;http://www.eniquesolution.com/E-Commerce/CommonFramework&quot; xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot; version=&quot;2.0&quot;>&lt;xsl:param name=&quot;Start&quot;/>&lt;xsl:template name=&quot;JDBCUpdate-input&quot; match=&quot;/&quot;>&lt;tns:jdbcUpdateActivityInput>&lt;APPLICATIONNAME>&lt;xsl:choose>&lt;xsl:when test=&quot;exists($Start/tns1:ApplictionName)&quot;>&lt;xsl:value-of select=&quot;$Start/tns1:ApplictionName&quot;/>&lt;/xsl:when>&lt;xsl:otherwise>&lt;xsl:attribute name=&quot;xsi:nil&quot;>true&lt;/xsl:attribute>&lt;/xsl:otherwise>&lt;/xsl:choose>&lt;/APPLICATIONNAME>&lt;PROCESSNAME>&lt;xsl:choose>&lt;xsl:when test=&quot;exists($Start/tns1:ProcessName)&quot;>&lt;xsl:value-of select=&quot;$Start/tns1:ProcessName&quot;/>&lt;/xsl:when>&lt;xsl:otherwise>&lt;xsl:attribute name=&quot;xsi:nil&quot;>true&lt;/xsl:attribute>&lt;/xsl:otherwise>&lt;/xsl:choose>&lt;/PROCESSNAME>&lt;LOGTYPE>&lt;xsl:value-of select=&quot;$Start/tns1:LogType&quot;/>&lt;/LOGTYPE>&lt;STATUS>&lt;xsl:value-of select=&quot;$Start/tns1:status&quot;/>&lt;/STATUS>&lt;CORRELATIONID>&lt;xsl:value-of select=&quot;$Start/tns1:CorrelationID&quot;/>&lt;/CORRELATIONID>&lt;MSGTYPE>&lt;xsl:choose>&lt;xsl:when test=&quot;exists($Start/tns1:MessageType)&quot;>&lt;xsl:value-of select=&quot;$Start/tns1:MessageType&quot;/>&lt;/xsl:when>&lt;xsl:otherwise>&lt;xsl:attribute name=&quot;xsi:nil&quot;>true&lt;/xsl:attribute>&lt;/xsl:otherwise>&lt;/xsl:choose>&lt;/MSGTYPE>&lt;TIMESTAMP>&lt;xsl:choose>&lt;xsl:when test=&quot;exists($Start/tns1:Timestamp)&quot;>&lt;xsl:value-of select=&quot;$Start/tns1:Timestamp&quot;/>&lt;/xsl:when>&lt;xsl:otherwise>&lt;xsl:attribute name=&quot;xsi:nil&quot;>true&lt;/xsl:attribute>&lt;/xsl:otherwise>&lt;/xsl:choose>&lt;/TIMESTAMP>&lt;ErrorCode>&lt;xsl:choose>&lt;xsl:when test=&quot;exists($Start/tns1:ErrorCode)&quot;>&lt;xsl:value-of select=&quot;$Start/tns1:ErrorCode&quot;/>&lt;/xsl:when>&lt;xsl:otherwise>&lt;xsl:attribute name=&quot;xsi:nil&quot;>true&lt;/xsl:attribute>&lt;/xsl:otherwise>&lt;/xsl:choose>&lt;/ErrorCode>&lt;ErrorMsg>&lt;xsl:choose>&lt;xsl:when test=&quot;exists($Start/tns1:ErrorMsg)&quot;>&lt;xsl:value-of select=&quot;$Start/tns1:ErrorMsg&quot;/>&lt;/xsl:when>&lt;xsl:otherwise>&lt;xsl:attribute name=&quot;xsi:nil&quot;>true&lt;/xsl:attribute>&lt;/xsl:otherwise>&lt;/xsl:choose>&lt;/ErrorMsg>&lt;/tns:jdbcUpdateActivityInput>&lt;/xsl:template>&lt;/xsl:stylesheet>" expressionLanguage="urn:oasis:names:tc:wsbpel:2.0:sublang:xslt1.0"/>
                     </tibex:inputBindings>
                     <tibex:config>
                         <bwext:BWActivity
@@ -737,32 +688,35 @@
                                     <type href="http://ns.tibco.com/bw/palette/jdbc#//JDBCUpdateActivity"/>
                                     <value
                                     sharedResourceProperty="jdbcProperty"
-                                    sqlStatement="insert into EmpInfoLog values(?,?,?,?,?,?,?,?)"
+                                    sqlStatement="insert into EmpErrorLog values(?,?,?,?,?,?,?,?,?)"
                                     timeout="10" xsi:type="jdbcPalette:JDBCUpdateActivity">
                                     <PreparedParameters
                                     DataType="12"
-                                    DataTypeDisplayValue="VARCHAR" ParameterName="Appliction"/>
+                                    DataTypeDisplayValue="VARCHAR" ParameterName="APPLICATIONNAME"/>
                                     <PreparedParameters
                                     DataType="12"
-                                    DataTypeDisplayValue="VARCHAR" ParameterName="ProcessName"/>
+                                    DataTypeDisplayValue="VARCHAR" ParameterName="PROCESSNAME"/>
                                     <PreparedParameters
                                     DataType="12"
-                                    DataTypeDisplayValue="VARCHAR" ParameterName="LogType"/>
+                                    DataTypeDisplayValue="VARCHAR" ParameterName="LOGTYPE"/>
                                     <PreparedParameters
                                     DataType="12"
-                                    DataTypeDisplayValue="VARCHAR" ParameterName="Status"/>
+                                    DataTypeDisplayValue="VARCHAR" ParameterName="STATUS"/>
                                     <PreparedParameters
                                     DataType="12"
-                                    DataTypeDisplayValue="VARCHAR" ParameterName="CorrelationID"/>
+                                    DataTypeDisplayValue="VARCHAR" ParameterName="CORRELATIONID"/>
                                     <PreparedParameters
                                     DataType="12"
-                                    DataTypeDisplayValue="VARCHAR" ParameterName="MessageType"/>
+                                    DataTypeDisplayValue="VARCHAR" ParameterName="MSGTYPE"/>
                                     <PreparedParameters
                                     DataType="12"
-                                    DataTypeDisplayValue="VARCHAR" ParameterName="Timestamp"/>
+                                    DataTypeDisplayValue="VARCHAR" ParameterName="TIMESTAMP"/>
                                     <PreparedParameters
-                                    DataType="2005"
-                                    DataTypeDisplayValue="CLOB" ParameterName="Payload"/>
+                                    DataType="12"
+                                    DataTypeDisplayValue="VARCHAR" ParameterName="ErrorCode"/>
+                                    <PreparedParameters
+                                    DataType="12"
+                                    DataTypeDisplayValue="VARCHAR" ParameterName="ErrorMsg"/>
                                     </value>
                                 </properties>
                             </activityConfig>

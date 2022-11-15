@@ -32,7 +32,7 @@
     		schemaLocation="../Schemas/WebFault.xsd">
     	</xsd:import></xsd:schema></wsdl:types>
   <wsdl:message name="AddSalDetailsRequest">
-    <wsdl:part element="xsd1:Emp_SalTitleReq" name="parameters" />
+    <wsdl:part element="xsd1:Emp_SalTitleReq" name="parameters"/>
   </wsdl:message>
   <wsdl:message name="AddSalDetailsResponse">
     <wsdl:part element="xsd1:Emp_SalTitleRes" name="parameters"/>
