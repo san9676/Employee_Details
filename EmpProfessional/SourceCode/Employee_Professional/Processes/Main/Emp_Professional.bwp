@@ -652,8 +652,8 @@
                                     <element href="//0/@process/@activity/@activity/@activities.0/@messages.0/@activity/@activity/@activities.3"/>
 
                                     <layoutConstraint
-                                    x="380"
-                                    xsi:type="notation:Bounds" y="45"/>
+                                    x="217"
+                                    xsi:type="notation:Bounds" y="51"/>
                                     </children>
 
                                     <children type="4002">
@@ -706,8 +706,8 @@
                                     <element href="//0/@process/@activity/@activity/@activities.0/@messages.0/@activity/@activity/@activities.4"/>
 
                                     <layoutConstraint
-                                    x="507"
-                                    xsi:type="notation:Bounds" y="52"/>
+                                    x="325"
+                                    xsi:type="notation:Bounds" y="59"/>
                                     </children>
 
                                     <children type="4002">
@@ -760,7 +760,7 @@
                                     <element href="//0/@process/@activity/@activity/@activities.0/@messages.0/@activity/@activity/@activities.5"/>
 
                                     <layoutConstraint
-                                    x="220"
+                                    x="589"
                                     xsi:type="notation:Bounds" y="45"/>
                                     </children>
 
@@ -814,8 +814,8 @@
                                     <element href="//0/@process/@activity/@activity/@activities.0/@messages.0/@activity/@activity/@activities.6"/>
 
                                     <layoutConstraint
-                                    x="590"
-                                    xsi:type="notation:Bounds" y="80"/>
+                                    x="431"
+                                    xsi:type="notation:Bounds" y="51"/>
                                     </children>
 
                                     <styles xsi:type="notation:DrawerStyle"/>
@@ -840,7 +840,7 @@
 
                                     <layoutConstraint
                                     height="219"
-                                    width="742" xsi:type="notation:Bounds"/>
+                                    width="771" xsi:type="notation:Bounds"/>
                                     </children>
 
                                     <styles xsi:type="notation:SortingStyle"/>
@@ -860,7 +860,7 @@
 
                                     <layoutConstraint
                                     height="219"
-                                    width="745"
+                                    width="774"
                                     x="15" xsi:type="notation:Bounds"/>
                                     </children>
 
@@ -1007,6 +1007,60 @@
                                     xsi:type="notation:Bounds" y="43"/>
                                     </children>
 
+                                    <children type="4002">
+
+                                    <children type="4017">
+
+                                    <styles
+                                    fontName="Segoe UI"
+                                    lineColor="0" xsi:type="notation:ShapeStyle"/>
+
+                                    <layoutConstraint xsi:type="notation:Bounds"/>
+                                    </children>
+
+                                    <children type="4017">
+
+                                    <styles
+                                    fontName="Segoe UI"
+                                    lineColor="0" xsi:type="notation:ShapeStyle"/>
+
+                                    <layoutConstraint xsi:type="notation:Bounds"/>
+                                    </children>
+
+                                    <children type="4017">
+
+                                    <styles
+                                    fontName="Segoe UI"
+                                    lineColor="0" xsi:type="notation:ShapeStyle"/>
+
+                                    <layoutConstraint xsi:type="notation:Bounds"/>
+                                    </children>
+
+                                    <children type="4017">
+
+                                    <styles
+                                    fontName="Segoe UI"
+                                    lineColor="0" xsi:type="notation:ShapeStyle"/>
+
+                                    <layoutConstraint xsi:type="notation:Bounds"/>
+                                    </children>
+
+                                    <styles
+                                    fontName="Segoe UI"
+                                    lineColor="0" xsi:type="notation:ShapeStyle"/>
+
+                                    <styles
+                                    backgroundColor="16777215"
+                                    gradientEndColor="50431"
+                                    gradientStartColor="16777215" xsi:type="bwnotation:BackgroundStyle"/>
+
+                                    <element href="//0/@process/@activity/@activity/@activities.0/@messages.0/@activity/@faultHandlers/@catchAll/@activity/@activity/@activities.2"/>
+
+                                    <layoutConstraint
+                                    x="328"
+                                    xsi:type="notation:Bounds" y="43"/>
+                                    </children>
+
                                     <styles xsi:type="notation:DrawerStyle"/>
 
                                     <styles xsi:type="notation:SortingStyle"/>
@@ -1029,7 +1083,7 @@
 
                                     <layoutConstraint
                                     height="168"
-                                    width="636" xsi:type="notation:Bounds"/>
+                                    width="693" xsi:type="notation:Bounds"/>
                                     </children>
 
                                     <styles xsi:type="notation:SortingStyle"/>
@@ -1081,7 +1135,7 @@
 
                                     <layoutConstraint
                                     height="420"
-                                    width="785" xsi:type="notation:Bounds"/>
+                                    width="814" xsi:type="notation:Bounds"/>
                                     </children>
                                     <styles xsi:type="notation:SortingStyle"/>
                                     <styles xsi:type="notation:FilteringStyle"/>
@@ -1139,7 +1193,7 @@
                                     <element href="//0/@process/@activity/@activity/@activities.0/@messages.0"/>
                                     <layoutConstraint
                                     height="439"
-                                    width="847"
+                                    width="876"
                                     x="2" xsi:type="notation:Bounds"/>
                                     </children>
                                     <styles xsi:type="notation:SortingStyle"/>
@@ -1151,7 +1205,7 @@
                                     <styles xsi:type="bwnotation:ResizingStyle"/>
                                     <element href="//0/@process/@activity/@activity/@activities.0"/>
                                     <layoutConstraint
-                                    height="469" width="866" xsi:type="notation:Bounds"/>
+                                    height="469" width="895" xsi:type="notation:Bounds"/>
                                     </children>
                                     <styles xsi:type="notation:DrawerStyle"/>
                                     <styles xsi:type="notation:SortingStyle"/>
@@ -1166,7 +1220,7 @@
                                     <styles xsi:type="bwnotation:ResizingStyle"/>
                                     <element href="//0/@process/@activity/@activity"/>
                                     <layoutConstraint height="479"
-                                    width="876" xsi:type="notation:Bounds"/>
+                                    width="905" xsi:type="notation:Bounds"/>
                                 </children>
                                 <styles xsi:type="notation:SortingStyle"/>
                                 <styles xsi:type="notation:FilteringStyle"/>
@@ -1175,7 +1229,7 @@
                             <styles xsi:type="bwnotation:BackgroundStyle"/>
                             <styles xsi:type="bwnotation:ResizingStyle"/>
                             <element href="//0/@process/@activity"/>
-                            <layoutConstraint height="479" width="879" xsi:type="notation:Bounds"/>
+                            <layoutConstraint height="479" width="908" xsi:type="notation:Bounds"/>
                         </children>
                         <styles xsi:type="notation:SortingStyle"/>
                         <styles xsi:type="notation:FilteringStyle"/>
@@ -1185,7 +1239,7 @@
                     <styles xsi:type="bwnotation:BackgroundStyle"/>
                     <styles xsi:type="bwnotation:ResizingStyle"/>
                     <element href="//0/@process/@activity"/>
-                    <layoutConstraint height="503" width="879" x="1"
+                    <layoutConstraint height="503" width="908" x="1"
                         xsi:type="notation:Bounds" y="1"/>
                 </children>
                 <styles xsi:type="notation:SortingStyle"/>
@@ -1194,7 +1248,7 @@
             </children>
             <styles fontName="Segoe UI" lineColor="0" xsi:type="notation:ShapeStyle"/>
             <element href="//0/@process"/>
-            <layoutConstraint height="555" width="1221" xsi:type="notation:Bounds"/>
+            <layoutConstraint height="555" width="1250" xsi:type="notation:Bounds"/>
         </children>
         <styles xsi:type="notation:DiagramStyle"/>
         <element href="//0"/>
@@ -1244,25 +1298,36 @@
         </edges>
         <edges
             source="//@children.0/@children.4/@children.0/@children.0/@children.0/@children.0/@children.0/@children.0/@children.0/@children.2/@children.0/@children.1/@children.0/@children.0/@children.0/@children.0/@children.0/@children.0/@children.0"
-            target="//@children.0/@children.4/@children.0/@children.0/@children.0/@children.0/@children.0/@children.0/@children.0/@children.2/@children.0/@children.1/@children.0/@children.0/@children.0/@children.0/@children.0/@children.0/@children.3" type="4006">
-            <children type="6002">
-                <layoutConstraint xsi:type="notation:Location" y="40"/>
-            </children>
-            <styles lineColor="0" xsi:type="notation:ConnectorStyle"/>
-            <styles fontName="Segoe UI" xsi:type="notation:FontStyle"/>
-            <element href="//0/@process/@activity/@activity/@activities.0/@messages.0/@activity/@activity/@links/@children.3"/>
-            <bendpoints points="[25, -3, -100, 11]$[101, -11, -24, 3]" xsi:type="notation:RelativeBendpoints"/>
-        </edges>
-        <edges
-            source="//@children.0/@children.4/@children.0/@children.0/@children.0/@children.0/@children.0/@children.0/@children.0/@children.2/@children.0/@children.1/@children.0/@children.0/@children.0/@children.0/@children.0/@children.0/@children.3"
             target="//@children.0/@children.4/@children.0/@children.0/@children.0/@children.0/@children.0/@children.0/@children.0/@children.2/@children.0/@children.1/@children.0/@children.0/@children.0/@children.0/@children.0/@children.0/@children.1" type="4006">
             <children type="6002">
                 <layoutConstraint xsi:type="notation:Location" y="40"/>
             </children>
             <styles lineColor="0" xsi:type="notation:ConnectorStyle"/>
             <styles fontName="Segoe UI" xsi:type="notation:FontStyle"/>
+            <element href="//0/@process/@activity/@activity/@activities.0/@messages.0/@activity/@activity/@links/@children.3"/>
+            <bendpoints points="[25, 3, -149, -18]$[150, 18, -24, -3]" xsi:type="notation:RelativeBendpoints"/>
+        </edges>
+        <edges
+            source="//@children.0/@children.4/@children.0/@children.0/@children.0/@children.0/@children.0/@children.0/@children.0/@children.2/@children.0/@children.1/@children.0/@children.0/@children.0/@children.0/@children.0/@children.0/@children.4"
+            target="//@children.0/@children.4/@children.0/@children.0/@children.0/@children.0/@children.0/@children.0/@children.0/@children.2/@children.0/@children.1/@children.0/@children.0/@children.0/@children.0/@children.0/@children.0/@children.3" type="4006">
+            <children type="6002">
+                <layoutConstraint xsi:type="notation:Location" y="40"/>
+            </children>
+            <styles lineColor="0" xsi:type="notation:ConnectorStyle"/>
+            <styles fontName="Segoe UI" xsi:type="notation:FontStyle"/>
             <element href="//0/@process/@activity/@activity/@activities.0/@messages.0/@activity/@activity/@links/@children.4"/>
-            <bendpoints points="[25, 0, -135, 0]$[136, 0, -24, 0]" xsi:type="notation:RelativeBendpoints"/>
+            <bendpoints points="[25, -17, -53, 38]$[54, -38, -24, 17]" xsi:type="notation:RelativeBendpoints"/>
+        </edges>
+        <edges
+            source="//@children.0/@children.4/@children.0/@children.0/@children.0/@children.0/@children.0/@children.0/@children.0/@children.2/@children.0/@children.1/@children.0/@children.0/@children.1/@children.0/@children.0/@children.1/@children.0/@children.0/@children.1"
+            target="//@children.0/@children.4/@children.0/@children.0/@children.0/@children.0/@children.0/@children.0/@children.0/@children.2/@children.0/@children.1/@children.0/@children.0/@children.1/@children.0/@children.0/@children.1/@children.0/@children.0/@children.2" type="4006">
+            <children type="6002">
+                <layoutConstraint xsi:type="notation:Location" y="40"/>
+            </children>
+            <styles lineColor="0" xsi:type="notation:ConnectorStyle"/>
+            <styles fontName="Segoe UI" xsi:type="notation:FontStyle"/>
+            <element href="//0/@process/@activity/@activity/@activities.0/@messages.0/@activity/@faultHandlers/@catchAll/@activity/@activity/@links/@children.1"/>
+            <bendpoints points="[0, 0, 0, 0]$[0, 0, 0, 0]" xsi:type="notation:RelativeBendpoints"/>
         </edges>
     </notation:Diagram>
     <tibex:NamespaceRegistry enabled="true">
@@ -1310,8 +1375,6 @@
         <bpws:variable name="FaultName" sca-bpel:internal="true" type="xsd:string"/>
         <bpws:variable element="ns:FaultDetail" name="FaultDetails" sca-bpel:internal="true"/>
         <bpws:variable element="ns2:LogExceptionHandler"
-            name="ErrorLog-input" sca-bpel:internal="true"/>
-        <bpws:variable element="ns2:LogExceptionHandler"
             name="EndLog-input" sca-bpel:internal="true"/>
         <bpws:variable messageType="ns1:AddEmp_ProfResponse"
             name="AddEmp_ProfOut-input" sca-bpel:internal="true"/>
@@ -1340,6 +1403,10 @@
             name="InsertResponse" sca-bpel:internal="true"/>
         <bpws:variable element="ns6:ActivityErrorData"
             name="_error_InsertResponse" sca-bpel:internal="true"/>
+        <bpws:variable element="ns2:ErrorLogHandler"
+            name="ErrorLog-input" sca-bpel:internal="true"/>
+        <bpws:variable messageType="ns1:AddEmp_ProfFault"
+            name="Reply-input" sca-bpel:internal="true"/>
     </bpws:variables>
     <bpws:extensions>
         <bpws:extension mustUnderstand="no" namespace="http://www.eclipse.org/gmf/runtime/1.0.2/notation"/>
@@ -1367,10 +1434,12 @@
                                     <bpws:links>
                                     <bpws:link
                                     name="ErrorLogToInsertErrorResponse" tibex:linkType="SUCCESS"/>
+                                    <bpws:link
+                                    name="InsertErrorResponseToReply" tibex:linkType="SUCCESS"/>
                                     </bpws:links>
                                     <bpws:extensionActivity>
                                     <tibex:extActivity
-                                    expression="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xa;&lt;!--START COERCIONS-->&#xa;&lt;!-- $FaultDetails/Data/*, element, ns:fault -->&#xa;&lt;!--END COERCIONS-->&lt;xsl:stylesheet xmlns:xsl=&quot;http://www.w3.org/1999/XSL/Transform&quot; xmlns:tns2=&quot;http://www.eniquesolution.com/E-Commerce/CommonFramework&quot; xmlns:tns=&quot;http://www.EniqueSol.org/Employee_Prof/V1&quot; xmlns:tib=&quot;http://www.tibco.com/bw/xslt/custom-functions&quot; xmlns:ns=&quot;http://www.EniqueSol.org/WebFault&quot; version=&quot;2.0&quot;>&lt;xsl:import-schema namespace=&quot;http://www.EniqueSol.org/WebFault&quot; schema-location=&quot;../../../CommonInterface/Schemas/WebFault.xsd&quot;/>&lt;xsl:param name=&quot;_processContext&quot;/>&lt;xsl:param name=&quot;AddEmp_Prof&quot;/>&lt;xsl:param name=&quot;FaultDetails&quot;/>&lt;xsl:template name=&quot;ErrorLog-input&quot; match=&quot;/&quot;>&lt;tns2:LogExceptionHandler>&lt;tns2:ApplictionName>&lt;xsl:value-of select=&quot;$_processContext/ApplicationName&quot;/>&lt;/tns2:ApplictionName>&lt;tns2:ProcessName>&lt;xsl:value-of select=&quot;'Emp_Professional'&quot;/>&lt;/tns2:ProcessName>&lt;tns2:LogType>&lt;xsl:value-of select=&quot;'ERROR'&quot;/>&lt;/tns2:LogType>&lt;tns2:status>&lt;xsl:value-of select=&quot;'Failed'&quot;/>&lt;/tns2:status>&lt;tns2:CorrelationID>&lt;xsl:value-of select=&quot;$AddEmp_Prof/parameters/tns:Employee_ProfReq/tns:CorelationID&quot;/>&lt;/tns2:CorrelationID>&lt;tns2:MessageType>&lt;xsl:value-of select=&quot;'ErrorDetails'&quot;/>&lt;/tns2:MessageType>&lt;tns2:LogMessage>&lt;xsl:value-of select=&quot;'Emp_professional_Req'&quot;/>&lt;/tns2:LogMessage>&lt;tns2:Timestamp>&lt;xsl:value-of select=&quot;current-dateTime()&quot;/>&lt;/tns2:Timestamp>&lt;tns2:Payload>&lt;xsl:value-of select=&quot;tib:render-xml($AddEmp_Prof/parameters/tns:Employee_ProfReq)&quot;/>&lt;/tns2:Payload>&lt;tns2:Exception>&lt;xsl:if test=&quot;$FaultDetails/Data/ns:fault/ns:faultCode&quot;>&lt;tns2:MessageCode>&lt;xsl:value-of select=&quot;$FaultDetails/Data/ns:fault/ns:faultCode&quot;/>&lt;/tns2:MessageCode>&lt;/xsl:if>&lt;xsl:if test=&quot;$FaultDetails/Data/ns:fault/ns:faultMsg&quot;>&lt;tns2:ExceptionMessage>&lt;xsl:value-of select=&quot;$FaultDetails/Data/ns:fault/ns:faultMsg&quot;/>&lt;/tns2:ExceptionMessage>&lt;/xsl:if>&lt;xsl:if test=&quot;$FaultDetails/Data/ns:fault/ns:StackTrace&quot;>&lt;tns2:StackTrace>&lt;xsl:value-of select=&quot;$FaultDetails/Data/ns:fault/ns:StackTrace&quot;/>&lt;/tns2:StackTrace>&lt;/xsl:if>&lt;/tns2:Exception>&lt;/tns2:LogExceptionHandler>&lt;/xsl:template>&lt;/xsl:stylesheet>"
+                                    expression="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xa;&lt;xsl:stylesheet xmlns:xsl=&quot;http://www.w3.org/1999/XSL/Transform&quot; xmlns:tns2=&quot;http://www.eniquesolution.com/E-Commerce/CommonFramework&quot; xmlns:tns=&quot;http://www.EniqueSol.org/Employee_Prof/V1&quot; version=&quot;2.0&quot;>&lt;xsl:param name=&quot;_processContext&quot;/>&lt;xsl:param name=&quot;FaultDetails&quot;/>&lt;xsl:param name=&quot;AddEmp_Prof&quot;/>&lt;xsl:template name=&quot;ErrorLog-input&quot; match=&quot;/&quot;>&lt;tns2:ErrorLogHandler>&lt;tns2:ApplictionName>&lt;xsl:value-of select=&quot;$_processContext/ApplicationName&quot;/>&lt;/tns2:ApplictionName>&lt;tns2:ProcessName>&lt;xsl:value-of select=&quot;'Emp_Professional'&quot;/>&lt;/tns2:ProcessName>&lt;tns2:LogType>&lt;xsl:value-of select=&quot;'ERROR'&quot;/>&lt;/tns2:LogType>&lt;tns2:status>&lt;xsl:value-of select=&quot;'Failed'&quot;/>&lt;/tns2:status>&lt;tns2:CorrelationID>&lt;xsl:value-of select=&quot;$AddEmp_Prof/parameters/tns:Employee_ProfReq/tns:CorelationID&quot;/>&lt;/tns2:CorrelationID>&lt;tns2:MessageType>&lt;xsl:value-of select=&quot;'ErrorDetails'&quot;/>&lt;/tns2:MessageType>&lt;tns2:Timestamp>&lt;xsl:value-of select=&quot;current-dateTime()&quot;/>&lt;/tns2:Timestamp>&lt;tns2:ErrorCode>&lt;xsl:value-of select=&quot;$FaultDetails/MsgCode&quot;/>&lt;/tns2:ErrorCode>&lt;tns2:ErrorMsg>&lt;xsl:value-of select=&quot;$FaultDetails/Msg&quot;/>&lt;/tns2:ErrorMsg>&lt;/tns2:ErrorLogHandler>&lt;/xsl:template>&lt;/xsl:stylesheet>"
                                     expressionLanguage="urn:oasis:names:tc:wsbpel:2.0:sublang:xslt1.0"
                                     inputVariable="ErrorLog-input"
                                     name="ErrorLog"
@@ -1382,12 +1451,12 @@
                                     <tibex:inputBindings>
                                     <tibex:inputBinding
                                     coercion=""
-                                    expression="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xa;&lt;xsl:stylesheet xmlns:xsl=&quot;http://www.w3.org/1999/XSL/Transform&quot; xmlns:tns2=&quot;http://www.eniquesolution.com/E-Commerce/CommonFramework&quot; xmlns:tns=&quot;http://www.EniqueSol.org/Employee_Prof/V1&quot; xmlns:tib=&quot;http://www.tibco.com/bw/xslt/custom-functions&quot; xmlns:ns=&quot;http://www.EniqueSol.org/WebFault&quot; version=&quot;2.0&quot;>&#xa;    &lt;xsl:param name=&quot;AddEmp_Prof.parameters&quot;/>&#xa;    &lt;xsl:param name=&quot;_processContext&quot;/>&#xa;    &lt;xsl:param name=&quot;FaultDetails&quot;/>&#xa;    &lt;xsl:template name=&quot;ErrorLog-input&quot; match=&quot;/&quot;>&#xa;        &lt;tns2:LogExceptionHandler>&#xa;            &lt;tns2:ApplictionName>&#xa;                &lt;xsl:value-of select=&quot;$_processContext/ApplicationName&quot;/>&#xa;            &lt;/tns2:ApplictionName>&#xa;            &lt;tns2:ProcessName>&#xa;                &lt;xsl:value-of select=&quot;'Emp_Professional'&quot;/>&#xa;            &lt;/tns2:ProcessName>&#xa;            &lt;tns2:LogType>&#xa;                &lt;xsl:value-of select=&quot;'ERROR'&quot;/>&#xa;            &lt;/tns2:LogType>&#xa;            &lt;tns2:status>&#xa;                &lt;xsl:value-of select=&quot;'Failed'&quot;/>&#xa;            &lt;/tns2:status>&#xa;            &lt;tns2:CorrelationID>&#xa;                &lt;xsl:value-of select=&quot;$AddEmp_Prof.parameters/tns:CorelationID&quot;/>&#xa;            &lt;/tns2:CorrelationID>&#xa;            &lt;tns2:MessageType>&#xa;                &lt;xsl:value-of select=&quot;'ErrorDetails'&quot;/>&#xa;            &lt;/tns2:MessageType>&#xa;            &lt;tns2:LogMessage>&#xa;                &lt;xsl:value-of select=&quot;'Emp_professional_Req'&quot;/>&#xa;            &lt;/tns2:LogMessage>&#xa;            &lt;tns2:Timestamp>&#xa;                &lt;xsl:value-of select=&quot;current-dateTime()&quot;/>&#xa;            &lt;/tns2:Timestamp>&#xa;            &lt;tns2:Payload>&#xa;                &lt;xsl:value-of select=&quot;tib:render-xml($AddEmp_Prof.parameters)&quot;/>&#xa;            &lt;/tns2:Payload>&#xa;            &lt;tns2:Exception>&#xa;                &lt;xsl:if test=&quot;$FaultDetails/Data/ns:fault/ns:faultCode&quot;>&#xa;                    &lt;tns2:MessageCode>&#xa;                        &lt;xsl:value-of select=&quot;$FaultDetails/Data/ns:fault/ns:faultCode&quot;/>&#xa;                    &lt;/tns2:MessageCode>&#xa;                &lt;/xsl:if>&#xa;                &lt;xsl:if test=&quot;$FaultDetails/Data/ns:fault/ns:faultMsg&quot;>&#xa;                    &lt;tns2:ExceptionMessage>&#xa;                        &lt;xsl:value-of select=&quot;$FaultDetails/Data/ns:fault/ns:faultMsg&quot;/>&#xa;                    &lt;/tns2:ExceptionMessage>&#xa;                &lt;/xsl:if>&#xa;                &lt;xsl:if test=&quot;$FaultDetails/Data/ns:fault/ns:StackTrace&quot;>&#xa;                    &lt;tns2:StackTrace>&#xa;                        &lt;xsl:value-of select=&quot;$FaultDetails/Data/ns:fault/ns:StackTrace&quot;/>&#xa;                    &lt;/tns2:StackTrace>&#xa;                &lt;/xsl:if>&#xa;            &lt;/tns2:Exception>&#xa;        &lt;/tns2:LogExceptionHandler>&#xa;    &lt;/xsl:template>&#xa;&lt;/xsl:stylesheet>" expressionLanguage="urn:oasis:names:tc:wsbpel:2.0:sublang:xslt1.0"/>
+                                    expression="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xa;&lt;xsl:stylesheet xmlns:xsl=&quot;http://www.w3.org/1999/XSL/Transform&quot; xmlns:tns2=&quot;http://www.eniquesolution.com/E-Commerce/CommonFramework&quot; xmlns:tns=&quot;http://www.EniqueSol.org/Employee_Prof/V1&quot; version=&quot;2.0&quot;>&#xa;    &lt;xsl:param name=&quot;AddEmp_Prof.parameters&quot;/>&#xa;    &lt;xsl:param name=&quot;_processContext&quot;/>&#xa;    &lt;xsl:param name=&quot;FaultDetails&quot;/>&#xa;    &lt;xsl:template name=&quot;ErrorLog-input&quot; match=&quot;/&quot;>&#xa;        &lt;tns2:ErrorLogHandler>&#xa;            &lt;tns2:ApplictionName>&#xa;                &lt;xsl:value-of select=&quot;$_processContext/ApplicationName&quot;/>&#xa;            &lt;/tns2:ApplictionName>&#xa;            &lt;tns2:ProcessName>&#xa;                &lt;xsl:value-of select=&quot;'Emp_Professional'&quot;/>&#xa;            &lt;/tns2:ProcessName>&#xa;            &lt;tns2:LogType>&#xa;                &lt;xsl:value-of select=&quot;'ERROR'&quot;/>&#xa;            &lt;/tns2:LogType>&#xa;            &lt;tns2:status>&#xa;                &lt;xsl:value-of select=&quot;'Failed'&quot;/>&#xa;            &lt;/tns2:status>&#xa;            &lt;tns2:CorrelationID>&#xa;                &lt;xsl:value-of select=&quot;$AddEmp_Prof.parameters/tns:CorelationID&quot;/>&#xa;            &lt;/tns2:CorrelationID>&#xa;            &lt;tns2:MessageType>&#xa;                &lt;xsl:value-of select=&quot;'ErrorDetails'&quot;/>&#xa;            &lt;/tns2:MessageType>&#xa;            &lt;tns2:Timestamp>&#xa;                &lt;xsl:value-of select=&quot;current-dateTime()&quot;/>&#xa;            &lt;/tns2:Timestamp>&#xa;            &lt;tns2:ErrorCode>&#xa;                &lt;xsl:value-of select=&quot;$FaultDetails/MsgCode&quot;/>&#xa;            &lt;/tns2:ErrorCode>&#xa;            &lt;tns2:ErrorMsg>&#xa;                &lt;xsl:value-of select=&quot;$FaultDetails/Msg&quot;/>&#xa;            &lt;/tns2:ErrorMsg>&#xa;        &lt;/tns2:ErrorLogHandler>&#xa;    &lt;/xsl:template>&#xa;&lt;/xsl:stylesheet>" expressionLanguage="urn:oasis:names:tc:wsbpel:2.0:sublang:xslt1.0"/>
                                     </tibex:inputBindings>
                                     <tibex:CallProcess
                                     moduleRef="CommonInterface"
                                     spawn="true"
-                                    subProcessName="es_common_framework_sh.LogHandler" xmlns:tibex="http://www.tibco.com/bpel/2007/extensions"/>
+                                    subProcessName="es_common_framework_sh.ErrorHandler" xmlns:tibex="http://www.tibco.com/bpel/2007/extensions"/>
                                     </tibex:extActivity>
                                     </bpws:extensionActivity>
                                     <bpws:extensionActivity>
@@ -1401,6 +1470,9 @@
                                     <bpws:targets>
                                     <bpws:target linkName="ErrorLogToInsertErrorResponse"/>
                                     </bpws:targets>
+                                    <bpws:sources>
+                                    <bpws:source linkName="InsertErrorResponseToReply"/>
+                                    </bpws:sources>
                                     <tibex:inputBindings>
                                     <tibex:inputBinding
                                     expression="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xa;&lt;xsl:stylesheet xmlns:xsl=&quot;http://www.w3.org/1999/XSL/Transform&quot; xmlns:tns6=&quot;http://www.tibco.com/namespaces/tnt/plugins/jdbc+9c95c869-7550-43d6-9627-78966d9262da+input&quot; xmlns:tns=&quot;http://www.EniqueSol.org/Employee_Prof/V1&quot; xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot; xmlns:ns=&quot;http://www.EniqueSol.org/WebFault&quot; version=&quot;2.0&quot;>&#xa;    &lt;xsl:param name=&quot;AddEmp_Prof.parameters&quot;/>&#xa;    &lt;xsl:param name=&quot;FaultDetails&quot;/>&#xa;    &lt;xsl:template name=&quot;InsertErrorResponse-input&quot; match=&quot;/&quot;>&#xa;        &lt;tns6:jdbcUpdateActivityInput>&#xa;            &lt;ProcessName>&#xa;                &lt;xsl:value-of select=&quot;'Emp_Professional'&quot;/>&#xa;            &lt;/ProcessName>&#xa;            &lt;ResponseCode>&#xa;                &lt;xsl:choose>&#xa;                    &lt;xsl:when test=&quot;exists($FaultDetails/Data/ns:fault/ns:faultCode)&quot;>&#xa;                        &lt;xsl:value-of select=&quot;$FaultDetails/Data/ns:fault/ns:faultCode&quot;/>&#xa;                    &lt;/xsl:when>&#xa;                    &lt;xsl:otherwise>&#xa;                        &lt;xsl:attribute name=&quot;xsi:nil&quot;>true&lt;/xsl:attribute>&#xa;                    &lt;/xsl:otherwise>&#xa;                &lt;/xsl:choose>&#xa;            &lt;/ResponseCode>&#xa;            &lt;ResponseMsg>&#xa;                &lt;xsl:value-of select=&quot;concat($FaultDetails/Data/ns:fault/ns:faultMsg,' ', $FaultDetails/Data/ns:fault/ns:StackTrace)&quot;/>&#xa;            &lt;/ResponseMsg>&#xa;            &lt;CorelationID>&#xa;                &lt;xsl:choose>&#xa;                    &lt;xsl:when test=&quot;exists($AddEmp_Prof.parameters/tns:CorelationID)&quot;>&#xa;                        &lt;xsl:value-of select=&quot;$AddEmp_Prof.parameters/tns:CorelationID&quot;/>&#xa;                    &lt;/xsl:when>&#xa;                    &lt;xsl:otherwise>&#xa;                        &lt;xsl:attribute name=&quot;xsi:nil&quot;>true&lt;/xsl:attribute>&#xa;                    &lt;/xsl:otherwise>&#xa;                &lt;/xsl:choose>&#xa;            &lt;/CorelationID>&#xa;        &lt;/tns6:jdbcUpdateActivityInput>&#xa;    &lt;/xsl:template>&#xa;&lt;/xsl:stylesheet>" expressionLanguage="urn:oasis:names:tc:wsbpel:2.0:sublang:xslt1.0"/>
@@ -1442,6 +1514,22 @@
                                     </tibex:config>
                                     </tibex:activityExtension>
                                     </bpws:extensionActivity>
+                                    <bpws:reply faultName="fault"
+                                    name="Reply"
+                                    operation="AddEmp_Prof"
+                                    partnerLink="Emp_Professional"
+                                    portType="ns1:Emp_Professional"
+                                    tibex:xpdlId="59921d34-fd67-41bc-b60c-fddc991aefca" variable="Reply-input">
+                                    <tibex:inputBinding expressionLanguage="urn:oasis:names:tc:wsbpel:2.0:sublang:xslt1.0">&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+&lt;xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:tns1="http://www.EniqueSol.com/Abstract/V1/Emp_Professional/" xmlns:ns="http://www.EniqueSol.org/WebFault" version="2.0"&gt;&lt;xsl:param name="FaultDetails"/&gt;&lt;xsl:template name="Reply-input" match="/"&gt;&lt;tns1:AddEmp_ProfFault&gt;&lt;parameters&gt;&lt;ns:fault&gt;&lt;ns:faultCode&gt;&lt;xsl:value-of select="$FaultDetails/MsgCode"/&gt;&lt;/ns:faultCode&gt;&lt;ns:faultMsg&gt;&lt;xsl:value-of select="$FaultDetails/Msg"/&gt;&lt;/ns:faultMsg&gt;&lt;ns:StackTrace&gt;&lt;xsl:value-of select="$FaultDetails/StackTrace"/&gt;&lt;/ns:StackTrace&gt;&lt;/ns:fault&gt;&lt;/parameters&gt;&lt;/tns1:AddEmp_ProfFault&gt;&lt;/xsl:template&gt;&lt;/xsl:stylesheet&gt;</tibex:inputBinding>
+                                    <tibex:inputBindings>
+                                    <tibex:partBinding
+                                    expression="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xa;&lt;xsl:stylesheet xmlns:xsl=&quot;http://www.w3.org/1999/XSL/Transform&quot; xmlns:tns1=&quot;http://www.EniqueSol.com/Abstract/V1/Emp_Professional/&quot; xmlns:ns=&quot;http://www.EniqueSol.org/WebFault&quot; version=&quot;2.0&quot;>&#xa;    &lt;xsl:param name=&quot;FaultDetails&quot;/>&#xa;    &lt;xsl:template name=&quot;Reply-input&quot; match=&quot;/&quot;>&#xa;        &lt;ns:fault>&#xa;            &lt;ns:faultCode>&#xa;                &lt;xsl:value-of select=&quot;$FaultDetails/MsgCode&quot;/>&#xa;            &lt;/ns:faultCode>&#xa;            &lt;ns:faultMsg>&#xa;                &lt;xsl:value-of select=&quot;$FaultDetails/Msg&quot;/>&#xa;            &lt;/ns:faultMsg>&#xa;            &lt;ns:StackTrace>&#xa;                &lt;xsl:value-of select=&quot;$FaultDetails/StackTrace&quot;/>&#xa;            &lt;/ns:StackTrace>&#xa;        &lt;/ns:fault>&#xa;    &lt;/xsl:template>&#xa;&lt;/xsl:stylesheet>" expressionLanguage="urn:oasis:names:tc:wsbpel:2.0:sublang:xslt1.0"/>
+                                    </tibex:inputBindings>
+                                    <bpws:targets>
+                                    <bpws:target linkName="InsertErrorResponseToReply"/>
+                                    </bpws:targets>
+                                    </bpws:reply>
                                     </bpws:flow>
                                 </bpws:scope>
                             </bpws:catchAll>
@@ -1453,10 +1541,9 @@
                                 <bpws:link name="EndLogToInsertResponse" tibex:linkType="SUCCESS"/>
                                 <bpws:link
                                     name="OnMessageStartToStartLog" tibex:linkType="SUCCESS"/>
+                                <bpws:link name="StartLogToEmpProf_Sub" tibex:linkType="SUCCESS"/>
                                 <bpws:link
-                                    name="StartLogToAddEmp_ProfOut" tibex:linkType="SUCCESS"/>
-                                <bpws:link
-                                    name="AddEmp_ProfOutToEmpProf_Sub" tibex:linkType="SUCCESS"/>
+                                    name="InsertResponseToAddEmp_ProfOut" tibex:linkType="SUCCESS"/>
                             </bpws:links>
                             <bpws:empty name="OnMessageStart"
                                 tibex:constructor="onMessageStart" tibex:xpdlId="675b2a42-87fd-4424-8d46-f6bf990ec28e">
@@ -1468,7 +1555,7 @@
                                 tibex:constructor="onMessageEnd" tibex:xpdlId="22745c9c-5fc6-4d39-8a5a-f7ef775006f9"/>
                             <bpws:extensionActivity>
                                 <tibex:extActivity
-                                    expression="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xa;&lt;xsl:stylesheet xmlns:xsl=&quot;http://www.w3.org/1999/XSL/Transform&quot; xmlns:tns2=&quot;http://www.eniquesolution.com/E-Commerce/CommonFramework&quot; xmlns:tns=&quot;http://www.EniqueSol.org/Employee_Prof/V1&quot; xmlns:tib=&quot;http://www.tibco.com/bw/xslt/custom-functions&quot; version=&quot;2.0&quot;>&lt;xsl:param name=&quot;_processContext&quot;/>&lt;xsl:param name=&quot;AddEmp_Prof&quot;/>&lt;xsl:template name=&quot;StartLog-input&quot; match=&quot;/&quot;>&lt;tns2:LogExceptionHandler>&lt;tns2:ApplictionName>&lt;xsl:value-of select=&quot;$_processContext/ApplicationName&quot;/>&lt;/tns2:ApplictionName>&lt;tns2:ProcessName>&lt;xsl:value-of select=&quot;'Emp_Professional'&quot;/>&lt;/tns2:ProcessName>&lt;tns2:LogType>&lt;xsl:value-of select=&quot;'INFO'&quot;/>&lt;/tns2:LogType>&lt;tns2:status>&lt;xsl:value-of select=&quot;'Success'&quot;/>&lt;/tns2:status>&lt;tns2:CorrelationID>&lt;xsl:value-of select=&quot;$AddEmp_Prof/parameters/tns:Employee_ProfReq/tns:CorelationID&quot;/>&lt;/tns2:CorrelationID>&lt;tns2:MessageType>&lt;xsl:value-of select=&quot;'RequestPayload'&quot;/>&lt;/tns2:MessageType>&lt;tns2:LogMessage>&lt;xsl:value-of select=&quot;'Emp_professional_Req'&quot;/>&lt;/tns2:LogMessage>&lt;tns2:Timestamp>&lt;xsl:value-of select=&quot;current-dateTime()&quot;/>&lt;/tns2:Timestamp>&lt;tns2:Payload>&lt;xsl:value-of select=&quot;tib:render-xml($AddEmp_Prof/parameters/tns:Employee_ProfReq)&quot;/>&lt;/tns2:Payload>&lt;/tns2:LogExceptionHandler>&lt;/xsl:template>&lt;/xsl:stylesheet>"
+                                    expression="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xa;&lt;xsl:stylesheet xmlns:xsl=&quot;http://www.w3.org/1999/XSL/Transform&quot; xmlns:tns2=&quot;http://www.eniquesolution.com/E-Commerce/CommonFramework&quot; xmlns:tns=&quot;http://www.EniqueSol.org/Employee_Prof/V1&quot; xmlns:tib=&quot;http://www.tibco.com/bw/xslt/custom-functions&quot; version=&quot;2.0&quot;>&lt;xsl:param name=&quot;_processContext&quot;/>&lt;xsl:param name=&quot;AddEmp_Prof&quot;/>&lt;xsl:template name=&quot;StartLog-input&quot; match=&quot;/&quot;>&lt;tns2:LogExceptionHandler>&lt;tns2:ApplictionName>&lt;xsl:value-of select=&quot;$_processContext/ApplicationName&quot;/>&lt;/tns2:ApplictionName>&lt;tns2:ProcessName>&lt;xsl:value-of select=&quot;'Emp_Professional'&quot;/>&lt;/tns2:ProcessName>&lt;tns2:LogType>&lt;xsl:value-of select=&quot;'INFO'&quot;/>&lt;/tns2:LogType>&lt;tns2:status>&lt;xsl:value-of select=&quot;'Success'&quot;/>&lt;/tns2:status>&lt;tns2:CorrelationID>&lt;xsl:value-of select=&quot;$AddEmp_Prof/parameters/tns:Employee_ProfReq/tns:CorelationID&quot;/>&lt;/tns2:CorrelationID>&lt;tns2:MessageType>&lt;xsl:value-of select=&quot;'RequestPayload'&quot;/>&lt;/tns2:MessageType>&lt;tns2:Timestamp>&lt;xsl:value-of select=&quot;current-dateTime()&quot;/>&lt;/tns2:Timestamp>&lt;tns2:PAYLOAD>&lt;xsl:value-of select=&quot;tib:render-xml($AddEmp_Prof/parameters/tns:Employee_ProfReq)&quot;/>&lt;/tns2:PAYLOAD>&lt;/tns2:LogExceptionHandler>&lt;/xsl:template>&lt;/xsl:stylesheet>"
                                     expressionLanguage="urn:oasis:names:tc:wsbpel:2.0:sublang:xslt1.0"
                                     inputVariable="StartLog-input"
                                     name="StartLog"
@@ -1478,11 +1565,11 @@
                                     <bpws:target linkName="OnMessageStartToStartLog"/>
                                     </bpws:targets>
                                     <bpws:sources>
-                                    <bpws:source linkName="StartLogToAddEmp_ProfOut"/>
+                                    <bpws:source linkName="StartLogToEmpProf_Sub"/>
                                     </bpws:sources>
                                     <tibex:inputBindings>
                                     <tibex:inputBinding coercion=""
-                                    expression="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xa;&lt;xsl:stylesheet xmlns:xsl=&quot;http://www.w3.org/1999/XSL/Transform&quot; xmlns:tns2=&quot;http://www.eniquesolution.com/E-Commerce/CommonFramework&quot; xmlns:tns=&quot;http://www.EniqueSol.org/Employee_Prof/V1&quot; xmlns:tib=&quot;http://www.tibco.com/bw/xslt/custom-functions&quot; version=&quot;2.0&quot;>&#xa;    &lt;xsl:param name=&quot;AddEmp_Prof.parameters&quot;/>&#xa;    &lt;xsl:param name=&quot;_processContext&quot;/>&#xa;    &lt;xsl:template name=&quot;StartLog-input&quot; match=&quot;/&quot;>&#xa;        &lt;tns2:LogExceptionHandler>&#xa;            &lt;tns2:ApplictionName>&#xa;                &lt;xsl:value-of select=&quot;$_processContext/ApplicationName&quot;/>&#xa;            &lt;/tns2:ApplictionName>&#xa;            &lt;tns2:ProcessName>&#xa;                &lt;xsl:value-of select=&quot;'Emp_Professional'&quot;/>&#xa;            &lt;/tns2:ProcessName>&#xa;            &lt;tns2:LogType>&#xa;                &lt;xsl:value-of select=&quot;'INFO'&quot;/>&#xa;            &lt;/tns2:LogType>&#xa;            &lt;tns2:status>&#xa;                &lt;xsl:value-of select=&quot;'Success'&quot;/>&#xa;            &lt;/tns2:status>&#xa;            &lt;tns2:CorrelationID>&#xa;                &lt;xsl:value-of select=&quot;$AddEmp_Prof.parameters/tns:CorelationID&quot;/>&#xa;            &lt;/tns2:CorrelationID>&#xa;            &lt;tns2:MessageType>&#xa;                &lt;xsl:value-of select=&quot;'RequestPayload'&quot;/>&#xa;            &lt;/tns2:MessageType>&#xa;            &lt;tns2:LogMessage>&#xa;                &lt;xsl:value-of select=&quot;'Emp_professional_Req'&quot;/>&#xa;            &lt;/tns2:LogMessage>&#xa;            &lt;tns2:Timestamp>&#xa;                &lt;xsl:value-of select=&quot;current-dateTime()&quot;/>&#xa;            &lt;/tns2:Timestamp>&#xa;            &lt;tns2:Payload>&#xa;                &lt;xsl:value-of select=&quot;tib:render-xml($AddEmp_Prof.parameters)&quot;/>&#xa;            &lt;/tns2:Payload>&#xa;        &lt;/tns2:LogExceptionHandler>&#xa;    &lt;/xsl:template>&#xa;&lt;/xsl:stylesheet>" expressionLanguage="urn:oasis:names:tc:wsbpel:2.0:sublang:xslt1.0"/>
+                                    expression="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xa;&lt;xsl:stylesheet xmlns:xsl=&quot;http://www.w3.org/1999/XSL/Transform&quot; xmlns:tns2=&quot;http://www.eniquesolution.com/E-Commerce/CommonFramework&quot; xmlns:tns=&quot;http://www.EniqueSol.org/Employee_Prof/V1&quot; xmlns:tib=&quot;http://www.tibco.com/bw/xslt/custom-functions&quot; version=&quot;2.0&quot;>&#xa;    &lt;xsl:param name=&quot;AddEmp_Prof.parameters&quot;/>&#xa;    &lt;xsl:param name=&quot;_processContext&quot;/>&#xa;    &lt;xsl:template name=&quot;StartLog-input&quot; match=&quot;/&quot;>&#xa;        &lt;tns2:LogExceptionHandler>&#xa;            &lt;tns2:ApplictionName>&#xa;                &lt;xsl:value-of select=&quot;$_processContext/ApplicationName&quot;/>&#xa;            &lt;/tns2:ApplictionName>&#xa;            &lt;tns2:ProcessName>&#xa;                &lt;xsl:value-of select=&quot;'Emp_Professional'&quot;/>&#xa;            &lt;/tns2:ProcessName>&#xa;            &lt;tns2:LogType>&#xa;                &lt;xsl:value-of select=&quot;'INFO'&quot;/>&#xa;            &lt;/tns2:LogType>&#xa;            &lt;tns2:status>&#xa;                &lt;xsl:value-of select=&quot;'Success'&quot;/>&#xa;            &lt;/tns2:status>&#xa;            &lt;tns2:CorrelationID>&#xa;                &lt;xsl:value-of select=&quot;$AddEmp_Prof.parameters/tns:CorelationID&quot;/>&#xa;            &lt;/tns2:CorrelationID>&#xa;            &lt;tns2:MessageType>&#xa;                &lt;xsl:value-of select=&quot;'RequestPayload'&quot;/>&#xa;            &lt;/tns2:MessageType>&#xa;            &lt;tns2:Timestamp>&#xa;                &lt;xsl:value-of select=&quot;current-dateTime()&quot;/>&#xa;            &lt;/tns2:Timestamp>&#xa;            &lt;tns2:PAYLOAD>&#xa;                &lt;xsl:value-of select=&quot;tib:render-xml($AddEmp_Prof.parameters)&quot;/>&#xa;            &lt;/tns2:PAYLOAD>&#xa;        &lt;/tns2:LogExceptionHandler>&#xa;    &lt;/xsl:template>&#xa;&lt;/xsl:stylesheet>" expressionLanguage="urn:oasis:names:tc:wsbpel:2.0:sublang:xslt1.0"/>
                                     </tibex:inputBindings>
                                     <tibex:CallProcess
                                     moduleRef="CommonInterface"
@@ -1492,7 +1579,7 @@
                             </bpws:extensionActivity>
                             <bpws:extensionActivity>
                                 <tibex:extActivity
-                                    expression="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xa;&lt;xsl:stylesheet xmlns:xsl=&quot;http://www.w3.org/1999/XSL/Transform&quot; xmlns:tns=&quot;http://www.EniqueSol.org/Employee_Prof/V1&quot; version=&quot;2.0&quot;>&lt;xsl:param name=&quot;AddEmp_Prof&quot;/>&lt;xsl:template name=&quot;EmpProf_Sub-input&quot; match=&quot;/&quot;>&lt;tns:Employee_Prof>&lt;tns:EmpCode>&lt;xsl:value-of select=&quot;$AddEmp_Prof/parameters/tns:Employee_ProfReq/tns:Employee_Prof/tns:EmpCode&quot;/>&lt;/tns:EmpCode>&lt;xsl:if test=&quot;$AddEmp_Prof/parameters/tns:Employee_ProfReq/tns:Employee_Prof/tns:Department&quot;>&lt;tns:Department>&lt;xsl:value-of select=&quot;$AddEmp_Prof/parameters/tns:Employee_ProfReq/tns:Employee_Prof/tns:Department&quot;/>&lt;/tns:Department>&lt;/xsl:if>&lt;xsl:if test=&quot;$AddEmp_Prof/parameters/tns:Employee_ProfReq/tns:Employee_Prof/tns:Reporting-To&quot;>&lt;tns:Reporting-To>&lt;xsl:value-of select=&quot;$AddEmp_Prof/parameters/tns:Employee_ProfReq/tns:Employee_Prof/tns:Reporting-To&quot;/>&lt;/tns:Reporting-To>&lt;/xsl:if>&lt;xsl:if test=&quot;$AddEmp_Prof/parameters/tns:Employee_ProfReq/tns:Employee_Prof/tns:Seating-Location&quot;>&lt;tns:Seating-Location>&lt;xsl:value-of select=&quot;$AddEmp_Prof/parameters/tns:Employee_ProfReq/tns:Employee_Prof/tns:Seating-Location&quot;/>&lt;/tns:Seating-Location>&lt;/xsl:if>&lt;xsl:if test=&quot;$AddEmp_Prof/parameters/tns:Employee_ProfReq/tns:Employee_Prof/tns:Location&quot;>&lt;tns:Location>&lt;xsl:value-of select=&quot;$AddEmp_Prof/parameters/tns:Employee_ProfReq/tns:Employee_Prof/tns:Location&quot;/>&lt;/tns:Location>&lt;/xsl:if>&lt;xsl:if test=&quot;$AddEmp_Prof/parameters/tns:Employee_ProfReq/tns:Employee_Prof/tns:Title&quot;>&lt;tns:Title>&lt;xsl:value-of select=&quot;$AddEmp_Prof/parameters/tns:Employee_ProfReq/tns:Employee_Prof/tns:Title&quot;/>&lt;/tns:Title>&lt;/xsl:if>&lt;xsl:if test=&quot;$AddEmp_Prof/parameters/tns:Employee_ProfReq/tns:Employee_Prof/tns:Date-of-joining&quot;>&lt;tns:Date-of-joining>&lt;xsl:value-of select=&quot;$AddEmp_Prof/parameters/tns:Employee_ProfReq/tns:Employee_Prof/tns:Date-of-joining&quot;/>&lt;/tns:Date-of-joining>&lt;/xsl:if>&lt;xsl:if test=&quot;$AddEmp_Prof/parameters/tns:Employee_ProfReq/tns:Employee_Prof/tns:Employee-status&quot;>&lt;tns:Employee-status>&lt;xsl:value-of select=&quot;$AddEmp_Prof/parameters/tns:Employee_ProfReq/tns:Employee_Prof/tns:Employee-status&quot;/>&lt;/tns:Employee-status>&lt;/xsl:if>&lt;xsl:if test=&quot;$AddEmp_Prof/parameters/tns:Employee_ProfReq/tns:Employee_Prof/tns:Employee-type&quot;>&lt;tns:Employee-type>&lt;xsl:value-of select=&quot;$AddEmp_Prof/parameters/tns:Employee_ProfReq/tns:Employee_Prof/tns:Employee-type&quot;/>&lt;/tns:Employee-type>&lt;/xsl:if>&lt;xsl:if test=&quot;$AddEmp_Prof/parameters/tns:Employee_ProfReq/tns:Employee_Prof/tns:Role&quot;>&lt;tns:Role>&lt;xsl:value-of select=&quot;$AddEmp_Prof/parameters/tns:Employee_ProfReq/tns:Employee_Prof/tns:Role&quot;/>&lt;/tns:Role>&lt;/xsl:if>&lt;xsl:if test=&quot;$AddEmp_Prof/parameters/tns:Employee_ProfReq/tns:Employee_Prof/tns:Experience&quot;>&lt;tns:Experience>&lt;xsl:value-of select=&quot;$AddEmp_Prof/parameters/tns:Employee_ProfReq/tns:Employee_Prof/tns:Experience&quot;/>&lt;/tns:Experience>&lt;/xsl:if>&lt;/tns:Employee_Prof>&lt;/xsl:template>&lt;/xsl:stylesheet>"
+                                    expression="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xa;&lt;xsl:stylesheet xmlns:xsl=&quot;http://www.w3.org/1999/XSL/Transform&quot; xmlns:tns=&quot;http://www.EniqueSol.org/Employee_Prof/V1&quot; version=&quot;2.0&quot;>&#xa;    &lt;xsl:param name=&quot;AddEmp_Prof&quot;/>&#xa;    &lt;xsl:template name=&quot;EmpProf_Sub-input&quot; match=&quot;/&quot;>&#xa;        &lt;tns:Employee_Prof>&#xa;            &lt;xsl:if test=&quot;$AddEmp_Prof/parameters/tns:Employee_ProfReq/tns:Employee_Prof/tns:EmpCode&quot;>&#xa;                &lt;tns:EmpCode>&#xa;                    &lt;xsl:value-of select=&quot;$AddEmp_Prof/parameters/tns:Employee_ProfReq/tns:Employee_Prof/tns:EmpCode&quot;/>&#xa;                &lt;/tns:EmpCode>&#xa;            &lt;/xsl:if>&#xa;            &lt;xsl:if test=&quot;$AddEmp_Prof/parameters/tns:Employee_ProfReq/tns:Employee_Prof/tns:Department&quot;>&#xa;                &lt;tns:Department>&#xa;                    &lt;xsl:value-of select=&quot;$AddEmp_Prof/parameters/tns:Employee_ProfReq/tns:Employee_Prof/tns:Department&quot;/>&#xa;                &lt;/tns:Department>&#xa;            &lt;/xsl:if>&#xa;            &lt;xsl:if test=&quot;$AddEmp_Prof/parameters/tns:Employee_ProfReq/tns:Employee_Prof/tns:Reporting-To&quot;>&#xa;                &lt;tns:Reporting-To>&#xa;                    &lt;xsl:value-of select=&quot;$AddEmp_Prof/parameters/tns:Employee_ProfReq/tns:Employee_Prof/tns:Reporting-To&quot;/>&#xa;                &lt;/tns:Reporting-To>&#xa;            &lt;/xsl:if>&#xa;            &lt;xsl:if test=&quot;$AddEmp_Prof/parameters/tns:Employee_ProfReq/tns:Employee_Prof/tns:Seating-Location&quot;>&#xa;                &lt;tns:Seating-Location>&#xa;                    &lt;xsl:value-of select=&quot;$AddEmp_Prof/parameters/tns:Employee_ProfReq/tns:Employee_Prof/tns:Seating-Location&quot;/>&#xa;                &lt;/tns:Seating-Location>&#xa;            &lt;/xsl:if>&#xa;            &lt;xsl:if test=&quot;$AddEmp_Prof/parameters/tns:Employee_ProfReq/tns:Employee_Prof/tns:Location&quot;>&#xa;                &lt;tns:Location>&#xa;                    &lt;xsl:value-of select=&quot;$AddEmp_Prof/parameters/tns:Employee_ProfReq/tns:Employee_Prof/tns:Location&quot;/>&#xa;                &lt;/tns:Location>&#xa;            &lt;/xsl:if>&#xa;            &lt;xsl:if test=&quot;$AddEmp_Prof/parameters/tns:Employee_ProfReq/tns:Employee_Prof/tns:Title&quot;>&#xa;                &lt;tns:Title>&#xa;                    &lt;xsl:value-of select=&quot;$AddEmp_Prof/parameters/tns:Employee_ProfReq/tns:Employee_Prof/tns:Title&quot;/>&#xa;                &lt;/tns:Title>&#xa;            &lt;/xsl:if>&#xa;            &lt;xsl:if test=&quot;$AddEmp_Prof/parameters/tns:Employee_ProfReq/tns:Employee_Prof/tns:Date-of-joining&quot;>&#xa;                &lt;tns:Date-of-joining>&#xa;                    &lt;xsl:value-of select=&quot;$AddEmp_Prof/parameters/tns:Employee_ProfReq/tns:Employee_Prof/tns:Date-of-joining&quot;/>&#xa;                &lt;/tns:Date-of-joining>&#xa;            &lt;/xsl:if>&#xa;            &lt;xsl:if test=&quot;$AddEmp_Prof/parameters/tns:Employee_ProfReq/tns:Employee_Prof/tns:Employee-status&quot;>&#xa;                &lt;tns:Employee-status>&#xa;                    &lt;xsl:value-of select=&quot;$AddEmp_Prof/parameters/tns:Employee_ProfReq/tns:Employee_Prof/tns:Employee-status&quot;/>&#xa;                &lt;/tns:Employee-status>&#xa;            &lt;/xsl:if>&#xa;            &lt;xsl:if test=&quot;$AddEmp_Prof/parameters/tns:Employee_ProfReq/tns:Employee_Prof/tns:Employee-type&quot;>&#xa;                &lt;tns:Employee-type>&#xa;                    &lt;xsl:value-of select=&quot;$AddEmp_Prof/parameters/tns:Employee_ProfReq/tns:Employee_Prof/tns:Employee-type&quot;/>&#xa;                &lt;/tns:Employee-type>&#xa;            &lt;/xsl:if>&#xa;            &lt;xsl:if test=&quot;$AddEmp_Prof/parameters/tns:Employee_ProfReq/tns:Employee_Prof/tns:Role&quot;>&#xa;                &lt;tns:Role>&#xa;                    &lt;xsl:value-of select=&quot;$AddEmp_Prof/parameters/tns:Employee_ProfReq/tns:Employee_Prof/tns:Role&quot;/>&#xa;                &lt;/tns:Role>&#xa;            &lt;/xsl:if>&#xa;            &lt;xsl:if test=&quot;$AddEmp_Prof/parameters/tns:Employee_ProfReq/tns:Employee_Prof/tns:Experience&quot;>&#xa;                &lt;tns:Experience>&#xa;                    &lt;xsl:value-of select=&quot;$AddEmp_Prof/parameters/tns:Employee_ProfReq/tns:Employee_Prof/tns:Experience&quot;/>&#xa;                &lt;/tns:Experience>&#xa;            &lt;/xsl:if>&#xa;        &lt;/tns:Employee_Prof>&#xa;    &lt;/xsl:template>&#xa;&lt;/xsl:stylesheet>"
                                     expressionLanguage="urn:oasis:names:tc:wsbpel:2.0:sublang:xslt1.0"
                                     inputVariable="EmpProf_Sub-input"
                                     name="EmpProf_Sub"
@@ -1500,14 +1587,14 @@
                                     tibex:xpdlId="4d69ae4e-78ba-454e-b4c4-cc5b65cd0e86"
                                     type="bw.generalactivities.callprocess" xmlns:tibex="http://www.tibco.com/bpel/2007/extensions">
                                     <bpws:targets>
-                                    <bpws:target linkName="AddEmp_ProfOutToEmpProf_Sub"/>
+                                    <bpws:target linkName="StartLogToEmpProf_Sub"/>
                                     </bpws:targets>
                                     <bpws:sources>
                                     <bpws:source linkName="EmpProf_SubToLogHandler"/>
                                     </bpws:sources>
                                     <tibex:inputBindings>
                                     <tibex:inputBinding coercion=""
-                                    expression="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xa;&lt;xsl:stylesheet xmlns:xsl=&quot;http://www.w3.org/1999/XSL/Transform&quot; xmlns:tns=&quot;http://www.EniqueSol.org/Employee_Prof/V1&quot; version=&quot;2.0&quot;>&#xa;    &lt;xsl:param name=&quot;AddEmp_Prof.parameters&quot;/>&#xa;    &lt;xsl:template name=&quot;EmpProf_Sub-input&quot; match=&quot;/&quot;>&#xa;        &lt;tns:Employee_Prof>&#xa;            &lt;tns:EmpCode>&#xa;                &lt;xsl:value-of select=&quot;$AddEmp_Prof.parameters/tns:Employee_Prof/tns:EmpCode&quot;/>&#xa;            &lt;/tns:EmpCode>&#xa;            &lt;xsl:if test=&quot;$AddEmp_Prof.parameters/tns:Employee_Prof/tns:Department&quot;>&#xa;                &lt;tns:Department>&#xa;                    &lt;xsl:value-of select=&quot;$AddEmp_Prof.parameters/tns:Employee_Prof/tns:Department&quot;/>&#xa;                &lt;/tns:Department>&#xa;            &lt;/xsl:if>&#xa;            &lt;xsl:if test=&quot;$AddEmp_Prof.parameters/tns:Employee_Prof/tns:Reporting-To&quot;>&#xa;                &lt;tns:Reporting-To>&#xa;                    &lt;xsl:value-of select=&quot;$AddEmp_Prof.parameters/tns:Employee_Prof/tns:Reporting-To&quot;/>&#xa;                &lt;/tns:Reporting-To>&#xa;            &lt;/xsl:if>&#xa;            &lt;xsl:if test=&quot;$AddEmp_Prof.parameters/tns:Employee_Prof/tns:Seating-Location&quot;>&#xa;                &lt;tns:Seating-Location>&#xa;                    &lt;xsl:value-of select=&quot;$AddEmp_Prof.parameters/tns:Employee_Prof/tns:Seating-Location&quot;/>&#xa;                &lt;/tns:Seating-Location>&#xa;            &lt;/xsl:if>&#xa;            &lt;xsl:if test=&quot;$AddEmp_Prof.parameters/tns:Employee_Prof/tns:Location&quot;>&#xa;                &lt;tns:Location>&#xa;                    &lt;xsl:value-of select=&quot;$AddEmp_Prof.parameters/tns:Employee_Prof/tns:Location&quot;/>&#xa;                &lt;/tns:Location>&#xa;            &lt;/xsl:if>&#xa;            &lt;xsl:if test=&quot;$AddEmp_Prof.parameters/tns:Employee_Prof/tns:Title&quot;>&#xa;                &lt;tns:Title>&#xa;                    &lt;xsl:value-of select=&quot;$AddEmp_Prof.parameters/tns:Employee_Prof/tns:Title&quot;/>&#xa;                &lt;/tns:Title>&#xa;            &lt;/xsl:if>&#xa;            &lt;xsl:if test=&quot;$AddEmp_Prof.parameters/tns:Employee_Prof/tns:Date-of-joining&quot;>&#xa;                &lt;tns:Date-of-joining>&#xa;                    &lt;xsl:value-of select=&quot;$AddEmp_Prof.parameters/tns:Employee_Prof/tns:Date-of-joining&quot;/>&#xa;                &lt;/tns:Date-of-joining>&#xa;            &lt;/xsl:if>&#xa;            &lt;xsl:if test=&quot;$AddEmp_Prof.parameters/tns:Employee_Prof/tns:Employee-status&quot;>&#xa;                &lt;tns:Employee-status>&#xa;                    &lt;xsl:value-of select=&quot;$AddEmp_Prof.parameters/tns:Employee_Prof/tns:Employee-status&quot;/>&#xa;                &lt;/tns:Employee-status>&#xa;            &lt;/xsl:if>&#xa;            &lt;xsl:if test=&quot;$AddEmp_Prof.parameters/tns:Employee_Prof/tns:Employee-type&quot;>&#xa;                &lt;tns:Employee-type>&#xa;                    &lt;xsl:value-of select=&quot;$AddEmp_Prof.parameters/tns:Employee_Prof/tns:Employee-type&quot;/>&#xa;                &lt;/tns:Employee-type>&#xa;            &lt;/xsl:if>&#xa;            &lt;xsl:if test=&quot;$AddEmp_Prof.parameters/tns:Employee_Prof/tns:Role&quot;>&#xa;                &lt;tns:Role>&#xa;                    &lt;xsl:value-of select=&quot;$AddEmp_Prof.parameters/tns:Employee_Prof/tns:Role&quot;/>&#xa;                &lt;/tns:Role>&#xa;            &lt;/xsl:if>&#xa;            &lt;xsl:if test=&quot;$AddEmp_Prof.parameters/tns:Employee_Prof/tns:Experience&quot;>&#xa;                &lt;tns:Experience>&#xa;                    &lt;xsl:value-of select=&quot;$AddEmp_Prof.parameters/tns:Employee_Prof/tns:Experience&quot;/>&#xa;                &lt;/tns:Experience>&#xa;            &lt;/xsl:if>&#xa;        &lt;/tns:Employee_Prof>&#xa;    &lt;/xsl:template>&#xa;&lt;/xsl:stylesheet>" expressionLanguage="urn:oasis:names:tc:wsbpel:2.0:sublang:xslt1.0"/>
+                                    expression="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xa;&lt;xsl:stylesheet xmlns:xsl=&quot;http://www.w3.org/1999/XSL/Transform&quot; xmlns:tns=&quot;http://www.EniqueSol.org/Employee_Prof/V1&quot; version=&quot;2.0&quot;>&lt;xsl:param name=&quot;AddEmp_Prof.parameters&quot;/>&lt;xsl:template name=&quot;EmpProf_Sub-input&quot; match=&quot;/&quot;>&lt;tns:Employee_Prof>&lt;xsl:if test=&quot;$AddEmp_Prof.parameters/tns:Employee_Prof/tns:EmpCode&quot;>&lt;tns:EmpCode>&lt;xsl:value-of select=&quot;$AddEmp_Prof.parameters/tns:Employee_Prof/tns:EmpCode&quot;/>&lt;/tns:EmpCode>&lt;/xsl:if>&lt;xsl:if test=&quot;$AddEmp_Prof.parameters/tns:Employee_Prof/tns:Department&quot;>&lt;tns:Department>&lt;xsl:value-of select=&quot;$AddEmp_Prof.parameters/tns:Employee_Prof/tns:Department&quot;/>&lt;/tns:Department>&lt;/xsl:if>&lt;xsl:if test=&quot;$AddEmp_Prof.parameters/tns:Employee_Prof/tns:Reporting-To&quot;>&lt;tns:Reporting-To>&lt;xsl:value-of select=&quot;$AddEmp_Prof.parameters/tns:Employee_Prof/tns:Reporting-To&quot;/>&lt;/tns:Reporting-To>&lt;/xsl:if>&lt;xsl:if test=&quot;$AddEmp_Prof.parameters/tns:Employee_Prof/tns:Seating-Location&quot;>&lt;tns:Seating-Location>&lt;xsl:value-of select=&quot;$AddEmp_Prof.parameters/tns:Employee_Prof/tns:Seating-Location&quot;/>&lt;/tns:Seating-Location>&lt;/xsl:if>&lt;xsl:if test=&quot;$AddEmp_Prof.parameters/tns:Employee_Prof/tns:Location&quot;>&lt;tns:Location>&lt;xsl:value-of select=&quot;$AddEmp_Prof.parameters/tns:Employee_Prof/tns:Location&quot;/>&lt;/tns:Location>&lt;/xsl:if>&lt;xsl:if test=&quot;$AddEmp_Prof.parameters/tns:Employee_Prof/tns:Title&quot;>&lt;tns:Title>&lt;xsl:value-of select=&quot;$AddEmp_Prof.parameters/tns:Employee_Prof/tns:Title&quot;/>&lt;/tns:Title>&lt;/xsl:if>&lt;xsl:if test=&quot;$AddEmp_Prof.parameters/tns:Employee_Prof/tns:Date-of-joining&quot;>&lt;tns:Date-of-joining>&lt;xsl:value-of select=&quot;$AddEmp_Prof.parameters/tns:Employee_Prof/tns:Date-of-joining&quot;/>&lt;/tns:Date-of-joining>&lt;/xsl:if>&lt;xsl:if test=&quot;$AddEmp_Prof.parameters/tns:Employee_Prof/tns:Employee-status&quot;>&lt;tns:Employee-status>&lt;xsl:value-of select=&quot;$AddEmp_Prof.parameters/tns:Employee_Prof/tns:Employee-status&quot;/>&lt;/tns:Employee-status>&lt;/xsl:if>&lt;xsl:if test=&quot;$AddEmp_Prof.parameters/tns:Employee_Prof/tns:Employee-type&quot;>&lt;tns:Employee-type>&lt;xsl:value-of select=&quot;$AddEmp_Prof.parameters/tns:Employee_Prof/tns:Employee-type&quot;/>&lt;/tns:Employee-type>&lt;/xsl:if>&lt;xsl:if test=&quot;$AddEmp_Prof.parameters/tns:Employee_Prof/tns:Role&quot;>&lt;tns:Role>&lt;xsl:value-of select=&quot;$AddEmp_Prof.parameters/tns:Employee_Prof/tns:Role&quot;/>&lt;/tns:Role>&lt;/xsl:if>&lt;xsl:if test=&quot;$AddEmp_Prof.parameters/tns:Employee_Prof/tns:Experience&quot;>&lt;tns:Experience>&lt;xsl:value-of select=&quot;$AddEmp_Prof.parameters/tns:Employee_Prof/tns:Experience&quot;/>&lt;/tns:Experience>&lt;/xsl:if>&lt;/tns:Employee_Prof>&lt;/xsl:template>&lt;/xsl:stylesheet>" expressionLanguage="urn:oasis:names:tc:wsbpel:2.0:sublang:xslt1.0"/>
                                     </tibex:inputBindings>
                                     <tibex:CallProcess
                                     subProcessName="SubProcesses.EmpProf_Sub" xmlns:tibex="http://www.tibco.com/bpel/2007/extensions"/>
@@ -1515,7 +1602,7 @@
                             </bpws:extensionActivity>
                             <bpws:extensionActivity>
                                 <tibex:extActivity
-                                    expression="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xa;&lt;xsl:stylesheet xmlns:xsl=&quot;http://www.w3.org/1999/XSL/Transform&quot; xmlns:tns2=&quot;http://www.eniquesolution.com/E-Commerce/CommonFramework&quot; xmlns:tib=&quot;http://www.tibco.com/bw/xslt/custom-functions&quot; xmlns:tns=&quot;http://www.EniqueSol.org/Employee_Prof/V1&quot; version=&quot;2.0&quot;>&lt;xsl:param name=&quot;_processContext&quot;/>&lt;xsl:param name=&quot;EmpProf_Sub&quot;/>&lt;xsl:param name=&quot;AddEmp_Prof&quot;/>&lt;xsl:template name=&quot;EndLog-input&quot; match=&quot;/&quot;>&lt;tns2:LogExceptionHandler>&lt;tns2:ApplictionName>&lt;xsl:value-of select=&quot;$_processContext/ApplicationName&quot;/>&lt;/tns2:ApplictionName>&lt;tns2:ProcessName>&lt;xsl:value-of select=&quot;'Emp_Professional'&quot;/>&lt;/tns2:ProcessName>&lt;tns2:LogType>&lt;xsl:value-of select=&quot;'INFO'&quot;/>&lt;/tns2:LogType>&lt;tns2:status>&lt;xsl:value-of select=&quot;'Success'&quot;/>&lt;/tns2:status>&lt;tns2:CorrelationID>&lt;xsl:value-of select=&quot;$AddEmp_Prof/parameters/tns:Employee_ProfReq/tns:CorelationID&quot;/>&lt;/tns2:CorrelationID>&lt;tns2:MessageType>&lt;xsl:value-of select=&quot;'ResponsePayload'&quot;/>&lt;/tns2:MessageType>&lt;tns2:LogMessage>&lt;xsl:value-of select=&quot;'Emp_professional_Res'&quot;/>&lt;/tns2:LogMessage>&lt;tns2:Timestamp>&lt;xsl:value-of select=&quot;current-dateTime()&quot;/>&lt;/tns2:Timestamp>&lt;tns2:Payload>&lt;xsl:value-of select=&quot;tib:render-xml($EmpProf_Sub)&quot;/>&lt;/tns2:Payload>&lt;/tns2:LogExceptionHandler>&lt;/xsl:template>&lt;/xsl:stylesheet>"
+                                    expression="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xa;&lt;xsl:stylesheet xmlns:xsl=&quot;http://www.w3.org/1999/XSL/Transform&quot; xmlns:tns2=&quot;http://www.eniquesolution.com/E-Commerce/CommonFramework&quot; xmlns:tns=&quot;http://www.EniqueSol.org/Employee_Prof/V1&quot; xmlns:tib=&quot;http://www.tibco.com/bw/xslt/custom-functions&quot; version=&quot;2.0&quot;>&lt;xsl:param name=&quot;_processContext&quot;/>&lt;xsl:param name=&quot;EmpProf_Sub&quot;/>&lt;xsl:param name=&quot;AddEmp_Prof&quot;/>&lt;xsl:template name=&quot;EndLog-input&quot; match=&quot;/&quot;>&lt;tns2:LogExceptionHandler>&lt;tns2:ApplictionName>&lt;xsl:value-of select=&quot;$_processContext/ApplicationName&quot;/>&lt;/tns2:ApplictionName>&lt;tns2:ProcessName>&lt;xsl:value-of select=&quot;'Emp_Professional'&quot;/>&lt;/tns2:ProcessName>&lt;tns2:LogType>&lt;xsl:value-of select=&quot;'INFO'&quot;/>&lt;/tns2:LogType>&lt;tns2:status>&lt;xsl:value-of select=&quot;'Success'&quot;/>&lt;/tns2:status>&lt;tns2:CorrelationID>&lt;xsl:value-of select=&quot;$AddEmp_Prof/parameters/tns:Employee_ProfReq/tns:CorelationID&quot;/>&lt;/tns2:CorrelationID>&lt;tns2:MessageType>&lt;xsl:value-of select=&quot;'ResponsePayload'&quot;/>&lt;/tns2:MessageType>&lt;tns2:Timestamp>&lt;xsl:value-of select=&quot;current-dateTime()&quot;/>&lt;/tns2:Timestamp>&lt;tns2:PAYLOAD>&lt;xsl:value-of select=&quot;tib:render-xml($EmpProf_Sub)&quot;/>&lt;/tns2:PAYLOAD>&lt;/tns2:LogExceptionHandler>&lt;/xsl:template>&lt;/xsl:stylesheet>"
                                     expressionLanguage="urn:oasis:names:tc:wsbpel:2.0:sublang:xslt1.0"
                                     inputVariable="EndLog-input"
                                     name="EndLog"
@@ -1529,7 +1616,7 @@
                                     </bpws:sources>
                                     <tibex:inputBindings>
                                     <tibex:inputBinding coercion=""
-                                    expression="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xa;&lt;xsl:stylesheet xmlns:xsl=&quot;http://www.w3.org/1999/XSL/Transform&quot; xmlns:tns2=&quot;http://www.eniquesolution.com/E-Commerce/CommonFramework&quot; xmlns:tib=&quot;http://www.tibco.com/bw/xslt/custom-functions&quot; xmlns:tns=&quot;http://www.EniqueSol.org/Employee_Prof/V1&quot; version=&quot;2.0&quot;>&#xa;    &lt;xsl:param name=&quot;AddEmp_Prof.parameters&quot;/>&#xa;    &lt;xsl:param name=&quot;_processContext&quot;/>&#xa;    &lt;xsl:param name=&quot;EmpProf_Sub&quot;/>&#xa;    &lt;xsl:template name=&quot;EndLog-input&quot; match=&quot;/&quot;>&#xa;        &lt;tns2:LogExceptionHandler>&#xa;            &lt;tns2:ApplictionName>&#xa;                &lt;xsl:value-of select=&quot;$_processContext/ApplicationName&quot;/>&#xa;            &lt;/tns2:ApplictionName>&#xa;            &lt;tns2:ProcessName>&#xa;                &lt;xsl:value-of select=&quot;'Emp_Professional'&quot;/>&#xa;            &lt;/tns2:ProcessName>&#xa;            &lt;tns2:LogType>&#xa;                &lt;xsl:value-of select=&quot;'INFO'&quot;/>&#xa;            &lt;/tns2:LogType>&#xa;            &lt;tns2:status>&#xa;                &lt;xsl:value-of select=&quot;'Success'&quot;/>&#xa;            &lt;/tns2:status>&#xa;            &lt;tns2:CorrelationID>&#xa;                &lt;xsl:value-of select=&quot;$AddEmp_Prof.parameters/tns:CorelationID&quot;/>&#xa;            &lt;/tns2:CorrelationID>&#xa;            &lt;tns2:MessageType>&#xa;                &lt;xsl:value-of select=&quot;'ResponsePayload'&quot;/>&#xa;            &lt;/tns2:MessageType>&#xa;            &lt;tns2:LogMessage>&#xa;                &lt;xsl:value-of select=&quot;'Emp_professional_Res'&quot;/>&#xa;            &lt;/tns2:LogMessage>&#xa;            &lt;tns2:Timestamp>&#xa;                &lt;xsl:value-of select=&quot;current-dateTime()&quot;/>&#xa;            &lt;/tns2:Timestamp>&#xa;            &lt;tns2:Payload>&#xa;                &lt;xsl:value-of select=&quot;tib:render-xml($EmpProf_Sub)&quot;/>&#xa;            &lt;/tns2:Payload>&#xa;        &lt;/tns2:LogExceptionHandler>&#xa;    &lt;/xsl:template>&#xa;&lt;/xsl:stylesheet>" expressionLanguage="urn:oasis:names:tc:wsbpel:2.0:sublang:xslt1.0"/>
+                                    expression="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xa;&lt;xsl:stylesheet xmlns:xsl=&quot;http://www.w3.org/1999/XSL/Transform&quot; xmlns:tns2=&quot;http://www.eniquesolution.com/E-Commerce/CommonFramework&quot; xmlns:tns=&quot;http://www.EniqueSol.org/Employee_Prof/V1&quot; xmlns:tib=&quot;http://www.tibco.com/bw/xslt/custom-functions&quot; version=&quot;2.0&quot;>&#xa;    &lt;xsl:param name=&quot;AddEmp_Prof.parameters&quot;/>&#xa;    &lt;xsl:param name=&quot;_processContext&quot;/>&#xa;    &lt;xsl:param name=&quot;EmpProf_Sub&quot;/>&#xa;    &lt;xsl:template name=&quot;EndLog-input&quot; match=&quot;/&quot;>&#xa;        &lt;tns2:LogExceptionHandler>&#xa;            &lt;tns2:ApplictionName>&#xa;                &lt;xsl:value-of select=&quot;$_processContext/ApplicationName&quot;/>&#xa;            &lt;/tns2:ApplictionName>&#xa;            &lt;tns2:ProcessName>&#xa;                &lt;xsl:value-of select=&quot;'Emp_Professional'&quot;/>&#xa;            &lt;/tns2:ProcessName>&#xa;            &lt;tns2:LogType>&#xa;                &lt;xsl:value-of select=&quot;'INFO'&quot;/>&#xa;            &lt;/tns2:LogType>&#xa;            &lt;tns2:status>&#xa;                &lt;xsl:value-of select=&quot;'Success'&quot;/>&#xa;            &lt;/tns2:status>&#xa;            &lt;tns2:CorrelationID>&#xa;                &lt;xsl:value-of select=&quot;$AddEmp_Prof.parameters/tns:CorelationID&quot;/>&#xa;            &lt;/tns2:CorrelationID>&#xa;            &lt;tns2:MessageType>&#xa;                &lt;xsl:value-of select=&quot;'ResponsePayload'&quot;/>&#xa;            &lt;/tns2:MessageType>&#xa;            &lt;tns2:Timestamp>&#xa;                &lt;xsl:value-of select=&quot;current-dateTime()&quot;/>&#xa;            &lt;/tns2:Timestamp>&#xa;            &lt;tns2:PAYLOAD>&#xa;                &lt;xsl:value-of select=&quot;tib:render-xml($EmpProf_Sub)&quot;/>&#xa;            &lt;/tns2:PAYLOAD>&#xa;        &lt;/tns2:LogExceptionHandler>&#xa;    &lt;/xsl:template>&#xa;&lt;/xsl:stylesheet>" expressionLanguage="urn:oasis:names:tc:wsbpel:2.0:sublang:xslt1.0"/>
                                     </tibex:inputBindings>
                                     <tibex:CallProcess
                                     moduleRef="CommonInterface"
@@ -1544,16 +1631,13 @@
                                 tibex:xpdlId="a942d418-24c5-4254-aa52-7714a3206581" variable="AddEmp_ProfOut-input">
                                 <tibex:inputBindings>
                                     <tibex:partBinding
-                                    expression="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xa;&lt;xsl:stylesheet xmlns:xsl=&quot;http://www.w3.org/1999/XSL/Transform&quot; xmlns:tns1=&quot;http://www.EniqueSol.com/Abstract/V1/Emp_Professional/&quot; xmlns:tns=&quot;http://www.EniqueSol.org/Employee_Prof/V1&quot; version=&quot;2.0&quot;>&#xa;    &lt;xsl:param name=&quot;AddEmp_Prof.parameters&quot;/>&#xa;    &lt;xsl:param name=&quot;SucessErrCode&quot;/>&#xa;    &lt;xsl:template name=&quot;AddEmp_ProfOut-input&quot; match=&quot;/&quot;>&#xa;        &lt;tns:Employee_ProfRes>&#xa;            &lt;tns:ResCode>&#xa;                &lt;xsl:value-of select=&quot;$SucessErrCode&quot;/>&#xa;            &lt;/tns:ResCode>&#xa;            &lt;tns:ResMsg>&#xa;                &lt;xsl:value-of select=&quot;concat('Emp_Professional process was Recivied with following CorelationID: ', $AddEmp_Prof.parameters/tns:CorelationID,'.......Check Log for further Details')&quot;/>&#xa;            &lt;/tns:ResMsg>&#xa;        &lt;/tns:Employee_ProfRes>&#xa;    &lt;/xsl:template>&#xa;&lt;/xsl:stylesheet>" expressionLanguage="urn:oasis:names:tc:wsbpel:2.0:sublang:xslt1.0"/>
+                                    expression="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xa;&lt;xsl:stylesheet xmlns:xsl=&quot;http://www.w3.org/1999/XSL/Transform&quot; xmlns:tns1=&quot;http://www.EniqueSol.com/Abstract/V1/Emp_Professional/&quot; xmlns:tns=&quot;http://www.EniqueSol.org/Employee_Prof/V1&quot; version=&quot;2.0&quot;>&#xa;    &lt;xsl:param name=&quot;AddEmp_Prof.parameters&quot;/>&#xa;    &lt;xsl:param name=&quot;SucessErrCode&quot;/>&#xa;    &lt;xsl:template name=&quot;AddEmp_ProfOut-input&quot; match=&quot;/&quot;>&#xa;        &lt;tns:Employee_ProfRes>&#xa;            &lt;tns:ResCode>&#xa;                &lt;xsl:value-of select=&quot;$SucessErrCode&quot;/>&#xa;            &lt;/tns:ResCode>&#xa;            &lt;tns:ResMsg>&#xa;                &lt;xsl:value-of select=&quot;concat('Professional Details inserted for employee: ',$AddEmp_Prof.parameters/tns:Employee_Prof/tns:EmpCode)&quot;/>&#xa;            &lt;/tns:ResMsg>&#xa;        &lt;/tns:Employee_ProfRes>&#xa;    &lt;/xsl:template>&#xa;&lt;/xsl:stylesheet>" expressionLanguage="urn:oasis:names:tc:wsbpel:2.0:sublang:xslt1.0"/>
                                 </tibex:inputBindings>
                                 <tibex:inputBinding expressionLanguage="urn:oasis:names:tc:wsbpel:2.0:sublang:xslt1.0">&lt;?xml version="1.0" encoding="UTF-8"?&gt;
-&lt;xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:tns1="http://www.EniqueSol.com/Abstract/V1/Emp_Professional/" xmlns:tns="http://www.EniqueSol.org/Employee_Prof/V1" version="2.0"&gt;&lt;xsl:param name="SucessErrCode"/&gt;&lt;xsl:param name="AddEmp_Prof"/&gt;&lt;xsl:template name="AddEmp_ProfOut-input" match="/"&gt;&lt;tns1:AddEmp_ProfResponse&gt;&lt;parameters&gt;&lt;tns:Employee_ProfRes&gt;&lt;tns:ResCode&gt;&lt;xsl:value-of select="$SucessErrCode"/&gt;&lt;/tns:ResCode&gt;&lt;tns:ResMsg&gt;&lt;xsl:value-of select="concat('Emp_Professional process was Recivied with following CorelationID: ', $AddEmp_Prof/parameters/tns:Employee_ProfReq/tns:CorelationID,'.......Check Log for further Details')"/&gt;&lt;/tns:ResMsg&gt;&lt;/tns:Employee_ProfRes&gt;&lt;/parameters&gt;&lt;/tns1:AddEmp_ProfResponse&gt;&lt;/xsl:template&gt;&lt;/xsl:stylesheet&gt;</tibex:inputBinding>
+&lt;xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:tns1="http://www.EniqueSol.com/Abstract/V1/Emp_Professional/" xmlns:tns="http://www.EniqueSol.org/Employee_Prof/V1" version="2.0"&gt;&lt;xsl:param name="SucessErrCode"/&gt;&lt;xsl:param name="AddEmp_Prof"/&gt;&lt;xsl:template name="AddEmp_ProfOut-input" match="/"&gt;&lt;tns1:AddEmp_ProfResponse&gt;&lt;parameters&gt;&lt;tns:Employee_ProfRes&gt;&lt;tns:ResCode&gt;&lt;xsl:value-of select="$SucessErrCode"/&gt;&lt;/tns:ResCode&gt;&lt;tns:ResMsg&gt;&lt;xsl:value-of select="concat('Professional Details inserted for employee: ',$AddEmp_Prof/parameters/tns:Employee_ProfReq/tns:Employee_Prof/tns:EmpCode)"/&gt;&lt;/tns:ResMsg&gt;&lt;/tns:Employee_ProfRes&gt;&lt;/parameters&gt;&lt;/tns1:AddEmp_ProfResponse&gt;&lt;/xsl:template&gt;&lt;/xsl:stylesheet&gt;</tibex:inputBinding>
                                 <bpws:targets>
-                                    <bpws:target linkName="StartLogToAddEmp_ProfOut"/>
+                                    <bpws:target linkName="InsertResponseToAddEmp_ProfOut"/>
                                 </bpws:targets>
-                                <bpws:sources>
-                                    <bpws:source linkName="AddEmp_ProfOutToEmpProf_Sub"/>
-                                </bpws:sources>
                                 <bpws:correlations/>
                             </bpws:reply>
                             <bpws:extensionActivity>
@@ -1567,7 +1651,9 @@
                                     <bpws:targets>
                                     <bpws:target linkName="EndLogToInsertResponse"/>
                                     </bpws:targets>
-                                    <bpws:sources/>
+                                    <bpws:sources>
+                                    <bpws:source linkName="InsertResponseToAddEmp_ProfOut"/>
+                                    </bpws:sources>
                                     <tibex:inputBindings>
                                     <tibex:inputBinding
                                     expression="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xa;&lt;xsl:stylesheet xmlns:xsl=&quot;http://www.w3.org/1999/XSL/Transform&quot; xmlns:tns5=&quot;http://www.tibco.com/namespaces/tnt/plugins/jdbc+8dda5cf4-74eb-43e6-9916-4e5cc63d81e2+input&quot; xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot; xmlns:tns=&quot;http://www.EniqueSol.org/Employee_Prof/V1&quot; version=&quot;2.0&quot;>&#xa;    &lt;xsl:param name=&quot;AddEmp_Prof.parameters&quot;/>&#xa;    &lt;xsl:param name=&quot;EmpProf_Sub&quot;/>&#xa;    &lt;xsl:template name=&quot;InsertResponse-input&quot; match=&quot;/&quot;>&#xa;        &lt;tns5:jdbcUpdateActivityInput>&#xa;            &lt;ProcessName>&#xa;                &lt;xsl:value-of select=&quot;'Emp_Professional'&quot;/>&#xa;            &lt;/ProcessName>&#xa;            &lt;ResponseCode>&#xa;                &lt;xsl:value-of select=&quot;$EmpProf_Sub/tns:ResCode&quot;/>&#xa;            &lt;/ResponseCode>&#xa;            &lt;ResponseMsg>&#xa;                &lt;xsl:value-of select=&quot;$EmpProf_Sub/tns:ResMsg&quot;/>&#xa;            &lt;/ResponseMsg>&#xa;            &lt;CorelationID>&#xa;                &lt;xsl:choose>&#xa;                    &lt;xsl:when test=&quot;exists($AddEmp_Prof.parameters/tns:CorelationID)&quot;>&#xa;                        &lt;xsl:value-of select=&quot;$AddEmp_Prof.parameters/tns:CorelationID&quot;/>&#xa;                    &lt;/xsl:when>&#xa;                    &lt;xsl:otherwise>&#xa;                        &lt;xsl:attribute name=&quot;xsi:nil&quot;>true&lt;/xsl:attribute>&#xa;                    &lt;/xsl:otherwise>&#xa;                &lt;/xsl:choose>&#xa;            &lt;/CorelationID>&#xa;        &lt;/tns5:jdbcUpdateActivityInput>&#xa;    &lt;/xsl:template>&#xa;&lt;/xsl:stylesheet>" expressionLanguage="urn:oasis:names:tc:wsbpel:2.0:sublang:xslt1.0"/>

@@ -195,17 +195,9 @@
                         <element maxOccurs="1" minOccurs="1"
                             name="MessageType" nillable="true" type="string"/>
                         <element maxOccurs="1" minOccurs="1"
-                            name="LogMessage" nillable="true" type="string"/>
-                        <element maxOccurs="1" minOccurs="1"
                             name="Timestamp" nillable="true" type="string"/>
                         <element maxOccurs="1" minOccurs="1"
                             name="Payload" nillable="true" type="string"/>
-                        <element maxOccurs="1" minOccurs="1"
-                            name="ERRORCODE" nillable="true" type="string"/>
-                        <element maxOccurs="1" minOccurs="1"
-                            name="ERRORMSG" nillable="true" type="string"/>
-                        <element maxOccurs="1" minOccurs="1"
-                            name="STACKTRACE" nillable="true" type="string"/>
                         <element maxOccurs="1" minOccurs="0"
                             name="ServerTimeZone" type="string"/>
                         <element maxOccurs="1" minOccurs="0"
@@ -732,7 +724,7 @@
                     </bpws:sources>
                     <tibex:inputBindings>
                         <tibex:inputBinding
-                            expression="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xa;&lt;xsl:stylesheet xmlns:xsl=&quot;http://www.w3.org/1999/XSL/Transform&quot; xmlns:tns1=&quot;http://www.tibco.com/namespaces/tnt/plugins/jdbc+3e72af6a-79eb-48e7-9292-0fcee2650c02+input&quot; xmlns:tns2=&quot;http://www.eniquesolution.com/E-Commerce/CommonFramework&quot; xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot; version=&quot;2.0&quot;>&lt;xsl:param name=&quot;Start&quot;/>&lt;xsl:template name=&quot;JDBCUpdate-input&quot; match=&quot;/&quot;>&lt;tns1:jdbcUpdateActivityInput>&lt;Appliction>&lt;xsl:choose>&lt;xsl:when test=&quot;exists($Start/tns2:ApplictionName)&quot;>&lt;xsl:value-of select=&quot;$Start/tns2:ApplictionName&quot;/>&lt;/xsl:when>&lt;xsl:otherwise>&lt;xsl:attribute name=&quot;xsi:nil&quot;>true&lt;/xsl:attribute>&lt;/xsl:otherwise>&lt;/xsl:choose>&lt;/Appliction>&lt;ProcessName>&lt;xsl:choose>&lt;xsl:when test=&quot;exists($Start/tns2:ProcessName)&quot;>&lt;xsl:value-of select=&quot;$Start/tns2:ProcessName&quot;/>&lt;/xsl:when>&lt;xsl:otherwise>&lt;xsl:attribute name=&quot;xsi:nil&quot;>true&lt;/xsl:attribute>&lt;/xsl:otherwise>&lt;/xsl:choose>&lt;/ProcessName>&lt;LogType>&lt;xsl:value-of select=&quot;$Start/tns2:LogType&quot;/>&lt;/LogType>&lt;Status>&lt;xsl:value-of select=&quot;$Start/tns2:status&quot;/>&lt;/Status>&lt;CorrelationID>&lt;xsl:value-of select=&quot;$Start/tns2:CorrelationID&quot;/>&lt;/CorrelationID>&lt;MessageType>&lt;xsl:choose>&lt;xsl:when test=&quot;exists($Start/tns2:MessageType)&quot;>&lt;xsl:value-of select=&quot;$Start/tns2:MessageType&quot;/>&lt;/xsl:when>&lt;xsl:otherwise>&lt;xsl:attribute name=&quot;xsi:nil&quot;>true&lt;/xsl:attribute>&lt;/xsl:otherwise>&lt;/xsl:choose>&lt;/MessageType>&lt;LogMessage>&lt;xsl:choose>&lt;xsl:when test=&quot;exists($Start/tns2:LogMessage)&quot;>&lt;xsl:value-of select=&quot;$Start/tns2:LogMessage&quot;/>&lt;/xsl:when>&lt;xsl:otherwise>&lt;xsl:attribute name=&quot;xsi:nil&quot;>true&lt;/xsl:attribute>&lt;/xsl:otherwise>&lt;/xsl:choose>&lt;/LogMessage>&lt;Timestamp>&lt;xsl:choose>&lt;xsl:when test=&quot;exists($Start/tns2:Timestamp)&quot;>&lt;xsl:value-of select=&quot;$Start/tns2:Timestamp&quot;/>&lt;/xsl:when>&lt;xsl:otherwise>&lt;xsl:attribute name=&quot;xsi:nil&quot;>true&lt;/xsl:attribute>&lt;/xsl:otherwise>&lt;/xsl:choose>&lt;/Timestamp>&lt;Payload>&lt;xsl:choose>&lt;xsl:when test=&quot;exists($Start/tns2:Payload)&quot;>&lt;xsl:value-of select=&quot;$Start/tns2:Payload&quot;/>&lt;/xsl:when>&lt;xsl:otherwise>&lt;xsl:attribute name=&quot;xsi:nil&quot;>true&lt;/xsl:attribute>&lt;/xsl:otherwise>&lt;/xsl:choose>&lt;/Payload>&lt;ERRORCODE>&lt;xsl:choose>&lt;xsl:when test=&quot;exists($Start/tns2:Exception/tns2:MessageCode)&quot;>&lt;xsl:value-of select=&quot;$Start/tns2:Exception/tns2:MessageCode&quot;/>&lt;/xsl:when>&lt;xsl:otherwise>&lt;xsl:attribute name=&quot;xsi:nil&quot;>true&lt;/xsl:attribute>&lt;/xsl:otherwise>&lt;/xsl:choose>&lt;/ERRORCODE>&lt;ERRORMSG>&lt;xsl:choose>&lt;xsl:when test=&quot;exists($Start/tns2:Exception/tns2:ExceptionMessage)&quot;>&lt;xsl:value-of select=&quot;$Start/tns2:Exception/tns2:ExceptionMessage&quot;/>&lt;/xsl:when>&lt;xsl:otherwise>&lt;xsl:attribute name=&quot;xsi:nil&quot;>true&lt;/xsl:attribute>&lt;/xsl:otherwise>&lt;/xsl:choose>&lt;/ERRORMSG>&lt;STACKTRACE>&lt;xsl:choose>&lt;xsl:when test=&quot;exists($Start/tns2:Exception/tns2:StackTrace)&quot;>&lt;xsl:value-of select=&quot;$Start/tns2:Exception/tns2:StackTrace&quot;/>&lt;/xsl:when>&lt;xsl:otherwise>&lt;xsl:attribute name=&quot;xsi:nil&quot;>true&lt;/xsl:attribute>&lt;/xsl:otherwise>&lt;/xsl:choose>&lt;/STACKTRACE>&lt;/tns1:jdbcUpdateActivityInput>&lt;/xsl:template>&lt;/xsl:stylesheet>" expressionLanguage="urn:oasis:names:tc:wsbpel:2.0:sublang:xslt1.0"/>
+                            expression="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xa;&lt;xsl:stylesheet xmlns:xsl=&quot;http://www.w3.org/1999/XSL/Transform&quot; xmlns:tns1=&quot;http://www.tibco.com/namespaces/tnt/plugins/jdbc+3e72af6a-79eb-48e7-9292-0fcee2650c02+input&quot; xmlns:tns2=&quot;http://www.eniquesolution.com/E-Commerce/CommonFramework&quot; xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot; version=&quot;2.0&quot;>&lt;xsl:param name=&quot;Start&quot;/>&lt;xsl:template name=&quot;JDBCUpdate-input&quot; match=&quot;/&quot;>&lt;tns1:jdbcUpdateActivityInput>&lt;Appliction>&lt;xsl:choose>&lt;xsl:when test=&quot;exists($Start/tns2:ApplictionName)&quot;>&lt;xsl:value-of select=&quot;$Start/tns2:ApplictionName&quot;/>&lt;/xsl:when>&lt;xsl:otherwise>&lt;xsl:attribute name=&quot;xsi:nil&quot;>true&lt;/xsl:attribute>&lt;/xsl:otherwise>&lt;/xsl:choose>&lt;/Appliction>&lt;ProcessName>&lt;xsl:choose>&lt;xsl:when test=&quot;exists($Start/tns2:ProcessName)&quot;>&lt;xsl:value-of select=&quot;$Start/tns2:ProcessName&quot;/>&lt;/xsl:when>&lt;xsl:otherwise>&lt;xsl:attribute name=&quot;xsi:nil&quot;>true&lt;/xsl:attribute>&lt;/xsl:otherwise>&lt;/xsl:choose>&lt;/ProcessName>&lt;LogType>&lt;xsl:value-of select=&quot;$Start/tns2:LogType&quot;/>&lt;/LogType>&lt;Status>&lt;xsl:value-of select=&quot;$Start/tns2:status&quot;/>&lt;/Status>&lt;CorrelationID>&lt;xsl:value-of select=&quot;$Start/tns2:CorrelationID&quot;/>&lt;/CorrelationID>&lt;MessageType>&lt;xsl:choose>&lt;xsl:when test=&quot;exists($Start/tns2:MessageType)&quot;>&lt;xsl:value-of select=&quot;$Start/tns2:MessageType&quot;/>&lt;/xsl:when>&lt;xsl:otherwise>&lt;xsl:attribute name=&quot;xsi:nil&quot;>true&lt;/xsl:attribute>&lt;/xsl:otherwise>&lt;/xsl:choose>&lt;/MessageType>&lt;Timestamp>&lt;xsl:choose>&lt;xsl:when test=&quot;exists($Start/tns2:Timestamp)&quot;>&lt;xsl:value-of select=&quot;$Start/tns2:Timestamp&quot;/>&lt;/xsl:when>&lt;xsl:otherwise>&lt;xsl:attribute name=&quot;xsi:nil&quot;>true&lt;/xsl:attribute>&lt;/xsl:otherwise>&lt;/xsl:choose>&lt;/Timestamp>&lt;Payload>&lt;xsl:choose>&lt;xsl:when test=&quot;exists($Start/tns2:PAYLOAD)&quot;>&lt;xsl:value-of select=&quot;$Start/tns2:PAYLOAD&quot;/>&lt;/xsl:when>&lt;xsl:otherwise>&lt;xsl:attribute name=&quot;xsi:nil&quot;>true&lt;/xsl:attribute>&lt;/xsl:otherwise>&lt;/xsl:choose>&lt;/Payload>&lt;/tns1:jdbcUpdateActivityInput>&lt;/xsl:template>&lt;/xsl:stylesheet>" expressionLanguage="urn:oasis:names:tc:wsbpel:2.0:sublang:xslt1.0"/>
                     </tibex:inputBindings>
                     <tibex:config>
                         <bwext:BWActivity
@@ -745,7 +737,7 @@
                                     <type href="http://ns.tibco.com/bw/palette/jdbc#//JDBCUpdateActivity"/>
                                     <value
                                     sharedResourceProperty="jdbcProperty"
-                                    sqlStatement="insert into EmpLog values(?,?,?,?,?,?,?,?,?,?,?,?)"
+                                    sqlStatement="insert into EmpInfoLog values(?,?,?,?,?,?,?,?)"
                                     timeout="10" xsi:type="jdbcPalette:JDBCUpdateActivity">
                                     <PreparedParameters
                                     DataType="12"
@@ -767,22 +759,10 @@
                                     DataTypeDisplayValue="VARCHAR" ParameterName="MessageType"/>
                                     <PreparedParameters
                                     DataType="12"
-                                    DataTypeDisplayValue="VARCHAR" ParameterName="LogMessage"/>
-                                    <PreparedParameters
-                                    DataType="12"
                                     DataTypeDisplayValue="VARCHAR" ParameterName="Timestamp"/>
                                     <PreparedParameters
-                                    DataType="12"
-                                    DataTypeDisplayValue="VARCHAR" ParameterName="Payload"/>
-                                    <PreparedParameters
-                                    DataType="12"
-                                    DataTypeDisplayValue="VARCHAR" ParameterName="ERRORCODE"/>
-                                    <PreparedParameters
-                                    DataType="12"
-                                    DataTypeDisplayValue="VARCHAR" ParameterName="ERRORMSG"/>
-                                    <PreparedParameters
-                                    DataType="12"
-                                    DataTypeDisplayValue="VARCHAR" ParameterName="STACKTRACE"/>
+                                    DataType="2005"
+                                    DataTypeDisplayValue="CLOB" ParameterName="Payload"/>
                                     </value>
                                 </properties>
                             </activityConfig>
