@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <bpws:process exitOnStandardFault="no" name="Services.AddEmpSalDetails"
     suppressJoinFailure="yes"
-    targetNamespace="http://xmlns.example.com/20221101102002"
+    targetNamespace="http://xmlns.example.com/20221115145025"
     xmlns:bpws="http://docs.oasis-open.org/wsbpel/2.0/process/executable"
     xmlns:info="http://www.tibco.com/bw/process/info"
     xmlns:ns="http://xmlns.example.com/20221101102002PLT"
@@ -14,7 +14,6 @@
     xmlns:ns6="http://schemas.tibco.com/bw/plugins/basic/6.0/Exceptions"
     xmlns:ns7="http://www.tibco.com/namespaces/tnt/plugins/jdbc+07045964-4646-4060-9efc-949b64a1bad3+input"
     xmlns:ns8="http://www.tibco.com/namespaces/tnt/plugins/jdbc+66dc66ea-ef7f-49f4-8744-ccfedd3fdb73+input"
-    xmlns:ns9="http://Eniquessolutions.com/abstract"
     xmlns:sca="http://docs.oasis-open.org/ns/opencsa/sca/200912"
     xmlns:sca-bpel="http://docs.oasis-open.org/ns/opencsa/sca-bpel/200801"
     xmlns:tib="http://www.tibco.com/bw/xslt/custom-functions"
@@ -427,23 +426,13 @@
             targetNamespace="http://xmlns.example.com/20221101102002PLT"
             xmlns:plnk="http://docs.oasis-open.org/wsbpel/2.0/plnktype"
             xmlns:ptyp="http://xmlns.example.com/20221101102002"
-            xmlns:ptyp1="http://Eniquessolutions.com/abstract"
             xmlns:tns="http://xmlns.example.com/20221101102002PLT"
             xmlns:vprop="http://docs.oasis-open.org/wsbpel/2.0/varprop"
             xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
             <plnk:partnerLinkType name="partnerLinkType">
                 <plnk:role name="use" portType="ptyp:EmpSalTitle"/>
             </plnk:partnerLinkType>
-            <plnk:partnerLinkType name="partnerLinkType1">
-                <plnk:role name="use" portType="ptyp:EmpSalTitle"/>
-            </plnk:partnerLinkType>
-            <plnk:partnerLinkType name="partnerLinkType2">
-                <plnk:role name="use" portType="ptyp1:EmpSalTitle"/>
-            </plnk:partnerLinkType>
             <wsdl:import namespace="http://xmlns.example.com/20221101102002"/>
-            <wsdl:import
-                location="../../Service%20Descriptors/Emp_SalTitle.wsdl" namespace="http://xmlns.example.com/20221101102002"/>
-            <wsdl:import namespace="http://Eniquessolutions.com/abstract"/>
         </wsdl:definitions>
     </tibex:Types>
     <tibex:ProcessInfo callable="false" createdBy="admin"
@@ -1030,19 +1019,18 @@
             namespace="http://www.w3.org/2001/XMLSchema" prefix="xsd"/>
     </tibex:NamespaceRegistry>
     <bpws:import importType="http://schemas.xmlsoap.org/wsdl/"
-        location="../../Service%20Descriptors/Emp_SalTitle.wsdl" namespace="http://Eniquessolutions.com/abstract"/>
+        location="../../Service%20Descriptors/Emp_SalTitle.wsdl" namespace="http://xmlns.example.com/20221101102002"/>
     <bpws:import importType="http://www.w3.org/2001/XMLSchema" namespace="http://www.eniquesolution.com/E-Commerce/CommonFramework"/>
     <bpws:partnerLinks>
         <bpws:partnerLink myRole="use" name="EmpSalService"
-            partnerLinkType="ns:partnerLinkType2"
-            sca-bpel:ignore="false" sca-bpel:service="Service"/>
+            partnerLinkType="ns:partnerLinkType" sca-bpel:ignore="false" sca-bpel:service="Service"/>
     </bpws:partnerLinks>
     <bpws:variables>
         <bpws:variable element="ns0:ProcessContext"
             name="_processContext" sca-bpel:internal="true"/>
-        <bpws:variable messageType="ns9:AddSalDetailsRequest"
+        <bpws:variable messageType="ns1:AddSalDetailsRequest"
             name="operationIn" sca-bpel:internal="true"/>
-        <bpws:variable messageType="ns9:AddSalDetailsResponse"
+        <bpws:variable messageType="ns1:AddSalDetailsResponse"
             name="Reply-input" sca-bpel:internal="true"/>
         <bpws:variable element="ns2:LogExceptionHandler"
             name="StartLog-input" sca-bpel:internal="true"/>
@@ -1177,7 +1165,7 @@
             </bpws:links>
             <bpws:receive createInstance="yes" name="Start"
                 operation="AddSalDetails" partnerLink="EmpSalService"
-                portType="ns9:EmpSalTitle"
+                portType="ns1:EmpSalTitle"
                 tibex:xpdlId="47554181-e689-479d-95f2-87f397cac3b7" variable="operationIn">
                 <bpws:sources>
                     <bpws:source linkName="StartToStartLog"/>
@@ -1185,14 +1173,14 @@
                 <bpws:correlations/>
             </bpws:receive>
             <bpws:reply name="Reply" operation="AddSalDetails"
-                partnerLink="EmpSalService" portType="ns9:EmpSalTitle"
+                partnerLink="EmpSalService" portType="ns1:EmpSalTitle"
                 tibex:xpdlId="9994ec96-4abf-46b9-8124-22a21cbb5346" variable="Reply-input">
                 <tibex:inputBindings>
                     <tibex:partBinding
-                        expression="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xa;&lt;xsl:stylesheet xmlns:xsl=&quot;http://www.w3.org/1999/XSL/Transform&quot; xmlns:tns1=&quot;http://xmlns.example.com/20221101102002&quot; xmlns:tns4=&quot;http://www.EniqueSol.org/Emp_SalTitle/V1&quot; xmlns:tns=&quot;http://Eniquessolutions.com/abstract&quot; version=&quot;2.0&quot;>&#xa;    &lt;xsl:template name=&quot;Reply-input&quot; match=&quot;/&quot;>&#xa;        &lt;tns4:Emp_SalTitleRes>&#xa;            &lt;tns4:ResCode>&#xa;                &lt;xsl:value-of select=&quot;'200'&quot;/>&#xa;            &lt;/tns4:ResCode>&#xa;            &lt;tns4:ResMsg>&#xa;                &lt;xsl:value-of select=&quot;'Salary and title Data inserted'&quot;/>&#xa;            &lt;/tns4:ResMsg>&#xa;        &lt;/tns4:Emp_SalTitleRes>&#xa;    &lt;/xsl:template>&#xa;&lt;/xsl:stylesheet>" expressionLanguage="urn:oasis:names:tc:wsbpel:2.0:sublang:xslt1.0"/>
+                        expression="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xa;&lt;xsl:stylesheet xmlns:xsl=&quot;http://www.w3.org/1999/XSL/Transform&quot; xmlns:tns1=&quot;http://xmlns.example.com/20221101102002&quot; xmlns:tns4=&quot;http://www.EniqueSol.org/Emp_SalTitle/V1&quot; version=&quot;2.0&quot;>&#xa;    &lt;xsl:template name=&quot;Reply-input&quot; match=&quot;/&quot;>&#xa;        &lt;tns4:Emp_SalTitleRes>&#xa;            &lt;tns4:ResCode>&#xa;                &lt;xsl:value-of select=&quot;'200'&quot;/>&#xa;            &lt;/tns4:ResCode>&#xa;            &lt;tns4:ResMsg>&#xa;                &lt;xsl:value-of select=&quot;'Request Received'&quot;/>&#xa;            &lt;/tns4:ResMsg>&#xa;        &lt;/tns4:Emp_SalTitleRes>&#xa;    &lt;/xsl:template>&#xa;&lt;/xsl:stylesheet>" expressionLanguage="urn:oasis:names:tc:wsbpel:2.0:sublang:xslt1.0"/>
                 </tibex:inputBindings>
                 <tibex:inputBinding expressionLanguage="urn:oasis:names:tc:wsbpel:2.0:sublang:xslt1.0">&lt;?xml version="1.0" encoding="UTF-8"?&gt;
-&lt;xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:tns1="http://xmlns.example.com/20221101102002" xmlns:tns4="http://www.EniqueSol.org/Emp_SalTitle/V1" xmlns:tns="http://Eniquessolutions.com/abstract" version="2.0"&gt;&lt;xsl:template name="Reply-input" match="/"&gt;&lt;tns:AddSalDetailsResponse&gt;&lt;parameters&gt;&lt;tns4:Emp_SalTitleRes&gt;&lt;tns4:ResCode&gt;&lt;xsl:value-of select="'200'"/&gt;&lt;/tns4:ResCode&gt;&lt;tns4:ResMsg&gt;&lt;xsl:value-of select="'Salary and title Data inserted'"/&gt;&lt;/tns4:ResMsg&gt;&lt;/tns4:Emp_SalTitleRes&gt;&lt;/parameters&gt;&lt;/tns:AddSalDetailsResponse&gt;&lt;/xsl:template&gt;&lt;/xsl:stylesheet&gt;</tibex:inputBinding>
+&lt;xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:tns1="http://xmlns.example.com/20221101102002" xmlns:tns4="http://www.EniqueSol.org/Emp_SalTitle/V1" version="2.0"&gt;&lt;xsl:template name="Reply-input" match="/"&gt;&lt;tns1:AddSalDetailsResponse&gt;&lt;parameters&gt;&lt;tns4:Emp_SalTitleRes&gt;&lt;tns4:ResCode&gt;&lt;xsl:value-of select="'200'"/&gt;&lt;/tns4:ResCode&gt;&lt;tns4:ResMsg&gt;&lt;xsl:value-of select="'Request Received'"/&gt;&lt;/tns4:ResMsg&gt;&lt;/tns4:Emp_SalTitleRes&gt;&lt;/parameters&gt;&lt;/tns1:AddSalDetailsResponse&gt;&lt;/xsl:template&gt;&lt;/xsl:stylesheet&gt;</tibex:inputBinding>
                 <bpws:targets>
                     <bpws:target linkName="InsertResponseToReply"/>
                 </bpws:targets>

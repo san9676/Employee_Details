@@ -33,7 +33,7 @@
     <project.type>AppSpace</project.type>
     <domainDesc></domainDesc>
     <keystorePassword></keystorePassword>
-    <bw.Home>C:\Tibco_bw6.8\bw\6.8</bw.Home>
+    <bw.Home>bw\6.8</bw.Home>
     <httpPort>9457</httpPort>
     <profile>default.substvar</profile>
     <restartAppNode>false</restartAppNode>
