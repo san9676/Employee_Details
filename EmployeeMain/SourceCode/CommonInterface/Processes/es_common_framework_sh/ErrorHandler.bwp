@@ -688,7 +688,7 @@
                                     <type href="http://ns.tibco.com/bw/palette/jdbc#//JDBCUpdateActivity"/>
                                     <value
                                     sharedResourceProperty="jdbcProperty"
-                                    sqlStatement="insert into EmpErrorLog values(?,?,?,?,?,?,?,?,?)"
+                                    sqlStatement="insert into EMPERRORLOG values(?,?,?,?,?,?,?,?,?)"
                                     timeout="10" xsi:type="jdbcPalette:JDBCUpdateActivity">
                                     <PreparedParameters
                                     DataType="12"
