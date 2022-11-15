@@ -592,8 +592,7 @@
         <tibex:namespaceItem
             namespace="http://www.w3.org/2001/XMLSchema-instance" prefix="xsi"/>
     </tibex:NamespaceRegistry>
-    <bpws:import importType="http://www.w3.org/2001/XMLSchema"
-        location="../../Schemas/CommonFramework.xsd" namespace="http://www.eniquesolution.com/E-Commerce/CommonFramework"/>
+    <bpws:import importType="http://www.w3.org/2001/XMLSchema" namespace="http://www.eniquesolution.com/E-Commerce/CommonFramework"/>
     <bpws:variables>
         <bpws:variable element="ns:ProcessContext"
             name="_processContext" sca-bpel:internal="true"/>

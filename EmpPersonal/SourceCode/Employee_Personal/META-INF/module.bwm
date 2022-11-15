@@ -31,6 +31,6 @@
     </sca:service>
   </sca:component>
   <sca:component xmi:id="_7-e6QGS2Ee2KD5PnCkKGqg" name="Componenttest" compositeext:version="1.0.0.qualifier">
-    <scaext:implementation xsi:type="BW:BWComponentImplementation" xmi:id="_7-e6QWS2Ee2KD5PnCkKGqg" processName="SubProcesses.test"/>
+    <scaext:implementation xsi:type="BW:BWComponentImplementation" xmi:id="_7-e6QWS2Ee2KD5PnCkKGqg" processName="SubProcesses.test" autoStart="false"/>
   </sca:component>
 </sca:composite>
