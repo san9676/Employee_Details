@@ -658,8 +658,8 @@
                                     <element href="//0/@process/@activity/@activity/@activities.0/@messages.0/@activity/@activity/@activities.2"/>
 
                                     <layoutConstraint
-                                    x="210"
-                                    xsi:type="notation:Bounds" y="4"/>
+                                    x="608"
+                                    xsi:type="notation:Bounds" y="52"/>
                                     </children>
 
                                     <children type="4002">
@@ -766,8 +766,8 @@
                                     <element href="//0/@process/@activity/@activity/@activities.0/@messages.0/@activity/@activity/@activities.4"/>
 
                                     <layoutConstraint
-                                    x="433"
-                                    xsi:type="notation:Bounds" y="52"/>
+                                    x="207"
+                                    xsi:type="notation:Bounds" y="38"/>
                                     </children>
 
                                     <children type="4002">
@@ -820,8 +820,8 @@
                                     <element href="//0/@process/@activity/@activity/@activities.0/@messages.0/@activity/@activity/@activities.5"/>
 
                                     <layoutConstraint
-                                    x="601"
-                                    xsi:type="notation:Bounds" y="35"/>
+                                    x="449"
+                                    xsi:type="notation:Bounds" y="64"/>
                                     </children>
 
                                     <children type="4002">
@@ -874,8 +874,8 @@
                                     <element href="//0/@process/@activity/@activity/@activities.0/@messages.0/@activity/@activity/@activities.6"/>
 
                                     <layoutConstraint
-                                    x="601"
-                                    xsi:type="notation:Bounds" y="120"/>
+                                    x="361"
+                                    xsi:type="notation:Bounds" y="86"/>
                                     </children>
 
                                     <styles xsi:type="notation:DrawerStyle"/>
@@ -1066,6 +1066,60 @@
 
                                     <layoutConstraint
                                     x="193"
+                                    xsi:type="notation:Bounds" y="38"/>
+                                    </children>
+
+                                    <children type="4002">
+
+                                    <children type="4017">
+
+                                    <styles
+                                    fontName="Segoe UI"
+                                    lineColor="0" xsi:type="notation:ShapeStyle"/>
+
+                                    <layoutConstraint xsi:type="notation:Bounds"/>
+                                    </children>
+
+                                    <children type="4017">
+
+                                    <styles
+                                    fontName="Segoe UI"
+                                    lineColor="0" xsi:type="notation:ShapeStyle"/>
+
+                                    <layoutConstraint xsi:type="notation:Bounds"/>
+                                    </children>
+
+                                    <children type="4017">
+
+                                    <styles
+                                    fontName="Segoe UI"
+                                    lineColor="0" xsi:type="notation:ShapeStyle"/>
+
+                                    <layoutConstraint xsi:type="notation:Bounds"/>
+                                    </children>
+
+                                    <children type="4017">
+
+                                    <styles
+                                    fontName="Segoe UI"
+                                    lineColor="0" xsi:type="notation:ShapeStyle"/>
+
+                                    <layoutConstraint xsi:type="notation:Bounds"/>
+                                    </children>
+
+                                    <styles
+                                    fontName="Segoe UI"
+                                    lineColor="0" xsi:type="notation:ShapeStyle"/>
+
+                                    <styles
+                                    backgroundColor="16777215"
+                                    gradientEndColor="50431"
+                                    gradientStartColor="16777215" xsi:type="bwnotation:BackgroundStyle"/>
+
+                                    <element href="//0/@process/@activity/@activity/@activities.0/@messages.0/@activity/@faultHandlers/@catchAll/@activity/@activity/@activities.2"/>
+
+                                    <layoutConstraint
+                                    x="304"
                                     xsi:type="notation:Bounds" y="38"/>
                                     </children>
 
@@ -1272,8 +1326,8 @@
             <bendpoints points="[0, 0, 0, 0]$[0, 0, 0, 0]" xsi:type="notation:RelativeBendpoints"/>
         </edges>
         <edges
-            source="//@children.0/@children.4/@children.0/@children.0/@children.0/@children.0/@children.0/@children.0/@children.0/@children.2/@children.0/@children.1/@children.0/@children.0/@children.0/@children.0/@children.0/@children.0/@children.0"
-            target="//@children.0/@children.4/@children.0/@children.0/@children.0/@children.0/@children.0/@children.0/@children.0/@children.2/@children.0/@children.1/@children.0/@children.0/@children.0/@children.0/@children.0/@children.0/@children.2" type="4006">
+            source="//@children.0/@children.4/@children.0/@children.0/@children.0/@children.0/@children.0/@children.0/@children.0/@children.2/@children.0/@children.1/@children.0/@children.0/@children.0/@children.0/@children.0/@children.0/@children.3"
+            target="//@children.0/@children.4/@children.0/@children.0/@children.0/@children.0/@children.0/@children.0/@children.0/@children.2/@children.0/@children.1/@children.0/@children.0/@children.0/@children.0/@children.0/@children.0/@children.0" type="4006">
             <children type="6002">
                 <layoutConstraint xsi:type="notation:Location" y="40"/>
             </children>
@@ -1281,11 +1335,10 @@
             <styles fontName="Segoe UI" xsi:type="notation:FontStyle"/>
             <element href="//0/@process/@activity/@activity/@activities.0/@messages.0/@activity/@activity/@links/@children.1"/>
             <bendpoints points="[0, 0, 0, 0]$[0, 0, 0, 0]" xsi:type="notation:RelativeBendpoints"/>
-            <sourceAnchor id="(0.673469387755102,0.7755102040816326)" xsi:type="notation:IdentityAnchor"/>
         </edges>
         <edges
             source="//@children.0/@children.4/@children.0/@children.0/@children.0/@children.0/@children.0/@children.0/@children.0/@children.2/@children.0/@children.1/@children.0/@children.0/@children.0/@children.0/@children.0/@children.0/@children.2"
-            target="//@children.0/@children.4/@children.0/@children.0/@children.0/@children.0/@children.0/@children.0/@children.0/@children.2/@children.0/@children.1/@children.0/@children.0/@children.0/@children.0/@children.0/@children.0/@children.3" type="4006">
+            target="//@children.0/@children.4/@children.0/@children.0/@children.0/@children.0/@children.0/@children.0/@children.0/@children.2/@children.0/@children.1/@children.0/@children.0/@children.0/@children.0/@children.0/@children.0/@children.4" type="4006">
             <children type="6002">
                 <layoutConstraint xsi:type="notation:Location" y="40"/>
             </children>
@@ -1295,8 +1348,8 @@
             <bendpoints points="[25, 0, -104, 0]$[105, 0, -24, 0]" xsi:type="notation:RelativeBendpoints"/>
         </edges>
         <edges
-            source="//@children.0/@children.4/@children.0/@children.0/@children.0/@children.0/@children.0/@children.0/@children.0/@children.2/@children.0/@children.1/@children.0/@children.0/@children.0/@children.0/@children.0/@children.0/@children.3"
-            target="//@children.0/@children.4/@children.0/@children.0/@children.0/@children.0/@children.0/@children.0/@children.0/@children.2/@children.0/@children.1/@children.0/@children.0/@children.0/@children.0/@children.0/@children.0/@children.4" type="4006">
+            source="//@children.0/@children.4/@children.0/@children.0/@children.0/@children.0/@children.0/@children.0/@children.0/@children.2/@children.0/@children.1/@children.0/@children.0/@children.0/@children.0/@children.0/@children.0/@children.4"
+            target="//@children.0/@children.4/@children.0/@children.0/@children.0/@children.0/@children.0/@children.0/@children.0/@children.2/@children.0/@children.1/@children.0/@children.0/@children.0/@children.0/@children.0/@children.0/@children.3" type="4006">
             <children type="6002">
                 <layoutConstraint xsi:type="notation:Location" y="40"/>
             </children>
@@ -1318,7 +1371,7 @@
         </edges>
         <edges
             source="//@children.0/@children.4/@children.0/@children.0/@children.0/@children.0/@children.0/@children.0/@children.0/@children.2/@children.0/@children.1/@children.0/@children.0/@children.0/@children.0/@children.0/@children.0/@children.1"
-            target="//@children.0/@children.4/@children.0/@children.0/@children.0/@children.0/@children.0/@children.0/@children.0/@children.2/@children.0/@children.1/@children.0/@children.0/@children.0/@children.0/@children.0/@children.0/@children.0" type="4006">
+            target="//@children.0/@children.4/@children.0/@children.0/@children.0/@children.0/@children.0/@children.0/@children.0/@children.2/@children.0/@children.1/@children.0/@children.0/@children.0/@children.0/@children.0/@children.0/@children.2" type="4006">
             <children type="6002">
                 <layoutConstraint xsi:type="notation:Location" y="40"/>
             </children>
@@ -1326,6 +1379,17 @@
             <styles fontName="Segoe UI" xsi:type="notation:FontStyle"/>
             <element href="//0/@process/@activity/@activity/@activities.0/@messages.0/@activity/@activity/@links/@children.4"/>
             <bendpoints points="[25, -9, -130, 48]$[131, -48, -24, 9]" xsi:type="notation:RelativeBendpoints"/>
+        </edges>
+        <edges
+            source="//@children.0/@children.4/@children.0/@children.0/@children.0/@children.0/@children.0/@children.0/@children.0/@children.2/@children.0/@children.1/@children.0/@children.0/@children.1/@children.0/@children.0/@children.1/@children.0/@children.0/@children.1"
+            target="//@children.0/@children.4/@children.0/@children.0/@children.0/@children.0/@children.0/@children.0/@children.0/@children.2/@children.0/@children.1/@children.0/@children.0/@children.1/@children.0/@children.0/@children.1/@children.0/@children.0/@children.2" type="4006">
+            <children type="6002">
+                <layoutConstraint xsi:type="notation:Location" y="40"/>
+            </children>
+            <styles lineColor="0" xsi:type="notation:ConnectorStyle"/>
+            <styles fontName="Segoe UI" xsi:type="notation:FontStyle"/>
+            <element href="//0/@process/@activity/@activity/@activities.0/@messages.0/@activity/@faultHandlers/@catchAll/@activity/@activity/@links/@children.1"/>
+            <bendpoints points="[0, 0, 0, 0]$[0, 0, 0, 0]" xsi:type="notation:RelativeBendpoints"/>
         </edges>
     </notation:Diagram>
     <tibex:NamespaceRegistry enabled="true">
@@ -1397,6 +1461,8 @@
             name="_error_InsertErrorResponse" sca-bpel:internal="true"/>
         <bpws:variable element="ns1:ErrorLogHandler"
             name="ErrorLog-input" sca-bpel:internal="true"/>
+        <bpws:variable messageType="ns0:post4XXFaultMessage"
+            name="Reply-input" sca-bpel:internal="true"/>
     </bpws:variables>
     <bpws:extensions>
         <bpws:extension mustUnderstand="no" namespace="http://www.eclipse.org/gmf/runtime/1.0.2/notation"/>
@@ -1424,10 +1490,12 @@
                                     <bpws:links>
                                     <bpws:link
                                     name="ErrorLogToInsertErrorResponse" tibex:linkType="SUCCESS"/>
+                                    <bpws:link
+                                    name="InsertErrorResponseToReply" tibex:linkType="SUCCESS"/>
                                     </bpws:links>
                                     <bpws:extensionActivity>
                                     <tibex:extActivity
-                                    expression="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xa;&lt;xsl:stylesheet xmlns:xsl=&quot;http://www.w3.org/1999/XSL/Transform&quot; xmlns:tns2=&quot;http://www.eniquesolution.com/E-Commerce/CommonFramework&quot; xmlns:tns1=&quot;http://www.EniqueSol.org/Emp_InsurenceDetails/V1&quot; version=&quot;2.0&quot;>&lt;xsl:param name=&quot;_processContext&quot;/>&lt;xsl:param name=&quot;FaultDetails&quot;/>&lt;xsl:param name=&quot;post&quot;/>&lt;xsl:template name=&quot;ErrorLog-input&quot; match=&quot;/&quot;>&lt;tns2:ErrorLogHandler>&lt;tns2:ApplictionName>&lt;xsl:value-of select=&quot;$_processContext/ApplicationName&quot;/>&lt;/tns2:ApplictionName>&lt;tns2:ProcessName>&lt;xsl:value-of select=&quot;'Add_InsurenceDetails'&quot;/>&lt;/tns2:ProcessName>&lt;tns2:LogType>&lt;xsl:value-of select=&quot;'ERROR'&quot;/>&lt;/tns2:LogType>&lt;tns2:status>&lt;xsl:value-of select=&quot;'Failed'&quot;/>&lt;/tns2:status>&lt;tns2:CorrelationID>&lt;xsl:value-of select=&quot;$post/item/tns1:Emp_InsurenceReq/tns1:CorelationID&quot;/>&lt;/tns2:CorrelationID>&lt;tns2:MessageType>&lt;xsl:value-of select=&quot;'ErrorDetails'&quot;/>&lt;/tns2:MessageType>&lt;tns2:Timestamp>&lt;xsl:value-of select=&quot;current-dateTime()&quot;/>&lt;/tns2:Timestamp>&lt;tns2:ErrorCode>&lt;xsl:value-of select=&quot;$FaultDetails/MsgCode&quot;/>&lt;/tns2:ErrorCode>&lt;tns2:ErrorMsg>&lt;xsl:value-of select=&quot;$FaultDetails/Msg&quot;/>&lt;/tns2:ErrorMsg>&lt;/tns2:ErrorLogHandler>&lt;/xsl:template>&lt;/xsl:stylesheet>"
+                                    expression="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xa;&lt;xsl:stylesheet xmlns:xsl=&quot;http://www.w3.org/1999/XSL/Transform&quot; xmlns:tns2=&quot;http://www.eniquesolution.com/E-Commerce/CommonFramework&quot; xmlns:tns1=&quot;http://www.EniqueSol.org/Emp_InsurenceDetails/V1&quot; version=&quot;2.0&quot;>&lt;xsl:param name=&quot;_processContext&quot;/>&lt;xsl:param name=&quot;FaultDetails&quot;/>&lt;xsl:param name=&quot;post&quot;/>&lt;xsl:template name=&quot;ErrorLog-input&quot; match=&quot;/&quot;>&lt;tns2:ErrorLogHandler>&lt;tns2:ApplictionName>&lt;xsl:value-of select=&quot;$_processContext/ApplicationName&quot;/>&lt;/tns2:ApplictionName>&lt;tns2:ProcessName>&lt;xsl:value-of select=&quot;'Add_InsurenceDetails'&quot;/>&lt;/tns2:ProcessName>&lt;tns2:LogType>&lt;xsl:value-of select=&quot;'ErrorLog'&quot;/>&lt;/tns2:LogType>&lt;tns2:status>&lt;xsl:value-of select=&quot;'Failed'&quot;/>&lt;/tns2:status>&lt;tns2:CorrelationID>&lt;xsl:value-of select=&quot;$post/item/tns1:Emp_InsurenceReq/tns1:CorelationID&quot;/>&lt;/tns2:CorrelationID>&lt;tns2:MessageType>&lt;xsl:value-of select=&quot;'ErrorDetails'&quot;/>&lt;/tns2:MessageType>&lt;tns2:Timestamp>&lt;xsl:value-of select=&quot;format-dateTime(current-dateTime(), &amp;quot;[Y0001]-[M01]-[D01] [H01]:[m01]:[s01]&amp;quot;)&quot;/>&lt;/tns2:Timestamp>&lt;tns2:ErrorCode>&lt;xsl:value-of select=&quot;$FaultDetails/MsgCode&quot;/>&lt;/tns2:ErrorCode>&lt;tns2:ErrorMsg>&lt;xsl:value-of select=&quot;$FaultDetails/Msg&quot;/>&lt;/tns2:ErrorMsg>&lt;/tns2:ErrorLogHandler>&lt;/xsl:template>&lt;/xsl:stylesheet>"
                                     expressionLanguage="urn:oasis:names:tc:wsbpel:2.0:sublang:xslt1.0"
                                     inputVariable="ErrorLog-input"
                                     name="ErrorLog"
@@ -1440,7 +1508,7 @@
                                     <tibex:inputBindings>
                                     <tibex:inputBinding
                                     coercion=""
-                                    expression="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xa;&lt;xsl:stylesheet xmlns:xsl=&quot;http://www.w3.org/1999/XSL/Transform&quot; xmlns:tns2=&quot;http://www.eniquesolution.com/E-Commerce/CommonFramework&quot; xmlns:tns1=&quot;http://www.EniqueSol.org/Emp_InsurenceDetails/V1&quot; version=&quot;2.0&quot;>&#xa;    &lt;xsl:param name=&quot;post.item&quot;/>&#xa;    &lt;xsl:param name=&quot;_processContext&quot;/>&#xa;    &lt;xsl:param name=&quot;FaultDetails&quot;/>&#xa;    &lt;xsl:template name=&quot;ErrorLog-input&quot; match=&quot;/&quot;>&#xa;        &lt;tns2:ErrorLogHandler>&#xa;            &lt;tns2:ApplictionName>&#xa;                &lt;xsl:value-of select=&quot;$_processContext/ApplicationName&quot;/>&#xa;            &lt;/tns2:ApplictionName>&#xa;            &lt;tns2:ProcessName>&#xa;                &lt;xsl:value-of select=&quot;'Add_InsurenceDetails'&quot;/>&#xa;            &lt;/tns2:ProcessName>&#xa;            &lt;tns2:LogType>&#xa;                &lt;xsl:value-of select=&quot;'ERROR'&quot;/>&#xa;            &lt;/tns2:LogType>&#xa;            &lt;tns2:status>&#xa;                &lt;xsl:value-of select=&quot;'Failed'&quot;/>&#xa;            &lt;/tns2:status>&#xa;            &lt;tns2:CorrelationID>&#xa;                &lt;xsl:value-of select=&quot;$post.item/tns1:CorelationID&quot;/>&#xa;            &lt;/tns2:CorrelationID>&#xa;            &lt;tns2:MessageType>&#xa;                &lt;xsl:value-of select=&quot;'ErrorDetails'&quot;/>&#xa;            &lt;/tns2:MessageType>&#xa;            &lt;tns2:Timestamp>&#xa;                &lt;xsl:value-of select=&quot;current-dateTime()&quot;/>&#xa;            &lt;/tns2:Timestamp>&#xa;            &lt;tns2:ErrorCode>&#xa;                &lt;xsl:value-of select=&quot;$FaultDetails/MsgCode&quot;/>&#xa;            &lt;/tns2:ErrorCode>&#xa;            &lt;tns2:ErrorMsg>&#xa;                &lt;xsl:value-of select=&quot;$FaultDetails/Msg&quot;/>&#xa;            &lt;/tns2:ErrorMsg>&#xa;        &lt;/tns2:ErrorLogHandler>&#xa;    &lt;/xsl:template>&#xa;&lt;/xsl:stylesheet>" expressionLanguage="urn:oasis:names:tc:wsbpel:2.0:sublang:xslt1.0"/>
+                                    expression="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xa;&lt;xsl:stylesheet xmlns:xsl=&quot;http://www.w3.org/1999/XSL/Transform&quot; xmlns:tns2=&quot;http://www.eniquesolution.com/E-Commerce/CommonFramework&quot; xmlns:tns1=&quot;http://www.EniqueSol.org/Emp_InsurenceDetails/V1&quot; version=&quot;2.0&quot;>&#xa;    &lt;xsl:param name=&quot;post.item&quot;/>&#xa;    &lt;xsl:param name=&quot;_processContext&quot;/>&#xa;    &lt;xsl:param name=&quot;FaultDetails&quot;/>&#xa;    &lt;xsl:template name=&quot;ErrorLog-input&quot; match=&quot;/&quot;>&#xa;        &lt;tns2:ErrorLogHandler>&#xa;            &lt;tns2:ApplictionName>&#xa;                &lt;xsl:value-of select=&quot;$_processContext/ApplicationName&quot;/>&#xa;            &lt;/tns2:ApplictionName>&#xa;            &lt;tns2:ProcessName>&#xa;                &lt;xsl:value-of select=&quot;'Add_InsurenceDetails'&quot;/>&#xa;            &lt;/tns2:ProcessName>&#xa;            &lt;tns2:LogType>&#xa;                &lt;xsl:value-of select=&quot;'ErrorLog'&quot;/>&#xa;            &lt;/tns2:LogType>&#xa;            &lt;tns2:status>&#xa;                &lt;xsl:value-of select=&quot;'Failed'&quot;/>&#xa;            &lt;/tns2:status>&#xa;            &lt;tns2:CorrelationID>&#xa;                &lt;xsl:value-of select=&quot;$post.item/tns1:CorelationID&quot;/>&#xa;            &lt;/tns2:CorrelationID>&#xa;            &lt;tns2:MessageType>&#xa;                &lt;xsl:value-of select=&quot;'ErrorDetails'&quot;/>&#xa;            &lt;/tns2:MessageType>&#xa;            &lt;tns2:Timestamp>&#xa;                &lt;xsl:value-of select=&quot;format-dateTime(current-dateTime(), &amp;quot;[Y0001]-[M01]-[D01] [H01]:[m01]:[s01]&amp;quot;)&quot;/>&#xa;            &lt;/tns2:Timestamp>&#xa;            &lt;tns2:ErrorCode>&#xa;                &lt;xsl:value-of select=&quot;$FaultDetails/MsgCode&quot;/>&#xa;            &lt;/tns2:ErrorCode>&#xa;            &lt;tns2:ErrorMsg>&#xa;                &lt;xsl:value-of select=&quot;$FaultDetails/Msg&quot;/>&#xa;            &lt;/tns2:ErrorMsg>&#xa;        &lt;/tns2:ErrorLogHandler>&#xa;    &lt;/xsl:template>&#xa;&lt;/xsl:stylesheet>" expressionLanguage="urn:oasis:names:tc:wsbpel:2.0:sublang:xslt1.0"/>
                                     </tibex:inputBindings>
                                     <tibex:CallProcess
                                     moduleRef="CommonInterface"
@@ -1459,6 +1527,9 @@
                                     <bpws:targets>
                                     <bpws:target linkName="ErrorLogToInsertErrorResponse"/>
                                     </bpws:targets>
+                                    <bpws:sources>
+                                    <bpws:source linkName="InsertErrorResponseToReply"/>
+                                    </bpws:sources>
                                     <tibex:inputBindings>
                                     <tibex:inputBinding
                                     expression="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xa;&lt;xsl:stylesheet xmlns:xsl=&quot;http://www.w3.org/1999/XSL/Transform&quot; xmlns:tns5=&quot;http://www.tibco.com/namespaces/tnt/plugins/jdbc+af94a803-e710-4a52-93d9-d5a7fa4a010b+input&quot; xmlns:tns1=&quot;http://www.EniqueSol.org/Emp_InsurenceDetails/V1&quot; xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot; version=&quot;2.0&quot;>&#xa;    &lt;xsl:param name=&quot;post.item&quot;/>&#xa;    &lt;xsl:param name=&quot;FaultDetails&quot;/>&#xa;    &lt;xsl:template name=&quot;InsertErrorResponse-input&quot; match=&quot;/&quot;>&#xa;        &lt;tns5:jdbcUpdateActivityInput>&#xa;            &lt;ProcessName>&#xa;                &lt;xsl:value-of select=&quot;'Add_insurenceDetails'&quot;/>&#xa;            &lt;/ProcessName>&#xa;            &lt;ResponseCode>&#xa;                &lt;xsl:value-of select=&quot;$FaultDetails/MsgCode&quot;/>&#xa;            &lt;/ResponseCode>&#xa;            &lt;ResponseMsg>&#xa;                &lt;xsl:value-of select=&quot;concat('StacKTrace: ', $FaultDetails/StackTrace)&quot;/>&#xa;            &lt;/ResponseMsg>&#xa;            &lt;CorelationID>&#xa;                &lt;xsl:choose>&#xa;                    &lt;xsl:when test=&quot;exists($post.item/tns1:CorelationID)&quot;>&#xa;                        &lt;xsl:value-of select=&quot;$post.item/tns1:CorelationID&quot;/>&#xa;                    &lt;/xsl:when>&#xa;                    &lt;xsl:otherwise>&#xa;                        &lt;xsl:attribute name=&quot;xsi:nil&quot;>true&lt;/xsl:attribute>&#xa;                    &lt;/xsl:otherwise>&#xa;                &lt;/xsl:choose>&#xa;            &lt;/CorelationID>&#xa;        &lt;/tns5:jdbcUpdateActivityInput>&#xa;    &lt;/xsl:template>&#xa;&lt;/xsl:stylesheet>" expressionLanguage="urn:oasis:names:tc:wsbpel:2.0:sublang:xslt1.0"/>
@@ -1500,6 +1571,23 @@
                                     </tibex:config>
                                     </tibex:activityExtension>
                                     </bpws:extensionActivity>
+                                    <bpws:reply
+                                    faultName="clientFault"
+                                    name="Reply"
+                                    operation="post"
+                                    partnerLink="addInsurence"
+                                    portType="ns0:addInsurence"
+                                    tibex:xpdlId="2f19b9a5-e621-4068-8aae-e7ef7f5bbe7c" variable="Reply-input">
+                                    <tibex:inputBinding expressionLanguage="urn:oasis:names:tc:wsbpel:2.0:sublang:xslt1.0">&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+&lt;xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:tns3="http://xmlns.example.com/20221031164724PLT" xmlns:tns="http://tns.tibco.com/bw/REST" xmlns:xsd="http://www.w3.org/2001/XMLSchema" version="2.0"&gt;&lt;xsl:param name="FaultDetails"/&gt;&lt;xsl:template name="Reply-input" match="/"&gt;&lt;tns3:post4XXFaultMessage&gt;&lt;clientError&gt;&lt;tns:client4XXError&gt;&lt;statusCode&gt;&lt;xsl:value-of select="xsd:integer($FaultDetails/MsgCode)"/&gt;&lt;/statusCode&gt;&lt;message&gt;&lt;xsl:value-of select="$FaultDetails/Msg"/&gt;&lt;/message&gt;&lt;/tns:client4XXError&gt;&lt;/clientError&gt;&lt;/tns3:post4XXFaultMessage&gt;&lt;/xsl:template&gt;&lt;/xsl:stylesheet&gt;</tibex:inputBinding>
+                                    <tibex:inputBindings>
+                                    <tibex:partBinding
+                                    expression="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xa;&lt;xsl:stylesheet xmlns:xsl=&quot;http://www.w3.org/1999/XSL/Transform&quot; xmlns:tns3=&quot;http://xmlns.example.com/20221031164724PLT&quot; xmlns:tns=&quot;http://tns.tibco.com/bw/REST&quot; xmlns:xsd=&quot;http://www.w3.org/2001/XMLSchema&quot; version=&quot;2.0&quot;>&#xa;    &lt;xsl:param name=&quot;FaultDetails&quot;/>&#xa;    &lt;xsl:template name=&quot;Reply-input&quot; match=&quot;/&quot;>&#xa;        &lt;tns:client4XXError>&#xa;            &lt;statusCode>&#xa;                &lt;xsl:value-of select=&quot;xsd:integer($FaultDetails/MsgCode)&quot;/>&#xa;            &lt;/statusCode>&#xa;            &lt;message>&#xa;                &lt;xsl:value-of select=&quot;$FaultDetails/Msg&quot;/>&#xa;            &lt;/message>&#xa;        &lt;/tns:client4XXError>&#xa;    &lt;/xsl:template>&#xa;&lt;/xsl:stylesheet>" expressionLanguage="urn:oasis:names:tc:wsbpel:2.0:sublang:xslt1.0"/>
+                                    </tibex:inputBindings>
+                                    <bpws:targets>
+                                    <bpws:target linkName="InsertErrorResponseToReply"/>
+                                    </bpws:targets>
+                                    </bpws:reply>
                                     </bpws:flow>
                                 </bpws:scope>
                             </bpws:catchAll>
@@ -1508,12 +1596,12 @@
                             <bpws:links>
                                 <bpws:link
                                     name="OnMessageStartToStartLog" tibex:linkType="SUCCESS"/>
+                                <bpws:link name="EndLogTopostOut" tibex:linkType="SUCCESS"/>
                                 <bpws:link
-                                    name="postOutToInsertInsurence" tibex:linkType="SUCCESS"/>
+                                    name="InsertInsurenceToInsertResponse" tibex:linkType="SUCCESS"/>
+                                <bpws:link name="InsertResponseToEndLog" tibex:linkType="SUCCESS"/>
                                 <bpws:link
-                                    name="JDBCUpdateToLogHandler1" tibex:linkType="SUCCESS"/>
-                                <bpws:link name="EndLogToJDBCUpdate1" tibex:linkType="SUCCESS"/>
-                                <bpws:link name="StartLogTopostOut" tibex:linkType="SUCCESS"/>
+                                    name="StartLogToInsertInsurence" tibex:linkType="SUCCESS"/>
                             </bpws:links>
                             <bpws:empty name="OnMessageStart"
                                 tibex:constructor="onMessageStart" tibex:xpdlId="3d1735ec-c260-4341-aeb8-5cdf5088e2dd">
@@ -1529,21 +1617,19 @@
                                 tibex:xpdlId="815740da-9969-485e-848b-88d440941f8e" variable="postOut-input">
                                 <tibex:inputBindings>
                                     <tibex:partBinding
-                                    expression="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xa;&lt;xsl:stylesheet xmlns:xsl=&quot;http://www.w3.org/1999/XSL/Transform&quot; xmlns:tns3=&quot;http://xmlns.example.com/20221031164724PLT&quot; xmlns:tns1=&quot;http://www.EniqueSol.org/Emp_InsurenceDetails/V1&quot; version=&quot;2.0&quot;>&#xa;    &lt;xsl:param name=&quot;post.item&quot;/>&#xa;    &lt;xsl:template name=&quot;postOut-input&quot; match=&quot;/&quot;>&#xa;        &lt;tns1:Emp_InsurenceRes>&#xa;            &lt;tns1:ResCode>&#xa;                &lt;xsl:value-of select=&quot;'200'&quot;/>&#xa;            &lt;/tns1:ResCode>&#xa;            &lt;tns1:ResMsg>&#xa;                &lt;xsl:value-of select=&quot;concat('Request Recieved with corID: ',$post.item/tns1:CorelationID)&quot;/>&#xa;            &lt;/tns1:ResMsg>&#xa;        &lt;/tns1:Emp_InsurenceRes>&#xa;    &lt;/xsl:template>&#xa;&lt;/xsl:stylesheet>" expressionLanguage="urn:oasis:names:tc:wsbpel:2.0:sublang:xslt1.0"/>
+                                    expression="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xa;&lt;xsl:stylesheet xmlns:xsl=&quot;http://www.w3.org/1999/XSL/Transform&quot; xmlns:tns3=&quot;http://xmlns.example.com/20221031164724PLT&quot; xmlns:tns1=&quot;http://www.EniqueSol.org/Emp_InsurenceDetails/V1&quot; version=&quot;2.0&quot;>&#xa;    &lt;xsl:template name=&quot;postOut-input&quot; match=&quot;/&quot;>&#xa;        &lt;tns1:Emp_InsurenceRes>&#xa;            &lt;tns1:ResCode>&#xa;                &lt;xsl:value-of select=&quot;'200'&quot;/>&#xa;            &lt;/tns1:ResCode>&#xa;            &lt;tns1:ResMsg>&#xa;                &lt;xsl:value-of select=&quot;'Insurence Details Inserted'&quot;/>&#xa;            &lt;/tns1:ResMsg>&#xa;        &lt;/tns1:Emp_InsurenceRes>&#xa;    &lt;/xsl:template>&#xa;&lt;/xsl:stylesheet>" expressionLanguage="urn:oasis:names:tc:wsbpel:2.0:sublang:xslt1.0"/>
                                 </tibex:inputBindings>
                                 <tibex:inputBinding expressionLanguage="urn:oasis:names:tc:wsbpel:2.0:sublang:xslt1.0">&lt;?xml version="1.0" encoding="UTF-8"?&gt;
-&lt;xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:tns3="http://xmlns.example.com/20221031164724PLT" xmlns:tns1="http://www.EniqueSol.org/Emp_InsurenceDetails/V1" version="2.0"&gt;&lt;xsl:param name="post"/&gt;&lt;xsl:template name="postOut-input" match="/"&gt;&lt;tns3:postResponse&gt;&lt;item&gt;&lt;tns1:Emp_InsurenceRes&gt;&lt;tns1:ResCode&gt;&lt;xsl:value-of select="'200'"/&gt;&lt;/tns1:ResCode&gt;&lt;tns1:ResMsg&gt;&lt;xsl:value-of select="concat('Request Recieved with corID: ',$post/item/tns1:Emp_InsurenceReq/tns1:CorelationID)"/&gt;&lt;/tns1:ResMsg&gt;&lt;/tns1:Emp_InsurenceRes&gt;&lt;/item&gt;&lt;/tns3:postResponse&gt;&lt;/xsl:template&gt;&lt;/xsl:stylesheet&gt;</tibex:inputBinding>
+&lt;xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:tns3="http://xmlns.example.com/20221031164724PLT" xmlns:tns1="http://www.EniqueSol.org/Emp_InsurenceDetails/V1" version="2.0"&gt;&lt;xsl:template name="postOut-input" match="/"&gt;&lt;tns3:postResponse&gt;&lt;item&gt;&lt;tns1:Emp_InsurenceRes&gt;&lt;tns1:ResCode&gt;&lt;xsl:value-of select="'200'"/&gt;&lt;/tns1:ResCode&gt;&lt;tns1:ResMsg&gt;&lt;xsl:value-of select="'Insurence Details Inserted'"/&gt;&lt;/tns1:ResMsg&gt;&lt;/tns1:Emp_InsurenceRes&gt;&lt;/item&gt;&lt;/tns3:postResponse&gt;&lt;/xsl:template&gt;&lt;/xsl:stylesheet&gt;</tibex:inputBinding>
                                 <bpws:targets>
-                                    <bpws:target linkName="StartLogTopostOut"/>
+                                    <bpws:target linkName="EndLogTopostOut"/>
                                 </bpws:targets>
-                                <bpws:sources>
-                                    <bpws:source linkName="postOutToInsertInsurence"/>
-                                </bpws:sources>
+                                <bpws:sources/>
                                 <bpws:correlations/>
                             </bpws:reply>
                             <bpws:extensionActivity>
                                 <tibex:extActivity
-                                    expression="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xa;&lt;xsl:stylesheet xmlns:xsl=&quot;http://www.w3.org/1999/XSL/Transform&quot; xmlns:tns2=&quot;http://www.eniquesolution.com/E-Commerce/CommonFramework&quot; xmlns:tns1=&quot;http://www.EniqueSol.org/Emp_InsurenceDetails/V1&quot; xmlns:tib=&quot;http://www.tibco.com/bw/xslt/custom-functions&quot; version=&quot;2.0&quot;>&lt;xsl:param name=&quot;_processContext&quot;/>&lt;xsl:param name=&quot;post&quot;/>&lt;xsl:template name=&quot;StartLog-input&quot; match=&quot;/&quot;>&lt;tns2:LogExceptionHandler>&lt;tns2:ApplictionName>&lt;xsl:value-of select=&quot;$_processContext/ApplicationName&quot;/>&lt;/tns2:ApplictionName>&lt;tns2:ProcessName>&lt;xsl:value-of select=&quot;'Add_InsurenceDetails'&quot;/>&lt;/tns2:ProcessName>&lt;tns2:LogType>&lt;xsl:value-of select=&quot;'INFO'&quot;/>&lt;/tns2:LogType>&lt;tns2:status>&lt;xsl:value-of select=&quot;'Success'&quot;/>&lt;/tns2:status>&lt;tns2:CorrelationID>&lt;xsl:value-of select=&quot;$post/item/tns1:Emp_InsurenceReq/tns1:CorelationID&quot;/>&lt;/tns2:CorrelationID>&lt;tns2:MessageType>&lt;xsl:value-of select=&quot;'RequestPayload'&quot;/>&lt;/tns2:MessageType>&lt;tns2:Timestamp>&lt;xsl:value-of select=&quot;current-dateTime()&quot;/>&lt;/tns2:Timestamp>&lt;tns2:PAYLOAD>&lt;xsl:value-of select=&quot;tib:render-xml($post/item/tns1:Emp_InsurenceReq)&quot;/>&lt;/tns2:PAYLOAD>&lt;/tns2:LogExceptionHandler>&lt;/xsl:template>&lt;/xsl:stylesheet>"
+                                    expression="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xa;&lt;xsl:stylesheet xmlns:xsl=&quot;http://www.w3.org/1999/XSL/Transform&quot; xmlns:tns2=&quot;http://www.eniquesolution.com/E-Commerce/CommonFramework&quot; xmlns:tns1=&quot;http://www.EniqueSol.org/Emp_InsurenceDetails/V1&quot; xmlns:tib=&quot;http://www.tibco.com/bw/xslt/custom-functions&quot; version=&quot;2.0&quot;>&lt;xsl:param name=&quot;_processContext&quot;/>&lt;xsl:param name=&quot;post&quot;/>&lt;xsl:template name=&quot;StartLog-input&quot; match=&quot;/&quot;>&lt;tns2:LogExceptionHandler>&lt;tns2:ApplictionName>&lt;xsl:value-of select=&quot;$_processContext/ApplicationName&quot;/>&lt;/tns2:ApplictionName>&lt;tns2:ProcessName>&lt;xsl:value-of select=&quot;'Add_InsurenceDetails'&quot;/>&lt;/tns2:ProcessName>&lt;tns2:LogType>&lt;xsl:value-of select=&quot;'StartLog'&quot;/>&lt;/tns2:LogType>&lt;tns2:status>&lt;xsl:value-of select=&quot;'Started'&quot;/>&lt;/tns2:status>&lt;tns2:CorrelationID>&lt;xsl:value-of select=&quot;$post/item/tns1:Emp_InsurenceReq/tns1:CorelationID&quot;/>&lt;/tns2:CorrelationID>&lt;tns2:MessageType>&lt;xsl:value-of select=&quot;'RequestPayload'&quot;/>&lt;/tns2:MessageType>&lt;tns2:Timestamp>&lt;xsl:value-of select=&quot;format-dateTime(current-dateTime(), &amp;quot;[Y0001]-[M01]-[D01] [H01]:[m01]:[s01]&amp;quot;)&quot;/>&lt;/tns2:Timestamp>&lt;tns2:PAYLOAD>&lt;xsl:value-of select=&quot;tib:render-xml($post/item/tns1:Emp_InsurenceReq)&quot;/>&lt;/tns2:PAYLOAD>&lt;/tns2:LogExceptionHandler>&lt;/xsl:template>&lt;/xsl:stylesheet>"
                                     expressionLanguage="urn:oasis:names:tc:wsbpel:2.0:sublang:xslt1.0"
                                     inputVariable="StartLog-input"
                                     name="StartLog"
@@ -1553,11 +1639,11 @@
                                     <bpws:target linkName="OnMessageStartToStartLog"/>
                                     </bpws:targets>
                                     <bpws:sources>
-                                    <bpws:source linkName="StartLogTopostOut"/>
+                                    <bpws:source linkName="StartLogToInsertInsurence"/>
                                     </bpws:sources>
                                     <tibex:inputBindings>
                                     <tibex:inputBinding coercion=""
-                                    expression="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xa;&lt;xsl:stylesheet xmlns:xsl=&quot;http://www.w3.org/1999/XSL/Transform&quot; xmlns:tns2=&quot;http://www.eniquesolution.com/E-Commerce/CommonFramework&quot; xmlns:tns1=&quot;http://www.EniqueSol.org/Emp_InsurenceDetails/V1&quot; xmlns:tib=&quot;http://www.tibco.com/bw/xslt/custom-functions&quot; version=&quot;2.0&quot;>&#xa;    &lt;xsl:param name=&quot;post.item&quot;/>&#xa;    &lt;xsl:param name=&quot;_processContext&quot;/>&#xa;    &lt;xsl:template name=&quot;StartLog-input&quot; match=&quot;/&quot;>&#xa;        &lt;tns2:LogExceptionHandler>&#xa;            &lt;tns2:ApplictionName>&#xa;                &lt;xsl:value-of select=&quot;$_processContext/ApplicationName&quot;/>&#xa;            &lt;/tns2:ApplictionName>&#xa;            &lt;tns2:ProcessName>&#xa;                &lt;xsl:value-of select=&quot;'Add_InsurenceDetails'&quot;/>&#xa;            &lt;/tns2:ProcessName>&#xa;            &lt;tns2:LogType>&#xa;                &lt;xsl:value-of select=&quot;'INFO'&quot;/>&#xa;            &lt;/tns2:LogType>&#xa;            &lt;tns2:status>&#xa;                &lt;xsl:value-of select=&quot;'Success'&quot;/>&#xa;            &lt;/tns2:status>&#xa;            &lt;tns2:CorrelationID>&#xa;                &lt;xsl:value-of select=&quot;$post.item/tns1:CorelationID&quot;/>&#xa;            &lt;/tns2:CorrelationID>&#xa;            &lt;tns2:MessageType>&#xa;                &lt;xsl:value-of select=&quot;'RequestPayload'&quot;/>&#xa;            &lt;/tns2:MessageType>&#xa;            &lt;tns2:Timestamp>&#xa;                &lt;xsl:value-of select=&quot;current-dateTime()&quot;/>&#xa;            &lt;/tns2:Timestamp>&#xa;            &lt;tns2:PAYLOAD>&#xa;                &lt;xsl:value-of select=&quot;tib:render-xml($post.item)&quot;/>&#xa;            &lt;/tns2:PAYLOAD>&#xa;        &lt;/tns2:LogExceptionHandler>&#xa;    &lt;/xsl:template>&#xa;&lt;/xsl:stylesheet>" expressionLanguage="urn:oasis:names:tc:wsbpel:2.0:sublang:xslt1.0"/>
+                                    expression="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xa;&lt;xsl:stylesheet xmlns:xsl=&quot;http://www.w3.org/1999/XSL/Transform&quot; xmlns:tns2=&quot;http://www.eniquesolution.com/E-Commerce/CommonFramework&quot; xmlns:tns1=&quot;http://www.EniqueSol.org/Emp_InsurenceDetails/V1&quot; xmlns:tib=&quot;http://www.tibco.com/bw/xslt/custom-functions&quot; version=&quot;2.0&quot;>&#xa;    &lt;xsl:param name=&quot;post.item&quot;/>&#xa;    &lt;xsl:param name=&quot;_processContext&quot;/>&#xa;    &lt;xsl:template name=&quot;StartLog-input&quot; match=&quot;/&quot;>&#xa;        &lt;tns2:LogExceptionHandler>&#xa;            &lt;tns2:ApplictionName>&#xa;                &lt;xsl:value-of select=&quot;$_processContext/ApplicationName&quot;/>&#xa;            &lt;/tns2:ApplictionName>&#xa;            &lt;tns2:ProcessName>&#xa;                &lt;xsl:value-of select=&quot;'Add_InsurenceDetails'&quot;/>&#xa;            &lt;/tns2:ProcessName>&#xa;            &lt;tns2:LogType>&#xa;                &lt;xsl:value-of select=&quot;'StartLog'&quot;/>&#xa;            &lt;/tns2:LogType>&#xa;            &lt;tns2:status>&#xa;                &lt;xsl:value-of select=&quot;'Started'&quot;/>&#xa;            &lt;/tns2:status>&#xa;            &lt;tns2:CorrelationID>&#xa;                &lt;xsl:value-of select=&quot;$post.item/tns1:CorelationID&quot;/>&#xa;            &lt;/tns2:CorrelationID>&#xa;            &lt;tns2:MessageType>&#xa;                &lt;xsl:value-of select=&quot;'RequestPayload'&quot;/>&#xa;            &lt;/tns2:MessageType>&#xa;            &lt;tns2:Timestamp>&#xa;                &lt;xsl:value-of select=&quot;format-dateTime(current-dateTime(), &amp;quot;[Y0001]-[M01]-[D01] [H01]:[m01]:[s01]&amp;quot;)&quot;/>&#xa;            &lt;/tns2:Timestamp>&#xa;            &lt;tns2:PAYLOAD>&#xa;                &lt;xsl:value-of select=&quot;tib:render-xml($post.item)&quot;/>&#xa;            &lt;/tns2:PAYLOAD>&#xa;        &lt;/tns2:LogExceptionHandler>&#xa;    &lt;/xsl:template>&#xa;&lt;/xsl:stylesheet>" expressionLanguage="urn:oasis:names:tc:wsbpel:2.0:sublang:xslt1.0"/>
                                     </tibex:inputBindings>
                                     <tibex:CallProcess
                                     moduleRef="CommonInterface"
@@ -1574,10 +1660,10 @@
                                     outputVariable="InsertInsurence"
                                     tibex:xpdlId="ba4a228c-c072-49d4-8d98-9102fa32b51f" xmlns:tibex="http://www.tibco.com/bpel/2007/extensions">
                                     <bpws:targets>
-                                    <bpws:target linkName="postOutToInsertInsurence"/>
+                                    <bpws:target linkName="StartLogToInsertInsurence"/>
                                     </bpws:targets>
                                     <bpws:sources>
-                                    <bpws:source linkName="JDBCUpdateToLogHandler1"/>
+                                    <bpws:source linkName="InsertInsurenceToInsertResponse"/>
                                     </bpws:sources>
                                     <tibex:inputBindings>
                                     <tibex:inputBinding
@@ -1634,21 +1720,21 @@
                             </bpws:extensionActivity>
                             <bpws:extensionActivity>
                                 <tibex:extActivity
-                                    expression="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xa;&lt;xsl:stylesheet xmlns:xsl=&quot;http://www.w3.org/1999/XSL/Transform&quot; xmlns:tns2=&quot;http://www.eniquesolution.com/E-Commerce/CommonFramework&quot; xmlns:tns1=&quot;http://www.EniqueSol.org/Emp_InsurenceDetails/V1&quot; version=&quot;2.0&quot;>&lt;xsl:param name=&quot;_processContext&quot;/>&lt;xsl:param name=&quot;post&quot;/>&lt;xsl:template name=&quot;EndLog-input&quot; match=&quot;/&quot;>&lt;tns2:LogExceptionHandler>&lt;tns2:ApplictionName>&lt;xsl:value-of select=&quot;$_processContext/ApplicationName&quot;/>&lt;/tns2:ApplictionName>&lt;tns2:ProcessName>&lt;xsl:value-of select=&quot;'Add_InsurenceDetails'&quot;/>&lt;/tns2:ProcessName>&lt;tns2:LogType>&lt;xsl:value-of select=&quot;'INFO'&quot;/>&lt;/tns2:LogType>&lt;tns2:status>&lt;xsl:value-of select=&quot;'Success'&quot;/>&lt;/tns2:status>&lt;tns2:CorrelationID>&lt;xsl:value-of select=&quot;$post/item/tns1:Emp_InsurenceReq/tns1:CorelationID&quot;/>&lt;/tns2:CorrelationID>&lt;tns2:MessageType>&lt;xsl:value-of select=&quot;'ResponsePayload'&quot;/>&lt;/tns2:MessageType>&lt;tns2:Timestamp>&lt;xsl:value-of select=&quot;current-dateTime()&quot;/>&lt;/tns2:Timestamp>&lt;tns2:PAYLOAD>&lt;xsl:value-of select=&quot;'Details Succefully Inserted'&quot;/>&lt;/tns2:PAYLOAD>&lt;/tns2:LogExceptionHandler>&lt;/xsl:template>&lt;/xsl:stylesheet>"
+                                    expression="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xa;&lt;xsl:stylesheet xmlns:xsl=&quot;http://www.w3.org/1999/XSL/Transform&quot; xmlns:tns2=&quot;http://www.eniquesolution.com/E-Commerce/CommonFramework&quot; xmlns:tns1=&quot;http://www.EniqueSol.org/Emp_InsurenceDetails/V1&quot; version=&quot;2.0&quot;>&lt;xsl:param name=&quot;_processContext&quot;/>&lt;xsl:param name=&quot;post&quot;/>&lt;xsl:template name=&quot;EndLog-input&quot; match=&quot;/&quot;>&lt;tns2:LogExceptionHandler>&lt;tns2:ApplictionName>&lt;xsl:value-of select=&quot;$_processContext/ApplicationName&quot;/>&lt;/tns2:ApplictionName>&lt;tns2:ProcessName>&lt;xsl:value-of select=&quot;'Add_InsurenceDetails'&quot;/>&lt;/tns2:ProcessName>&lt;tns2:LogType>&lt;xsl:value-of select=&quot;'EndLog'&quot;/>&lt;/tns2:LogType>&lt;tns2:status>&lt;xsl:value-of select=&quot;'Success'&quot;/>&lt;/tns2:status>&lt;tns2:CorrelationID>&lt;xsl:value-of select=&quot;$post/item/tns1:Emp_InsurenceReq/tns1:CorelationID&quot;/>&lt;/tns2:CorrelationID>&lt;tns2:MessageType>&lt;xsl:value-of select=&quot;'ResponsePayload'&quot;/>&lt;/tns2:MessageType>&lt;tns2:Timestamp>&lt;xsl:value-of select=&quot;format-dateTime(current-dateTime(), &amp;quot;[Y0001]-[M01]-[D01] [H01]:[m01]:[s01]&amp;quot;)&quot;/>&lt;/tns2:Timestamp>&lt;tns2:PAYLOAD>&lt;xsl:value-of select=&quot;'Details Succefully Inserted'&quot;/>&lt;/tns2:PAYLOAD>&lt;/tns2:LogExceptionHandler>&lt;/xsl:template>&lt;/xsl:stylesheet>"
                                     expressionLanguage="urn:oasis:names:tc:wsbpel:2.0:sublang:xslt1.0"
                                     inputVariable="EndLog-input"
                                     name="EndLog"
                                     tibex:xpdlId="0f83edaf-396e-46e9-ae0d-b1f5bdff1fd3"
                                     type="bw.generalactivities.callprocess" xmlns:tibex="http://www.tibco.com/bpel/2007/extensions">
                                     <bpws:targets>
-                                    <bpws:target linkName="JDBCUpdateToLogHandler1"/>
+                                    <bpws:target linkName="InsertResponseToEndLog"/>
                                     </bpws:targets>
                                     <bpws:sources>
-                                    <bpws:source linkName="EndLogToJDBCUpdate1"/>
+                                    <bpws:source linkName="EndLogTopostOut"/>
                                     </bpws:sources>
                                     <tibex:inputBindings>
                                     <tibex:inputBinding coercion=""
-                                    expression="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xa;&lt;xsl:stylesheet xmlns:xsl=&quot;http://www.w3.org/1999/XSL/Transform&quot; xmlns:tns2=&quot;http://www.eniquesolution.com/E-Commerce/CommonFramework&quot; xmlns:tns1=&quot;http://www.EniqueSol.org/Emp_InsurenceDetails/V1&quot; version=&quot;2.0&quot;>&#xa;    &lt;xsl:param name=&quot;post.item&quot;/>&#xa;    &lt;xsl:param name=&quot;_processContext&quot;/>&#xa;    &lt;xsl:template name=&quot;EndLog-input&quot; match=&quot;/&quot;>&#xa;        &lt;tns2:LogExceptionHandler>&#xa;            &lt;tns2:ApplictionName>&#xa;                &lt;xsl:value-of select=&quot;$_processContext/ApplicationName&quot;/>&#xa;            &lt;/tns2:ApplictionName>&#xa;            &lt;tns2:ProcessName>&#xa;                &lt;xsl:value-of select=&quot;'Add_InsurenceDetails'&quot;/>&#xa;            &lt;/tns2:ProcessName>&#xa;            &lt;tns2:LogType>&#xa;                &lt;xsl:value-of select=&quot;'INFO'&quot;/>&#xa;            &lt;/tns2:LogType>&#xa;            &lt;tns2:status>&#xa;                &lt;xsl:value-of select=&quot;'Success'&quot;/>&#xa;            &lt;/tns2:status>&#xa;            &lt;tns2:CorrelationID>&#xa;                &lt;xsl:value-of select=&quot;$post.item/tns1:CorelationID&quot;/>&#xa;            &lt;/tns2:CorrelationID>&#xa;            &lt;tns2:MessageType>&#xa;                &lt;xsl:value-of select=&quot;'ResponsePayload'&quot;/>&#xa;            &lt;/tns2:MessageType>&#xa;            &lt;tns2:Timestamp>&#xa;                &lt;xsl:value-of select=&quot;current-dateTime()&quot;/>&#xa;            &lt;/tns2:Timestamp>&#xa;            &lt;tns2:PAYLOAD>&#xa;                &lt;xsl:value-of select=&quot;'Details Succefully Inserted'&quot;/>&#xa;            &lt;/tns2:PAYLOAD>&#xa;        &lt;/tns2:LogExceptionHandler>&#xa;    &lt;/xsl:template>&#xa;&lt;/xsl:stylesheet>" expressionLanguage="urn:oasis:names:tc:wsbpel:2.0:sublang:xslt1.0"/>
+                                    expression="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xa;&lt;xsl:stylesheet xmlns:xsl=&quot;http://www.w3.org/1999/XSL/Transform&quot; xmlns:tns2=&quot;http://www.eniquesolution.com/E-Commerce/CommonFramework&quot; xmlns:tns1=&quot;http://www.EniqueSol.org/Emp_InsurenceDetails/V1&quot; version=&quot;2.0&quot;>&#xa;    &lt;xsl:param name=&quot;post.item&quot;/>&#xa;    &lt;xsl:param name=&quot;_processContext&quot;/>&#xa;    &lt;xsl:template name=&quot;EndLog-input&quot; match=&quot;/&quot;>&#xa;        &lt;tns2:LogExceptionHandler>&#xa;            &lt;tns2:ApplictionName>&#xa;                &lt;xsl:value-of select=&quot;$_processContext/ApplicationName&quot;/>&#xa;            &lt;/tns2:ApplictionName>&#xa;            &lt;tns2:ProcessName>&#xa;                &lt;xsl:value-of select=&quot;'Add_InsurenceDetails'&quot;/>&#xa;            &lt;/tns2:ProcessName>&#xa;            &lt;tns2:LogType>&#xa;                &lt;xsl:value-of select=&quot;'EndLog'&quot;/>&#xa;            &lt;/tns2:LogType>&#xa;            &lt;tns2:status>&#xa;                &lt;xsl:value-of select=&quot;'Success'&quot;/>&#xa;            &lt;/tns2:status>&#xa;            &lt;tns2:CorrelationID>&#xa;                &lt;xsl:value-of select=&quot;$post.item/tns1:CorelationID&quot;/>&#xa;            &lt;/tns2:CorrelationID>&#xa;            &lt;tns2:MessageType>&#xa;                &lt;xsl:value-of select=&quot;'ResponsePayload'&quot;/>&#xa;            &lt;/tns2:MessageType>&#xa;            &lt;tns2:Timestamp>&#xa;                &lt;xsl:value-of select=&quot;format-dateTime(current-dateTime(), &amp;quot;[Y0001]-[M01]-[D01] [H01]:[m01]:[s01]&amp;quot;)&quot;/>&#xa;            &lt;/tns2:Timestamp>&#xa;            &lt;tns2:PAYLOAD>&#xa;                &lt;xsl:value-of select=&quot;'Details Succefully Inserted'&quot;/>&#xa;            &lt;/tns2:PAYLOAD>&#xa;        &lt;/tns2:LogExceptionHandler>&#xa;    &lt;/xsl:template>&#xa;&lt;/xsl:stylesheet>" expressionLanguage="urn:oasis:names:tc:wsbpel:2.0:sublang:xslt1.0"/>
                                     </tibex:inputBindings>
                                     <tibex:CallProcess
                                     moduleRef="CommonInterface"
@@ -1665,8 +1751,11 @@
                                     outputVariable="InsertResponse"
                                     tibex:xpdlId="d663c934-cf11-4a83-8464-476ecc5ff639" xmlns:tibex="http://www.tibco.com/bpel/2007/extensions">
                                     <bpws:targets>
-                                    <bpws:target linkName="EndLogToJDBCUpdate1"/>
+                                    <bpws:target linkName="InsertInsurenceToInsertResponse"/>
                                     </bpws:targets>
+                                    <bpws:sources>
+                                    <bpws:source linkName="InsertResponseToEndLog"/>
+                                    </bpws:sources>
                                     <tibex:inputBindings>
                                     <tibex:inputBinding
                                     expression="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xa;&lt;xsl:stylesheet xmlns:xsl=&quot;http://www.w3.org/1999/XSL/Transform&quot; xmlns:tns4=&quot;http://www.tibco.com/namespaces/tnt/plugins/jdbc+d663c934-cf11-4a83-8464-476ecc5ff639+input&quot; xmlns:tns1=&quot;http://www.EniqueSol.org/Emp_InsurenceDetails/V1&quot; xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot; version=&quot;2.0&quot;>&#xa;    &lt;xsl:param name=&quot;post.item&quot;/>&#xa;    &lt;xsl:template name=&quot;InsertResponse-input&quot; match=&quot;/&quot;>&#xa;        &lt;tns4:jdbcUpdateActivityInput>&#xa;            &lt;ProcessName>&#xa;                &lt;xsl:value-of select=&quot;'Add_insurenceDetails'&quot;/>&#xa;            &lt;/ProcessName>&#xa;            &lt;ResponseCode>&#xa;                &lt;xsl:value-of select=&quot;'200'&quot;/>&#xa;            &lt;/ResponseCode>&#xa;            &lt;ResponseMsg>&#xa;                &lt;xsl:value-of select=&quot;'Insurence Details Inserted'&quot;/>&#xa;            &lt;/ResponseMsg>&#xa;            &lt;CorelationID>&#xa;                &lt;xsl:choose>&#xa;                    &lt;xsl:when test=&quot;exists($post.item/tns1:CorelationID)&quot;>&#xa;                        &lt;xsl:value-of select=&quot;$post.item/tns1:CorelationID&quot;/>&#xa;                    &lt;/xsl:when>&#xa;                    &lt;xsl:otherwise>&#xa;                        &lt;xsl:attribute name=&quot;xsi:nil&quot;>true&lt;/xsl:attribute>&#xa;                    &lt;/xsl:otherwise>&#xa;                &lt;/xsl:choose>&#xa;            &lt;/CorelationID>&#xa;        &lt;/tns4:jdbcUpdateActivityInput>&#xa;    &lt;/xsl:template>&#xa;&lt;/xsl:stylesheet>" expressionLanguage="urn:oasis:names:tc:wsbpel:2.0:sublang:xslt1.0"/>
