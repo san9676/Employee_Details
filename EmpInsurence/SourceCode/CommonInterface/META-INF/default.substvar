@@ -120,7 +120,7 @@
 		</globalVariable>
 		<globalVariable>
 			<name>/Connections/HTTP/Port</name>
-			<value>9216</value>
+			<value>8967</value>
 			<deploymentSettable>false</deploymentSettable>
 			<serviceSettable>false</serviceSettable>
 			<type>Integer</type>
