@@ -1395,9 +1395,9 @@
                         <bpws:source linkName="StartToRenderJSON">
                             <tibex:DesignExpression>
                                 <tibex:expression
-                                    expression="matches(xsd:string($Start/ns0:empPersonal/ns0:PhoneNo), '[0-9]{10}') and matches($Start/ns0:empPersonal/ns0:EmailID, '([A-Za-z0-9]+)@([a-zA-Z]+)([\.])([a-zA-Z]+)') and if (string-length($Start/ns0:empPersonal/ns0:Alt_EmailID)>0) then matches($Start/ns0:empPersonal/ns0:EmailID, '([A-Za-z0-9]+)@([a-zA-Z]+)([\.])([a-zA-Z]+)') else true()" expressionLanguage="urn:oasis:names:tc:wsbpel:2.0:sublang:xpath2.0"/>
+                                    expression="matches(xsd:string($Start/ns0:empPersonal/ns0:PhoneNo), '[0-9]{10}') and matches($Start/ns0:empPersonal/ns0:EmailID, '^[a-zA-Z0-9+_.-]+@[a-zA-Z0-9.-]+$')" expressionLanguage="urn:oasis:names:tc:wsbpel:2.0:sublang:xpath2.0"/>
                             </tibex:DesignExpression>
-                            <bpws:transitionCondition expressionLanguage="urn:oasis:names:tc:wsbpel:2.0:sublang:xpath2.0"><![CDATA[matches(xsd:string($Start/ns0:empPersonal/ns0:PhoneNo), '[0-9]{10}') and matches($Start/ns0:empPersonal/ns0:EmailID, '([A-Za-z0-9]+)@([a-zA-Z]+)([\.])([a-zA-Z]+)') and if (string-length($Start/ns0:empPersonal/ns0:Alt_EmailID)>0) then matches($Start/ns0:empPersonal/ns0:EmailID, '([A-Za-z0-9]+)@([a-zA-Z]+)([\.])([a-zA-Z]+)') else true()]]></bpws:transitionCondition>
+                            <bpws:transitionCondition expressionLanguage="urn:oasis:names:tc:wsbpel:2.0:sublang:xpath2.0"><![CDATA[matches(xsd:string($Start/ns0:empPersonal/ns0:PhoneNo), '[0-9]{10}') and matches($Start/ns0:empPersonal/ns0:EmailID, '^[a-zA-Z0-9+_.-]+@[a-zA-Z0-9.-]+$')]]></bpws:transitionCondition>
                         </bpws:source>
                     </bpws:sources>
                     <tibex:eventSource>
