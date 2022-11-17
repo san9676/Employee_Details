@@ -757,8 +757,8 @@
                                     gradientEndColor="50431"
                                     gradientStartColor="16777215" xsi:type="bwnotation:BackgroundStyle"/>
                                     <element href="//0/@process/@activity/@activity/@activities.2"/>
-                                    <layoutConstraint x="95"
-                                    xsi:type="notation:Bounds" y="141"/>
+                                    <layoutConstraint x="221"
+                                    xsi:type="notation:Bounds" y="110"/>
                                     </children>
                                     <children type="4002">
                                     <children type="4017">
@@ -792,8 +792,8 @@
                                     gradientEndColor="50431"
                                     gradientStartColor="16777215" xsi:type="bwnotation:BackgroundStyle"/>
                                     <element href="//0/@process/@activity/@activity/@activities.3"/>
-                                    <layoutConstraint x="650"
-                                    xsi:type="notation:Bounds" y="148"/>
+                                    <layoutConstraint x="602"
+                                    xsi:type="notation:Bounds" y="129"/>
                                     </children>
                                     <children type="4002">
                                     <children type="4017">
@@ -827,8 +827,8 @@
                                     gradientEndColor="50431"
                                     gradientStartColor="16777215" xsi:type="bwnotation:BackgroundStyle"/>
                                     <element href="//0/@process/@activity/@activity/@activities.4"/>
-                                    <layoutConstraint x="237"
-                                    xsi:type="notation:Bounds" y="141"/>
+                                    <layoutConstraint x="136"
+                                    xsi:type="notation:Bounds" y="165"/>
                                     </children>
                                     <children type="4002">
                                     <children type="4017">
@@ -947,7 +947,7 @@
                                     gradientStartColor="16777215" xsi:type="bwnotation:BackgroundStyle"/>
                                     <styles xsi:type="bwnotation:ResizingStyle"/>
                                     <element href="//0/@process/@activity/@activity"/>
-                                    <layoutConstraint height="384"
+                                    <layoutConstraint height="407"
                                     width="893" xsi:type="notation:Bounds"/>
                                 </children>
                                 <styles xsi:type="notation:SortingStyle"/>
@@ -1116,17 +1116,6 @@
         <styles xsi:type="notation:DiagramStyle"/>
         <element href="//0"/>
         <edges
-            source="//@children.0/@children.3/@children.0/@children.0/@children.0/@children.0/@children.0/@children.0/@children.0"
-            target="//@children.0/@children.3/@children.0/@children.0/@children.0/@children.0/@children.0/@children.0/@children.2" type="4006">
-            <children type="6002">
-                <layoutConstraint xsi:type="notation:Location" y="40"/>
-            </children>
-            <styles lineColor="0" xsi:type="notation:ConnectorStyle"/>
-            <styles fontName="Segoe UI" xsi:type="notation:FontStyle"/>
-            <element href="//0/@process/@activity/@activity/@links/@children.0"/>
-            <bendpoints points="[25, 0, -103, 0]$[104, 0, -24, 0]" xsi:type="notation:RelativeBendpoints"/>
-        </edges>
-        <edges
             source="//@children.0/@children.3/@children.0/@children.0/@children.0/@children.0/@children.0/@children.0/@children.3"
             target="//@children.0/@children.3/@children.0/@children.0/@children.0/@children.0/@children.0/@children.0/@children.1" type="4006">
             <children type="6002">
@@ -1134,30 +1123,20 @@
             </children>
             <styles lineColor="0" xsi:type="notation:ConnectorStyle"/>
             <styles fontName="Segoe UI" xsi:type="notation:FontStyle"/>
-            <element href="//0/@process/@activity/@activity/@links/@children.1"/>
+            <element href="//0/@process/@activity/@activity/@links/@children.0"/>
             <bendpoints points="[25, 0, -105, 0]$[106, 0, -24, 0]" xsi:type="notation:RelativeBendpoints"/>
         </edges>
         <edges
             source="//@children.0/@children.3/@children.0/@children.0/@children.0/@children.0/@children.0/@children.0/@children.2"
-            target="//@children.0/@children.3/@children.0/@children.0/@children.0/@children.0/@children.0/@children.0/@children.4" type="4006">
-            <children type="6002">
-                <layoutConstraint xsi:type="notation:Location" y="40"/>
-            </children>
-            <styles lineColor="0" xsi:type="notation:ConnectorStyle"/>
-            <styles fontName="Segoe UI" xsi:type="notation:FontStyle"/>
-            <element href="//0/@process/@activity/@activity/@links/@children.2"/>
-            <bendpoints points="[0, 0, 0, 0]$[0, 0, 0, 0]" xsi:type="notation:RelativeBendpoints"/>
-        </edges>
-        <edges
-            source="//@children.0/@children.3/@children.0/@children.0/@children.0/@children.0/@children.0/@children.0/@children.4"
             target="//@children.0/@children.3/@children.0/@children.0/@children.0/@children.0/@children.0/@children.0/@children.5" type="4006">
             <children type="6002">
                 <layoutConstraint xsi:type="notation:Location" y="40"/>
             </children>
             <styles lineColor="0" xsi:type="notation:ConnectorStyle"/>
             <styles fontName="Segoe UI" xsi:type="notation:FontStyle"/>
-            <element href="//0/@process/@activity/@activity/@links/@children.3"/>
+            <element href="//0/@process/@activity/@activity/@links/@children.1"/>
             <bendpoints points="[0, 0, 0, 0]$[0, 0, 0, 0]" xsi:type="notation:RelativeBendpoints"/>
+            <sourceAnchor id="(1.0,0.40816326530612246)" xsi:type="notation:IdentityAnchor"/>
         </edges>
         <edges
             source="//@children.0/@children.3/@children.0/@children.0/@children.0/@children.0/@children.0/@children.0/@children.5"
@@ -1167,7 +1146,7 @@
             </children>
             <styles lineColor="0" xsi:type="notation:ConnectorStyle"/>
             <styles fontName="Segoe UI" xsi:type="notation:FontStyle"/>
-            <element href="//0/@process/@activity/@activity/@links/@children.4"/>
+            <element href="//0/@process/@activity/@activity/@links/@children.2"/>
             <bendpoints points="[0, 0, 0, 0]$[0, 0, 0, 0]" xsi:type="notation:RelativeBendpoints"/>
         </edges>
         <edges
@@ -1178,20 +1157,21 @@
             </children>
             <styles lineColor="0" xsi:type="notation:ConnectorStyle"/>
             <styles fontName="Segoe UI" xsi:type="notation:FontStyle"/>
-            <element href="//0/@process/@activity/@activity/@links/@children.5"/>
+            <element href="//0/@process/@activity/@activity/@links/@children.3"/>
             <bendpoints points="[25, 0, -60, 0]$[61, 0, -24, 0]" xsi:type="notation:RelativeBendpoints"/>
         </edges>
         <edges
-            source="//@children.0/@children.3/@children.0/@children.0/@children.0/@children.0/@children.0/@children.0/@children.2"
+            source="//@children.0/@children.3/@children.0/@children.0/@children.0/@children.0/@children.0/@children.0/@children.0"
             target="//@children.0/@children.3/@children.0/@children.0/@children.0/@children.0/@children.0/@children.0/@children.7" type="4006">
             <children type="6002">
                 <layoutConstraint xsi:type="notation:Location" y="40"/>
             </children>
             <styles lineColor="0" xsi:type="notation:ConnectorStyle"/>
             <styles fontName="Segoe UI" xsi:type="notation:FontStyle"/>
-            <element href="//0/@process/@activity/@activity/@links/@children.6"/>
+            <element href="//0/@process/@activity/@activity/@links/@children.4"/>
             <bendpoints
-                points="[25, 2, -319, -130]$[78, 2, -266, -130]$[78, 130, -266, -2]$[320, 130, -24, -2]" xsi:type="notation:RelativeBendpoints"/>
+                points="[5, 2, -462, -107]$[5, 114, -462, 5]$[443, 114, -24, 5]" xsi:type="notation:RelativeBendpoints"/>
+            <sourceAnchor id="(0.5918367346938775,0.9591836734693877)" xsi:type="notation:IdentityAnchor"/>
         </edges>
         <edges
             source="//@children.0/@children.3/@children.0/@children.0/@children.0/@children.0/@children.0/@children.0/@children.7"
@@ -1201,7 +1181,7 @@
             </children>
             <styles lineColor="0" xsi:type="notation:ConnectorStyle"/>
             <styles fontName="Segoe UI" xsi:type="notation:FontStyle"/>
-            <element href="//0/@process/@activity/@activity/@links/@children.7"/>
+            <element href="//0/@process/@activity/@activity/@links/@children.5"/>
             <bendpoints
                 points="[25, 0, -444, 119]$[469, 0, 0, 119]$[469, -94, 0, 25]" xsi:type="notation:RelativeBendpoints"/>
         </edges>
@@ -1215,6 +1195,28 @@
             <styles fontName="Segoe UI" xsi:type="notation:FontStyle"/>
             <element href="//0/@process/@activity/@faultHandlers/@catchAll/@activity/@activity/@links/@children.0"/>
             <bendpoints points="[0, 0, 0, 0]$[0, 0, 0, 0]" xsi:type="notation:RelativeBendpoints"/>
+        </edges>
+        <edges
+            source="//@children.0/@children.3/@children.0/@children.0/@children.0/@children.0/@children.0/@children.0/@children.0"
+            target="//@children.0/@children.3/@children.0/@children.0/@children.0/@children.0/@children.0/@children.0/@children.4" type="4006">
+            <children type="6002">
+                <layoutConstraint xsi:type="notation:Location" y="40"/>
+            </children>
+            <styles lineColor="0" xsi:type="notation:ConnectorStyle"/>
+            <styles fontName="Segoe UI" xsi:type="notation:FontStyle"/>
+            <element href="//0/@process/@activity/@activity/@links/@children.6"/>
+            <bendpoints points="[25, 3, -144, -21]$[145, 21, -24, -3]" xsi:type="notation:RelativeBendpoints"/>
+        </edges>
+        <edges
+            source="//@children.0/@children.3/@children.0/@children.0/@children.0/@children.0/@children.0/@children.0/@children.4"
+            target="//@children.0/@children.3/@children.0/@children.0/@children.0/@children.0/@children.0/@children.0/@children.2" type="4006">
+            <children type="6002">
+                <layoutConstraint xsi:type="notation:Location" y="40"/>
+            </children>
+            <styles lineColor="0" xsi:type="notation:ConnectorStyle"/>
+            <styles fontName="Segoe UI" xsi:type="notation:FontStyle"/>
+            <element href="//0/@process/@activity/@activity/@links/@children.7"/>
+            <bendpoints points="[22, -24, -48, 55]$[48, -54, -22, 25]" xsi:type="notation:RelativeBendpoints"/>
         </edges>
     </notation:Diagram>
     <tibex:NamespaceRegistry enabled="true">
@@ -1322,7 +1324,7 @@
                                 </bpws:sources>
                                 <tibex:inputBindings>
                                     <tibex:inputBinding coercion=""
-                                    expression="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xa;&lt;xsl:stylesheet xmlns:xsl=&quot;http://www.w3.org/1999/XSL/Transform&quot; xmlns:tns2=&quot;http://www.eniquesolution.com/E-Commerce/CommonFramework&quot; xmlns:tns=&quot;http://www.EniqueSol.org/Employee_Personal/V1&quot; version=&quot;2.0&quot;>&lt;xsl:param name=&quot;_processContext&quot;/>&lt;xsl:param name=&quot;FaultDetails&quot;/>&lt;xsl:param name=&quot;Start&quot;/>&lt;xsl:template name=&quot;ErrorLog-input&quot; match=&quot;/&quot;>&lt;tns2:ErrorLogHandler>&lt;tns2:ApplictionName>&lt;xsl:value-of select=&quot;$_processContext/ApplicationName&quot;/>&lt;/tns2:ApplictionName>&lt;tns2:ProcessName>&lt;xsl:value-of select=&quot;'EmpPersonalCall'&quot;/>&lt;/tns2:ProcessName>&lt;tns2:LogType>&lt;xsl:value-of select=&quot;'ERROR'&quot;/>&lt;/tns2:LogType>&lt;tns2:status>&lt;xsl:value-of select=&quot;'Failed'&quot;/>&lt;/tns2:status>&lt;tns2:CorrelationID>&lt;xsl:value-of select=&quot;$Start/tns:CorelationID&quot;/>&lt;/tns2:CorrelationID>&lt;tns2:MessageType>&lt;xsl:value-of select=&quot;'ErrorDetails'&quot;/>&lt;/tns2:MessageType>&lt;tns2:Timestamp>&lt;xsl:value-of select=&quot;current-dateTime()&quot;/>&lt;/tns2:Timestamp>&lt;tns2:ErrorCode>&lt;xsl:value-of select=&quot;$FaultDetails/MsgCode&quot;/>&lt;/tns2:ErrorCode>&lt;tns2:ErrorMsg>&lt;xsl:value-of select=&quot;$FaultDetails/Msg&quot;/>&lt;/tns2:ErrorMsg>&lt;/tns2:ErrorLogHandler>&lt;/xsl:template>&lt;/xsl:stylesheet>" expressionLanguage="urn:oasis:names:tc:wsbpel:2.0:sublang:xslt1.0"/>
+                                    expression="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xa;&lt;xsl:stylesheet xmlns:xsl=&quot;http://www.w3.org/1999/XSL/Transform&quot; xmlns:tns2=&quot;http://www.eniquesolution.com/E-Commerce/CommonFramework&quot; xmlns:tns=&quot;http://www.EniqueSol.org/Employee_Personal/V1&quot; version=&quot;2.0&quot;>&lt;xsl:param name=&quot;_processContext&quot;/>&lt;xsl:param name=&quot;FaultDetails&quot;/>&lt;xsl:param name=&quot;Start&quot;/>&lt;xsl:template name=&quot;ErrorLog-input&quot; match=&quot;/&quot;>&lt;tns2:ErrorLogHandler>&lt;tns2:ApplictionName>&lt;xsl:value-of select=&quot;$_processContext/ApplicationName&quot;/>&lt;/tns2:ApplictionName>&lt;tns2:ProcessName>&lt;xsl:value-of select=&quot;'EmpPersonalCall'&quot;/>&lt;/tns2:ProcessName>&lt;tns2:LogType>&lt;xsl:value-of select=&quot;'ErrorLog'&quot;/>&lt;/tns2:LogType>&lt;tns2:status>&lt;xsl:value-of select=&quot;'Failed'&quot;/>&lt;/tns2:status>&lt;tns2:CorrelationID>&lt;xsl:value-of select=&quot;$Start/tns:CorelationID&quot;/>&lt;/tns2:CorrelationID>&lt;tns2:MessageType>&lt;xsl:value-of select=&quot;'ErrorDetails'&quot;/>&lt;/tns2:MessageType>&lt;tns2:Timestamp>&lt;xsl:value-of select=&quot;format-dateTime(current-dateTime(), &amp;quot;[Y0001]-[M01]-[D01] [H01]:[m01]:[s01]&amp;quot;)&quot;/>&lt;/tns2:Timestamp>&lt;tns2:ErrorCode>&lt;xsl:value-of select=&quot;$FaultDetails/MsgCode&quot;/>&lt;/tns2:ErrorCode>&lt;tns2:ErrorMsg>&lt;xsl:value-of select=&quot;$FaultDetails/Msg&quot;/>&lt;/tns2:ErrorMsg>&lt;/tns2:ErrorLogHandler>&lt;/xsl:template>&lt;/xsl:stylesheet>" expressionLanguage="urn:oasis:names:tc:wsbpel:2.0:sublang:xslt1.0"/>
                                 </tibex:inputBindings>
                                 <tibex:CallProcess
                                     moduleRef="CommonInterface"
@@ -1368,14 +1370,14 @@
         </bpws:faultHandlers>
         <bpws:flow name="flow">
             <bpws:links>
-                <bpws:link name="StartToLogHandler" tibex:linkType="SUCCESS"/>
                 <bpws:link name="LogHandler1ToEnd" tibex:linkType="SUCCESS"/>
-                <bpws:link name="LogHandlerToRenderJSON" tibex:linkType="SUCCESSWITHCONDITION"/>
-                <bpws:link name="RenderJSONToInvokeRESTAPI" tibex:linkType="SUCCESS"/>
+                <bpws:link name="StartLogToInvokeRESTAPI" tibex:linkType="SUCCESS"/>
                 <bpws:link name="InvokeRESTAPIToParseJSON" tibex:linkType="SUCCESS"/>
                 <bpws:link name="ParseJSONToLogHandler1" tibex:linkType="SUCCESS"/>
-                <bpws:link name="StartLogToEmpty" tibex:linkType="SUCCESSWITHNOCONDITION"/>
+                <bpws:link name="StartToEmpty" tibex:linkType="SUCCESSWITHNOCONDITION"/>
                 <bpws:link name="EmptyToEnd" tibex:linkType="SUCCESS"/>
+                <bpws:link name="StartToRenderJSON" tibex:linkType="SUCCESSWITHCONDITION"/>
+                <bpws:link name="RenderJSONToStartLog" tibex:linkType="SUCCESS"/>
             </bpws:links>
             <bpws:extensionActivity>
                 <tibex:receiveEvent createInstance="yes"
@@ -1383,7 +1385,20 @@
                     tibex:xpdlId="4c7a7b2a-ad5d-4f72-a703-a87438775c2a"
                     variable="Start" xmlns:tibex="http://www.tibco.com/bpel/2007/extensions">
                     <bpws:sources>
-                        <bpws:source linkName="StartToLogHandler"/>
+                        <bpws:source linkName="StartToEmpty">
+                            <tibex:DesignExpression>
+                                <tibex:expression
+                                    expression="##otherwise##" expressionLanguage="urn:oasis:names:tc:wsbpel:2.0:sublang:xpath2.0"/>
+                            </tibex:DesignExpression>
+                            <bpws:transitionCondition expressionLanguage="urn:oasis:names:tc:wsbpel:2.0:sublang:xpath2.0"><![CDATA[##otherwise##]]></bpws:transitionCondition>
+                        </bpws:source>
+                        <bpws:source linkName="StartToRenderJSON">
+                            <tibex:DesignExpression>
+                                <tibex:expression
+                                    expression="matches(xsd:string($Start/ns0:empPersonal/ns0:PhoneNo), '[0-9]{10}') and matches($Start/ns0:empPersonal/ns0:EmailID, '([A-Za-z0-9]+)@([a-zA-Z]+)([\.])([a-zA-Z]+)') and if (string-length($Start/ns0:empPersonal/ns0:Alt_EmailID)>0) then matches($Start/ns0:empPersonal/ns0:EmailID, '([A-Za-z0-9]+)@([a-zA-Z]+)([\.])([a-zA-Z]+)') else true()" expressionLanguage="urn:oasis:names:tc:wsbpel:2.0:sublang:xpath2.0"/>
+                            </tibex:DesignExpression>
+                            <bpws:transitionCondition expressionLanguage="urn:oasis:names:tc:wsbpel:2.0:sublang:xpath2.0"><![CDATA[matches(xsd:string($Start/ns0:empPersonal/ns0:PhoneNo), '[0-9]{10}') and matches($Start/ns0:empPersonal/ns0:EmailID, '([A-Za-z0-9]+)@([a-zA-Z]+)([\.])([a-zA-Z]+)') and if (string-length($Start/ns0:empPersonal/ns0:Alt_EmailID)>0) then matches($Start/ns0:empPersonal/ns0:EmailID, '([A-Za-z0-9]+)@([a-zA-Z]+)([\.])([a-zA-Z]+)') else true()]]></bpws:transitionCondition>
+                        </bpws:source>
                     </bpws:sources>
                     <tibex:eventSource>
                         <tibex:StartEvent xmlns:tibex="http://www.tibco.com/bpel/2007/extensions"/>
@@ -1424,27 +1439,14 @@
                     tibex:xpdlId="a791d04c-88bd-4933-8541-bfb0de70f5cb"
                     type="bw.generalactivities.callprocess" xmlns:tibex="http://www.tibco.com/bpel/2007/extensions">
                     <bpws:targets>
-                        <bpws:target linkName="StartToLogHandler"/>
+                        <bpws:target linkName="RenderJSONToStartLog"/>
                     </bpws:targets>
                     <bpws:sources>
-                        <bpws:source linkName="LogHandlerToRenderJSON">
-                            <tibex:DesignExpression>
-                                <tibex:expression
-                                    expression="matches(xsd:string($Start/ns0:empPersonal/ns0:PhoneNo), '[0-9]{10}') and matches($Start/ns0:empPersonal/ns0:EmailID, '^[a-zA-Z0-9+_.-]+@[a-zA-Z0-9.-]+$')" expressionLanguage="urn:oasis:names:tc:wsbpel:2.0:sublang:xpath2.0"/>
-                            </tibex:DesignExpression>
-                            <bpws:transitionCondition expressionLanguage="urn:oasis:names:tc:wsbpel:2.0:sublang:xpath2.0"><![CDATA[matches(xsd:string($Start/ns0:empPersonal/ns0:PhoneNo), '[0-9]{10}') and matches($Start/ns0:empPersonal/ns0:EmailID, '^[a-zA-Z0-9+_.-]+@[a-zA-Z0-9.-]+$')]]></bpws:transitionCondition>
-                        </bpws:source>
-                        <bpws:source linkName="StartLogToEmpty">
-                            <tibex:DesignExpression>
-                                <tibex:expression
-                                    expression="##otherwise##" expressionLanguage="urn:oasis:names:tc:wsbpel:2.0:sublang:xpath2.0"/>
-                            </tibex:DesignExpression>
-                            <bpws:transitionCondition expressionLanguage="urn:oasis:names:tc:wsbpel:2.0:sublang:xpath2.0"><![CDATA[##otherwise##]]></bpws:transitionCondition>
-                        </bpws:source>
+                        <bpws:source linkName="StartLogToInvokeRESTAPI"/>
                     </bpws:sources>
                     <tibex:inputBindings>
                         <tibex:inputBinding coercion=""
-                            expression="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xa;&lt;xsl:stylesheet xmlns:xsl=&quot;http://www.w3.org/1999/XSL/Transform&quot; xmlns:tns2=&quot;http://www.eniquesolution.com/E-Commerce/CommonFramework&quot; xmlns:tns=&quot;http://www.EniqueSol.org/Employee_Personal/V1&quot; xmlns:tib=&quot;http://www.tibco.com/bw/xslt/custom-functions&quot; version=&quot;2.0&quot;>&lt;xsl:param name=&quot;_processContext&quot;/>&lt;xsl:param name=&quot;Start&quot;/>&lt;xsl:template name=&quot;StartLog-input&quot; match=&quot;/&quot;>&lt;tns2:LogExceptionHandler>&lt;tns2:ApplictionName>&lt;xsl:value-of select=&quot;$_processContext/ApplicationName&quot;/>&lt;/tns2:ApplictionName>&lt;tns2:ProcessName>&lt;xsl:value-of select=&quot;'EmpPersonalCall'&quot;/>&lt;/tns2:ProcessName>&lt;tns2:LogType>&lt;xsl:value-of select=&quot;'INFO'&quot;/>&lt;/tns2:LogType>&lt;tns2:status>&lt;xsl:value-of select=&quot;'success'&quot;/>&lt;/tns2:status>&lt;tns2:CorrelationID>&lt;xsl:value-of select=&quot;$Start/tns:CorelationID&quot;/>&lt;/tns2:CorrelationID>&lt;tns2:MessageType>&lt;xsl:value-of select=&quot;'RequestPayload'&quot;/>&lt;/tns2:MessageType>&lt;tns2:Timestamp>&lt;xsl:value-of select=&quot;current-dateTime()&quot;/>&lt;/tns2:Timestamp>&lt;tns2:PAYLOAD>&lt;xsl:value-of select=&quot;tib:render-xml($Start)&quot;/>&lt;/tns2:PAYLOAD>&lt;/tns2:LogExceptionHandler>&lt;/xsl:template>&lt;/xsl:stylesheet>" expressionLanguage="urn:oasis:names:tc:wsbpel:2.0:sublang:xslt1.0"/>
+                            expression="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xa;&lt;xsl:stylesheet xmlns:xsl=&quot;http://www.w3.org/1999/XSL/Transform&quot; xmlns:tns2=&quot;http://www.eniquesolution.com/E-Commerce/CommonFramework&quot; xmlns:tns=&quot;http://www.EniqueSol.org/Employee_Personal/V1&quot; xmlns:tib=&quot;http://www.tibco.com/bw/xslt/custom-functions&quot; version=&quot;2.0&quot;>&lt;xsl:param name=&quot;_processContext&quot;/>&lt;xsl:param name=&quot;Start&quot;/>&lt;xsl:param name=&quot;RenderJSON&quot;/>&lt;xsl:template name=&quot;StartLog-input&quot; match=&quot;/&quot;>&lt;tns2:LogExceptionHandler>&lt;tns2:ApplictionName>&lt;xsl:value-of select=&quot;$_processContext/ApplicationName&quot;/>&lt;/tns2:ApplictionName>&lt;tns2:ProcessName>&lt;xsl:value-of select=&quot;'EmpPersonalCall'&quot;/>&lt;/tns2:ProcessName>&lt;tns2:LogType>&lt;xsl:value-of select=&quot;'StartLog'&quot;/>&lt;/tns2:LogType>&lt;tns2:status>&lt;xsl:value-of select=&quot;'Started'&quot;/>&lt;/tns2:status>&lt;tns2:CorrelationID>&lt;xsl:value-of select=&quot;$Start/tns:CorelationID&quot;/>&lt;/tns2:CorrelationID>&lt;tns2:MessageType>&lt;xsl:value-of select=&quot;'RequestPayload'&quot;/>&lt;/tns2:MessageType>&lt;tns2:Timestamp>&lt;xsl:value-of select=&quot;format-dateTime(current-dateTime(), &amp;quot;[Y0001]-[M01]-[D01] [H01]:[m01]:[s01]&amp;quot;)&quot;/>&lt;/tns2:Timestamp>&lt;tns2:PAYLOAD>&lt;xsl:value-of select=&quot;tib:render-xml($RenderJSON/jsonString)&quot;/>&lt;/tns2:PAYLOAD>&lt;/tns2:LogExceptionHandler>&lt;/xsl:template>&lt;/xsl:stylesheet>" expressionLanguage="urn:oasis:names:tc:wsbpel:2.0:sublang:xslt1.0"/>
                     </tibex:inputBindings>
                     <tibex:CallProcess moduleRef="CommonInterface"
                         spawn="true"
@@ -1464,7 +1466,7 @@
                     </bpws:sources>
                     <tibex:inputBindings>
                         <tibex:inputBinding coercion=""
-                            expression="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xa;&lt;xsl:stylesheet xmlns:xsl=&quot;http://www.w3.org/1999/XSL/Transform&quot; xmlns:tns2=&quot;http://www.eniquesolution.com/E-Commerce/CommonFramework&quot; xmlns:tns=&quot;http://www.EniqueSol.org/Employee_Personal/V1&quot; xmlns:tib=&quot;http://www.tibco.com/bw/xslt/custom-functions&quot; version=&quot;2.0&quot;>&lt;xsl:param name=&quot;_processContext&quot;/>&lt;xsl:param name=&quot;Start&quot;/>&lt;xsl:param name=&quot;ParseJSON&quot;/>&lt;xsl:template name=&quot;EndLog-input&quot; match=&quot;/&quot;>&lt;tns2:LogExceptionHandler>&lt;tns2:ApplictionName>&lt;xsl:value-of select=&quot;$_processContext/ApplicationName&quot;/>&lt;/tns2:ApplictionName>&lt;tns2:ProcessName>&lt;xsl:value-of select=&quot;'EmpPersonalCall'&quot;/>&lt;/tns2:ProcessName>&lt;tns2:LogType>&lt;xsl:value-of select=&quot;'INFO'&quot;/>&lt;/tns2:LogType>&lt;tns2:status>&lt;xsl:value-of select=&quot;'success'&quot;/>&lt;/tns2:status>&lt;tns2:CorrelationID>&lt;xsl:value-of select=&quot;$Start/tns:CorelationID&quot;/>&lt;/tns2:CorrelationID>&lt;tns2:MessageType>&lt;xsl:value-of select=&quot;'ResponsePayload'&quot;/>&lt;/tns2:MessageType>&lt;tns2:Timestamp>&lt;xsl:value-of select=&quot;current-dateTime()&quot;/>&lt;/tns2:Timestamp>&lt;tns2:PAYLOAD>&lt;xsl:value-of select=&quot;tib:render-xml($ParseJSON)&quot;/>&lt;/tns2:PAYLOAD>&lt;/tns2:LogExceptionHandler>&lt;/xsl:template>&lt;/xsl:stylesheet>" expressionLanguage="urn:oasis:names:tc:wsbpel:2.0:sublang:xslt1.0"/>
+                            expression="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xa;&lt;xsl:stylesheet xmlns:xsl=&quot;http://www.w3.org/1999/XSL/Transform&quot; xmlns:tns2=&quot;http://www.eniquesolution.com/E-Commerce/CommonFramework&quot; xmlns:tns=&quot;http://www.EniqueSol.org/Employee_Personal/V1&quot; xmlns:tib=&quot;http://www.tibco.com/bw/xslt/custom-functions&quot; version=&quot;2.0&quot;>&lt;xsl:param name=&quot;_processContext&quot;/>&lt;xsl:param name=&quot;Start&quot;/>&lt;xsl:param name=&quot;ParseJSON&quot;/>&lt;xsl:template name=&quot;EndLog-input&quot; match=&quot;/&quot;>&lt;tns2:LogExceptionHandler>&lt;tns2:ApplictionName>&lt;xsl:value-of select=&quot;$_processContext/ApplicationName&quot;/>&lt;/tns2:ApplictionName>&lt;tns2:ProcessName>&lt;xsl:value-of select=&quot;'EmpPersonalCall'&quot;/>&lt;/tns2:ProcessName>&lt;tns2:LogType>&lt;xsl:value-of select=&quot;'EndLog'&quot;/>&lt;/tns2:LogType>&lt;tns2:status>&lt;xsl:value-of select=&quot;'Success'&quot;/>&lt;/tns2:status>&lt;tns2:CorrelationID>&lt;xsl:value-of select=&quot;$Start/tns:CorelationID&quot;/>&lt;/tns2:CorrelationID>&lt;tns2:MessageType>&lt;xsl:value-of select=&quot;'ResponsePayload'&quot;/>&lt;/tns2:MessageType>&lt;tns2:Timestamp>&lt;xsl:value-of select=&quot;format-dateTime(current-dateTime(), &amp;quot;[Y0001]-[M01]-[D01] [H01]:[m01]:[s01]&amp;quot;)&quot;/>&lt;/tns2:Timestamp>&lt;tns2:PAYLOAD>&lt;xsl:value-of select=&quot;tib:render-xml($ParseJSON)&quot;/>&lt;/tns2:PAYLOAD>&lt;/tns2:LogExceptionHandler>&lt;/xsl:template>&lt;/xsl:stylesheet>" expressionLanguage="urn:oasis:names:tc:wsbpel:2.0:sublang:xslt1.0"/>
                     </tibex:inputBindings>
                     <tibex:CallProcess moduleRef="CommonInterface"
                         spawn="true"
@@ -1477,10 +1479,10 @@
                     outputVariable="RenderJSON" tibex:copyOf="Start"
                     tibex:xpdlId="f8bacf40-79aa-4d0b-b27a-c2872adb43ab" xmlns:tibex="http://www.tibco.com/bpel/2007/extensions">
                     <bpws:targets>
-                        <bpws:target linkName="LogHandlerToRenderJSON"/>
+                        <bpws:target linkName="StartToRenderJSON"/>
                     </bpws:targets>
                     <bpws:sources>
-                        <bpws:source linkName="RenderJSONToInvokeRESTAPI"/>
+                        <bpws:source linkName="RenderJSONToStartLog"/>
                     </bpws:sources>
                     <tibex:inputBindings>
                         <tibex:inputBinding
@@ -1512,7 +1514,7 @@
                     name="InvokeRESTAPI" outputVariable="InvokeRESTAPI"
                     tibex:xpdlId="1bdbd803-0753-4910-9a5b-55f1fcfbb926" xmlns:tibex="http://www.tibco.com/bpel/2007/extensions">
                     <bpws:targets>
-                        <bpws:target linkName="RenderJSONToInvokeRESTAPI"/>
+                        <bpws:target linkName="StartLogToInvokeRESTAPI"/>
                     </bpws:targets>
                     <bpws:sources>
                         <bpws:source linkName="InvokeRESTAPIToParseJSON"/>
@@ -1579,7 +1581,7 @@
             </bpws:extensionActivity>
             <bpws:empty name="Empty" tibex:xpdlId="b8070e67-a680-48d7-8811-fa72feb71001">
                 <bpws:targets>
-                    <bpws:target linkName="StartLogToEmpty"/>
+                    <bpws:target linkName="StartToEmpty"/>
                 </bpws:targets>
                 <bpws:sources>
                     <bpws:source linkName="EmptyToEnd"/>
