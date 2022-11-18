@@ -9,6 +9,10 @@
     xmlns:ns1="http://www.tibco.com/namespaces/tnt/plugins/jdbc+371c4254-a3e4-4910-8a58-682e321453c9+input"
     xmlns:ns10="http://tns.tibco.com/bw/activity/sendmail/xsd/input+0da9a16c-7657-4cf0-a9d3-180becc640b1+input"
     xmlns:ns11="http://tns.tibco.com/bw/palette/internal/activityerror+bw.mail.send"
+    xmlns:ns12="http://www.example.org/MainPayload"
+    xmlns:ns13="http://tns.tibco.com/bw/activity/sendmail/xsd/input+47bfa9c4-8c0b-421b-9ca4-b52f13d859cb+input"
+    xmlns:ns14="http://www.tibco.com/namespaces/tnt/plugins/jdbc+cd2c2c55-70a3-48f3-870c-4df67bc35453+input"
+    xmlns:ns15="http://tns.tibco.com/bw/palette/internal/activityerror+bw.jdbc.SQLDirect"
     xmlns:ns2="http://www.tibco.com/namespaces/tnt/plugins/jdbc+371c4254-a3e4-4910-8a58-682e321453c9+output"
     xmlns:ns3="http://tns.tibco.com/bw/palette/internal/activityerror+bw.jdbc.JDBCCallProcedure"
     xmlns:ns4="http://www.tibco.com/namespaces/tnt/plugins/jdbc+c3a8af8a-588c-4b3c-bbd6-d946806ef4d0+input"
@@ -529,9 +533,9 @@
             <xs:element name="mimeEnvelopeElement" type="tns:mimeEnvelopeSuperSetType"/>
         </xs:schema>
         <schema elementFormDefault="qualified"
-            targetNamespace="http://tns.tibco.com/bw/activity/sendmail/xsd/input+0da9a16c-7657-4cf0-a9d3-180becc640b1+input"
+            targetNamespace="http://tns.tibco.com/bw/activity/sendmail/xsd/input+47bfa9c4-8c0b-421b-9ca4-b52f13d859cb+input"
             xmlns="http://www.w3.org/2001/XMLSchema"
-            xmlns:tns="http://tns.tibco.com/bw/activity/sendmail/xsd/input+0da9a16c-7657-4cf0-a9d3-180becc640b1+input" xmlns:tns1="http://xmlns.tibco.com/encodings/mimefile">
+            xmlns:tns="http://tns.tibco.com/bw/activity/sendmail/xsd/input+47bfa9c4-8c0b-421b-9ca4-b52f13d859cb+input" xmlns:tns1="http://xmlns.tibco.com/encodings/mimefile">
             <import namespace="http://xmlns.tibco.com/encodings/mimefile"/>
             <complexType name="SendMailParametersType">
                 <sequence>
@@ -624,7 +628,7 @@
         extraErrorVars="true" modifiers="public"
         productVersion="6.8.0 V55 2021-11-10" scalable="true"
         singleton="true" stateless="false" type="IT"/>
-    <tibex:ProcessInterface context="" input="" output=""/>
+    <tibex:ProcessInterface context="" input="" output="{http://www.example.org/MainPayload}MainSysRes"/>
     <tibex:ProcessTemplateConfigurations/>
     <notation:Diagram measurementUnit="Pixel" type="BWProcess"
         xmlns:bwnotation="http://tns.tibco.com/bw/runtime/BWNotation"
@@ -686,8 +690,8 @@
                                     gradientEndColor="50431"
                                     gradientStartColor="16777215" xsi:type="bwnotation:BackgroundStyle"/>
                                     <element href="//0/@process/@activity/@activity/@activities.0"/>
-                                    <layoutConstraint x="-30"
-                                    xsi:type="notation:Bounds" y="142"/>
+                                    <layoutConstraint x="-60"
+                                    xsi:type="notation:Bounds" y="60"/>
                                     </children>
                                     <children type="4002">
                                     <children type="4017">
@@ -764,7 +768,7 @@
                                     gradientEndColor="50431"
                                     gradientStartColor="16777215" xsi:type="bwnotation:BackgroundStyle"/>
                                     <element href="//0/@process/@activity/@activity/@activities.2"/>
-                                    <layoutConstraint x="147"
+                                    <layoutConstraint x="182"
                                     xsi:type="notation:Bounds" y="142"/>
                                     </children>
                                     <children type="4002">
@@ -844,7 +848,7 @@
                                     <element href="//0/@process/@activity/@activity/@activities.4"/>
                                     <layoutConstraint
                                     height="40" width="40"
-                                    x="282"
+                                    x="298"
                                     xsi:type="notation:Bounds" y="142"/>
                                     </children>
                                     <children type="4002">
@@ -961,7 +965,7 @@
                                     <element href="//0/@process/@activity/@activity/@activities.7"/>
                                     <layoutConstraint
                                     height="40" width="40"
-                                    x="49"
+                                    x="11"
                                     xsi:type="notation:Bounds" y="142"/>
                                     </children>
                                     <styles xsi:type="notation:DrawerStyle"/>
@@ -977,7 +981,7 @@
                                     <styles xsi:type="bwnotation:ResizingStyle"/>
                                     <element href="//0/@process/@activity/@activity"/>
                                     <layoutConstraint height="407"
-                                    width="892" xsi:type="notation:Bounds"/>
+                                    width="898" xsi:type="notation:Bounds"/>
                                 </children>
                                 <styles xsi:type="notation:SortingStyle"/>
                                 <styles xsi:type="notation:FilteringStyle"/>
@@ -987,7 +991,7 @@
                             <styles xsi:type="bwnotation:BackgroundStyle"/>
                             <styles xsi:type="bwnotation:ResizingStyle"/>
                             <element href="//0/@process/@activity"/>
-                            <layoutConstraint height="372" width="895" xsi:type="notation:Bounds"/>
+                            <layoutConstraint height="407" width="901" xsi:type="notation:Bounds"/>
                         </children>
                         <children type="4022">
                             <children type="3022">
@@ -1007,6 +1011,7 @@
                                     <children type="3032">
                                     <children type="4005">
                                     <children type="3007">
+                                    <eAnnotations source="Pixel"/>
                                     <eAnnotations source="Pixel"/>
                                     <eAnnotations source="Pixel"/>
                                     <eAnnotations source="Pixel"/>
@@ -1138,7 +1143,50 @@
                                     gradientStartColor="16777215" xsi:type="bwnotation:BackgroundStyle"/>
                                     <element href="//0/@process/@activity/@faultHandlers/@catchAll/@activity/@activity/@activities.2"/>
                                     <layoutConstraint
-                                    x="398"
+                                    x="494"
+                                    xsi:type="notation:Bounds" y="18"/>
+                                    </children>
+                                    <children type="4002 bw.mail.send">
+                                    <children type="4017">
+                                    <styles
+                                    fontName="Segoe UI"
+                                    lineColor="0" xsi:type="notation:ShapeStyle"/>
+
+                                    <layoutConstraint xsi:type="notation:Bounds"/>
+                                    </children>
+                                    <children type="4017">
+                                    <styles
+                                    fontName="Segoe UI"
+                                    lineColor="0" xsi:type="notation:ShapeStyle"/>
+
+                                    <layoutConstraint xsi:type="notation:Bounds"/>
+                                    </children>
+                                    <children type="4017">
+                                    <styles
+                                    fontName="Segoe UI"
+                                    lineColor="0" xsi:type="notation:ShapeStyle"/>
+
+                                    <layoutConstraint xsi:type="notation:Bounds"/>
+                                    </children>
+                                    <children type="4017">
+                                    <styles
+                                    fontName="Segoe UI"
+                                    lineColor="0" xsi:type="notation:ShapeStyle"/>
+
+                                    <layoutConstraint xsi:type="notation:Bounds"/>
+                                    </children>
+                                    <styles
+                                    fontName="Segoe UI"
+                                    lineColor="0" xsi:type="notation:ShapeStyle"/>
+                                    <styles
+                                    backgroundColor="16777215"
+                                    gradientEndColor="50431"
+                                    gradientStartColor="16777215" xsi:type="bwnotation:BackgroundStyle"/>
+                                    <element href="//0/@process/@activity/@faultHandlers/@catchAll/@activity/@activity/@activities.3"/>
+                                    <layoutConstraint
+                                    height="40"
+                                    width="40"
+                                    x="379"
                                     xsi:type="notation:Bounds" y="30"/>
                                     </children>
                                     <styles xsi:type="notation:DrawerStyle"/>
@@ -1183,7 +1231,7 @@
                     <styles xsi:type="bwnotation:BackgroundStyle"/>
                     <styles xsi:type="bwnotation:ResizingStyle"/>
                     <element href="//0/@process/@activity"/>
-                    <layoutConstraint height="608" width="895" x="1"
+                    <layoutConstraint height="608" width="901" x="1"
                         xsi:type="notation:Bounds" y="1"/>
                 </children>
                 <styles xsi:type="notation:SortingStyle"/>
@@ -1192,7 +1240,7 @@
             </children>
             <styles fontName="Segoe UI" lineColor="0" xsi:type="notation:ShapeStyle"/>
             <element href="//0/@process"/>
-            <layoutConstraint height="660" width="1237" xsi:type="notation:Bounds"/>
+            <layoutConstraint height="660" width="1243" xsi:type="notation:Bounds"/>
         </children>
         <styles xsi:type="notation:DiagramStyle"/>
         <element href="//0"/>
@@ -1287,14 +1335,26 @@
         </edges>
         <edges
             source="//@children.0/@children.3/@children.0/@children.0/@children.1/@children.0/@children.0/@children.1/@children.0/@children.0/@children.1"
-            target="//@children.0/@children.3/@children.0/@children.0/@children.1/@children.0/@children.0/@children.1/@children.0/@children.0/@children.2" type="4006">
+            target="//@children.0/@children.3/@children.0/@children.0/@children.1/@children.0/@children.0/@children.1/@children.0/@children.0/@children.3" type="4006">
             <children type="6002">
                 <layoutConstraint xsi:type="notation:Location" y="40"/>
             </children>
             <styles lineColor="0" xsi:type="notation:ConnectorStyle"/>
             <styles fontName="Segoe UI" xsi:type="notation:FontStyle"/>
             <element href="//0/@process/@activity/@faultHandlers/@catchAll/@activity/@activity/@links/@children.1"/>
-            <bendpoints points="[25, 6, -126, 0]$[127, 0, -24, -6]" xsi:type="notation:RelativeBendpoints"/>
+            <bendpoints points="[0, 0, 0, 0]$[0, 0, 0, 0]" xsi:type="notation:RelativeBendpoints"/>
+            <targetAnchor id="(0.9387755102040817,0.30612244897959184)" xsi:type="notation:IdentityAnchor"/>
+        </edges>
+        <edges
+            source="//@children.0/@children.3/@children.0/@children.0/@children.1/@children.0/@children.0/@children.1/@children.0/@children.0/@children.3"
+            target="//@children.0/@children.3/@children.0/@children.0/@children.1/@children.0/@children.0/@children.1/@children.0/@children.0/@children.2" type="4006">
+            <children type="6002">
+                <layoutConstraint xsi:type="notation:Location" y="40"/>
+            </children>
+            <styles lineColor="0" xsi:type="notation:ConnectorStyle"/>
+            <styles fontName="Segoe UI" xsi:type="notation:FontStyle"/>
+            <element href="//0/@process/@activity/@faultHandlers/@catchAll/@activity/@activity/@links/@children.2"/>
+            <bendpoints points="[25, -3, -90, 9]$[91, -9, -24, 3]" xsi:type="notation:RelativeBendpoints"/>
         </edges>
     </notation:Diagram>
     <tibex:NamespaceRegistry enabled="true">
@@ -1314,8 +1374,17 @@
             namespace="http://www.EniqueSol.org/Emp_SalTitle/V1" prefix="tns1"/>
         <tibex:namespaceItem
             namespace="http://www.EniqueSol.org/Employee_Prof/V1" prefix="tns7"/>
+        <tibex:namespaceItem
+            namespace="http://www.example.org/MainPayload" prefix="tns2"/>
+        <tibex:namespaceItem
+            namespace="http://www.tibco.com/namespaces/tnt/plugins/jdbc+cd2c2c55-70a3-48f3-870c-4df67bc35453+input" prefix="tns8"/>
+        <tibex:namespaceItem
+            namespace="http://www.EniqueSol.org/Emp_InsurenceDetails/V1" prefix="tns3"/>
+        <tibex:namespaceItem
+            namespace="http://tns.tibco.com/bw/activity/sendmail/xsd/input+47bfa9c4-8c0b-421b-9ca4-b52f13d859cb+input" prefix="tns10"/>
     </tibex:NamespaceRegistry>
     <bpws:import importType="http://www.w3.org/2001/XMLSchema" namespace="http://www.eniquesolution.com/E-Commerce/CommonFramework"/>
+    <bpws:import importType="http://www.w3.org/2001/XMLSchema" namespace="http://www.example.org/MainPayload"/>
     <bpws:variables>
         <bpws:variable element="ns:ProcessContext"
             name="_processContext" sca-bpel:internal="true"/>
@@ -1362,12 +1431,14 @@
                 <bpws:literal>es_common_framework_sh.SMTPResource</bpws:literal>
             </bpws:from>
         </bpws:variable>
-        <bpws:variable element="ns10:mailActivityInput"
+        <bpws:variable element="ns0:ErrorLogHandler"
+            name="ErrorLog-input" sca-bpel:internal="true"/>
+        <bpws:variable element="ns12:MainSysRes" name="End-input"
+            sca-bpel:internal="true" tibex:parameter="out"/>
+        <bpws:variable element="ns13:mailActivityInput"
             name="SendMail-input" sca-bpel:internal="true"/>
         <bpws:variable element="ns11:ActivityErrorData"
             name="_error_SendMail" sca-bpel:internal="true"/>
-        <bpws:variable element="ns0:ErrorLogHandler"
-            name="ErrorLog-input" sca-bpel:internal="true"/>
     </bpws:variables>
     <bpws:extensions>
         <bpws:extension mustUnderstand="no" namespace="http://www.eclipse.org/gmf/runtime/1.0.2/notation"/>
@@ -1388,6 +1459,7 @@
                                 name="ErrorLogToCopy_1_InsertResponse" tibex:linkType="SUCCESS"/>
                             <bpws:link
                                 name="InsertErrorResponseToSendMail" tibex:linkType="SUCCESS"/>
+                            <bpws:link name="SendMailToEnd1" tibex:linkType="SUCCESS"/>
                         </bpws:links>
                         <bpws:extensionActivity>
                             <tibex:extActivity
@@ -1459,22 +1531,52 @@
                         </bpws:extensionActivity>
                         <bpws:extensionActivity>
                             <tibex:activityExtension
-                                inputVariable="SendMail-input"
-                                name="SendMail"
-                                tibex:xpdlId="0da9a16c-7657-4cf0-a9d3-180becc640b1" xmlns:tibex="http://www.tibco.com/bpel/2007/extensions">
+                                inputVariable="End-input" name="End1"
+                                tibex:xpdlId="f8321250-43c9-4f0f-96b9-a51d807b3114" xmlns:tibex="http://www.tibco.com/bpel/2007/extensions">
                                 <bpws:targets>
-                                    <bpws:target linkName="InsertErrorResponseToSendMail"/>
+                                    <bpws:target linkName="SendMailToEnd1"/>
                                 </bpws:targets>
                                 <tibex:inputBindings>
                                     <tibex:inputBinding
-                                    expression="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xa;&lt;xsl:stylesheet xmlns:xsl=&quot;http://www.w3.org/1999/XSL/Transform&quot; xmlns:tns6=&quot;http://tns.tibco.com/bw/activity/sendmail/xsd/input+0da9a16c-7657-4cf0-a9d3-180becc640b1+input&quot; version=&quot;2.0&quot;>&lt;xsl:param name=&quot;FaultDetails&quot;/>&lt;xsl:template name=&quot;SendMail-input&quot; match=&quot;/&quot;>&lt;tns6:mailActivityInput>&lt;from>&lt;xsl:value-of select=&quot;'santoshbe22@gmail.com'&quot;/>&lt;/from>&lt;to>&lt;xsl:value-of select=&quot;'stalgeri@eniquesolutions.com'&quot;/>&lt;/to>&lt;subject>&lt;xsl:value-of select=&quot;'EmployeeDetails- Add Main Data Error'&quot;/>&lt;/subject>&lt;bodyElement>&lt;bodyText>&lt;xsl:value-of select=&quot;concat('Hi User',',','&amp;#xD;&amp;#xA;             The Insert Main Data process has failed for the employee',' caused by:&amp;#xD;&amp;#xA;',$FaultDetails/Msg,'&amp;#xD;&amp;#xA; Send request to http://localhost:7879/addMainData')&quot;/>&lt;/bodyText>&lt;/bodyElement>&lt;/tns6:mailActivityInput>&lt;/xsl:template>&lt;/xsl:stylesheet>" expressionLanguage="urn:oasis:names:tc:wsbpel:2.0:sublang:xslt1.0"/>
+                                    expression="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xa;&lt;xsl:stylesheet xmlns:xsl=&quot;http://www.w3.org/1999/XSL/Transform&quot; xmlns:tns2=&quot;http://www.example.org/MainPayload&quot; version=&quot;2.0&quot;>&lt;xsl:param name=&quot;FaultDetails&quot;/>&lt;xsl:template name=&quot;End-input&quot; match=&quot;/&quot;>&lt;tns2:MainSysRes>&lt;tns2:ResCode>&lt;xsl:value-of select=&quot;$FaultDetails/MsgCode&quot;/>&lt;/tns2:ResCode>&lt;tns2:ResMsg>&lt;xsl:value-of select=&quot;$FaultDetails/Msg&quot;/>&lt;/tns2:ResMsg>&lt;/tns2:MainSysRes>&lt;/xsl:template>&lt;/xsl:stylesheet>" expressionLanguage="urn:oasis:names:tc:wsbpel:2.0:sublang:xslt1.0"/>
+                                </tibex:inputBindings>
+                                <tibex:config>
+                                    <bwext:BWActivity
+                                    activityTypeID="bw.internal.end"
+                                    xmlns:activityconfig="http://tns.tibco.com/bw/model/activityconfig"
+                                    xmlns:bwext="http://tns.tibco.com/bw/model/core/bwext"
+                                    xmlns:internalactivities="http://ns.tibco.com/bw/core/internalactivity" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                                    <activityConfig>
+                                    <properties name="config" xsi:type="activityconfig:EMFProperty">
+                                    <type href="http://ns.tibco.com/bw/core/internalactivity#//End"/>
+                                    <value xsi:type="internalactivities:End"/>
+                                    </properties>
+                                    </activityConfig>
+                                    </bwext:BWActivity>
+                                </tibex:config>
+                            </tibex:activityExtension>
+                        </bpws:extensionActivity>
+                        <bpws:extensionActivity>
+                            <tibex:activityExtension
+                                inputVariable="SendMail-input"
+                                name="SendMail"
+                                tibex:xpdlId="47bfa9c4-8c0b-421b-9ca4-b52f13d859cb" xmlns:tibex="http://www.tibco.com/bpel/2007/extensions">
+                                <bpws:targets>
+                                    <bpws:target linkName="InsertErrorResponseToSendMail"/>
+                                </bpws:targets>
+                                <bpws:sources>
+                                    <bpws:source linkName="SendMailToEnd1"/>
+                                </bpws:sources>
+                                <tibex:inputBindings>
+                                    <tibex:inputBinding
+                                    expression="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xa;&lt;xsl:stylesheet xmlns:xsl=&quot;http://www.w3.org/1999/XSL/Transform&quot; xmlns:tns10=&quot;http://tns.tibco.com/bw/activity/sendmail/xsd/input+47bfa9c4-8c0b-421b-9ca4-b52f13d859cb+input&quot; version=&quot;2.0&quot;>&lt;xsl:param name=&quot;FaultDetails&quot;/>&lt;xsl:template name=&quot;SendMail-input&quot; match=&quot;/&quot;>&lt;tns10:mailActivityInput>&lt;from>&lt;xsl:value-of select=&quot;'santoshbe22@gmail.com'&quot;/>&lt;/from>&lt;to>&lt;xsl:value-of select=&quot;'stalgeri@eniquesolutions.com'&quot;/>&lt;/to>&lt;cc>&lt;xsl:value-of select=&quot;'saranya@eniquesolutions.com'&quot;/>&lt;/cc>&lt;subject>&lt;xsl:value-of select=&quot;'Employee Details- Main Data Error'&quot;/>&lt;/subject>&lt;bodyElement>&lt;bodyText>&lt;xsl:value-of select=&quot;concat('Hi User,&amp;#xD;&amp;#xA;&amp;#x9;&amp;#x9;The Application for Main table Details failed for employee: ', '&amp;#xD;&amp;#xA;&amp;#x9;&amp;#x9;caused by: ', &amp;#xD;&amp;#xA;$FaultDetails/MsgCode,&amp;#x9;&amp;#x9;&amp;#xD;&amp;#xA;$FaultDetails/Msg,&amp;#xD;&amp;#xA;&amp;#xD;&amp;#xA;&amp;#xD;&amp;#xA;&amp;#xD;&amp;#xA;'Please send request to the following: http://localhost:7879/addMainData ',&amp;#xD;&amp;#xA;'Thanks and Regards,&amp;#xD;&amp;#xA;Tibco.')&quot;/>&lt;/bodyText>&lt;/bodyElement>&lt;/tns10:mailActivityInput>&lt;/xsl:template>&lt;/xsl:stylesheet>" expressionLanguage="urn:oasis:names:tc:wsbpel:2.0:sublang:xslt1.0"/>
                                 </tibex:inputBindings>
                                 <tibex:config>
                                     <bwext:BWActivity
                                     activityTypeID="bw.mail.send"
                                     xmlns:activityconfig="http://tns.tibco.com/bw/model/activityconfig"
                                     xmlns:bwext="http://tns.tibco.com/bw/model/core/bwext"
-                                    xmlns:input="http://tns.tibco.com/bw/activity/sendmail/xsd/input+0da9a16c-7657-4cf0-a9d3-180becc640b1+input"
+                                    xmlns:input="http://tns.tibco.com/bw/activity/sendmail/xsd/input+47bfa9c4-8c0b-421b-9ca4-b52f13d859cb+input"
                                     xmlns:mail="http://ns.tibco.com/bw/palette/mail" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
                                     <activityConfig>
                                     <properties name="config" xsi:type="activityconfig:EMFProperty">
@@ -1501,7 +1603,7 @@
                 <bpws:link name="JDBCCallProcedureToLogHandler1" tibex:linkType="SUCCESS"/>
                 <bpws:link name="InsertResponseToEnd" tibex:linkType="SUCCESS"/>
                 <bpws:link name="JDBCCallProcedureToEndLog" tibex:linkType="SUCCESS"/>
-                <bpws:link name="GetSharedVariableToStartLog" tibex:linkType="SUCCESS"/>
+                <bpws:link name="GetTxIdToStartLog" tibex:linkType="SUCCESS"/>
             </bpws:links>
             <bpws:extensionActivity>
                 <tibex:receiveEvent createInstance="yes"
@@ -1516,11 +1618,16 @@
                 </tibex:receiveEvent>
             </bpws:extensionActivity>
             <bpws:extensionActivity>
-                <tibex:activityExtension name="End"
+                <tibex:activityExtension inputVariable="End-input"
+                    name="End"
                     tibex:xpdlId="360feb06-aacb-44c7-ba3e-5c6ac8ce0963" xmlns:tibex="http://www.tibco.com/bpel/2007/extensions">
                     <bpws:targets>
                         <bpws:target linkName="InsertResponseToEnd"/>
                     </bpws:targets>
+                    <tibex:inputBindings>
+                        <tibex:inputBinding
+                            expression="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xa;&lt;xsl:stylesheet xmlns:xsl=&quot;http://www.w3.org/1999/XSL/Transform&quot; xmlns:tns2=&quot;http://www.example.org/MainPayload&quot; xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot; version=&quot;2.0&quot;>&lt;xsl:param name=&quot;JDBCCallProcedure&quot;/>&lt;xsl:template name=&quot;End-input&quot; match=&quot;/&quot;>&lt;tns2:MainSysRes>&lt;tns2:ResCode>&lt;xsl:value-of select=&quot;'200'&quot;/>&lt;/tns2:ResCode>&lt;xsl:if test=&quot;not((string($JDBCCallProcedure/outputSet/OUTPUT/@xsi:nil)=(&amp;quot;true&amp;quot;)) or (string($JDBCCallProcedure/outputSet/OUTPUT/@xsi:nil)=(&amp;quot;1&amp;quot;))) and exists($JDBCCallProcedure/outputSet/OUTPUT)&quot;>&lt;tns2:ResMsg>&lt;xsl:value-of select=&quot;$JDBCCallProcedure/outputSet/OUTPUT&quot;/>&lt;/tns2:ResMsg>&lt;/xsl:if>&lt;/tns2:MainSysRes>&lt;/xsl:template>&lt;/xsl:stylesheet>" expressionLanguage="urn:oasis:names:tc:wsbpel:2.0:sublang:xslt1.0"/>
+                    </tibex:inputBindings>
                     <tibex:config>
                         <bwext:BWActivity
                             activityTypeID="bw.internal.end"
@@ -1543,7 +1650,7 @@
                     tibex:xpdlId="6ad78b1e-06db-4ae6-92f6-d484f8f0d2ef"
                     type="bw.generalactivities.callprocess" xmlns:tibex="http://www.tibco.com/bpel/2007/extensions">
                     <bpws:targets>
-                        <bpws:target linkName="GetSharedVariableToStartLog"/>
+                        <bpws:target linkName="GetTxIdToStartLog"/>
                     </bpws:targets>
                     <bpws:sources>
                         <bpws:source linkName="LogHandlerToJDBCCallProcedure"/>
@@ -1590,7 +1697,7 @@
                     </bpws:sources>
                     <tibex:inputBindings>
                         <tibex:inputBinding
-                            expression="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xa;&lt;xsl:stylesheet xmlns:xsl=&quot;http://www.w3.org/1999/XSL/Transform&quot; xmlns:tns2=&quot;http://www.tibco.com/namespaces/tnt/plugins/jdbc+371c4254-a3e4-4910-8a58-682e321453c9+input&quot; version=&quot;2.0&quot;>&#xa;    &lt;xsl:template name=&quot;JDBCCallProcedure-input&quot; match=&quot;/&quot;>&#xa;        &lt;tns2:inputs/>&#xa;    &lt;/xsl:template>&#xa;&lt;/xsl:stylesheet>" expressionLanguage="urn:oasis:names:tc:wsbpel:2.0:sublang:xslt1.0"/>
+                            expression="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xa;&lt;xsl:stylesheet xmlns:xsl=&quot;http://www.w3.org/1999/XSL/Transform&quot; xmlns:tns9=&quot;http://www.tibco.com/namespaces/tnt/plugins/jdbc+371c4254-a3e4-4910-8a58-682e321453c9+input&quot; version=&quot;2.0&quot;>&#xa;    &lt;xsl:template name=&quot;JDBCCallProcedure-input&quot; match=&quot;/&quot;>&#xa;        &lt;tns9:inputs/>&#xa;    &lt;/xsl:template>&#xa;&lt;/xsl:stylesheet>" expressionLanguage="urn:oasis:names:tc:wsbpel:2.0:sublang:xslt1.0"/>
                     </tibex:inputBindings>
                     <tibex:config>
                         <bwext:BWActivity
@@ -1673,7 +1780,7 @@
                     </bpws:sources>
                     <tibex:inputBindings>
                         <tibex:inputBinding
-                            expression="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xa;&lt;xsl:stylesheet xmlns:xsl=&quot;http://www.w3.org/1999/XSL/Transform&quot; xmlns:tns2=&quot;http://www.tibco.com/namespaces/tnt/plugins/jdbc+aff6b694-8a1d-4e76-ba71-dc6ad119fa33+input&quot; version=&quot;2.0&quot;>&#xa;    &lt;xsl:template name=&quot;JDBCCallProcedure-input&quot; match=&quot;/&quot;>&#xa;        &lt;tns2:inputs/>&#xa;    &lt;/xsl:template>&#xa;&lt;/xsl:stylesheet>" expressionLanguage="urn:oasis:names:tc:wsbpel:2.0:sublang:xslt1.0"/>
+                            expression="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xa;&lt;xsl:stylesheet xmlns:xsl=&quot;http://www.w3.org/1999/XSL/Transform&quot; xmlns:tns9=&quot;http://www.tibco.com/namespaces/tnt/plugins/jdbc+aff6b694-8a1d-4e76-ba71-dc6ad119fa33+input&quot; version=&quot;2.0&quot;>&#xa;    &lt;xsl:template name=&quot;JDBCCallProcedure-input&quot; match=&quot;/&quot;>&#xa;        &lt;tns9:inputs/>&#xa;    &lt;/xsl:template>&#xa;&lt;/xsl:stylesheet>" expressionLanguage="urn:oasis:names:tc:wsbpel:2.0:sublang:xslt1.0"/>
                     </tibex:inputBindings>
                     <tibex:config>
                         <bwext:BWActivity
@@ -1707,7 +1814,7 @@
                         <bpws:target linkName="StartToStartLog"/>
                     </bpws:targets>
                     <bpws:sources>
-                        <bpws:source linkName="GetSharedVariableToStartLog"/>
+                        <bpws:source linkName="GetTxIdToStartLog"/>
                     </bpws:sources>
                     <tibex:GetSharedVariable inline="true"
                         variableName="//CommonInterface//TrxID" xmlns:tibex="http://www.tibco.com/bpel/2007/extensions"/>

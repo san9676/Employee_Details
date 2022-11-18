@@ -14,6 +14,7 @@
     xmlns:ns6="http://www.tibco.com/namespaces/tnt/plugins/jdbc+f100df22-addf-45fb-9459-e276b07d017d+input"
     xmlns:ns7="http://tns.tibco.com/bw/activity/sendmail/xsd/input+0d4b280c-c0ab-461c-887c-fc5bc223d5e8+input"
     xmlns:ns8="http://tns.tibco.com/bw/palette/internal/activityerror+bw.mail.send"
+    xmlns:ns9="http://tns.tibco.com/bw/activity/sendmail/xsd/input+87565f95-e67f-401d-89fc-63f4e43d2d2e+input"
     xmlns:sca="http://docs.oasis-open.org/ns/opencsa/sca/200912"
     xmlns:sca-bpel="http://docs.oasis-open.org/ns/opencsa/sca-bpel/200801"
     xmlns:tib="http://www.tibco.com/bw/xslt/custom-functions"
@@ -463,38 +464,10 @@
             </xs:complexType>
             <xs:element name="mimeEnvelopeElement" type="tns:mimeEnvelopeSuperSetType"/>
         </xs:schema>
-        <schema attributeFormDefault="unqualified"
-            elementFormDefault="qualified"
-            targetNamespace="http://tns.tibco.com/bw/activity/sendmail/xsd/exception"
-            xmlns="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://tns.tibco.com/bw/activity/sendmail/xsd/exception">
-            <complexType name="InvalidInputExceptionType">
-                <sequence>
-                    <element form="unqualified" name="msg" type="string"/>
-                    <element form="unqualified" maxOccurs="1"
-                        minOccurs="0" name="msgCode" type="string"/>
-                </sequence>
-            </complexType>
-            <complexType name="UnknownHostExceptionType">
-                <sequence>
-                    <element form="unqualified" name="msg" type="string"/>
-                    <element form="unqualified" maxOccurs="1"
-                        minOccurs="0" name="msgCode" type="string"/>
-                    <element form="unqualified" name="hostName" type="string"/>
-                </sequence>
-            </complexType>
-            <complexType name="SendFailedExceptionType">
-                <complexContent>
-                    <extension base="tns:InvalidInputExceptionType"/>
-                </complexContent>
-            </complexType>
-            <element name="SendFailedException" type="tns:SendFailedExceptionType"/>
-            <element name="InvalidInputException" type="tns:InvalidInputExceptionType"/>
-            <element name="UnknownHostException" type="tns:UnknownHostExceptionType"/>
-        </schema>
         <schema elementFormDefault="qualified"
-            targetNamespace="http://tns.tibco.com/bw/activity/sendmail/xsd/input+0d4b280c-c0ab-461c-887c-fc5bc223d5e8+input"
+            targetNamespace="http://tns.tibco.com/bw/activity/sendmail/xsd/input+87565f95-e67f-401d-89fc-63f4e43d2d2e+input"
             xmlns="http://www.w3.org/2001/XMLSchema"
-            xmlns:tns="http://tns.tibco.com/bw/activity/sendmail/xsd/input+0d4b280c-c0ab-461c-887c-fc5bc223d5e8+input" xmlns:tns1="http://xmlns.tibco.com/encodings/mimefile">
+            xmlns:tns="http://tns.tibco.com/bw/activity/sendmail/xsd/input+87565f95-e67f-401d-89fc-63f4e43d2d2e+input" xmlns:tns1="http://xmlns.tibco.com/encodings/mimefile">
             <import namespace="http://xmlns.tibco.com/encodings/mimefile"/>
             <complexType name="SendMailParametersType">
                 <sequence>
@@ -538,6 +511,34 @@
                 </choice>
             </complexType>
             <element name="mailActivityInput" type="tns:SendMailParametersType"/>
+        </schema>
+        <schema attributeFormDefault="unqualified"
+            elementFormDefault="qualified"
+            targetNamespace="http://tns.tibco.com/bw/activity/sendmail/xsd/exception"
+            xmlns="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://tns.tibco.com/bw/activity/sendmail/xsd/exception">
+            <complexType name="InvalidInputExceptionType">
+                <sequence>
+                    <element form="unqualified" name="msg" type="string"/>
+                    <element form="unqualified" maxOccurs="1"
+                        minOccurs="0" name="msgCode" type="string"/>
+                </sequence>
+            </complexType>
+            <complexType name="UnknownHostExceptionType">
+                <sequence>
+                    <element form="unqualified" name="msg" type="string"/>
+                    <element form="unqualified" maxOccurs="1"
+                        minOccurs="0" name="msgCode" type="string"/>
+                    <element form="unqualified" name="hostName" type="string"/>
+                </sequence>
+            </complexType>
+            <complexType name="SendFailedExceptionType">
+                <complexContent>
+                    <extension base="tns:InvalidInputExceptionType"/>
+                </complexContent>
+            </complexType>
+            <element name="SendFailedException" type="tns:SendFailedExceptionType"/>
+            <element name="InvalidInputException" type="tns:InvalidInputExceptionType"/>
+            <element name="UnknownHostException" type="tns:UnknownHostExceptionType"/>
         </schema>
         <schema elementFormDefault="unqualified"
             targetNamespace="http://tns.tibco.com/bw/palette/internal/activityerror+bw.mail.send"
@@ -840,6 +841,7 @@
                                     <eAnnotations source="Pixel"/>
                                     <eAnnotations source="Pixel"/>
                                     <eAnnotations source="Pixel"/>
+                                    <eAnnotations source="Pixel"/>
                                     <children type="4002">
                                     <children type="4017">
                                     <styles
@@ -962,8 +964,51 @@
                                     gradientStartColor="16777215" xsi:type="bwnotation:BackgroundStyle"/>
                                     <element href="//0/@process/@activity/@faultHandlers/@catchAll/@activity/@activity/@activities.2"/>
                                     <layoutConstraint
-                                    x="381"
-                                    xsi:type="notation:Bounds" y="45"/>
+                                    x="514"
+                                    xsi:type="notation:Bounds" y="59"/>
+                                    </children>
+                                    <children type="4002 bw.mail.send">
+                                    <children type="4017">
+                                    <styles
+                                    fontName="Segoe UI"
+                                    lineColor="0" xsi:type="notation:ShapeStyle"/>
+
+                                    <layoutConstraint xsi:type="notation:Bounds"/>
+                                    </children>
+                                    <children type="4017">
+                                    <styles
+                                    fontName="Segoe UI"
+                                    lineColor="0" xsi:type="notation:ShapeStyle"/>
+
+                                    <layoutConstraint xsi:type="notation:Bounds"/>
+                                    </children>
+                                    <children type="4017">
+                                    <styles
+                                    fontName="Segoe UI"
+                                    lineColor="0" xsi:type="notation:ShapeStyle"/>
+
+                                    <layoutConstraint xsi:type="notation:Bounds"/>
+                                    </children>
+                                    <children type="4017">
+                                    <styles
+                                    fontName="Segoe UI"
+                                    lineColor="0" xsi:type="notation:ShapeStyle"/>
+
+                                    <layoutConstraint xsi:type="notation:Bounds"/>
+                                    </children>
+                                    <styles
+                                    fontName="Segoe UI"
+                                    lineColor="0" xsi:type="notation:ShapeStyle"/>
+                                    <styles
+                                    backgroundColor="16777215"
+                                    gradientEndColor="50431"
+                                    gradientStartColor="16777215" xsi:type="bwnotation:BackgroundStyle"/>
+                                    <element href="//0/@process/@activity/@faultHandlers/@catchAll/@activity/@activity/@activities.3"/>
+                                    <layoutConstraint
+                                    height="40"
+                                    width="40"
+                                    x="395"
+                                    xsi:type="notation:Bounds" y="52"/>
                                     </children>
                                     <styles xsi:type="notation:DrawerStyle"/>
                                     <styles xsi:type="notation:SortingStyle"/>
@@ -1088,14 +1133,25 @@
         </edges>
         <edges
             source="//@children.0/@children.3/@children.0/@children.0/@children.1/@children.0/@children.0/@children.1/@children.0/@children.0/@children.1"
-            target="//@children.0/@children.3/@children.0/@children.0/@children.1/@children.0/@children.0/@children.1/@children.0/@children.0/@children.2" type="4006">
+            target="//@children.0/@children.3/@children.0/@children.0/@children.1/@children.0/@children.0/@children.1/@children.0/@children.0/@children.3" type="4006">
             <children type="6002">
                 <layoutConstraint xsi:type="notation:Location" y="40"/>
             </children>
             <styles lineColor="0" xsi:type="notation:ConnectorStyle"/>
             <styles fontName="Segoe UI" xsi:type="notation:FontStyle"/>
             <element href="//0/@process/@activity/@faultHandlers/@catchAll/@activity/@activity/@links/@children.1"/>
-            <bendpoints points="[25, -3, -123, 17]$[124, -17, -24, 3]" xsi:type="notation:RelativeBendpoints"/>
+            <bendpoints points="[0, 0, 0, 0]$[0, 0, 0, 0]" xsi:type="notation:RelativeBendpoints"/>
+        </edges>
+        <edges
+            source="//@children.0/@children.3/@children.0/@children.0/@children.1/@children.0/@children.0/@children.1/@children.0/@children.0/@children.3"
+            target="//@children.0/@children.3/@children.0/@children.0/@children.1/@children.0/@children.0/@children.1/@children.0/@children.0/@children.2" type="4006">
+            <children type="6002">
+                <layoutConstraint xsi:type="notation:Location" y="40"/>
+            </children>
+            <styles lineColor="0" xsi:type="notation:ConnectorStyle"/>
+            <styles fontName="Segoe UI" xsi:type="notation:FontStyle"/>
+            <element href="//0/@process/@activity/@faultHandlers/@catchAll/@activity/@activity/@links/@children.2"/>
+            <bendpoints points="[25, 7, -94, 0]$[95, 0, -24, -7]" xsi:type="notation:RelativeBendpoints"/>
         </edges>
     </notation:Diagram>
     <tibex:NamespaceRegistry enabled="true">
@@ -1115,6 +1171,10 @@
             namespace="http://www.tibco.com/namespaces/tnt/plugins/jdbc+f100df22-addf-45fb-9459-e276b07d017d+input" prefix="tns4"/>
         <tibex:namespaceItem
             namespace="http://tns.tibco.com/bw/activity/sendmail/xsd/input+0d4b280c-c0ab-461c-887c-fc5bc223d5e8+input" prefix="tns12"/>
+        <tibex:namespaceItem
+            namespace="http://www.EniqueSol.org/Employee_Personal/V1" prefix="tns6"/>
+        <tibex:namespaceItem
+            namespace="http://tns.tibco.com/bw/activity/sendmail/xsd/input+87565f95-e67f-401d-89fc-63f4e43d2d2e+input" prefix="tns5"/>
     </tibex:NamespaceRegistry>
     <bpws:import importType="http://www.w3.org/2001/XMLSchema" namespace="http://www.eniquesolution.com/E-Commerce/CommonFramework"/>
     <bpws:import importType="http://www.w3.org/2001/XMLSchema" namespace="http://www.EniqueSol.org/Employee_Address/V1"/>
@@ -1164,12 +1224,12 @@
                 <bpws:literal>es_common_framework_sh.SMTPResource</bpws:literal>
             </bpws:from>
         </bpws:variable>
-        <bpws:variable element="ns7:mailActivityInput"
-            name="AddresserrorMail-input" sca-bpel:internal="true"/>
-        <bpws:variable element="ns8:ActivityErrorData"
-            name="_error_AddresserrorMail" sca-bpel:internal="true"/>
         <bpws:variable element="ns0:ErrorLogHandler"
             name="Errorlog-input" sca-bpel:internal="true"/>
+        <bpws:variable element="ns9:mailActivityInput"
+            name="SendMail-input" sca-bpel:internal="true"/>
+        <bpws:variable element="ns8:ActivityErrorData"
+            name="_error_SendMail" sca-bpel:internal="true"/>
     </bpws:variables>
     <bpws:extensions>
         <bpws:extension mustUnderstand="no" namespace="http://www.eclipse.org/gmf/runtime/1.0.2/notation"/>
@@ -1189,7 +1249,8 @@
                             <bpws:link
                                 name="ErrorlogToCopy_1_insertResponse" tibex:linkType="SUCCESS"/>
                             <bpws:link
-                                name="insertErrorResponseToAddresserrorMail" tibex:linkType="SUCCESS"/>
+                                name="insertErrorResponseToSendMail" tibex:linkType="SUCCESS"/>
+                            <bpws:link name="SendMailToEnd1" tibex:linkType="SUCCESS"/>
                         </bpws:links>
                         <bpws:extensionActivity>
                             <tibex:extActivity
@@ -1221,7 +1282,7 @@
                                     <bpws:target linkName="ErrorlogToCopy_1_insertResponse"/>
                                 </bpws:targets>
                                 <bpws:sources>
-                                    <bpws:source linkName="insertErrorResponseToAddresserrorMail"/>
+                                    <bpws:source linkName="insertErrorResponseToSendMail"/>
                                 </bpws:sources>
                                 <tibex:inputBindings>
                                     <tibex:inputBinding
@@ -1261,22 +1322,52 @@
                         </bpws:extensionActivity>
                         <bpws:extensionActivity>
                             <tibex:activityExtension
-                                inputVariable="AddresserrorMail-input"
-                                name="AddresserrorMail"
-                                tibex:xpdlId="0d4b280c-c0ab-461c-887c-fc5bc223d5e8" xmlns:tibex="http://www.tibco.com/bpel/2007/extensions">
+                                inputVariable="End-input" name="End1"
+                                tibex:xpdlId="c8dd839b-334a-487c-8f0c-72f6b81d2c5e" xmlns:tibex="http://www.tibco.com/bpel/2007/extensions">
                                 <bpws:targets>
-                                    <bpws:target linkName="insertErrorResponseToAddresserrorMail"/>
+                                    <bpws:target linkName="SendMailToEnd1"/>
                                 </bpws:targets>
                                 <tibex:inputBindings>
                                     <tibex:inputBinding
-                                    expression="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xa;&lt;xsl:stylesheet xmlns:xsl=&quot;http://www.w3.org/1999/XSL/Transform&quot; xmlns:tns12=&quot;http://tns.tibco.com/bw/activity/sendmail/xsd/input+0d4b280c-c0ab-461c-887c-fc5bc223d5e8+input&quot; xmlns:tns1=&quot;http://www.EniqueSol.org/Employee_Address/V1&quot; version=&quot;2.0&quot;>&lt;xsl:param name=&quot;Start&quot;/>&lt;xsl:param name=&quot;FaultDetails&quot;/>&lt;xsl:template name=&quot;AddresserrorMail-input&quot; match=&quot;/&quot;>&lt;tns12:mailActivityInput>&lt;from>&lt;xsl:value-of select=&quot;'santoshbe22@gmail.com'&quot;/>&lt;/from>&lt;to>&lt;xsl:value-of select=&quot;'stalgeri@eniquesolutions.com'&quot;/>&lt;/to>&lt;subject>&lt;xsl:value-of select=&quot;'EmployeeDetails-Address Error'&quot;/>&lt;/subject>&lt;bodyElement>&lt;bodyText>&lt;xsl:value-of select=&quot;concat('Hi User,&amp;#xD;&amp;#xA;the Employee Address details has failed for EmpCode:',$Start/tns1:EmpAddress/tns1:EmpCode,' caused by:&amp;#xD;&amp;#xA;',$FaultDetails/Msg,'&amp;#xD;&amp;#xA; Send request to http://localhost:7879/addAddress ')&quot;/>&lt;/bodyText>&lt;/bodyElement>&lt;/tns12:mailActivityInput>&lt;/xsl:template>&lt;/xsl:stylesheet>" expressionLanguage="urn:oasis:names:tc:wsbpel:2.0:sublang:xslt1.0"/>
+                                    expression="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xa;&lt;xsl:stylesheet xmlns:xsl=&quot;http://www.w3.org/1999/XSL/Transform&quot; xmlns:tns1=&quot;http://www.EniqueSol.org/Employee_Address/V1&quot; version=&quot;2.0&quot;>&lt;xsl:param name=&quot;FaultDetails&quot;/>&lt;xsl:template name=&quot;End-input&quot; match=&quot;/&quot;>&lt;tns1:Employee_AddressRes>&lt;tns1:ResCode>&lt;xsl:value-of select=&quot;$FaultDetails/MsgCode&quot;/>&lt;/tns1:ResCode>&lt;tns1:ResMsg>&lt;xsl:value-of select=&quot;$FaultDetails/Msg&quot;/>&lt;/tns1:ResMsg>&lt;/tns1:Employee_AddressRes>&lt;/xsl:template>&lt;/xsl:stylesheet>" expressionLanguage="urn:oasis:names:tc:wsbpel:2.0:sublang:xslt1.0"/>
+                                </tibex:inputBindings>
+                                <tibex:config>
+                                    <bwext:BWActivity
+                                    activityTypeID="bw.internal.end"
+                                    xmlns:activityconfig="http://tns.tibco.com/bw/model/activityconfig"
+                                    xmlns:bwext="http://tns.tibco.com/bw/model/core/bwext"
+                                    xmlns:internalactivities="http://ns.tibco.com/bw/core/internalactivity" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                                    <activityConfig>
+                                    <properties name="config" xsi:type="activityconfig:EMFProperty">
+                                    <type href="http://ns.tibco.com/bw/core/internalactivity#//End"/>
+                                    <value xsi:type="internalactivities:End"/>
+                                    </properties>
+                                    </activityConfig>
+                                    </bwext:BWActivity>
+                                </tibex:config>
+                            </tibex:activityExtension>
+                        </bpws:extensionActivity>
+                        <bpws:extensionActivity>
+                            <tibex:activityExtension
+                                inputVariable="SendMail-input"
+                                name="SendMail"
+                                tibex:xpdlId="87565f95-e67f-401d-89fc-63f4e43d2d2e" xmlns:tibex="http://www.tibco.com/bpel/2007/extensions">
+                                <bpws:targets>
+                                    <bpws:target linkName="insertErrorResponseToSendMail"/>
+                                </bpws:targets>
+                                <bpws:sources>
+                                    <bpws:source linkName="SendMailToEnd1"/>
+                                </bpws:sources>
+                                <tibex:inputBindings>
+                                    <tibex:inputBinding
+                                    expression="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xa;&lt;xsl:stylesheet xmlns:xsl=&quot;http://www.w3.org/1999/XSL/Transform&quot; xmlns:tns5=&quot;http://tns.tibco.com/bw/activity/sendmail/xsd/input+87565f95-e67f-401d-89fc-63f4e43d2d2e+input&quot; xmlns:tns1=&quot;http://www.EniqueSol.org/Employee_Address/V1&quot; version=&quot;2.0&quot;>&lt;xsl:param name=&quot;FaultDetails&quot;/>&lt;xsl:param name=&quot;Start&quot;/>&lt;xsl:template name=&quot;SendMail-input&quot; match=&quot;/&quot;>&lt;tns5:mailActivityInput>&lt;from>&lt;xsl:value-of select=&quot;'santoshbe22@gmail.com'&quot;/>&lt;/from>&lt;to>&lt;xsl:value-of select=&quot;'stalgeri@eniquesolutions.com'&quot;/>&lt;/to>&lt;cc>&lt;xsl:value-of select=&quot;'saranya@eniquesolutions.com'&quot;/>&lt;/cc>&lt;subject>&lt;xsl:value-of select=&quot;'Employee Details- Address Error'&quot;/>&lt;/subject>&lt;bodyElement>&lt;bodyText>&lt;xsl:value-of select=&quot;concat('Hi User,&amp;#xD;&amp;#xA;&amp;#x9;&amp;#x9;The Application for Address Details failed for employee: ',$Start/tns1:EmpAddress/tns1:EmpCode,'&amp;#xD;&amp;#xA;&amp;#x9;&amp;#x9;caused by: ', &amp;#xD;&amp;#xA;$FaultDetails/MsgCode,&amp;#x9;&amp;#x9;&amp;#xD;&amp;#xA;$FaultDetails/Msg,&amp;#xD;&amp;#xA;&amp;#xD;&amp;#xA;&amp;#xD;&amp;#xA;'Please send request to the following: http://localhost:7879/addAddress ',&amp;#xD;&amp;#xA;'Thanks and Regards,&amp;#xD;&amp;#xA;Tibco.')&quot;/>&lt;/bodyText>&lt;/bodyElement>&lt;/tns5:mailActivityInput>&lt;/xsl:template>&lt;/xsl:stylesheet>" expressionLanguage="urn:oasis:names:tc:wsbpel:2.0:sublang:xslt1.0"/>
                                 </tibex:inputBindings>
                                 <tibex:config>
                                     <bwext:BWActivity
                                     activityTypeID="bw.mail.send"
                                     xmlns:activityconfig="http://tns.tibco.com/bw/model/activityconfig"
                                     xmlns:bwext="http://tns.tibco.com/bw/model/core/bwext"
-                                    xmlns:input="http://tns.tibco.com/bw/activity/sendmail/xsd/input+0d4b280c-c0ab-461c-887c-fc5bc223d5e8+input"
+                                    xmlns:input="http://tns.tibco.com/bw/activity/sendmail/xsd/input+87565f95-e67f-401d-89fc-63f4e43d2d2e+input"
                                     xmlns:mail="http://ns.tibco.com/bw/palette/mail" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
                                     <activityConfig>
                                     <properties name="config" xsi:type="activityconfig:EMFProperty">
@@ -1325,7 +1416,7 @@
                     </bpws:targets>
                     <tibex:inputBindings>
                         <tibex:inputBinding
-                            expression="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xa;&lt;xsl:stylesheet xmlns:xsl=&quot;http://www.w3.org/1999/XSL/Transform&quot; xmlns:tns1=&quot;http://www.EniqueSol.org/Employee_Address/V1&quot; version=&quot;2.0&quot;>&lt;xsl:template name=&quot;End-input&quot; match=&quot;/&quot;>&lt;tns1:Employee_AddressRes>&lt;tns1:ResCode>&lt;xsl:value-of select=&quot;'200'&quot;/>&lt;/tns1:ResCode>&lt;tns1:ResMsg>&lt;xsl:value-of select=&quot;''&quot;/>&lt;/tns1:ResMsg>&lt;/tns1:Employee_AddressRes>&lt;/xsl:template>&lt;/xsl:stylesheet>" expressionLanguage="urn:oasis:names:tc:wsbpel:2.0:sublang:xslt1.0"/>
+                            expression="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xa;&lt;xsl:stylesheet xmlns:xsl=&quot;http://www.w3.org/1999/XSL/Transform&quot; xmlns:tns1=&quot;http://www.EniqueSol.org/Employee_Address/V1&quot; version=&quot;2.0&quot;>&lt;xsl:template name=&quot;End-input&quot; match=&quot;/&quot;>&lt;tns1:Employee_AddressRes>&lt;tns1:ResCode>&lt;xsl:value-of select=&quot;'200'&quot;/>&lt;/tns1:ResCode>&lt;tns1:ResMsg>&lt;xsl:value-of select=&quot;'Address Details Inserted'&quot;/>&lt;/tns1:ResMsg>&lt;/tns1:Employee_AddressRes>&lt;/xsl:template>&lt;/xsl:stylesheet>" expressionLanguage="urn:oasis:names:tc:wsbpel:2.0:sublang:xslt1.0"/>
                     </tibex:inputBindings>
                     <tibex:config>
                         <bwext:BWActivity

@@ -31,6 +31,7 @@
     xmlns:ns3="http://www.tibco.com/namespaces/tnt/plugins/restinvoke+73f1235a-aad8-41f3-8697-3643361f788b+RestInvokeOutput"
     xmlns:ns30="http://tns.tibco.com/bw/activity/sendmail/xsd/input+aeaf765e-558f-4837-add8-4624024e66aa+input"
     xmlns:ns31="http://tns.tibco.com/bw/activity/sendmail/xsd/input+6194fe6c-77c3-432a-ba45-1d0e11fb4e2f+input"
+    xmlns:ns32="http://www.example.org/MainPayload"
     xmlns:ns4="http://tns.tibco.com/bw/palette/internal/activityerror+bw.restjson.Rest"
     xmlns:ns5="http://www.EniqueSol.org/Employee_Personal/V1"
     xmlns:ns6="activity.jsonRender.output+4fea1bc9-f63a-42dc-9385-279150e2358b+ActivityOutputType"
@@ -6498,6 +6499,7 @@
     <bpws:import importType="http://www.w3.org/2001/XMLSchema" namespace="http://www.EniqueSol.org/Emp_InsurenceDetails/V1"/>
     <bpws:import importType="http://www.w3.org/2001/XMLSchema" namespace="http://www.EniqueSol.org/Emp_OrgDetails/V1"/>
     <bpws:import importType="http://www.w3.org/2001/XMLSchema" namespace="http://www.EniqueSol.org/Emp_SalTitle/V1"/>
+    <bpws:import importType="http://www.w3.org/2001/XMLSchema" namespace="http://www.example.org/MainPayload"/>
     <bpws:partnerLinks>
         <bpws:partnerLink myRole="use" name="addPersonal"
             partnerLinkType="ns:partnerLinkType" sca-bpel:ignore="false" sca-bpel:service="addPersonal"/>
@@ -6697,6 +6699,7 @@
             name="Reply5-input" sca-bpel:internal="true"/>
         <bpws:variable messageType="ns:post4XXFaultMessage6"
             name="Reply6-input" sca-bpel:internal="true"/>
+        <bpws:variable element="ns32:MainSysRes" name="FetchEmpDetails" sca-bpel:internal="true"/>
     </bpws:variables>
     <bpws:extensions>
         <bpws:extension mustUnderstand="no" namespace="http://www.eclipse.org/gmf/runtime/1.0.2/notation"/>
@@ -8130,6 +8133,7 @@
                             <bpws:extensionActivity>
                                 <tibex:extActivity
                                     name="FetchEmpDetails"
+                                    outputVariable="FetchEmpDetails"
                                     tibex:xpdlId="d866961a-d529-447f-ad19-bb834abfa923"
                                     type="bw.generalactivities.callprocess" xmlns:tibex="http://www.tibco.com/bpel/2007/extensions">
                                     <bpws:targets>
@@ -8138,6 +8142,10 @@
                                     <bpws:sources>
                                     <bpws:source linkName="FetchEmpDetailsToSendMail1"/>
                                     </bpws:sources>
+                                    <tibex:inputBindings>
+                                    <tibex:inputBinding coercion=""
+                                    expression="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xa;&lt;xsl:stylesheet xmlns:xsl=&quot;http://www.w3.org/1999/XSL/Transform&quot; xmlns:tns=&quot;http://www.example.org/MainPayload&quot; version=&quot;2.0&quot;>&lt;xsl:template name=&quot;FetchEmpDetails-input&quot; match=&quot;/&quot;>&lt;tns:FetchEmpDataReq/>&lt;/xsl:template>&lt;/xsl:stylesheet>" expressionLanguage="urn:oasis:names:tc:wsbpel:2.0:sublang:xslt1.0"/>
+                                    </tibex:inputBindings>
                                     <tibex:CallProcess
                                     subProcessName="SubProcesses.FetchEmpDetails" xmlns:tibex="http://www.tibco.com/bpel/2007/extensions"/>
                                 </tibex:extActivity>

@@ -631,8 +631,8 @@
                                     gradientEndColor="50431"
                                     gradientStartColor="16777215" xsi:type="bwnotation:BackgroundStyle"/>
                                     <element href="//0/@process/@activity/@activity/@activities.1"/>
-                                    <layoutConstraint x="308"
-                                    xsi:type="notation:Bounds" y="105"/>
+                                    <layoutConstraint x="305"
+                                    xsi:type="notation:Bounds" y="45"/>
                                     </children>
                                     <children type="4002 bw.mail.send">
                                     <children type="4017">
@@ -668,8 +668,8 @@
                                     <element href="//0/@process/@activity/@activity/@activities.2"/>
                                     <layoutConstraint
                                     height="40" width="40"
-                                    x="192"
-                                    xsi:type="notation:Bounds" y="105"/>
+                                    x="169"
+                                    xsi:type="notation:Bounds" y="57"/>
                                     </children>
                                     <children type="4002">
                                     <children type="4017">
@@ -850,9 +850,9 @@
                     <bpws:sources>
                         <bpws:source linkName="TimerToLog">
                             <tibex:DesignExpression>
-                                <tibex:expression expression="1=2" expressionLanguage="urn:oasis:names:tc:wsbpel:2.0:sublang:xpath2.0"/>
+                                <tibex:expression expression="1=1" expressionLanguage="urn:oasis:names:tc:wsbpel:2.0:sublang:xpath2.0"/>
                             </tibex:DesignExpression>
-                            <bpws:transitionCondition expressionLanguage="urn:oasis:names:tc:wsbpel:2.0:sublang:xpath2.0"><![CDATA[1=2]]></bpws:transitionCondition>
+                            <bpws:transitionCondition expressionLanguage="urn:oasis:names:tc:wsbpel:2.0:sublang:xpath2.0"><![CDATA[1=1]]></bpws:transitionCondition>
                         </bpws:source>
                         <bpws:source linkName="TimerToSQLDirect">
                             <tibex:DesignExpression>
@@ -926,7 +926,7 @@
                     </bpws:sources>
                     <tibex:inputBindings>
                         <tibex:inputBinding
-                            expression="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xa;&lt;xsl:stylesheet xmlns:xsl=&quot;http://www.w3.org/1999/XSL/Transform&quot; xmlns:tns1=&quot;http://tns.tibco.com/bw/activity/sendmail/xsd/input+44584dcb-88ab-47b9-9146-81722dc78b2a+input&quot; version=&quot;2.0&quot;>&lt;xsl:template name=&quot;SendMail-input&quot; match=&quot;/&quot;>&lt;tns1:mailActivityInput>&lt;from>&lt;xsl:value-of select=&quot;'santoshbe22@gmail.com'&quot;/>&lt;/from>&lt;to>&lt;xsl:value-of select=&quot;'stalgeri@eniquesolutions.com'&quot;/>&lt;/to>&lt;subject>&lt;xsl:value-of select=&quot;'hello'&quot;/>&lt;/subject>&lt;bodyElement>&lt;bodyText>&lt;xsl:value-of select=&quot;'Hi Santosh test'&quot;/>&lt;/bodyText>&lt;/bodyElement>&lt;/tns1:mailActivityInput>&lt;/xsl:template>&lt;/xsl:stylesheet>" expressionLanguage="urn:oasis:names:tc:wsbpel:2.0:sublang:xslt1.0"/>
+                            expression="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xa;&lt;xsl:stylesheet xmlns:xsl=&quot;http://www.w3.org/1999/XSL/Transform&quot; xmlns:tns1=&quot;http://tns.tibco.com/bw/activity/sendmail/xsd/input+44584dcb-88ab-47b9-9146-81722dc78b2a+input&quot; version=&quot;2.0&quot;>&lt;xsl:template name=&quot;SendMail-input&quot; match=&quot;/&quot;>&lt;tns1:mailActivityInput>&lt;from>&lt;xsl:value-of select=&quot;'santoshbe22@gmail.com'&quot;/>&lt;/from>&lt;to>&lt;xsl:value-of select=&quot;'stalgeri@eniquesolutions.com'&quot;/>&lt;/to>&lt;subject>&lt;xsl:value-of select=&quot;'hello'&quot;/>&lt;/subject>&lt;xsl:choose>&lt;xsl:when test=&quot;1=1&quot;>&lt;bodyElement>&lt;bodyText>&lt;xsl:value-of select=&quot;'Hi Santosh test'&quot;/>&lt;/bodyText>&lt;/bodyElement>&lt;/xsl:when>&lt;xsl:when test=&quot;1=1&quot;>&lt;bodyElement>&lt;bodyText>&lt;xsl:value-of select=&quot;'Hi Santosh test'&quot;/>&lt;/bodyText>&lt;/bodyElement>&lt;/xsl:when>&lt;xsl:when test=&quot;1=1&quot;>&lt;bodyElement>&lt;bodyText>&lt;xsl:value-of select=&quot;'Hi Santosh test'&quot;/>&lt;/bodyText>&lt;/bodyElement>&lt;/xsl:when>&lt;xsl:otherwise>&lt;bodyElement>&lt;bodyText>&lt;xsl:value-of select=&quot;'Hi Santosh test'&quot;/>&lt;/bodyText>&lt;/bodyElement>&lt;/xsl:otherwise>&lt;/xsl:choose>&lt;/tns1:mailActivityInput>&lt;/xsl:template>&lt;/xsl:stylesheet>" expressionLanguage="urn:oasis:names:tc:wsbpel:2.0:sublang:xslt1.0"/>
                     </tibex:inputBindings>
                     <tibex:config>
                         <bwext:BWActivity activityTypeID="bw.mail.send"

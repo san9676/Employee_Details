@@ -47,4 +47,12 @@
     		<element name="ResMsg" type="string" maxOccurs="1" minOccurs="0"></element>
     	</sequence>
     </complexType>
+
+    <element name="FetchEmpDataReq" type="tns:FetchEmpDataReqType"></element>
+    
+    <complexType name="FetchEmpDataReqType">
+    	<sequence>
+    		<element name="EmpCode" type="string" maxOccurs="1" minOccurs="0"></element>
+    	</sequence>
+    </complexType>
 </schema>
