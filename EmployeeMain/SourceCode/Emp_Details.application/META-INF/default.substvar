@@ -183,7 +183,7 @@
 		</globalVariable>
 		<globalVariable>
 			<name>//CommonInterface///Connections/HTTP/Host</name>
-			<value>localhost</value>
+			<value>192.168.0.135</value>
 			<deploymentSettable>false</deploymentSettable>
 			<serviceSettable>false</serviceSettable>
 			<type>String</type>
@@ -209,16 +209,6 @@
 			<useLookupValue>false</useLookupValue>
 		</globalVariable>
 		<globalVariable>
-			<name>//CommonInterface///Connections/HTTP/Port</name>
-			<value>9216</value>
-			<deploymentSettable>false</deploymentSettable>
-			<serviceSettable>false</serviceSettable>
-			<type>Integer</type>
-			<isOverride>false</isOverride>
-			<useLookupValue>false</useLookupValue>
-			<lookupValue>9217</lookupValue>
-		</globalVariable>
-		<globalVariable>
 			<name>//CommonInterface//BW.MODULE.NAME</name>
 			<value></value>
 			<deploymentSettable>false</deploymentSettable>
@@ -238,7 +228,7 @@
 		</globalVariable>
 		<globalVariable>
 			<name>//Emp_Details///SalHttpClient/host</name>
-			<value>localhost</value>
+			<value>192.168.0.135</value>
 			<deploymentSettable>false</deploymentSettable>
 			<serviceSettable>false</serviceSettable>
 			<type>String</type>
@@ -256,7 +246,7 @@
 		</globalVariable>
 		<globalVariable>
 			<name>//Emp_Details///OrgHttpClient/Host</name>
-			<value>localhost</value>
+			<value>192.168.0.135</value>
 			<deploymentSettable>false</deploymentSettable>
 			<serviceSettable>false</serviceSettable>
 			<type>String</type>
@@ -283,7 +273,7 @@
 		</globalVariable>
 		<globalVariable>
 			<name>//CommonInterface///InsurenceClientHttp/host</name>
-			<value>localhost</value>
+			<value>192.168.0.135</value>
 			<deploymentSettable>false</deploymentSettable>
 			<serviceSettable>false</serviceSettable>
 			<type>String</type>
@@ -292,7 +282,7 @@
 		</globalVariable>
 		<globalVariable>
 			<name>//CommonInterface///PersonalClientHttp/host</name>
-			<value>localhost</value>
+			<value>192.168.0.135</value>
 			<deploymentSettable>false</deploymentSettable>
 			<serviceSettable>false</serviceSettable>
 			<type>String</type>
@@ -319,7 +309,7 @@
 		</globalVariable>
 		<globalVariable>
 			<name>//CommonInterface///EmpProf/HTTP/host</name>
-			<value>localhost</value>
+			<value>192.168.0.135</value>
 			<deploymentSettable>false</deploymentSettable>
 			<serviceSettable>false</serviceSettable>
 			<type>String</type>
@@ -350,6 +340,24 @@
 			<deploymentSettable>false</deploymentSettable>
 			<serviceSettable>false</serviceSettable>
 			<type>String</type>
+			<isOverride>false</isOverride>
+			<useLookupValue>false</useLookupValue>
+		</globalVariable>
+		<globalVariable>
+			<name>//CommonInterface///Connections/HTTP/MSPort</name>
+			<value>9216</value>
+			<deploymentSettable>false</deploymentSettable>
+			<serviceSettable>false</serviceSettable>
+			<type>Integer</type>
+			<isOverride>false</isOverride>
+			<useLookupValue>false</useLookupValue>
+		</globalVariable>
+		<globalVariable>
+			<name>//CommonInterface///Connections/HTTP/EDPort</name>
+			<value>7879</value>
+			<deploymentSettable>false</deploymentSettable>
+			<serviceSettable>false</serviceSettable>
+			<type>Integer</type>
 			<isOverride>false</isOverride>
 			<useLookupValue>false</useLookupValue>
 		</globalVariable>

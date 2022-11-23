@@ -13,7 +13,8 @@
   <sca:property xmi:id="_YOSW4E7JEe2pVZfBfiTVQA" name="/Connections/JDBC/password" type="property:password" scaext:simpleValue="#!qNt25SvH4ke0l1HssZ0oGQ==" publicAccess="true" scalable="true"/>
   <sca:property xmi:id="_Yhhb8E7JEe2pVZfBfiTVQA" name="/Connections/JDBC/URL" type="XMLSchema:string" publicAccess="true" scalable="true"/>
   <sca:property xmi:id="_LnfM0FjtEe28ef0bHrU9Ng" name="/Connections/HTTP/Host" type="XMLSchema:string" publicAccess="true" scalable="true"/>
-  <sca:property xmi:id="_OXjgsFjtEe28ef0bHrU9Ng" name="/Connections/HTTP/Port" type="XMLSchema:int" scaext:simpleValue="0" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_OXjgsFjtEe28ef0bHrU9Ng" name="/Connections/HTTP/MSPort" type="XMLSchema:int" scaext:simpleValue="0" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_6z84IGsJEe2iSc35GOJf8g" name="/Connections/HTTP/EDPort" type="XMLSchema:int" scaext:simpleValue="0" publicAccess="true" scalable="true"/>
   <sca:property xmi:id="_ocYm0E9xEe2pVZfBfiTVQA" name="/MsgCodes/SuccessCode" type="XMLSchema:string" publicAccess="true" scalable="true"/>
   <sca:property xmi:id="_raU-oE9xEe2pVZfBfiTVQA" name="/MsgCodes/TechnicalErrorCode" type="XMLSchema:string" publicAccess="true" scalable="true"/>
   <sca:property xmi:id="_tMdqoE9xEe2pVZfBfiTVQA" name="/MsgCodes/BusErrorCode" type="XMLSchema:string" publicAccess="true" scalable="true"/>

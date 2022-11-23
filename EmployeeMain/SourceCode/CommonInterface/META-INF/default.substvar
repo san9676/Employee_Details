@@ -111,7 +111,7 @@
 		</globalVariable>
 		<globalVariable>
 			<name>/Connections/HTTP/Host</name>
-			<value>localhost</value>
+			<value>192.168.0.135</value>
 			<deploymentSettable>false</deploymentSettable>
 			<serviceSettable>false</serviceSettable>
 			<type>String</type>
@@ -119,8 +119,17 @@
 			<useLookupValue>false</useLookupValue>
 		</globalVariable>
 		<globalVariable>
-			<name>/Connections/HTTP/Port</name>
+			<name>/Connections/HTTP/MSPort</name>
 			<value>9216</value>
+			<deploymentSettable>false</deploymentSettable>
+			<serviceSettable>false</serviceSettable>
+			<type>Integer</type>
+			<isOverride>false</isOverride>
+			<useLookupValue>false</useLookupValue>
+		</globalVariable>
+		<globalVariable>
+			<name>/Connections/HTTP/EDPort</name>
+			<value>7879</value>
 			<deploymentSettable>false</deploymentSettable>
 			<serviceSettable>false</serviceSettable>
 			<type>Integer</type>
@@ -156,7 +165,7 @@
 		</globalVariable>
 		<globalVariable>
 			<name>/InsurenceClientHttp/host</name>
-			<value>localhost</value>
+			<value>192.168.0.135</value>
 			<deploymentSettable>false</deploymentSettable>
 			<serviceSettable>false</serviceSettable>
 			<type>String</type>
@@ -174,7 +183,7 @@
 		</globalVariable>
 		<globalVariable>
 			<name>/PersonalClientHttp/host</name>
-			<value>localhost</value>
+			<value>192.168.0.135</value>
 			<deploymentSettable>false</deploymentSettable>
 			<serviceSettable>false</serviceSettable>
 			<type>String</type>
@@ -201,7 +210,7 @@
 		</globalVariable>
 		<globalVariable>
 			<name>/EmpProf/HTTP/host</name>
-			<value>localhost</value>
+			<value>192.168.0.135</value>
 			<deploymentSettable>false</deploymentSettable>
 			<serviceSettable>false</serviceSettable>
 			<type>String</type>
