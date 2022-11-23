@@ -18,6 +18,58 @@
     xmlns:tibex="http://www.tibco.com/bpel/2007/extensions"
     xmlns:tibprop="http://ns.tibco.com/bw/property"
     xmlns:tns="http://tns.tibco.com/bw/REST" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <tibex:VariableDescriptor type="MemorySaving">
+        <task name="pick">
+            <endingVariables>
+                <variable>post</variable>
+            </endingVariables>
+        </task>
+        <task name="postOut">
+            <endingVariables>
+                <variable>postOut-input</variable>
+                <variable>SuccesCode</variable>
+            </endingVariables>
+        </task>
+        <task name="Emp_personalSub">
+            <endingVariables>
+                <variable>Emp_personalSub-input</variable>
+            </endingVariables>
+        </task>
+        <task name="StartLog">
+            <endingVariables>
+                <variable>StartLog-input</variable>
+            </endingVariables>
+        </task>
+        <task name="EndLog">
+            <endingVariables>
+                <variable>EndLog-input</variable>
+            </endingVariables>
+        </task>
+        <task name="InsertResponse">
+            <endingVariables>
+                <variable>InsertResponse-input</variable>
+                <variable>InsertResponse</variable>
+                <variable>Emp_personalSub</variable>
+            </endingVariables>
+        </task>
+        <task name="ErrorLog">
+            <endingVariables>
+                <variable>ErrorLog-input</variable>
+            </endingVariables>
+        </task>
+        <task name="InsertErrorResponse">
+            <endingVariables>
+                <variable>InsertErrorResponse-input</variable>
+                <variable>InsertErrorResponse</variable>
+            </endingVariables>
+        </task>
+        <task name="Reply">
+            <endingVariables>
+                <variable>Reply-input</variable>
+                <variable>FaultDetails</variable>
+            </endingVariables>
+        </task>
+    </tibex:VariableDescriptor>
     <tibex:Types>
         <xs:schema attributeFormDefault="unqualified"
             elementFormDefault="qualified"
