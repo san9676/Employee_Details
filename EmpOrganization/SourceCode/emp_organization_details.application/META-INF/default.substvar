@@ -93,7 +93,7 @@
 		</globalVariable>
 		<globalVariable>
 			<name>//emp_organization_details///Http/host</name>
-			<value>localhost</value>
+			<value>192.168.0.135</value>
 			<deploymentSettable>false</deploymentSettable>
 			<serviceSettable>false</serviceSettable>
 			<type>String</type>
@@ -201,7 +201,7 @@
 		</globalVariable>
 		<globalVariable>
 			<name>//CommonInterface///Connections/HTTP/Host</name>
-			<value>localhost</value>
+			<value>192.168.0.135</value>
 			<deploymentSettable>false</deploymentSettable>
 			<serviceSettable>false</serviceSettable>
 			<type>String</type>
@@ -265,7 +265,7 @@
 		</globalVariable>
 		<globalVariable>
 			<name>//CommonInterface///InsurenceClientHttp/host</name>
-			<value>localhost</value>
+			<value>192.168.0.135</value>
 			<deploymentSettable>false</deploymentSettable>
 			<serviceSettable>false</serviceSettable>
 			<type>String</type>
@@ -274,7 +274,7 @@
 		</globalVariable>
 		<globalVariable>
 			<name>//CommonInterface///PersonalClientHttp/host</name>
-			<value>localhost</value>
+			<value>192.168.0.135</value>
 			<deploymentSettable>false</deploymentSettable>
 			<serviceSettable>false</serviceSettable>
 			<type>String</type>
@@ -301,7 +301,7 @@
 		</globalVariable>
 		<globalVariable>
 			<name>//CommonInterface///EmpProf/HTTP/host</name>
-			<value>localhost</value>
+			<value>192.168.0.135</value>
 			<deploymentSettable>false</deploymentSettable>
 			<serviceSettable>false</serviceSettable>
 			<type>String</type>
