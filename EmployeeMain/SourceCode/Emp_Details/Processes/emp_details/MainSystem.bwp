@@ -1684,6 +1684,60 @@
                                     xsi:type="notation:Bounds" y="45"/>
                                     </children>
 
+                                    <children type="4002">
+
+                                    <children type="4017">
+
+                                    <styles
+                                    fontName="Segoe UI"
+                                    lineColor="0" xsi:type="notation:ShapeStyle"/>
+
+                                    <layoutConstraint xsi:type="notation:Bounds"/>
+                                    </children>
+
+                                    <children type="4017">
+
+                                    <styles
+                                    fontName="Segoe UI"
+                                    lineColor="0" xsi:type="notation:ShapeStyle"/>
+
+                                    <layoutConstraint xsi:type="notation:Bounds"/>
+                                    </children>
+
+                                    <children type="4017">
+
+                                    <styles
+                                    fontName="Segoe UI"
+                                    lineColor="0" xsi:type="notation:ShapeStyle"/>
+
+                                    <layoutConstraint xsi:type="notation:Bounds"/>
+                                    </children>
+
+                                    <children type="4017">
+
+                                    <styles
+                                    fontName="Segoe UI"
+                                    lineColor="0" xsi:type="notation:ShapeStyle"/>
+
+                                    <layoutConstraint xsi:type="notation:Bounds"/>
+                                    </children>
+
+                                    <styles
+                                    fontName="Segoe UI"
+                                    lineColor="0" xsi:type="notation:ShapeStyle"/>
+
+                                    <styles
+                                    backgroundColor="16777215"
+                                    gradientEndColor="50431"
+                                    gradientStartColor="16777215" xsi:type="bwnotation:BackgroundStyle"/>
+
+                                    <element href="//0/@process/@activity/@activity/@activities.0/@messages.0/@activity/@faultHandlers/@catchAll/@activity/@activity/@activities.2"/>
+
+                                    <layoutConstraint
+                                    x="395"
+                                    xsi:type="notation:Bounds" y="45"/>
+                                    </children>
+
                                     <styles xsi:type="notation:DrawerStyle"/>
 
                                     <styles xsi:type="notation:SortingStyle"/>
@@ -2109,6 +2163,17 @@
             <element href="//0/@process/@activity/@activity/@activities.0/@messages.0/@activity/@activity/@links/@children.18"/>
             <bendpoints points="[0, 0, 0, 0]$[0, 0, 0, 0]" xsi:type="notation:RelativeBendpoints"/>
         </edges>
+        <edges
+            source="//@children.0/@children.4/@children.0/@children.0/@children.0/@children.0/@children.0/@children.0/@children.0/@children.2/@children.0/@children.1/@children.0/@children.0/@children.1/@children.0/@children.0/@children.1/@children.0/@children.0/@children.1"
+            target="//@children.0/@children.4/@children.0/@children.0/@children.0/@children.0/@children.0/@children.0/@children.0/@children.2/@children.0/@children.1/@children.0/@children.0/@children.1/@children.0/@children.0/@children.1/@children.0/@children.0/@children.2" type="4006">
+            <children type="6002">
+                <layoutConstraint xsi:type="notation:Location" y="40"/>
+            </children>
+            <styles lineColor="0" xsi:type="notation:ConnectorStyle"/>
+            <styles fontName="Segoe UI" xsi:type="notation:FontStyle"/>
+            <element href="//0/@process/@activity/@activity/@activities.0/@messages.0/@activity/@faultHandlers/@catchAll/@activity/@activity/@links/@children.1"/>
+            <bendpoints points="[0, 0, 0, 0]$[0, 0, 0, 0]" xsi:type="notation:RelativeBendpoints"/>
+        </edges>
     </notation:Diagram>
     <tibex:NamespaceRegistry enabled="true">
         <tibex:namespaceItem
@@ -2226,6 +2291,7 @@
         <bpws:variable element="ns7:ErrorLogHandler"
             name="ErrorLog-input" sca-bpel:internal="true"/>
         <bpws:variable element="ns14:MainSysRes" name="FetchEmpDetails" sca-bpel:internal="true"/>
+        <bpws:variable messageType="ns:postResponse" name="Reply-input" sca-bpel:internal="true"/>
     </bpws:variables>
     <bpws:extensions>
         <bpws:extension mustUnderstand="no" namespace="http://www.eclipse.org/gmf/runtime/1.0.2/notation"/>
@@ -2253,6 +2319,8 @@
                                     <bpws:links>
                                     <bpws:link
                                     name="ErrorLogToCopy_1_SendMail" tibex:linkType="SUCCESS"/>
+                                    <bpws:link
+                                    name="ErrorMailToReply" tibex:linkType="SUCCESS"/>
                                     </bpws:links>
                                     <bpws:extensionActivity>
                                     <tibex:extActivity
@@ -2277,7 +2345,7 @@
                                     </bpws:extensionActivity>
                                     <bpws:extensionActivity>
                                     <tibex:activityExtension
-                                    expression="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xa;&lt;xsl:stylesheet xmlns:xsl=&quot;http://www.w3.org/1999/XSL/Transform&quot; xmlns:tns6=&quot;http://tns.tibco.com/bw/activity/sendmail/xsd/input+cb27dc13-28a2-4854-b6a2-62a996eca257+input&quot; xmlns:tns5=&quot;http://www.EniqueSol.org/Employee_Personal/V1&quot; xmlns:tns1=&quot;http://www.example.org/MainPayload&quot; version=&quot;2.0&quot;>&lt;xsl:param name=&quot;post&quot;/>&lt;xsl:param name=&quot;FaultDetails&quot;/>&lt;xsl:template name=&quot;ErrorMail-input&quot; match=&quot;/&quot;>&lt;tns6:mailActivityInput>&lt;from>&lt;xsl:value-of select=&quot;'santoshbe22@gmail.com'&quot;/>&lt;/from>&lt;to>&lt;xsl:value-of select=&quot;'stalgeri@eniquesolutions.com'&quot;/>&lt;/to>&lt;bodyElement>&lt;bodyText>&lt;xsl:value-of select=&quot;concat('Hi User',',','&amp;#xD;&amp;#xA;             The Application process has failed for the employee' , $post/item/tns1:MainSysReq/tns5:EmpPersonal/tns5:EmpCode,' caused by:&amp;#xD;&amp;#xA;',$FaultDetails/Msg)&quot;/>&lt;/bodyText>&lt;/bodyElement>&lt;/tns6:mailActivityInput>&lt;/xsl:template>&lt;/xsl:stylesheet>"
+                                    expression="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xa;&lt;xsl:stylesheet xmlns:xsl=&quot;http://www.w3.org/1999/XSL/Transform&quot; xmlns:tns6=&quot;http://tns.tibco.com/bw/activity/sendmail/xsd/input+cb27dc13-28a2-4854-b6a2-62a996eca257+input&quot; xmlns:tns5=&quot;http://www.EniqueSol.org/Employee_Personal/V1&quot; xmlns:tns1=&quot;http://www.example.org/MainPayload&quot; version=&quot;2.0&quot;>&lt;xsl:param name=&quot;post&quot;/>&lt;xsl:param name=&quot;FaultDetails&quot;/>&lt;xsl:template name=&quot;ErrorMail-input&quot; match=&quot;/&quot;>&lt;tns6:mailActivityInput>&lt;from>&lt;xsl:value-of select=&quot;'santoshbe22@gmail.com'&quot;/>&lt;/from>&lt;to>&lt;xsl:value-of select=&quot;'stalgeri@eniquesolutions.com'&quot;/>&lt;/to>&lt;cc>&lt;xsl:value-of select=&quot;'sjambulkar@eniquesolutions.com'&quot;/>&lt;/cc>&lt;bodyElement>&lt;bodyText>&lt;xsl:value-of select=&quot;concat('Hi User',',','&amp;#xD;&amp;#xA;             The Application process has failed for the employee' , $post/item/tns1:MainSysReq/tns5:EmpPersonal/tns5:EmpCode,' caused by:&amp;#xD;&amp;#xA;',$FaultDetails/Msg)&quot;/>&lt;/bodyText>&lt;/bodyElement>&lt;/tns6:mailActivityInput>&lt;/xsl:template>&lt;/xsl:stylesheet>"
                                     expressionLanguage="urn:oasis:names:tc:wsbpel:2.0:sublang:xslt1.0"
                                     inputVariable="ErrorMail-input"
                                     name="ErrorMail"
@@ -2285,9 +2353,12 @@
                                     <bpws:targets>
                                     <bpws:target linkName="ErrorLogToCopy_1_SendMail"/>
                                     </bpws:targets>
+                                    <bpws:sources>
+                                    <bpws:source linkName="ErrorMailToReply"/>
+                                    </bpws:sources>
                                     <tibex:inputBindings>
                                     <tibex:inputBinding
-                                    expression="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xa;&lt;xsl:stylesheet xmlns:xsl=&quot;http://www.w3.org/1999/XSL/Transform&quot; xmlns:tns6=&quot;http://tns.tibco.com/bw/activity/sendmail/xsd/input+cb27dc13-28a2-4854-b6a2-62a996eca257+input&quot; xmlns:tns5=&quot;http://www.EniqueSol.org/Employee_Personal/V1&quot; xmlns:tns1=&quot;http://www.example.org/MainPayload&quot; version=&quot;2.0&quot;>&#xa;    &lt;xsl:param name=&quot;post.item&quot;/>&#xa;    &lt;xsl:param name=&quot;FaultDetails&quot;/>&#xa;    &lt;xsl:template name=&quot;ErrorMail-input&quot; match=&quot;/&quot;>&#xa;        &lt;tns6:mailActivityInput>&#xa;            &lt;from>&#xa;                &lt;xsl:value-of select=&quot;'santoshbe22@gmail.com'&quot;/>&#xa;            &lt;/from>&#xa;            &lt;to>&#xa;                &lt;xsl:value-of select=&quot;'stalgeri@eniquesolutions.com'&quot;/>&#xa;            &lt;/to>&#xa;            &lt;bodyElement>&#xa;                &lt;bodyText>&#xa;                    &lt;xsl:value-of select=&quot;concat('Hi User',',','&amp;#xD;&amp;#xA;             The Application process has failed for the employee' , $post.item/tns5:EmpPersonal/tns5:EmpCode,' caused by:&amp;#xD;&amp;#xA;',$FaultDetails/Msg)&quot;/>&#xa;                &lt;/bodyText>&#xa;            &lt;/bodyElement>&#xa;        &lt;/tns6:mailActivityInput>&#xa;    &lt;/xsl:template>&#xa;&lt;/xsl:stylesheet>" expressionLanguage="urn:oasis:names:tc:wsbpel:2.0:sublang:xslt1.0"/>
+                                    expression="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xa;&lt;xsl:stylesheet xmlns:xsl=&quot;http://www.w3.org/1999/XSL/Transform&quot; xmlns:tns6=&quot;http://tns.tibco.com/bw/activity/sendmail/xsd/input+cb27dc13-28a2-4854-b6a2-62a996eca257+input&quot; xmlns:tns5=&quot;http://www.EniqueSol.org/Employee_Personal/V1&quot; xmlns:tns1=&quot;http://www.example.org/MainPayload&quot; version=&quot;2.0&quot;>&#xa;    &lt;xsl:param name=&quot;post.item&quot;/>&#xa;    &lt;xsl:param name=&quot;FaultDetails&quot;/>&#xa;    &lt;xsl:template name=&quot;ErrorMail-input&quot; match=&quot;/&quot;>&#xa;        &lt;tns6:mailActivityInput>&#xa;            &lt;from>&#xa;                &lt;xsl:value-of select=&quot;'santoshbe22@gmail.com'&quot;/>&#xa;            &lt;/from>&#xa;            &lt;to>&#xa;                &lt;xsl:value-of select=&quot;'stalgeri@eniquesolutions.com'&quot;/>&#xa;            &lt;/to>&#xa;            &lt;cc>&#xa;                &lt;xsl:value-of select=&quot;'sjambulkar@eniquesolutions.com'&quot;/>&#xa;            &lt;/cc>&#xa;            &lt;bodyElement>&#xa;                &lt;bodyText>&#xa;                    &lt;xsl:value-of select=&quot;concat('Hi User',',','&amp;#xD;&amp;#xA;             The Application process has failed for the employee' , $post.item/tns5:EmpPersonal/tns5:EmpCode,' caused by:&amp;#xD;&amp;#xA;',$FaultDetails/Msg)&quot;/>&#xa;                &lt;/bodyText>&#xa;            &lt;/bodyElement>&#xa;        &lt;/tns6:mailActivityInput>&#xa;    &lt;/xsl:template>&#xa;&lt;/xsl:stylesheet>" expressionLanguage="urn:oasis:names:tc:wsbpel:2.0:sublang:xslt1.0"/>
                                     </tibex:inputBindings>
                                     <tibex:config>
                                     <bwext:BWActivity
@@ -2310,6 +2381,21 @@
                                     </tibex:config>
                                     </tibex:activityExtension>
                                     </bpws:extensionActivity>
+                                    <bpws:reply name="Reply"
+                                    operation="post"
+                                    partnerLink="EmployeeMain"
+                                    portType="ns:EmployeeMain"
+                                    tibex:xpdlId="351ad21c-fd98-4c52-93bb-105ee456d4aa" variable="Reply-input">
+                                    <tibex:inputBinding expressionLanguage="urn:oasis:names:tc:wsbpel:2.0:sublang:xslt1.0">&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+&lt;xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:tns="http://xmlns.example.com/20221107171336PLT" xmlns:tns1="http://www.example.org/MainPayload" version="2.0"&gt;&lt;xsl:param name="FaultDetails"/&gt;&lt;xsl:template name="Reply-input" match="/"&gt;&lt;tns:postResponse&gt;&lt;item&gt;&lt;tns1:MainSysRes&gt;&lt;tns1:ResCode&gt;&lt;xsl:value-of select="$FaultDetails/MsgCode"/&gt;&lt;/tns1:ResCode&gt;&lt;tns1:ResMsg&gt;&lt;xsl:value-of select="$FaultDetails/Msg"/&gt;&lt;/tns1:ResMsg&gt;&lt;/tns1:MainSysRes&gt;&lt;/item&gt;&lt;/tns:postResponse&gt;&lt;/xsl:template&gt;&lt;/xsl:stylesheet&gt;</tibex:inputBinding>
+                                    <tibex:inputBindings>
+                                    <tibex:partBinding
+                                    expression="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xa;&lt;xsl:stylesheet xmlns:xsl=&quot;http://www.w3.org/1999/XSL/Transform&quot; xmlns:tns=&quot;http://xmlns.example.com/20221107171336PLT&quot; xmlns:tns1=&quot;http://www.example.org/MainPayload&quot; version=&quot;2.0&quot;>&#xa;    &lt;xsl:param name=&quot;FaultDetails&quot;/>&#xa;    &lt;xsl:template name=&quot;Reply-input&quot; match=&quot;/&quot;>&#xa;        &lt;tns1:MainSysRes>&#xa;            &lt;tns1:ResCode>&#xa;                &lt;xsl:value-of select=&quot;$FaultDetails/MsgCode&quot;/>&#xa;            &lt;/tns1:ResCode>&#xa;            &lt;tns1:ResMsg>&#xa;                &lt;xsl:value-of select=&quot;$FaultDetails/Msg&quot;/>&#xa;            &lt;/tns1:ResMsg>&#xa;        &lt;/tns1:MainSysRes>&#xa;    &lt;/xsl:template>&#xa;&lt;/xsl:stylesheet>" expressionLanguage="urn:oasis:names:tc:wsbpel:2.0:sublang:xslt1.0"/>
+                                    </tibex:inputBindings>
+                                    <bpws:targets>
+                                    <bpws:target linkName="ErrorMailToReply"/>
+                                    </bpws:targets>
+                                    </bpws:reply>
                                     </bpws:flow>
                                 </bpws:scope>
                             </bpws:catchAll>
@@ -2631,7 +2717,7 @@
                                     </bpws:targets>
                                     <tibex:inputBindings>
                                     <tibex:inputBinding
-                                    expression="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xa;&lt;xsl:stylesheet xmlns:xsl=&quot;http://www.w3.org/1999/XSL/Transform&quot; xmlns:tns4=&quot;http://tns.tibco.com/bw/activity/sendmail/xsd/input+a37c7068-71f1-4b01-817b-41aff5d813fa+input&quot; version=&quot;2.0&quot;>&lt;xsl:param name=&quot;SQLDirect&quot;/>&lt;xsl:template name=&quot;SendMail-input&quot; match=&quot;/&quot;>&lt;tns4:mailActivityInput>&lt;from>&lt;xsl:value-of select=&quot;'santoshbe22@gmail.com'&quot;/>&lt;/from>&lt;to>&lt;xsl:value-of select=&quot;'stalgeri@eniquesolutions.com'&quot;/>&lt;/to>&lt;cc>&lt;xsl:value-of select=&quot;'saranya@eniquesolutions.com'&quot;/>&lt;/cc>&lt;subject>&lt;xsl:value-of select=&quot;'Application for new EmployeeDetails'&quot;/>&lt;/subject>&lt;bodyElement>&lt;bodyText>&lt;xsl:value-of select=&quot;concat('Hi User,        &amp;#xD;&amp;#xA;&amp;#x9;&amp;#x9;The new Employee submittion has been completed for the employee ' , string($SQLDirect/unknownResultset[1]/row[1]/column[name='EMPCODE']/value),'&amp;#xD;&amp;#xA;&amp;#x9;&amp;#x9;&amp;#x9;&amp;#xD;&amp;#xA;&amp;#x9;&amp;#x9;&amp;#x9; &amp;#xD;&amp;#xA;&amp;#x9;&amp;#x9;thanks and regards,&amp;#xD;&amp;#xA;&amp;#x9;&amp;#x9;Santosh.')&quot;/>&lt;/bodyText>&lt;/bodyElement>&lt;/tns4:mailActivityInput>&lt;/xsl:template>&lt;/xsl:stylesheet>" expressionLanguage="urn:oasis:names:tc:wsbpel:2.0:sublang:xslt1.0"/>
+                                    expression="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xa;&lt;xsl:stylesheet xmlns:xsl=&quot;http://www.w3.org/1999/XSL/Transform&quot; xmlns:tns4=&quot;http://tns.tibco.com/bw/activity/sendmail/xsd/input+a37c7068-71f1-4b01-817b-41aff5d813fa+input&quot; version=&quot;2.0&quot;>&lt;xsl:param name=&quot;SQLDirect&quot;/>&lt;xsl:template name=&quot;SendMail-input&quot; match=&quot;/&quot;>&lt;tns4:mailActivityInput>&lt;from>&lt;xsl:value-of select=&quot;'santoshbe22@gmail.com'&quot;/>&lt;/from>&lt;to>&lt;xsl:value-of select=&quot;'stalgeri@eniquesolutions.com'&quot;/>&lt;/to>&lt;cc>&lt;xsl:value-of select=&quot;'sjambulkar@eniquesolutions.com'&quot;/>&lt;/cc>&lt;cc>&lt;xsl:value-of select=&quot;'saranya@eniquesolutions.com'&quot;/>&lt;/cc>&lt;subject>&lt;xsl:value-of select=&quot;'Application for new EmployeeDetails'&quot;/>&lt;/subject>&lt;bodyElement>&lt;bodyText>&lt;xsl:value-of select=&quot;concat('Hi User,        &amp;#xD;&amp;#xA;&amp;#x9;&amp;#x9;The new Employee submittion has been completed for the employee ' , string($SQLDirect/unknownResultset[1]/row[1]/column[name='EMPCODE']/value),'&amp;#xD;&amp;#xA;&amp;#x9;&amp;#x9;&amp;#x9;&amp;#xD;&amp;#xA;&amp;#x9;&amp;#x9;&amp;#x9; &amp;#xD;&amp;#xA;&amp;#x9;&amp;#x9;thanks and regards,&amp;#xD;&amp;#xA;&amp;#x9;&amp;#x9;Santosh.')&quot;/>&lt;/bodyText>&lt;/bodyElement>&lt;/tns4:mailActivityInput>&lt;/xsl:template>&lt;/xsl:stylesheet>" expressionLanguage="urn:oasis:names:tc:wsbpel:2.0:sublang:xslt1.0"/>
                                     </tibex:inputBindings>
                                     <tibex:config>
                                     <bwext:BWActivity

@@ -113,7 +113,7 @@
   <sca:property xmi:id="_M36IEGDeEe2rs8GLg4L-mQ" name="/resourcePaths/OrganizationPath" type="XMLSchema:string" publicAccess="true" scalable="true"/>
   <sca:property xmi:id="_UKu1cGDeEe2rs8GLg4L-mQ" name="/resourcePaths/InsurencePath" type="XMLSchema:string" publicAccess="true" scalable="true"/>
   <sca:component xmi:id="_ofUYsF5cEe2PFegRppAYBA" name="Componenttest" compositeext:version="1.0.0.qualifier">
-    <scaext:implementation xsi:type="BW:BWComponentImplementation" xmi:id="_ofUYsV5cEe2PFegRppAYBA" processName="SubProcesses.test"/>
+    <scaext:implementation xsi:type="BW:BWComponentImplementation" xmi:id="_ofUYsV5cEe2PFegRppAYBA" processName="SubProcesses.test" autoStart="false"/>
   </sca:component>
   <sca:component xmi:id="_arJrIF6REe2PFegRppAYBA" name="ComponentMainSystem" compositeext:version="1.0.0.qualifier">
     <scaext:implementation xsi:type="BW:BWComponentImplementation" xmi:id="_arKSMF6REe2PFegRppAYBA" processName="emp_details.MainSystem"/>
