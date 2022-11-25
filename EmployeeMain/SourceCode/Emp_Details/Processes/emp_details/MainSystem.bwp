@@ -12,6 +12,7 @@
     xmlns:ns12="http://www.tibco.com/namespaces/tnt/plugins/jdbc"
     xmlns:ns13="http://tns.tibco.com/bw/palette/internal/activityerror+bw.jdbc.SQLDirect"
     xmlns:ns14="http://www.example.org/MainPayload"
+    xmlns:ns15="http://schemas.tibco.com/bw/plugins/basic/6.0/Exceptions"
     xmlns:ns2="http://www.EniqueSol.org/Employee_Personal/V1"
     xmlns:ns3="http://www.EniqueSol.org/Employee_Prof/V1"
     xmlns:ns4="http://www.EniqueSol.org/Emp_SalTitle/V1"
@@ -550,6 +551,21 @@
                     <element maxOccurs="1" minOccurs="0" ref="Q2:ActivityTimedOutException"/>
                 </choice>
             </complexType>
+        </schema>
+        <schema
+            targetNamespace="http://schemas.tibco.com/bw/plugins/basic/6.0/Exceptions"
+            xmlns="http://www.w3.org/2001/XMLSchema"
+            xmlns:tibex="http://www.tibco.com/bpel/2007/extensions" xmlns:tns="http://schemas.tibco.com/bw/plugins/basic/6.0/Exceptions">
+            <element name="DefaultFault">
+                <complexType>
+                    <sequence>
+                        <element maxOccurs="1" minOccurs="0"
+                            name="message" type="string"/>
+                        <element maxOccurs="1" minOccurs="0"
+                            name="msgCode" type="string"/>
+                    </sequence>
+                </complexType>
+            </element>
         </schema>
         <wsdl:definitions
             targetNamespace="http://xmlns.example.com/20221107171336PLT"
@@ -1491,6 +1507,60 @@
                                     xsi:type="notation:Bounds" y="251"/>
                                     </children>
 
+                                    <children type="4002">
+
+                                    <children type="4017">
+
+                                    <styles
+                                    fontName="Segoe UI"
+                                    lineColor="0" xsi:type="notation:ShapeStyle"/>
+
+                                    <layoutConstraint xsi:type="notation:Bounds"/>
+                                    </children>
+
+                                    <children type="4017">
+
+                                    <styles
+                                    fontName="Segoe UI"
+                                    lineColor="0" xsi:type="notation:ShapeStyle"/>
+
+                                    <layoutConstraint xsi:type="notation:Bounds"/>
+                                    </children>
+
+                                    <children type="4017">
+
+                                    <styles
+                                    fontName="Segoe UI"
+                                    lineColor="0" xsi:type="notation:ShapeStyle"/>
+
+                                    <layoutConstraint xsi:type="notation:Bounds"/>
+                                    </children>
+
+                                    <children type="4017">
+
+                                    <styles
+                                    fontName="Segoe UI"
+                                    lineColor="0" xsi:type="notation:ShapeStyle"/>
+
+                                    <layoutConstraint xsi:type="notation:Bounds"/>
+                                    </children>
+
+                                    <styles
+                                    fontName="Segoe UI"
+                                    lineColor="0" xsi:type="notation:ShapeStyle"/>
+
+                                    <styles
+                                    backgroundColor="16777215"
+                                    gradientEndColor="50431"
+                                    gradientStartColor="16777215" xsi:type="bwnotation:BackgroundStyle"/>
+
+                                    <element href="//0/@process/@activity/@activity/@activities.0/@messages.0/@activity/@activity/@activities.16"/>
+
+                                    <layoutConstraint
+                                    x="-31"
+                                    xsi:type="notation:Bounds" y="359"/>
+                                    </children>
+
                                     <styles xsi:type="notation:DrawerStyle"/>
 
                                     <styles xsi:type="notation:SortingStyle"/>
@@ -2174,6 +2244,17 @@
             <element href="//0/@process/@activity/@activity/@activities.0/@messages.0/@activity/@faultHandlers/@catchAll/@activity/@activity/@links/@children.1"/>
             <bendpoints points="[0, 0, 0, 0]$[0, 0, 0, 0]" xsi:type="notation:RelativeBendpoints"/>
         </edges>
+        <edges
+            source="//@children.0/@children.4/@children.0/@children.0/@children.0/@children.0/@children.0/@children.0/@children.0/@children.2/@children.0/@children.0/@children.0"
+            target="//@children.0/@children.4/@children.0/@children.0/@children.0/@children.0/@children.0/@children.0/@children.0/@children.2/@children.0/@children.1/@children.0/@children.0/@children.0/@children.0/@children.0/@children.0/@children.14" type="4006">
+            <children type="6002">
+                <layoutConstraint xsi:type="notation:Location" y="40"/>
+            </children>
+            <styles lineColor="0" xsi:type="notation:ConnectorStyle"/>
+            <styles fontName="Segoe UI" xsi:type="notation:FontStyle"/>
+            <element href="//0/@process/@activity/@activity/@activities.0/@messages.0/@activity/@activity/@links/@children.19"/>
+            <bendpoints points="[0, 0, 0, 0]$[0, 0, 0, 0]" xsi:type="notation:RelativeBendpoints"/>
+        </edges>
     </notation:Diagram>
     <tibex:NamespaceRegistry enabled="true">
         <tibex:namespaceItem
@@ -2204,6 +2285,8 @@
             namespace="http://www.EniqueSol.org/Emp_OrgDetails/V1" prefix="tns10"/>
         <tibex:namespaceItem
             namespace="http://www.EniqueSol.org/Emp_InsurenceDetails/V1" prefix="tns11"/>
+        <tibex:namespaceItem
+            namespace="http://schemas.tibco.com/bw/plugins/basic/6.0/Exceptions" prefix="tns12"/>
     </tibex:NamespaceRegistry>
     <bpws:import importType="http://www.w3.org/2001/XMLSchema" namespace="http://www.example.org/MainPayload"/>
     <bpws:import importType="http://www.w3.org/2001/XMLSchema" namespace="http://tns.tibco.com/bw/REST"/>
@@ -2292,6 +2375,7 @@
             name="ErrorLog-input" sca-bpel:internal="true"/>
         <bpws:variable element="ns14:MainSysRes" name="FetchEmpDetails" sca-bpel:internal="true"/>
         <bpws:variable messageType="ns:postResponse" name="Reply-input" sca-bpel:internal="true"/>
+        <bpws:variable element="ns15:DefaultFault" name="Throw-input" sca-bpel:internal="true"/>
     </bpws:variables>
     <bpws:extensions>
         <bpws:extension mustUnderstand="no" namespace="http://www.eclipse.org/gmf/runtime/1.0.2/notation"/>
@@ -2403,7 +2487,7 @@
                         <bpws:flow name="flow1">
                             <bpws:links>
                                 <bpws:link
-                                    name="OnMessageStartToSetSharedVariable" tibex:linkType="SUCCESS"/>
+                                    name="OnMessageStartToSetSharedVariable" tibex:linkType="SUCCESSWITHCONDITION"/>
                                 <bpws:link name="SetTxIDToLogHandler" tibex:linkType="SUCCESS"/>
                                 <bpws:link
                                     name="EmpInsurenceToFetchEmpDetails" tibex:linkType="SUCCESS"/>
@@ -2432,11 +2516,25 @@
                                 <bpws:link name="EndLogToSendMail" tibex:linkType="SUCCESSWITHCONDITION"/>
                                 <bpws:link name="SQLDirectTopostOut" tibex:linkType="SUCCESS"/>
                                 <bpws:link name="EndLogToExit" tibex:linkType="SUCCESSWITHNOCONDITION"/>
+                                <bpws:link name="OnMessageStartToThrow" tibex:linkType="SUCCESSWITHNOCONDITION"/>
                             </bpws:links>
                             <bpws:empty name="OnMessageStart"
                                 tibex:constructor="onMessageStart" tibex:xpdlId="31f6bc03-2245-41b4-be50-17f4683f860f">
                                 <bpws:sources>
-                                    <bpws:source linkName="OnMessageStartToSetSharedVariable"/>
+                                    <bpws:source linkName="OnMessageStartToSetSharedVariable">
+                                    <tibex:DesignExpression>
+                                    <tibex:expression
+                                    expression="exists($post/item/ns14:MainSysReq/ns2:EmpPersonal) and exists($post/item/ns14:MainSysReq/ns3:Employee_Prof) and exists($post/item/ns14:MainSysReq/ns1:Employee_Address) and exists($post/item/ns14:MainSysReq/ns5:Emp_OrgDetails) and exists($post/item/ns14:MainSysReq/ns6:Emp_Insurence) and exists($post/item/ns14:MainSysReq/ns4:Emp_SalTitle)" expressionLanguage="urn:oasis:names:tc:wsbpel:2.0:sublang:xpath2.0"/>
+                                    </tibex:DesignExpression>
+                                    <bpws:transitionCondition expressionLanguage="urn:oasis:names:tc:wsbpel:2.0:sublang:xpath2.0"><![CDATA[exists($post.item/ns2:EmpPersonal) and exists($post.item/ns3:Employee_Prof) and exists($post.item/ns1:Employee_Address) and exists($post.item/ns5:Emp_OrgDetails) and exists($post.item/ns6:Emp_Insurence) and exists($post.item/ns4:Emp_SalTitle)]]></bpws:transitionCondition>
+                                    </bpws:source>
+                                    <bpws:source linkName="OnMessageStartToThrow">
+                                    <tibex:DesignExpression>
+                                    <tibex:expression
+                                    expression="##otherwise##" expressionLanguage="urn:oasis:names:tc:wsbpel:2.0:sublang:xpath2.0"/>
+                                    </tibex:DesignExpression>
+                                    <bpws:transitionCondition expressionLanguage="urn:oasis:names:tc:wsbpel:2.0:sublang:xpath2.0"><![CDATA[##otherwise##]]></bpws:transitionCondition>
+                                    </bpws:source>
                                 </bpws:sources>
                             </bpws:empty>
                             <bpws:empty name="OnMessageEnd"
@@ -2780,6 +2878,16 @@
                                     <bpws:target linkName="EndLogToExit"/>
                                 </bpws:targets>
                             </bpws:exit>
+                            <bpws:throw faultName="ns15:DefaultFault"
+                                faultVariable="Throw-input" name="Throw" tibex:xpdlId="f7858bc5-7355-47e0-94bf-6f41e2fd8e47">
+                                <tibex:inputBindings>
+                                    <tibex:partBinding
+                                    expression="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xa;&lt;xsl:stylesheet xmlns:xsl=&quot;http://www.w3.org/1999/XSL/Transform&quot; xmlns:tns12=&quot;http://schemas.tibco.com/bw/plugins/basic/6.0/Exceptions&quot; version=&quot;2.0&quot;>&lt;xsl:template name=&quot;Throw-input&quot; match=&quot;/&quot;>&lt;tns12:DefaultFault>&lt;message>&lt;xsl:value-of select=&quot;'Bad request'&quot;/>&lt;/message>&lt;msgCode>&lt;xsl:value-of select=&quot;'400'&quot;/>&lt;/msgCode>&lt;/tns12:DefaultFault>&lt;/xsl:template>&lt;/xsl:stylesheet>" expressionLanguage="urn:oasis:names:tc:wsbpel:2.0:sublang:xslt1.0"/>
+                                </tibex:inputBindings>
+                                <bpws:targets>
+                                    <bpws:target linkName="OnMessageStartToThrow"/>
+                                </bpws:targets>
+                            </bpws:throw>
                         </bpws:flow>
                     </bpws:scope>
                 </bpws:onMessage>
