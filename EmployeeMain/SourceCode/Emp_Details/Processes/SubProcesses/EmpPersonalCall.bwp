@@ -9,6 +9,7 @@
     xmlns:ns1="http://www.eniquesolution.com/E-Commerce/CommonFramework"
     xmlns:ns10="http://tns.tibco.com/bw/palette/internal/activityerror+bw.mail.send"
     xmlns:ns11="http://tns.tibco.com/bw/activity/sendmail/xsd/input+f97123d4-05da-42be-a62d-9c305e93a3ee+input"
+    xmlns:ns12="http://schemas.tibco.com/bw/plugins/basic/6.0/Exceptions"
     xmlns:ns2="activity.jsonRender.output+f8bacf40-79aa-4d0b-b27a-c2872adb43ab+ActivityOutputType"
     xmlns:ns3="http://tns.tibco.com/bw/palette/internal/activityerror+bw.restjson.JsonRender"
     xmlns:ns4="http://www.tibco.com/namespaces/tnt/plugins/restinvoke+1bdbd803-0753-4910-9a5b-55f1fcfbb926+RestInvokeInput"
@@ -627,6 +628,21 @@
                 </choice>
             </complexType>
         </schema>
+        <schema
+            targetNamespace="http://schemas.tibco.com/bw/plugins/basic/6.0/Exceptions"
+            xmlns="http://www.w3.org/2001/XMLSchema"
+            xmlns:tibex="http://www.tibco.com/bpel/2007/extensions" xmlns:tns="http://schemas.tibco.com/bw/plugins/basic/6.0/Exceptions">
+            <element name="DefaultFault">
+                <complexType>
+                    <sequence>
+                        <element maxOccurs="1" minOccurs="0"
+                            name="message" type="string"/>
+                        <element maxOccurs="1" minOccurs="0"
+                            name="msgCode" type="string"/>
+                    </sequence>
+                </complexType>
+            </element>
+        </schema>
     </tibex:Types>
     <tibex:ProcessInfo callable="true" createdBy="admin"
         createdOn="Mon Nov 07 17:54:00 IST 2022" description=""
@@ -936,6 +952,41 @@
                                     <layoutConstraint x="439"
                                     xsi:type="notation:Bounds" y="273"/>
                                     </children>
+                                    <children type="4002">
+                                    <children type="4017">
+                                    <styles
+                                    fontName="Segoe UI"
+                                    lineColor="0" xsi:type="notation:ShapeStyle"/>
+                                    <layoutConstraint xsi:type="notation:Bounds"/>
+                                    </children>
+                                    <children type="4017">
+                                    <styles
+                                    fontName="Segoe UI"
+                                    lineColor="0" xsi:type="notation:ShapeStyle"/>
+                                    <layoutConstraint xsi:type="notation:Bounds"/>
+                                    </children>
+                                    <children type="4017">
+                                    <styles
+                                    fontName="Segoe UI"
+                                    lineColor="0" xsi:type="notation:ShapeStyle"/>
+                                    <layoutConstraint xsi:type="notation:Bounds"/>
+                                    </children>
+                                    <children type="4017">
+                                    <styles
+                                    fontName="Segoe UI"
+                                    lineColor="0" xsi:type="notation:ShapeStyle"/>
+                                    <layoutConstraint xsi:type="notation:Bounds"/>
+                                    </children>
+                                    <styles fontName="Segoe UI"
+                                    lineColor="0" xsi:type="notation:ShapeStyle"/>
+                                    <styles
+                                    backgroundColor="16777215"
+                                    gradientEndColor="50431"
+                                    gradientStartColor="16777215" xsi:type="bwnotation:BackgroundStyle"/>
+                                    <element href="//0/@process/@activity/@activity/@activities.8"/>
+                                    <layoutConstraint x="535"
+                                    xsi:type="notation:Bounds" y="273"/>
+                                    </children>
                                     <styles xsi:type="notation:DrawerStyle"/>
                                     <styles xsi:type="notation:SortingStyle"/>
                                     <styles xsi:type="notation:FilteringStyle"/>
@@ -1218,18 +1269,6 @@
             <sourceAnchor id="(0.5918367346938775,0.9591836734693877)" xsi:type="notation:IdentityAnchor"/>
         </edges>
         <edges
-            source="//@children.0/@children.3/@children.0/@children.0/@children.0/@children.0/@children.0/@children.0/@children.7"
-            target="//@children.0/@children.3/@children.0/@children.0/@children.0/@children.0/@children.0/@children.0/@children.1" type="4006">
-            <children type="6002">
-                <layoutConstraint xsi:type="notation:Location" y="40"/>
-            </children>
-            <styles lineColor="0" xsi:type="notation:ConnectorStyle"/>
-            <styles fontName="Segoe UI" xsi:type="notation:FontStyle"/>
-            <element href="//0/@process/@activity/@activity/@links/@children.5"/>
-            <bendpoints
-                points="[25, 0, -444, 119]$[469, 0, 0, 119]$[469, -94, 0, 25]" xsi:type="notation:RelativeBendpoints"/>
-        </edges>
-        <edges
             source="//@children.0/@children.3/@children.0/@children.0/@children.0/@children.0/@children.0/@children.0/@children.0"
             target="//@children.0/@children.3/@children.0/@children.0/@children.0/@children.0/@children.0/@children.0/@children.4" type="4006">
             <children type="6002">
@@ -1237,7 +1276,7 @@
             </children>
             <styles lineColor="0" xsi:type="notation:ConnectorStyle"/>
             <styles fontName="Segoe UI" xsi:type="notation:FontStyle"/>
-            <element href="//0/@process/@activity/@activity/@links/@children.6"/>
+            <element href="//0/@process/@activity/@activity/@links/@children.5"/>
             <bendpoints points="[25, 3, -144, -21]$[145, 21, -24, -3]" xsi:type="notation:RelativeBendpoints"/>
         </edges>
         <edges
@@ -1248,7 +1287,7 @@
             </children>
             <styles lineColor="0" xsi:type="notation:ConnectorStyle"/>
             <styles fontName="Segoe UI" xsi:type="notation:FontStyle"/>
-            <element href="//0/@process/@activity/@activity/@links/@children.7"/>
+            <element href="//0/@process/@activity/@activity/@links/@children.6"/>
             <bendpoints points="[22, -24, -48, 55]$[48, -54, -22, 25]" xsi:type="notation:RelativeBendpoints"/>
         </edges>
         <edges
@@ -1273,6 +1312,17 @@
             <element href="//0/@process/@activity/@faultHandlers/@catchAll/@activity/@activity/@links/@children.1"/>
             <bendpoints points="[0, 0, 0, 0]$[0, 0, 0, 0]" xsi:type="notation:RelativeBendpoints"/>
         </edges>
+        <edges
+            source="//@children.0/@children.3/@children.0/@children.0/@children.0/@children.0/@children.0/@children.0/@children.7"
+            target="//@children.0/@children.3/@children.0/@children.0/@children.0/@children.0/@children.0/@children.0/@children.8" type="4006">
+            <children type="6002">
+                <layoutConstraint xsi:type="notation:Location" y="40"/>
+            </children>
+            <styles lineColor="0" xsi:type="notation:ConnectorStyle"/>
+            <styles fontName="Segoe UI" xsi:type="notation:FontStyle"/>
+            <element href="//0/@process/@activity/@activity/@links/@children.7"/>
+            <bendpoints points="[0, 0, 0, 0]$[0, 0, 0, 0]" xsi:type="notation:RelativeBendpoints"/>
+        </edges>
     </notation:Diagram>
     <tibex:NamespaceRegistry enabled="true">
         <tibex:namespaceItem
@@ -1293,6 +1343,8 @@
             namespace="http://tns.tibco.com/bw/activity/sendmail/xsd/input+cb27dc13-28a2-4854-b6a2-62a996eca257+input" prefix="tns6"/>
         <tibex:namespaceItem
             namespace="http://tns.tibco.com/bw/activity/sendmail/xsd/input+f97123d4-05da-42be-a62d-9c305e93a3ee+input" prefix="tns5"/>
+        <tibex:namespaceItem
+            namespace="http://schemas.tibco.com/bw/plugins/basic/6.0/Exceptions" prefix="tns7"/>
     </tibex:NamespaceRegistry>
     <bpws:import importType="http://www.w3.org/2001/XMLSchema" namespace="http://www.EniqueSol.org/Employee_Personal/V1"/>
     <bpws:import importType="http://www.w3.org/2001/XMLSchema" namespace="http://www.eniquesolution.com/E-Commerce/CommonFramework"/>
@@ -1351,6 +1403,7 @@
             name="SendMail-input" sca-bpel:internal="true"/>
         <bpws:variable element="ns10:ActivityErrorData"
             name="_error_SendMail" sca-bpel:internal="true"/>
+        <bpws:variable element="ns12:DefaultFault" name="Throw-input" sca-bpel:internal="true"/>
     </bpws:variables>
     <bpws:extensions>
         <bpws:extension mustUnderstand="no" namespace="http://www.eclipse.org/gmf/runtime/1.0.2/notation"/>
@@ -1463,9 +1516,9 @@
                 <bpws:link name="InvokeRESTAPIToParseJSON" tibex:linkType="SUCCESS"/>
                 <bpws:link name="ParseJSONToLogHandler1" tibex:linkType="SUCCESS"/>
                 <bpws:link name="StartToEmpty" tibex:linkType="SUCCESSWITHNOCONDITION"/>
-                <bpws:link name="EmptyToEnd" tibex:linkType="SUCCESS"/>
                 <bpws:link name="StartToRenderJSON" tibex:linkType="SUCCESSWITHCONDITION"/>
                 <bpws:link name="RenderJSONToStartLog" tibex:linkType="SUCCESS"/>
+                <bpws:link name="EmptyToThrow" tibex:linkType="SUCCESS"/>
             </bpws:links>
             <bpws:extensionActivity>
                 <tibex:receiveEvent createInstance="yes"
@@ -1499,11 +1552,10 @@
                     tibex:xpdlId="c0b084ea-9fba-44d1-b368-52c161584860" xmlns:tibex="http://www.tibco.com/bpel/2007/extensions">
                     <bpws:targets>
                         <bpws:target linkName="LogHandler1ToEnd"/>
-                        <bpws:target linkName="EmptyToEnd"/>
                     </bpws:targets>
                     <tibex:inputBindings>
                         <tibex:inputBinding
-                            expression="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xa;&lt;xsl:stylesheet xmlns:xsl=&quot;http://www.w3.org/1999/XSL/Transform&quot; xmlns:tns=&quot;http://www.EniqueSol.org/Employee_Personal/V1&quot; xmlns:xsd=&quot;http://www.w3.org/2001/XMLSchema&quot; version=&quot;2.0&quot;>&lt;xsl:param name=&quot;ParseJSON&quot;/>&lt;xsl:param name=&quot;Start&quot;/>&lt;xsl:template name=&quot;End-input&quot; match=&quot;/&quot;>&lt;xsl:choose>&lt;xsl:when test=&quot;not(matches(xsd:string($Start/tns:empPersonal/tns:PhoneNo), '[0-9]{10}'))&quot;>&lt;tns:EmpPersonalRes>&lt;tns:ResCode>&lt;xsl:value-of select=&quot;'500'&quot;/>&lt;/tns:ResCode>&lt;tns:ResMsg>&lt;xsl:value-of select=&quot;'Invalid Phone No'&quot;/>&lt;/tns:ResMsg>&lt;/tns:EmpPersonalRes>&lt;/xsl:when>&lt;xsl:when test=&quot;not(matches($Start/tns:empPersonal/tns:EmailID, '^[a-zA-Z0-9+_.-]+@[a-zA-Z0-9.-]+$'))&quot;>&lt;tns:EmpPersonalRes>&lt;tns:ResCode>&lt;xsl:value-of select=&quot;'500'&quot;/>&lt;/tns:ResCode>&lt;tns:ResMsg>&lt;xsl:value-of select=&quot;'Invalid EmailID'&quot;/>&lt;/tns:ResMsg>&lt;/tns:EmpPersonalRes>&lt;/xsl:when>&lt;xsl:otherwise>&lt;tns:EmpPersonalRes>&lt;xsl:if test=&quot;$ParseJSON/tns:ResCode&quot;>&lt;tns:ResCode>&lt;xsl:value-of select=&quot;$ParseJSON/tns:ResCode&quot;/>&lt;/tns:ResCode>&lt;/xsl:if>&lt;xsl:if test=&quot;$ParseJSON/tns:ResMsg&quot;>&lt;tns:ResMsg>&lt;xsl:value-of select=&quot;$ParseJSON/tns:ResMsg&quot;/>&lt;/tns:ResMsg>&lt;/xsl:if>&lt;/tns:EmpPersonalRes>&lt;/xsl:otherwise>&lt;/xsl:choose>&lt;/xsl:template>&lt;/xsl:stylesheet>" expressionLanguage="urn:oasis:names:tc:wsbpel:2.0:sublang:xslt1.0"/>
+                            expression="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xa;&lt;xsl:stylesheet xmlns:xsl=&quot;http://www.w3.org/1999/XSL/Transform&quot; xmlns:xsd=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:tns=&quot;http://www.EniqueSol.org/Employee_Personal/V1&quot; version=&quot;2.0&quot;>&lt;xsl:param name=&quot;ParseJSON&quot;/>&lt;xsl:template name=&quot;End-input&quot; match=&quot;/&quot;>&lt;xsl:choose/>&lt;tns:EmpPersonalRes>&lt;xsl:if test=&quot;$ParseJSON/tns:ResCode&quot;>&lt;tns:ResCode>&lt;xsl:value-of select=&quot;$ParseJSON/tns:ResCode&quot;/>&lt;/tns:ResCode>&lt;/xsl:if>&lt;xsl:if test=&quot;$ParseJSON/tns:ResMsg&quot;>&lt;tns:ResMsg>&lt;xsl:value-of select=&quot;$ParseJSON/tns:ResMsg&quot;/>&lt;/tns:ResMsg>&lt;/xsl:if>&lt;/tns:EmpPersonalRes>&lt;/xsl:template>&lt;/xsl:stylesheet>" expressionLanguage="urn:oasis:names:tc:wsbpel:2.0:sublang:xslt1.0"/>
                     </tibex:inputBindings>
                     <tibex:config>
                         <bwext:BWActivity
@@ -1672,9 +1724,19 @@
                     <bpws:target linkName="StartToEmpty"/>
                 </bpws:targets>
                 <bpws:sources>
-                    <bpws:source linkName="EmptyToEnd"/>
+                    <bpws:source linkName="EmptyToThrow"/>
                 </bpws:sources>
             </bpws:empty>
+            <bpws:throw faultName="ns12:DefaultFault"
+                faultVariable="Throw-input" name="Throw" tibex:xpdlId="db79526c-0e36-41c5-a362-3077cd36dac0">
+                <tibex:inputBindings>
+                    <tibex:partBinding
+                        expression="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xa;&lt;xsl:stylesheet xmlns:xsl=&quot;http://www.w3.org/1999/XSL/Transform&quot; xmlns:tns7=&quot;http://schemas.tibco.com/bw/plugins/basic/6.0/Exceptions&quot; xmlns:tns=&quot;http://www.EniqueSol.org/Employee_Personal/V1&quot; xmlns:xsd=&quot;http://www.w3.org/2001/XMLSchema&quot; version=&quot;2.0&quot;>&lt;xsl:param name=&quot;Start&quot;/>&lt;xsl:template name=&quot;Throw-input&quot; match=&quot;/&quot;>&lt;xsl:choose>&lt;xsl:when test=&quot;not(matches(xsd:string($Start/tns:empPersonal/tns:PhoneNo), '[0-9]{10}'))&quot;>&lt;tns7:DefaultFault>&lt;message>&lt;xsl:value-of select=&quot;'500'&quot;/>&lt;/message>&lt;msgCode>&lt;xsl:value-of select=&quot;'Invalid Phone No'&quot;/>&lt;/msgCode>&lt;/tns7:DefaultFault>&lt;/xsl:when>&lt;xsl:otherwise>&lt;tns7:DefaultFault>&lt;message>&lt;xsl:value-of select=&quot;'500'&quot;/>&lt;/message>&lt;msgCode>&lt;xsl:value-of select=&quot;'Invalid EmailID'&quot;/>&lt;/msgCode>&lt;/tns7:DefaultFault>&lt;/xsl:otherwise>&lt;/xsl:choose>&lt;/xsl:template>&lt;/xsl:stylesheet>" expressionLanguage="urn:oasis:names:tc:wsbpel:2.0:sublang:xslt1.0"/>
+                </tibex:inputBindings>
+                <bpws:targets>
+                    <bpws:target linkName="EmptyToThrow"/>
+                </bpws:targets>
+            </bpws:throw>
         </bpws:flow>
     </bpws:scope>
 </bpws:process>
