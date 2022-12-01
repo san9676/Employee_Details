@@ -13,6 +13,7 @@
     xmlns:ns13="http://tns.tibco.com/bw/activity/sendmail/xsd/input+47bfa9c4-8c0b-421b-9ca4-b52f13d859cb+input"
     xmlns:ns14="http://www.tibco.com/namespaces/tnt/plugins/jdbc+cd2c2c55-70a3-48f3-870c-4df67bc35453+input"
     xmlns:ns15="http://tns.tibco.com/bw/palette/internal/activityerror+bw.jdbc.SQLDirect"
+    xmlns:ns16="http://schemas.tibco.com/bw/plugins/basic/6.0/Exceptions"
     xmlns:ns2="http://www.tibco.com/namespaces/tnt/plugins/jdbc+371c4254-a3e4-4910-8a58-682e321453c9+output"
     xmlns:ns3="http://tns.tibco.com/bw/palette/internal/activityerror+bw.jdbc.JDBCCallProcedure"
     xmlns:ns4="http://www.tibco.com/namespaces/tnt/plugins/jdbc+c3a8af8a-588c-4b3c-bbd6-d946806ef4d0+input"
@@ -463,7 +464,15 @@
                             <complexType>
                                 <sequence>
                                     <element maxOccurs="1" minOccurs="0"
-                                    name="OUTPUT" nillable="true" type="string"/>
+                                    name="ERR_RESCODE"
+                                    nillable="true" type="string"/>
+                                    <element maxOccurs="1" minOccurs="0"
+                                    name="ERR_EMP_CODE"
+                                    nillable="true" type="string"/>
+                                    <element maxOccurs="1" minOccurs="0"
+                                    name="RESCODE" nillable="true" type="string"/>
+                                    <element maxOccurs="1" minOccurs="0"
+                                    name="EMP_CODE" nillable="true" type="string"/>
                                 </sequence>
                             </complexType>
                         </element>
@@ -621,6 +630,21 @@
                     <element maxOccurs="1" minOccurs="0" ref="Q1:SendFailedException"/>
                 </choice>
             </complexType>
+        </schema>
+        <schema
+            targetNamespace="http://schemas.tibco.com/bw/plugins/basic/6.0/Exceptions"
+            xmlns="http://www.w3.org/2001/XMLSchema"
+            xmlns:tibex="http://www.tibco.com/bpel/2007/extensions" xmlns:tns="http://schemas.tibco.com/bw/plugins/basic/6.0/Exceptions">
+            <element name="DefaultFault">
+                <complexType>
+                    <sequence>
+                        <element maxOccurs="1" minOccurs="0"
+                            name="message" type="string"/>
+                        <element maxOccurs="1" minOccurs="0"
+                            name="msgCode" type="string"/>
+                    </sequence>
+                </complexType>
+            </element>
         </schema>
     </tibex:Types>
     <tibex:ProcessInfo callable="true" createdBy="admin"
@@ -928,8 +952,8 @@
                                     <element href="//0/@process/@activity/@activity/@activities.6"/>
                                     <layoutConstraint
                                     height="40" width="40"
-                                    x="411"
-                                    xsi:type="notation:Bounds" y="142"/>
+                                    x="430"
+                                    xsi:type="notation:Bounds" y="108"/>
                                     </children>
                                     <children type="4002 bw.internal.getSharedVariable">
                                     <children type="4017">
@@ -967,6 +991,41 @@
                                     height="40" width="40"
                                     x="11"
                                     xsi:type="notation:Bounds" y="142"/>
+                                    </children>
+                                    <children type="4002">
+                                    <children type="4017">
+                                    <styles
+                                    fontName="Segoe UI"
+                                    lineColor="0" xsi:type="notation:ShapeStyle"/>
+                                    <layoutConstraint xsi:type="notation:Bounds"/>
+                                    </children>
+                                    <children type="4017">
+                                    <styles
+                                    fontName="Segoe UI"
+                                    lineColor="0" xsi:type="notation:ShapeStyle"/>
+                                    <layoutConstraint xsi:type="notation:Bounds"/>
+                                    </children>
+                                    <children type="4017">
+                                    <styles
+                                    fontName="Segoe UI"
+                                    lineColor="0" xsi:type="notation:ShapeStyle"/>
+                                    <layoutConstraint xsi:type="notation:Bounds"/>
+                                    </children>
+                                    <children type="4017">
+                                    <styles
+                                    fontName="Segoe UI"
+                                    lineColor="0" xsi:type="notation:ShapeStyle"/>
+                                    <layoutConstraint xsi:type="notation:Bounds"/>
+                                    </children>
+                                    <styles fontName="Segoe UI"
+                                    lineColor="0" xsi:type="notation:ShapeStyle"/>
+                                    <styles
+                                    backgroundColor="16777215"
+                                    gradientEndColor="50431"
+                                    gradientStartColor="16777215" xsi:type="bwnotation:BackgroundStyle"/>
+                                    <element href="//0/@process/@activity/@activity/@activities.8"/>
+                                    <layoutConstraint x="430"
+                                    xsi:type="notation:Bounds" y="232"/>
                                     </children>
                                     <styles xsi:type="notation:DrawerStyle"/>
                                     <styles xsi:type="notation:SortingStyle"/>
@@ -1240,7 +1299,7 @@
             </children>
             <styles fontName="Segoe UI" lineColor="0" xsi:type="notation:ShapeStyle"/>
             <element href="//0/@process"/>
-            <layoutConstraint height="660" width="1243" xsi:type="notation:Bounds"/>
+            <layoutConstraint height="660" width="1344" xsi:type="notation:Bounds"/>
         </children>
         <styles xsi:type="notation:DiagramStyle"/>
         <element href="//0"/>
@@ -1356,6 +1415,17 @@
             <element href="//0/@process/@activity/@faultHandlers/@catchAll/@activity/@activity/@links/@children.2"/>
             <bendpoints points="[25, -3, -90, 9]$[91, -9, -24, 3]" xsi:type="notation:RelativeBendpoints"/>
         </edges>
+        <edges
+            source="//@children.0/@children.3/@children.0/@children.0/@children.0/@children.0/@children.0/@children.0/@children.6"
+            target="//@children.0/@children.3/@children.0/@children.0/@children.0/@children.0/@children.0/@children.0/@children.8" type="4006">
+            <children type="6002">
+                <layoutConstraint xsi:type="notation:Location" y="40"/>
+            </children>
+            <styles lineColor="0" xsi:type="notation:ConnectorStyle"/>
+            <styles fontName="Segoe UI" xsi:type="notation:FontStyle"/>
+            <element href="//0/@process/@activity/@activity/@links/@children.7"/>
+            <bendpoints points="[0, 0, 0, 0]$[0, 0, 0, 0]" xsi:type="notation:RelativeBendpoints"/>
+        </edges>
     </notation:Diagram>
     <tibex:NamespaceRegistry enabled="true">
         <tibex:namespaceItem
@@ -1382,6 +1452,8 @@
             namespace="http://www.EniqueSol.org/Emp_InsurenceDetails/V1" prefix="tns3"/>
         <tibex:namespaceItem
             namespace="http://tns.tibco.com/bw/activity/sendmail/xsd/input+47bfa9c4-8c0b-421b-9ca4-b52f13d859cb+input" prefix="tns10"/>
+        <tibex:namespaceItem
+            namespace="http://schemas.tibco.com/bw/plugins/basic/6.0/Exceptions" prefix="tns9"/>
     </tibex:NamespaceRegistry>
     <bpws:import importType="http://www.w3.org/2001/XMLSchema" namespace="http://www.eniquesolution.com/E-Commerce/CommonFramework"/>
     <bpws:import importType="http://www.w3.org/2001/XMLSchema" namespace="http://www.example.org/MainPayload"/>
@@ -1410,11 +1482,10 @@
             name="InsertResponse" sca-bpel:internal="true"/>
         <bpws:variable element="ns6:ActivityErrorData"
             name="_error_InsertResponse" sca-bpel:internal="true"/>
-        <bpws:variable element="ns7:inputs"
-            name="JDBCCallProcedure-input" sca-bpel:internal="true"/>
-        <bpws:variable element="ns8:resultSet" name="JDBCCallProcedure" sca-bpel:internal="true"/>
+        <bpws:variable element="ns7:inputs" name="InserMain-input" sca-bpel:internal="true"/>
+        <bpws:variable element="ns8:resultSet" name="InserMain" sca-bpel:internal="true"/>
         <bpws:variable element="ns3:ActivityErrorData"
-            name="_error_JDBCCallProcedure" sca-bpel:internal="true"/>
+            name="_error_InserMain" sca-bpel:internal="true"/>
         <bpws:variable name="FaultName" sca-bpel:internal="true" type="xsd:string"/>
         <bpws:variable element="ns:FaultDetail" name="FaultDetails" sca-bpel:internal="true"/>
         <bpws:variable element="ns9:jdbcUpdateActivityInput"
@@ -1439,6 +1510,7 @@
             name="SendMail-input" sca-bpel:internal="true"/>
         <bpws:variable element="ns11:ActivityErrorData"
             name="_error_SendMail" sca-bpel:internal="true"/>
+        <bpws:variable element="ns16:DefaultFault" name="Throw-input" sca-bpel:internal="true"/>
     </bpws:variables>
     <bpws:extensions>
         <bpws:extension mustUnderstand="no" namespace="http://www.eclipse.org/gmf/runtime/1.0.2/notation"/>
@@ -1569,7 +1641,7 @@
                                 </bpws:sources>
                                 <tibex:inputBindings>
                                     <tibex:inputBinding
-                                    expression="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xa;&lt;xsl:stylesheet xmlns:xsl=&quot;http://www.w3.org/1999/XSL/Transform&quot; xmlns:tns10=&quot;http://tns.tibco.com/bw/activity/sendmail/xsd/input+47bfa9c4-8c0b-421b-9ca4-b52f13d859cb+input&quot; version=&quot;2.0&quot;>&lt;xsl:param name=&quot;FaultDetails&quot;/>&lt;xsl:template name=&quot;SendMail-input&quot; match=&quot;/&quot;>&lt;tns10:mailActivityInput>&lt;from>&lt;xsl:value-of select=&quot;'santoshbe22@gmail.com'&quot;/>&lt;/from>&lt;to>&lt;xsl:value-of select=&quot;'stalgeri@eniquesolutions.com'&quot;/>&lt;/to>&lt;cc>&lt;xsl:value-of select=&quot;'sjambulkar@eniquesolutions.com'&quot;/>&lt;/cc>&lt;subject>&lt;xsl:value-of select=&quot;'Employee Details- Main Data Error'&quot;/>&lt;/subject>&lt;bodyElement>&lt;bodyText>&lt;xsl:value-of select=&quot;concat('Hi User,&amp;#xD;&amp;#xA;&amp;#x9;&amp;#x9;The Application for Main table Details failed for employee: ', '&amp;#xD;&amp;#xA;&amp;#x9;&amp;#x9;caused by: ', &amp;#xD;&amp;#xA;$FaultDetails/MsgCode,&amp;#x9;&amp;#x9;&amp;#xD;&amp;#xA;$FaultDetails/Msg,&amp;#xD;&amp;#xA;&amp;#xD;&amp;#xA;&amp;#xD;&amp;#xA;&amp;#xD;&amp;#xA;'Please send request to the following: http://localhost:7879/addMainData ',&amp;#xD;&amp;#xA;'Thanks and Regards,&amp;#xD;&amp;#xA;Tibco.')&quot;/>&lt;/bodyText>&lt;/bodyElement>&lt;/tns10:mailActivityInput>&lt;/xsl:template>&lt;/xsl:stylesheet>" expressionLanguage="urn:oasis:names:tc:wsbpel:2.0:sublang:xslt1.0"/>
+                                    expression="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xa;&lt;xsl:stylesheet xmlns:xsl=&quot;http://www.w3.org/1999/XSL/Transform&quot; xmlns:tns10=&quot;http://tns.tibco.com/bw/activity/sendmail/xsd/input+47bfa9c4-8c0b-421b-9ca4-b52f13d859cb+input&quot; version=&quot;2.0&quot;>&lt;xsl:param name=&quot;FaultDetails&quot;/>&lt;xsl:template name=&quot;SendMail-input&quot; match=&quot;/&quot;>&lt;tns10:mailActivityInput>&lt;from>&lt;xsl:value-of select=&quot;'santoshbe22@gmail.com'&quot;/>&lt;/from>&lt;to>&lt;xsl:value-of select=&quot;'stalgeri@eniquesolutions.com'&quot;/>&lt;/to>&lt;cc>&lt;xsl:value-of select=&quot;'sjambulkar@eniquesolutions.com'&quot;/>&lt;/cc>&lt;subject>&lt;xsl:value-of select=&quot;'Employee Details- Main Data Error'&quot;/>&lt;/subject>&lt;bodyElement>&lt;xsl:choose>&lt;xsl:when test=&quot;$FaultDetails/MsgCode='301'&quot;>&lt;bodyText>&lt;xsl:value-of select=&quot;concat('Hi User,&amp;#xD;&amp;#xA;&amp;#x9;&amp;#x9;The Application for Main table Details failed for employee: ', '&amp;#xD;&amp;#xA;&amp;#x9;&amp;#x9;caused by: ', &amp;#xD;&amp;#xA;$FaultDetails/MsgCode,&amp;#x9;&amp;#x9;&amp;#xD;&amp;#xA;$FaultDetails/Msg,'&amp;#xD;&amp;#xA;&amp;#xD;&amp;#xA;&amp;#xD;&amp;#xA;Please send request to the following:&amp;#xD;&amp;#xA;salary_title:http://localhost:7879/addSalTitle with correct salary&amp;#xD;&amp;#xA;and&amp;#xD;&amp;#xA;addMainData:http://localhost:7879/addMainData ',&amp;#xD;&amp;#xA;'Thanks and Regards,&amp;#xD;&amp;#xA;Tibco.')&quot;/>&lt;/bodyText>&lt;/xsl:when>&lt;xsl:otherwise>&lt;bodyText>&lt;xsl:value-of select=&quot;concat('Hi User,&amp;#xD;&amp;#xA;&amp;#x9;&amp;#x9;The Application for Main table Details failed for employee: ', '&amp;#xD;&amp;#xA;&amp;#x9;&amp;#x9;caused by: ', &amp;#xD;&amp;#xA;$FaultDetails/MsgCode,&amp;#x9;&amp;#x9;&amp;#xD;&amp;#xA;$FaultDetails/Msg,&amp;#xD;&amp;#xA;&amp;#xD;&amp;#xA;&amp;#xD;&amp;#xA;&amp;#xD;&amp;#xA;'Please send request to the following: http://localhost:7879/addMainData ',&amp;#xD;&amp;#xA;'Thanks and Regards,&amp;#xD;&amp;#xA;Tibco.')&quot;/>&lt;/bodyText>&lt;/xsl:otherwise>&lt;/xsl:choose>&lt;/bodyElement>&lt;/tns10:mailActivityInput>&lt;/xsl:template>&lt;/xsl:stylesheet>" expressionLanguage="urn:oasis:names:tc:wsbpel:2.0:sublang:xslt1.0"/>
                                 </tibex:inputBindings>
                                 <tibex:config>
                                     <bwext:BWActivity
@@ -1602,8 +1674,9 @@
                 <bpws:link name="LogHandlerToJDBCCallProcedure" tibex:linkType="SUCCESS"/>
                 <bpws:link name="JDBCCallProcedureToLogHandler1" tibex:linkType="SUCCESS"/>
                 <bpws:link name="InsertResponseToEnd" tibex:linkType="SUCCESS"/>
-                <bpws:link name="JDBCCallProcedureToEndLog" tibex:linkType="SUCCESS"/>
+                <bpws:link name="JDBCCallProcedureToEndLog" tibex:linkType="SUCCESSWITHCONDITION"/>
                 <bpws:link name="GetTxIdToStartLog" tibex:linkType="SUCCESS"/>
+                <bpws:link name="JDBCCallProcedureToThrow" tibex:linkType="SUCCESS"/>
             </bpws:links>
             <bpws:extensionActivity>
                 <tibex:receiveEvent createInstance="yes"
@@ -1626,7 +1699,7 @@
                     </bpws:targets>
                     <tibex:inputBindings>
                         <tibex:inputBinding
-                            expression="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xa;&lt;xsl:stylesheet xmlns:xsl=&quot;http://www.w3.org/1999/XSL/Transform&quot; xmlns:tns2=&quot;http://www.example.org/MainPayload&quot; xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot; version=&quot;2.0&quot;>&lt;xsl:param name=&quot;JDBCCallProcedure&quot;/>&lt;xsl:template name=&quot;End-input&quot; match=&quot;/&quot;>&lt;tns2:MainSysRes>&lt;tns2:ResCode>&lt;xsl:value-of select=&quot;'200'&quot;/>&lt;/tns2:ResCode>&lt;xsl:if test=&quot;not((string($JDBCCallProcedure/outputSet/OUTPUT/@xsi:nil)=(&amp;quot;true&amp;quot;)) or (string($JDBCCallProcedure/outputSet/OUTPUT/@xsi:nil)=(&amp;quot;1&amp;quot;))) and exists($JDBCCallProcedure/outputSet/OUTPUT)&quot;>&lt;tns2:ResMsg>&lt;xsl:value-of select=&quot;$JDBCCallProcedure/outputSet/OUTPUT&quot;/>&lt;/tns2:ResMsg>&lt;/xsl:if>&lt;/tns2:MainSysRes>&lt;/xsl:template>&lt;/xsl:stylesheet>" expressionLanguage="urn:oasis:names:tc:wsbpel:2.0:sublang:xslt1.0"/>
+                            expression="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xa;&lt;xsl:stylesheet xmlns:xsl=&quot;http://www.w3.org/1999/XSL/Transform&quot; xmlns:tns2=&quot;http://www.example.org/MainPayload&quot; xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot; version=&quot;2.0&quot;>&lt;xsl:template name=&quot;End-input&quot; match=&quot;/&quot;>&lt;tns2:MainSysRes>&lt;tns2:ResCode>&lt;xsl:value-of select=&quot;'200'&quot;/>&lt;/tns2:ResCode>&lt;tns2:ResMsg>&lt;xsl:value-of select=&quot;'Employee Details Inserted'&quot;/>&lt;/tns2:ResMsg>&lt;/tns2:MainSysRes>&lt;/xsl:template>&lt;/xsl:stylesheet>" expressionLanguage="urn:oasis:names:tc:wsbpel:2.0:sublang:xslt1.0"/>
                     </tibex:inputBindings>
                     <tibex:config>
                         <bwext:BWActivity
@@ -1677,7 +1750,7 @@
                     </bpws:sources>
                     <tibex:inputBindings>
                         <tibex:inputBinding coercion=""
-                            expression="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xa;&lt;xsl:stylesheet xmlns:xsl=&quot;http://www.w3.org/1999/XSL/Transform&quot; xmlns:tns=&quot;http://www.eniquesolution.com/E-Commerce/CommonFramework&quot; xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot; version=&quot;2.0&quot;>&lt;xsl:param name=&quot;_processContext&quot;/>&lt;xsl:param name=&quot;JDBCCallProcedure&quot;/>&lt;xsl:param name=&quot;GetTxId&quot;/>&lt;xsl:template name=&quot;EndLog-input&quot; match=&quot;/&quot;>&lt;tns:LogExceptionHandler>&lt;tns:ApplictionName>&lt;xsl:value-of select=&quot;$_processContext/ApplicationName&quot;/>&lt;/tns:ApplictionName>&lt;tns:ProcessName>&lt;xsl:value-of select=&quot;'FetchEmpDetails'&quot;/>&lt;/tns:ProcessName>&lt;tns:LogType>&lt;xsl:value-of select=&quot;'EndLog'&quot;/>&lt;/tns:LogType>&lt;tns:status>&lt;xsl:value-of select=&quot;'Success'&quot;/>&lt;/tns:status>&lt;tns:CorrelationID>&lt;xsl:value-of select=&quot;$GetTxId&quot;/>&lt;/tns:CorrelationID>&lt;tns:MessageType>&lt;xsl:value-of select=&quot;'ResponsePayload'&quot;/>&lt;/tns:MessageType>&lt;tns:Timestamp>&lt;xsl:value-of select=&quot;format-dateTime(current-dateTime(), &amp;quot;[Y0001]-[M01]-[D01] [H01]:[m01]:[s01]&amp;quot;)&quot;/>&lt;/tns:Timestamp>&lt;xsl:if test=&quot;not((string($JDBCCallProcedure/outputSet/OUTPUT/@xsi:nil)=(&amp;quot;true&amp;quot;)) or (string($JDBCCallProcedure/outputSet/OUTPUT/@xsi:nil)=(&amp;quot;1&amp;quot;))) and exists($JDBCCallProcedure/outputSet/OUTPUT)&quot;>&lt;tns:PAYLOAD>&lt;xsl:value-of select=&quot;$JDBCCallProcedure/outputSet/OUTPUT&quot;/>&lt;/tns:PAYLOAD>&lt;/xsl:if>&lt;/tns:LogExceptionHandler>&lt;/xsl:template>&lt;/xsl:stylesheet>" expressionLanguage="urn:oasis:names:tc:wsbpel:2.0:sublang:xslt1.0"/>
+                            expression="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xa;&lt;xsl:stylesheet xmlns:xsl=&quot;http://www.w3.org/1999/XSL/Transform&quot; xmlns:tns=&quot;http://www.eniquesolution.com/E-Commerce/CommonFramework&quot; xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot; version=&quot;2.0&quot;>&lt;xsl:param name=&quot;_processContext&quot;/>&lt;xsl:param name=&quot;GetTxId&quot;/>&lt;xsl:template name=&quot;EndLog-input&quot; match=&quot;/&quot;>&lt;tns:LogExceptionHandler>&lt;tns:ApplictionName>&lt;xsl:value-of select=&quot;$_processContext/ApplicationName&quot;/>&lt;/tns:ApplictionName>&lt;tns:ProcessName>&lt;xsl:value-of select=&quot;'FetchEmpDetails'&quot;/>&lt;/tns:ProcessName>&lt;tns:LogType>&lt;xsl:value-of select=&quot;'EndLog'&quot;/>&lt;/tns:LogType>&lt;tns:status>&lt;xsl:value-of select=&quot;'Success'&quot;/>&lt;/tns:status>&lt;tns:CorrelationID>&lt;xsl:value-of select=&quot;$GetTxId&quot;/>&lt;/tns:CorrelationID>&lt;tns:MessageType>&lt;xsl:value-of select=&quot;'ResponsePayload'&quot;/>&lt;/tns:MessageType>&lt;tns:Timestamp>&lt;xsl:value-of select=&quot;format-dateTime(current-dateTime(), &amp;quot;[Y0001]-[M01]-[D01] [H01]:[m01]:[s01]&amp;quot;)&quot;/>&lt;/tns:Timestamp>&lt;tns:PAYLOAD>&lt;xsl:value-of select=&quot;'Employee Details Inserted'&quot;/>&lt;/tns:PAYLOAD>&lt;/tns:LogExceptionHandler>&lt;/xsl:template>&lt;/xsl:stylesheet>" expressionLanguage="urn:oasis:names:tc:wsbpel:2.0:sublang:xslt1.0"/>
                     </tibex:inputBindings>
                     <tibex:CallProcess moduleRef="CommonInterface"
                         spawn="true"
@@ -1697,7 +1770,7 @@
                     </bpws:sources>
                     <tibex:inputBindings>
                         <tibex:inputBinding
-                            expression="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xa;&lt;xsl:stylesheet xmlns:xsl=&quot;http://www.w3.org/1999/XSL/Transform&quot; xmlns:tns9=&quot;http://www.tibco.com/namespaces/tnt/plugins/jdbc+371c4254-a3e4-4910-8a58-682e321453c9+input&quot; version=&quot;2.0&quot;>&#xa;    &lt;xsl:template name=&quot;JDBCCallProcedure-input&quot; match=&quot;/&quot;>&#xa;        &lt;tns9:inputs/>&#xa;    &lt;/xsl:template>&#xa;&lt;/xsl:stylesheet>" expressionLanguage="urn:oasis:names:tc:wsbpel:2.0:sublang:xslt1.0"/>
+                            expression="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xa;&lt;xsl:stylesheet xmlns:xsl=&quot;http://www.w3.org/1999/XSL/Transform&quot; xmlns:tns11=&quot;http://www.tibco.com/namespaces/tnt/plugins/jdbc+371c4254-a3e4-4910-8a58-682e321453c9+input&quot; version=&quot;2.0&quot;>&#xa;    &lt;xsl:template name=&quot;JDBCCallProcedure-input&quot; match=&quot;/&quot;>&#xa;        &lt;tns11:inputs/>&#xa;    &lt;/xsl:template>&#xa;&lt;/xsl:stylesheet>" expressionLanguage="urn:oasis:names:tc:wsbpel:2.0:sublang:xslt1.0"/>
                     </tibex:inputBindings>
                     <tibex:config>
                         <bwext:BWActivity
@@ -1732,7 +1805,7 @@
                     </bpws:sources>
                     <tibex:inputBindings>
                         <tibex:inputBinding
-                            expression="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xa;&lt;xsl:stylesheet xmlns:xsl=&quot;http://www.w3.org/1999/XSL/Transform&quot; xmlns:tns4=&quot;http://www.tibco.com/namespaces/tnt/plugins/jdbc+c3a8af8a-588c-4b3c-bbd6-d946806ef4d0+input&quot; xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot; version=&quot;2.0&quot;>&lt;xsl:param name=&quot;GetTxId&quot;/>&lt;xsl:param name=&quot;JDBCCallProcedure&quot;/>&lt;xsl:template name=&quot;InsertResponse-input&quot; match=&quot;/&quot;>&lt;tns4:jdbcUpdateActivityInput>&lt;ProcessName>&lt;xsl:value-of select=&quot;'FetchEmpDetails'&quot;/>&lt;/ProcessName>&lt;ResponseCode>&lt;xsl:value-of select=&quot;'200'&quot;/>&lt;/ResponseCode>&lt;ResponseMsg>&lt;xsl:copy-of select=&quot;$JDBCCallProcedure/outputSet/OUTPUT/@xsi:nil&quot;/>&lt;xsl:value-of select=&quot;$JDBCCallProcedure/outputSet/OUTPUT&quot;/>&lt;/ResponseMsg>&lt;CorelationID>&lt;xsl:value-of select=&quot;$GetTxId&quot;/>&lt;/CorelationID>&lt;/tns4:jdbcUpdateActivityInput>&lt;/xsl:template>&lt;/xsl:stylesheet>" expressionLanguage="urn:oasis:names:tc:wsbpel:2.0:sublang:xslt1.0"/>
+                            expression="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xa;&lt;xsl:stylesheet xmlns:xsl=&quot;http://www.w3.org/1999/XSL/Transform&quot; xmlns:tns4=&quot;http://www.tibco.com/namespaces/tnt/plugins/jdbc+c3a8af8a-588c-4b3c-bbd6-d946806ef4d0+input&quot; xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot; version=&quot;2.0&quot;>&lt;xsl:param name=&quot;GetTxId&quot;/>&lt;xsl:template name=&quot;InsertResponse-input&quot; match=&quot;/&quot;>&lt;tns4:jdbcUpdateActivityInput>&lt;ProcessName>&lt;xsl:value-of select=&quot;'FetchEmpDetails'&quot;/>&lt;/ProcessName>&lt;ResponseCode>&lt;xsl:value-of select=&quot;'200'&quot;/>&lt;/ResponseCode>&lt;ResponseMsg>&lt;xsl:value-of select=&quot;'Employee Details Inserted'&quot;/>&lt;/ResponseMsg>&lt;CorelationID>&lt;xsl:value-of select=&quot;$GetTxId&quot;/>&lt;/CorelationID>&lt;/tns4:jdbcUpdateActivityInput>&lt;/xsl:template>&lt;/xsl:stylesheet>" expressionLanguage="urn:oasis:names:tc:wsbpel:2.0:sublang:xslt1.0"/>
                     </tibex:inputBindings>
                     <tibex:config>
                         <bwext:BWActivity
@@ -1767,20 +1840,25 @@
                 </tibex:activityExtension>
             </bpws:extensionActivity>
             <bpws:extensionActivity>
-                <tibex:activityExtension
-                    inputVariable="JDBCCallProcedure-input"
-                    name="JDBCCallProcedure"
-                    outputVariable="JDBCCallProcedure"
+                <tibex:activityExtension inputVariable="InserMain-input"
+                    name="InserMain" outputVariable="InserMain"
                     tibex:xpdlId="aff6b694-8a1d-4e76-ba71-dc6ad119fa33" xmlns:tibex="http://www.tibco.com/bpel/2007/extensions">
                     <bpws:targets>
                         <bpws:target linkName="JDBCCallProcedureToLogHandler1"/>
                     </bpws:targets>
                     <bpws:sources>
-                        <bpws:source linkName="JDBCCallProcedureToEndLog"/>
+                        <bpws:source linkName="JDBCCallProcedureToEndLog">
+                            <tibex:DesignExpression>
+                                <tibex:expression
+                                    expression="string-length($InserMain/outputSet/ERR_RESCODE) = 0" expressionLanguage="urn:oasis:names:tc:wsbpel:2.0:sublang:xpath2.0"/>
+                            </tibex:DesignExpression>
+                            <bpws:transitionCondition expressionLanguage="urn:oasis:names:tc:wsbpel:2.0:sublang:xpath2.0"><![CDATA[string-length($InserMain/outputSet/ERR_RESCODE) = 0]]></bpws:transitionCondition>
+                        </bpws:source>
+                        <bpws:source linkName="JDBCCallProcedureToThrow"/>
                     </bpws:sources>
                     <tibex:inputBindings>
                         <tibex:inputBinding
-                            expression="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xa;&lt;xsl:stylesheet xmlns:xsl=&quot;http://www.w3.org/1999/XSL/Transform&quot; xmlns:tns9=&quot;http://www.tibco.com/namespaces/tnt/plugins/jdbc+aff6b694-8a1d-4e76-ba71-dc6ad119fa33+input&quot; version=&quot;2.0&quot;>&#xa;    &lt;xsl:template name=&quot;JDBCCallProcedure-input&quot; match=&quot;/&quot;>&#xa;        &lt;tns9:inputs/>&#xa;    &lt;/xsl:template>&#xa;&lt;/xsl:stylesheet>" expressionLanguage="urn:oasis:names:tc:wsbpel:2.0:sublang:xslt1.0"/>
+                            expression="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xa;&lt;xsl:stylesheet xmlns:xsl=&quot;http://www.w3.org/1999/XSL/Transform&quot; xmlns:tns11=&quot;http://www.tibco.com/namespaces/tnt/plugins/jdbc+aff6b694-8a1d-4e76-ba71-dc6ad119fa33+input&quot; version=&quot;2.0&quot;>&#xa;    &lt;xsl:template name=&quot;JDBCCallProcedure-input&quot; match=&quot;/&quot;>&#xa;        &lt;tns11:inputs/>&#xa;    &lt;/xsl:template>&#xa;&lt;/xsl:stylesheet>" expressionLanguage="urn:oasis:names:tc:wsbpel:2.0:sublang:xslt1.0"/>
                     </tibex:inputBindings>
                     <tibex:config>
                         <bwext:BWActivity
@@ -1797,7 +1875,16 @@
                                     timeout="10" xsi:type="jdbcPalette:JDBCCallProcedureActivity">
                                     <preparedParamters DataType="12"
                                     DataTypeDisplayValue="VARCHAR2"
-                                    ParameterName="OUTPUT" ProcedureParamterType="4"/>
+                                    ParameterName="ERR_RESCODE" ProcedureParamterType="4"/>
+                                    <preparedParamters DataType="12"
+                                    DataTypeDisplayValue="VARCHAR2"
+                                    ParameterName="ERR_EMP_CODE" ProcedureParamterType="4"/>
+                                    <preparedParamters DataType="12"
+                                    DataTypeDisplayValue="VARCHAR2"
+                                    ParameterName="RESCODE" ProcedureParamterType="4"/>
+                                    <preparedParamters DataType="12"
+                                    DataTypeDisplayValue="VARCHAR2"
+                                    ParameterName="EMP_CODE" ProcedureParamterType="4"/>
                                     </value>
                                 </properties>
                             </activityConfig>
@@ -1820,6 +1907,16 @@
                         variableName="//CommonInterface//TrxID" xmlns:tibex="http://www.tibco.com/bpel/2007/extensions"/>
                 </tibex:extActivity>
             </bpws:extensionActivity>
+            <bpws:throw faultName="ns16:DefaultFault"
+                faultVariable="Throw-input" name="Throw" tibex:xpdlId="2edea816-c5f9-4208-a2a2-125baae2348d">
+                <tibex:inputBindings>
+                    <tibex:partBinding
+                        expression="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xa;&lt;xsl:stylesheet xmlns:xsl=&quot;http://www.w3.org/1999/XSL/Transform&quot; xmlns:tns9=&quot;http://schemas.tibco.com/bw/plugins/basic/6.0/Exceptions&quot; xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot; version=&quot;2.0&quot;>&lt;xsl:param name=&quot;InserMain&quot;/>&lt;xsl:template name=&quot;Throw-input&quot; match=&quot;/&quot;>&lt;tns9:DefaultFault>&lt;message>&lt;xsl:value-of select=&quot;concat('Main Table Insertion faulted for', $InserMain/outputSet/ERR_EMP_CODE,' the Salary exceded 1cr')&quot;/>&lt;/message>&lt;xsl:if test=&quot;not((string($InserMain/outputSet/ERR_RESCODE/@xsi:nil)=(&amp;quot;true&amp;quot;)) or (string($InserMain/outputSet/ERR_RESCODE/@xsi:nil)=(&amp;quot;1&amp;quot;))) and exists($InserMain/outputSet/ERR_RESCODE)&quot;>&lt;msgCode>&lt;xsl:value-of select=&quot;$InserMain/outputSet/ERR_RESCODE&quot;/>&lt;/msgCode>&lt;/xsl:if>&lt;/tns9:DefaultFault>&lt;/xsl:template>&lt;/xsl:stylesheet>" expressionLanguage="urn:oasis:names:tc:wsbpel:2.0:sublang:xslt1.0"/>
+                </tibex:inputBindings>
+                <bpws:targets>
+                    <bpws:target linkName="JDBCCallProcedureToThrow"/>
+                </bpws:targets>
+            </bpws:throw>
         </bpws:flow>
     </bpws:scope>
 </bpws:process>

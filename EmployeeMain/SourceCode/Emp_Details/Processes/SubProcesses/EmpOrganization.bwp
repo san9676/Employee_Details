@@ -921,41 +921,6 @@
                                     <layoutConstraint x="362"
                                     xsi:type="notation:Bounds" y="169"/>
                                     </children>
-                                    <children type="4002">
-                                    <children type="4017">
-                                    <styles
-                                    fontName="Segoe UI"
-                                    lineColor="0" xsi:type="notation:ShapeStyle"/>
-                                    <layoutConstraint xsi:type="notation:Bounds"/>
-                                    </children>
-                                    <children type="4017">
-                                    <styles
-                                    fontName="Segoe UI"
-                                    lineColor="0" xsi:type="notation:ShapeStyle"/>
-                                    <layoutConstraint xsi:type="notation:Bounds"/>
-                                    </children>
-                                    <children type="4017">
-                                    <styles
-                                    fontName="Segoe UI"
-                                    lineColor="0" xsi:type="notation:ShapeStyle"/>
-                                    <layoutConstraint xsi:type="notation:Bounds"/>
-                                    </children>
-                                    <children type="4017">
-                                    <styles
-                                    fontName="Segoe UI"
-                                    lineColor="0" xsi:type="notation:ShapeStyle"/>
-                                    <layoutConstraint xsi:type="notation:Bounds"/>
-                                    </children>
-                                    <styles fontName="Segoe UI"
-                                    lineColor="0" xsi:type="notation:ShapeStyle"/>
-                                    <styles
-                                    backgroundColor="16777215"
-                                    gradientEndColor="50431"
-                                    gradientStartColor="16777215" xsi:type="bwnotation:BackgroundStyle"/>
-                                    <element href="//0/@process/@activity/@activity/@activities.6"/>
-                                    <layoutConstraint x="380"
-                                    xsi:type="notation:Bounds" y="313"/>
-                                    </children>
                                     <children type="4002 bw.restjson.JsonParser">
                                     <children type="4017">
                                     <styles
@@ -987,7 +952,7 @@
                                     backgroundColor="16777215"
                                     gradientEndColor="50431"
                                     gradientStartColor="16777215" xsi:type="bwnotation:BackgroundStyle"/>
-                                    <element href="//0/@process/@activity/@activity/@activities.7"/>
+                                    <element href="//0/@process/@activity/@activity/@activities.6"/>
                                     <layoutConstraint
                                     height="40" width="40"
                                     x="479"
@@ -1024,9 +989,44 @@
                                     backgroundColor="16777215"
                                     gradientEndColor="50431"
                                     gradientStartColor="16777215" xsi:type="bwnotation:BackgroundStyle"/>
-                                    <element href="//0/@process/@activity/@activity/@activities.8"/>
+                                    <element href="//0/@process/@activity/@activity/@activities.7"/>
                                     <layoutConstraint x="414"
                                     xsi:type="notation:Bounds" y="46"/>
+                                    </children>
+                                    <children type="4002">
+                                    <children type="4017">
+                                    <styles
+                                    fontName="Segoe UI"
+                                    lineColor="0" xsi:type="notation:ShapeStyle"/>
+                                    <layoutConstraint xsi:type="notation:Bounds"/>
+                                    </children>
+                                    <children type="4017">
+                                    <styles
+                                    fontName="Segoe UI"
+                                    lineColor="0" xsi:type="notation:ShapeStyle"/>
+                                    <layoutConstraint xsi:type="notation:Bounds"/>
+                                    </children>
+                                    <children type="4017">
+                                    <styles
+                                    fontName="Segoe UI"
+                                    lineColor="0" xsi:type="notation:ShapeStyle"/>
+                                    <layoutConstraint xsi:type="notation:Bounds"/>
+                                    </children>
+                                    <children type="4017">
+                                    <styles
+                                    fontName="Segoe UI"
+                                    lineColor="0" xsi:type="notation:ShapeStyle"/>
+                                    <layoutConstraint xsi:type="notation:Bounds"/>
+                                    </children>
+                                    <styles fontName="Segoe UI"
+                                    lineColor="0" xsi:type="notation:ShapeStyle"/>
+                                    <styles
+                                    backgroundColor="16777215"
+                                    gradientEndColor="50431"
+                                    gradientStartColor="16777215" xsi:type="bwnotation:BackgroundStyle"/>
+                                    <element href="//0/@process/@activity/@activity/@activities.8"/>
+                                    <layoutConstraint x="501"
+                                    xsi:type="notation:Bounds" y="289"/>
                                     </children>
                                     <styles xsi:type="notation:DrawerStyle"/>
                                     <styles xsi:type="notation:SortingStyle"/>
@@ -1288,7 +1288,7 @@
         </edges>
         <edges
             source="//@children.0/@children.3/@children.0/@children.0/@children.0/@children.0/@children.0/@children.0/@children.5"
-            target="//@children.0/@children.3/@children.0/@children.0/@children.0/@children.0/@children.0/@children.0/@children.7" type="4006">
+            target="//@children.0/@children.3/@children.0/@children.0/@children.0/@children.0/@children.0/@children.0/@children.6" type="4006">
             <children type="6002">
                 <layoutConstraint xsi:type="notation:Location" y="40"/>
             </children>
@@ -1310,7 +1310,7 @@
         </edges>
         <edges
             source="//@children.0/@children.3/@children.0/@children.0/@children.0/@children.0/@children.0/@children.0/@children.0"
-            target="//@children.0/@children.3/@children.0/@children.0/@children.0/@children.0/@children.0/@children.0/@children.6" type="4006">
+            target="//@children.0/@children.3/@children.0/@children.0/@children.0/@children.0/@children.0/@children.0/@children.8" type="4006">
             <children type="6002">
                 <layoutConstraint xsi:type="notation:Location" y="40"/>
             </children>
@@ -1319,40 +1319,28 @@
             <element href="//0/@process/@activity/@activity/@links/@children.5"/>
             <bendpoints
                 points="[8, 10, -422, -84]$[8, 99, -422, 5]$[406, 99, -24, 5]" xsi:type="notation:RelativeBendpoints"/>
-            <sourceAnchor id="(0.20408163265306123,0.7959183673469388)" xsi:type="notation:IdentityAnchor"/>
+            <sourceAnchor id="(0.4897959183673469,1.0)" xsi:type="notation:IdentityAnchor"/>
         </edges>
         <edges
             source="//@children.0/@children.3/@children.0/@children.0/@children.0/@children.0/@children.0/@children.0/@children.6"
-            target="//@children.0/@children.3/@children.0/@children.0/@children.0/@children.0/@children.0/@children.0/@children.1" type="4006">
-            <children type="6002">
-                <layoutConstraint xsi:type="notation:Location" y="40"/>
-            </children>
-            <styles lineColor="0" xsi:type="notation:ConnectorStyle"/>
-            <styles fontName="Segoe UI" xsi:type="notation:FontStyle"/>
-            <element href="//0/@process/@activity/@activity/@links/@children.6"/>
-            <bendpoints
-                points="[25, 0, -275, 109]$[246, 0, -54, 109]$[246, -109, -54, 0]$[276, -109, -24, 0]" xsi:type="notation:RelativeBendpoints"/>
-        </edges>
-        <edges
-            source="//@children.0/@children.3/@children.0/@children.0/@children.0/@children.0/@children.0/@children.0/@children.7"
             target="//@children.0/@children.3/@children.0/@children.0/@children.0/@children.0/@children.0/@children.0/@children.3" type="4006">
             <children type="6002">
                 <layoutConstraint xsi:type="notation:Location" y="40"/>
             </children>
             <styles lineColor="0" xsi:type="notation:ConnectorStyle"/>
             <styles fontName="Segoe UI" xsi:type="notation:FontStyle"/>
-            <element href="//0/@process/@activity/@activity/@links/@children.7"/>
+            <element href="//0/@process/@activity/@activity/@links/@children.6"/>
             <bendpoints points="[0, 0, 0, 0]$[0, 0, 0, 0]" xsi:type="notation:RelativeBendpoints"/>
         </edges>
         <edges
-            source="//@children.0/@children.3/@children.0/@children.0/@children.0/@children.0/@children.0/@children.0/@children.7"
-            target="//@children.0/@children.3/@children.0/@children.0/@children.0/@children.0/@children.0/@children.0/@children.8" type="4006">
+            source="//@children.0/@children.3/@children.0/@children.0/@children.0/@children.0/@children.0/@children.0/@children.6"
+            target="//@children.0/@children.3/@children.0/@children.0/@children.0/@children.0/@children.0/@children.0/@children.7" type="4006">
             <children type="6002">
                 <layoutConstraint xsi:type="notation:Location" y="40"/>
             </children>
             <styles lineColor="8421631" xsi:type="notation:ConnectorStyle"/>
             <styles fontColor="8421631" fontName="Segoe UI" xsi:type="notation:FontStyle"/>
-            <element href="//0/@process/@activity/@activity/@links/@children.8"/>
+            <element href="//0/@process/@activity/@activity/@links/@children.7"/>
             <bendpoints points="[0, 0, 0, 0]$[0, 0, 0, 0]" xsi:type="notation:RelativeBendpoints"/>
             <sourceAnchor id="(0.22448979591836735,0.14285714285714285)" xsi:type="notation:IdentityAnchor"/>
         </edges>
@@ -1472,6 +1460,7 @@
             name="SendMail-input" sca-bpel:internal="true"/>
         <bpws:variable element="ns10:ActivityErrorData"
             name="_error_SendMail" sca-bpel:internal="true"/>
+        <bpws:variable element="ns12:DefaultFault" name="Throw1-input" sca-bpel:internal="true"/>
     </bpws:variables>
     <bpws:extensions>
         <bpws:extension mustUnderstand="no" namespace="http://www.eclipse.org/gmf/runtime/1.0.2/notation"/>
@@ -1579,13 +1568,12 @@
         </bpws:faultHandlers>
         <bpws:flow name="flow">
             <bpws:links>
-                <bpws:link name="RenderJSONToStartLog" tibex:linkType="SUCCESSWITHCONDITION"/>
-                <bpws:link name="StartToRenderJSON" tibex:linkType="SUCCESS"/>
+                <bpws:link name="RenderJSONToStartLog" tibex:linkType="SUCCESS"/>
+                <bpws:link name="StartToRenderJSON" tibex:linkType="SUCCESSWITHCONDITION"/>
                 <bpws:link name="StartLogToSendHTTPRequest" tibex:linkType="SUCCESS"/>
                 <bpws:link name="SendHTTPRequestToEndLog" tibex:linkType="SUCCESS"/>
                 <bpws:link name="LogHandler1ToEnd" tibex:linkType="SUCCESS"/>
-                <bpws:link name="StartToEmpty" tibex:linkType="SUCCESSWITHNOCONDITION"/>
-                <bpws:link name="EmptyToEnd" tibex:linkType="SUCCESS"/>
+                <bpws:link name="StartToThrow1" tibex:linkType="SUCCESSWITHNOCONDITION"/>
                 <bpws:link name="ParseJSONToEndLog" tibex:linkType="SUCCESSWITHCONDITION"/>
                 <bpws:link name="ParseJSONToThrow" tibex:linkType="SUCCESSWITHNOCONDITION"/>
             </bpws:links>
@@ -1595,15 +1583,19 @@
                     tibex:xpdlId="a805112e-ada6-492a-a839-7ca354a4696a"
                     variable="Start" xmlns:tibex="http://www.tibco.com/bpel/2007/extensions">
                     <bpws:sources>
-                        <bpws:source linkName="StartToEmpty">
+                        <bpws:source linkName="StartToRenderJSON">
+                            <tibex:DesignExpression>
+                                <tibex:expression
+                                    expression="matches(xsd:string($Start/ns0:EmpOrganization/ns0:CompanyPhNo), '[0-9]{10}')" expressionLanguage="urn:oasis:names:tc:wsbpel:2.0:sublang:xpath2.0"/>
+                            </tibex:DesignExpression>
+                            <bpws:transitionCondition expressionLanguage="urn:oasis:names:tc:wsbpel:2.0:sublang:xpath2.0"><![CDATA[matches(xsd:string($Start/ns0:EmpOrganization/ns0:CompanyPhNo), '[0-9]{10}')]]></bpws:transitionCondition>
+                        </bpws:source>
+                        <bpws:source linkName="StartToThrow1">
                             <tibex:DesignExpression>
                                 <tibex:expression
                                     expression="##otherwise##" expressionLanguage="urn:oasis:names:tc:wsbpel:2.0:sublang:xpath2.0"/>
                             </tibex:DesignExpression>
                             <bpws:transitionCondition expressionLanguage="urn:oasis:names:tc:wsbpel:2.0:sublang:xpath2.0"><![CDATA[##otherwise##]]></bpws:transitionCondition>
-                        </bpws:source>
-                        <bpws:source linkName="StartToRenderJSON">
-                            <tibex:DesignExpression/>
                         </bpws:source>
                     </bpws:sources>
                     <tibex:eventSource>
@@ -1617,7 +1609,6 @@
                     tibex:xpdlId="582ab3e3-9092-4706-b505-c3ddf0d90459" xmlns:tibex="http://www.tibco.com/bpel/2007/extensions">
                     <bpws:targets>
                         <bpws:target linkName="LogHandler1ToEnd"/>
-                        <bpws:target linkName="EmptyToEnd"/>
                     </bpws:targets>
                     <tibex:inputBindings>
                         <tibex:inputBinding
@@ -1689,11 +1680,7 @@
                     </bpws:targets>
                     <bpws:sources>
                         <bpws:source linkName="RenderJSONToStartLog">
-                            <tibex:DesignExpression>
-                                <tibex:expression
-                                    expression="matches(xsd:string($Start/ns0:EmpOrganization/ns0:CompanyPhNo), '[0-9]{10}')" expressionLanguage="urn:oasis:names:tc:wsbpel:2.0:sublang:xpath2.0"/>
-                            </tibex:DesignExpression>
-                            <bpws:transitionCondition expressionLanguage="urn:oasis:names:tc:wsbpel:2.0:sublang:xpath2.0"><![CDATA[matches(xsd:string($Start/ns0:EmpOrganization/ns0:CompanyPhNo), '[0-9]{10}')]]></bpws:transitionCondition>
+                            <tibex:DesignExpression/>
                         </bpws:source>
                     </bpws:sources>
                     <tibex:inputBindings>
@@ -1759,14 +1746,6 @@
                     </tibex:config>
                 </tibex:activityExtension>
             </bpws:extensionActivity>
-            <bpws:empty name="Empty" tibex:xpdlId="41d7b93c-ed92-428a-b30a-927371cd85e0">
-                <bpws:targets>
-                    <bpws:target linkName="StartToEmpty"/>
-                </bpws:targets>
-                <bpws:sources>
-                    <bpws:source linkName="EmptyToEnd"/>
-                </bpws:sources>
-            </bpws:empty>
             <bpws:extensionActivity>
                 <tibex:activityExtension inputVariable="ParseJSON-input"
                     name="ParseJSON" outputVariable="ParseJSON"
@@ -1821,6 +1800,16 @@
                 </tibex:inputBindings>
                 <bpws:targets>
                     <bpws:target linkName="ParseJSONToThrow"/>
+                </bpws:targets>
+            </bpws:throw>
+            <bpws:throw faultName="ns12:DefaultFault"
+                faultVariable="Throw1-input" name="Throw1" tibex:xpdlId="03accbc8-2e4e-462e-9b35-192a2665c9ac">
+                <tibex:inputBindings>
+                    <tibex:partBinding
+                        expression="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xa;&lt;xsl:stylesheet xmlns:xsl=&quot;http://www.w3.org/1999/XSL/Transform&quot; xmlns:tns6=&quot;http://schemas.tibco.com/bw/plugins/basic/6.0/Exceptions&quot; version=&quot;2.0&quot;>&lt;xsl:template name=&quot;Throw1-input&quot; match=&quot;/&quot;>&lt;tns6:DefaultFault>&lt;message>&lt;xsl:value-of select=&quot;'Invalid Phone No'&quot;/>&lt;/message>&lt;msgCode>&lt;xsl:value-of select=&quot;'500'&quot;/>&lt;/msgCode>&lt;/tns6:DefaultFault>&lt;/xsl:template>&lt;/xsl:stylesheet>" expressionLanguage="urn:oasis:names:tc:wsbpel:2.0:sublang:xslt1.0"/>
+                </tibex:inputBindings>
+                <bpws:targets>
+                    <bpws:target linkName="StartToThrow1"/>
                 </bpws:targets>
             </bpws:throw>
         </bpws:flow>
