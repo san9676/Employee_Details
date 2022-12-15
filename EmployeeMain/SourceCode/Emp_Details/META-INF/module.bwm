@@ -145,4 +145,7 @@
       <sca:interface.wsdl xmi:id="_s7ApMWP0Ee2amtg6x3AB3w" interface="http://xmlns.example.com/20221114105738PLT#wsdl.interface(addMainData)" scaext:wsdlLocation="../Processes/emp_details/EmpDetails.bwp"/>
     </sca:service>
   </sca:component>
+  <sca:component xmi:id="_h2RYkHSLEe2Xb5f1uLggTw" name="ComponentreportGen" compositeext:version="1.0.0.qualifier">
+    <scaext:implementation xsi:type="BW:BWComponentImplementation" xmi:id="_h2RYkXSLEe2Xb5f1uLggTw" processName="emp_details.reportGen"/>
+  </sca:component>
 </sca:composite>

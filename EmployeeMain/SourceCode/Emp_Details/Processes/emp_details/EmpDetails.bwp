@@ -5884,6 +5884,8 @@
         <bpws:variable messageType="ns:post4XXFaultMessage6"
             name="Reply6-input" sca-bpel:internal="true"/>
         <bpws:variable element="ns32:MainSysRes" name="FetchEmpDetails" sca-bpel:internal="true"/>
+        <bpws:variable element="ns32:FetchEmpDataReq"
+            name="FetchEmpDetails-input" sca-bpel:internal="true"/>
     </bpws:variables>
     <bpws:extensions>
         <bpws:extension mustUnderstand="no" namespace="http://www.eclipse.org/gmf/runtime/1.0.2/notation"/>
@@ -7048,6 +7050,7 @@
                             </bpws:extensionActivity>
                             <bpws:extensionActivity>
                                 <tibex:extActivity
+                                    inputVariable="FetchEmpDetails-input"
                                     name="FetchEmpDetails"
                                     outputVariable="FetchEmpDetails"
                                     tibex:xpdlId="d866961a-d529-447f-ad19-bb834abfa923"
